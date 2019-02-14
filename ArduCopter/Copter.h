@@ -956,6 +956,12 @@ private:
 #if MODE_LOITER_ENABLED == ENABLED
     ModeLoiter mode_loiter;
 #endif
+
+    //code added by Beatrice for bachelor degree test
+#if MODE_MODE_TEST_ENABLED == ENABLED
+    ModeModeTest mode_mode_test;
+#endif
+    ///////////////////////////////
 #if MODE_POSHOLD_ENABLED == ENABLED
     ModePosHold mode_poshold;
 #endif

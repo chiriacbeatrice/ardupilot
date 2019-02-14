@@ -161,6 +161,13 @@ Copter::Mode *Copter::mode_from_mode_num(const uint8_t mode)
             break;
 #endif
 
+//Code added by Beatrice for bachelor degree tests
+#if MODE_MODE_TEST_ENABLED == ENABLED
+        case MODE_TEST:
+            ret = &mode_mode_test;
+            break;
+#endif
+
         default:
             break;
     }

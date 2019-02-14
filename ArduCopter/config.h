@@ -320,6 +320,13 @@
 #endif
 
 //////////////////////////////////////////////////////////////////////////////
+// Test Mode - makes the same thing like loiter. Implemented by Beatrice for bachelor degree tests
+#ifndef MODE_MODE_TEST_ENABLED
+# define MODE_MODE_TEST_ENABLED ENABLED
+#endif
+
+
+//////////////////////////////////////////////////////////////////////////////
 // Position Hold - enable holding of global position
 #ifndef MODE_POSHOLD_ENABLED
 # define MODE_POSHOLD_ENABLED ENABLED
