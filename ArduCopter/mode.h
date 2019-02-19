@@ -952,7 +952,7 @@ public:
     bool init(bool ignore_checks) override;
     void run() override;
 
-    bool requires_GPS() const override { return true; }
+    bool requires_GPS() const override { return false; }  //aici l-am pus pe false pentru testarea in cladire in mode normal el trebuie pe true
     bool has_manual_throttle() const override { return false; }
     bool allows_arming(bool from_gcs) const override { return true; };
     bool is_autopilot() const override { return false; }
