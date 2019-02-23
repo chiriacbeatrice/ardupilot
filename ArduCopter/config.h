@@ -144,6 +144,12 @@
  # define GPS_HDOP_GOOD_DEFAULT         140     // minimum hdop that represents a good position.  used during pre-arm checks if fence is enabled
 #endif
 
+// test for parameter betty_param_test
+#ifndef BETTY_PARAM_TEST_DEFAULT
+# define BETTY_PARAM_TEST_DEFAULT         100     // the value is random
+#endif
+/////////////////////////////////////////
+
 // GCS failsafe
 #ifndef FS_GCS
  # define FS_GCS                        DISABLED

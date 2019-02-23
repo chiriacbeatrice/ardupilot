@@ -41,4 +41,6 @@ Copter::Copter(void)
     sensor_health.compass = true;
 }
 
+
+
 Copter copter;

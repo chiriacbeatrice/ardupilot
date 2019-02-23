@@ -128,6 +128,8 @@ public:
         k_param_throttle_filt,
         k_param_throttle_behavior,
         k_param_pilot_takeoff_alt, // 64
+        k_param_betty_param_test,  //parametru adaugat de betty
+
 
         // 65: AP_Limits Library
         k_param_limits = 65,            // deprecated - remove
@@ -388,6 +390,7 @@ public:
 
     AP_Int8         failsafe_gcs;               // ground station failsafe behavior
     AP_Int16        gps_hdop_good;              // GPS Hdop value at or below this value represent a good position
+    AP_Int16        betty_param_test;          //parametru adaugat de betty
 
     AP_Int8         compass_enabled;
     AP_Int8         super_simple;

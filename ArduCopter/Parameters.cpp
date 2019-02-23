@@ -185,6 +185,13 @@ const AP_Param::Info Copter::var_info[] = {
     // @User: Advanced
     GSCALAR(gps_hdop_good, "GPS_HDOP_GOOD", GPS_HDOP_GOOD_DEFAULT),
 
+    // @Param: BETTY_PARAM_TEST
+    // @DisplayName: BETTY Param Test
+    // @Description: It's just a new parameter for test to verify if it appear in MissionPlanner
+    // @Range: -32768 32767
+    // @User: Advanced
+    GSCALAR(betty_param_test, "BETTY_PARAM_TEST", BETTY_PARAM_TEST_DEFAULT),
+
     // @Param: MAG_ENABLE
     // @DisplayName: Compass enable/disable
     // @Description: Setting this to Enabled(1) will enable the compass. Setting this to Disabled(0) will disable the compass

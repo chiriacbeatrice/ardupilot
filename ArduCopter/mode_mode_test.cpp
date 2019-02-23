@@ -9,8 +9,28 @@
  */
 
 // loiter_init - initialise loiter controller
+
+
+
+
+
 bool Copter::ModeModeTest::init(bool ignore_checks)
 {
+    /////////////////////////////cod adaugat de betty pentru loguri//////////////////////////////
+    //Easy Way to add a log//////
+    DataFlash_Class::instance()->Log_Write("TEST", "TimeUS,Alt,TESTBetty",
+                                           "sm", // units: seconds, meters
+                                           "FB", // mult: 1e-6, 1e-2
+                                           "Qf", // format: uint64_t, float
+                                           AP_HAL::micros64(),
+                                           (double)alt_in_cm);  /// campurile astea le=am pus in header caci altfel nu stie de ele
+
+                                           //Inca nu am setat alt_in_cm nicaieri. Ar trebui eventual un setter pentru el
+
+    //Hard Way to add a log//////
+    copter.Log_Write_Test();
+    //////////////////////////////
+
     if (copter.position_ok() || ignore_checks) {
         if (!copter.failsafe.radio) {
             float target_roll, target_pitch;

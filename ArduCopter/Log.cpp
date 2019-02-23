@@ -553,6 +553,17 @@ void Copter::Log_Write_Vehicle_Startup_Messages()
     gps.Write_DataFlash_Log_Startup_messages();
 }
 
+//Hard Way to add a log cod adaugat de betty//////
+void Copter::Log_Write_Test()
+{
+    struct log_Test pkt = {
+            LOG_PACKET_HEADER_INIT(LOG_TEST_MSG_BETTY),
+            time_us  : AP_HAL::micros64(),
+            a_value  : 1234
+    };
+    DataFlash.WriteBlock(&pkt, sizeof(pkt));
+}////////////////////////Hard Way to add a log/////////////////////////////////////
+
 
 void Copter::log_init(void)
 {
@@ -578,6 +589,7 @@ void Copter::Log_Sensor_Health() {}
 void Copter::Log_Write_Precland() {}
 void Copter::Log_Write_GuidedTarget(uint8_t target_type, const Vector3f& pos_target, const Vector3f& vel_target) {}
 void Copter::Log_Write_Vehicle_Startup_Messages() {}
+void Copter::Log_Write_Test(){} //cod adaugat de betty pentru loguri Hard Way/////////////
 
 #if FRAME_CONFIG == HELI_FRAME
 void Copter::Log_Write_Heli() {}

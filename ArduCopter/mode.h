@@ -980,6 +980,9 @@ private:
 #if PRECISION_LANDING == ENABLED
     bool _precision_loiter_enabled;
 #endif
+
+    ////camp adaugat de betty pentru loguri. Nu are relevanta.Altfel nu trecea la complare//////
+    int32_t alt_in_cm ;
 };
 
 class ModePosHold : public Mode {
