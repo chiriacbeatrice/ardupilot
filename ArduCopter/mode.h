@@ -946,13 +946,16 @@ private:
 
 };
 
-//Beatrice -class added for bachelor degree
+//Betty -class added for bachelor degree
 class ModeModeTest : public Mode{
 public:
     bool init(bool ignore_checks) override;
     void run() override;
 
     bool requires_GPS() const override { return false; }  //aici l-am pus pe false pentru testarea in cladire in mode normal el trebuie pe true
+                                                         //functia asta face urmatorul lucru: ii spune ca are nevoie de  coordonatele gps
+                                                         // pentru a putea trece in modul respectiv cand se face din interfata comanda
+                                                         // de switch pe respectivul mode din MissionPlanner
     bool has_manual_throttle() const override { return false; }
     bool allows_arming(bool from_gcs) const override { return true; };
     bool is_autopilot() const override { return false; }

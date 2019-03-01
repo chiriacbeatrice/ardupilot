@@ -201,7 +201,7 @@ public:
     friend class RC_Channel_Copter;
     friend class RC_Channels_Copter;
 
-    Copter(void);
+    Copter(void);    //constructor without parameters, comment added by Betty
 
     // HAL::Callbacks implementation.
     void setup() override;
@@ -961,7 +961,7 @@ private:
     ModeLoiter mode_loiter;
 #endif
 
-    //code added by Beatrice for bachelor degree test
+    //code added by Betty for bachelor degree test
 #if MODE_MODE_TEST_ENABLED == ENABLED
     ModeModeTest mode_mode_test;
 #endif

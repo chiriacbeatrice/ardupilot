@@ -1,5 +1,5 @@
 //
-// Created by beatrice on 15.01.2019.
+// Created by beatrice(betty) on 15.01.2019.
 //
 
 #include "Copter.h"
@@ -49,7 +49,8 @@ bool Copter::ModeModeTest::init(bool ignore_checks)
         loiter_nav->init_target();
 
         // initialise position and desired velocity
-        if (!pos_control->is_active_z()) {
+        if (!pos_control->is_active_z())
+        {
             pos_control->set_alt_target_to_current_alt();
             pos_control->set_desired_velocity_z(inertial_nav.get_velocity_z());
         }
@@ -83,11 +84,13 @@ void Copter::ModeModeTest::precision_loiter_xy()
 {
     loiter_nav->clear_pilot_desired_acceleration();
     Vector2f target_pos, target_vel_rel;
-    if (!copter.precland.get_target_position_cm(target_pos)) {
+    if (!copter.precland.get_target_position_cm(target_pos))  //coment from AC_PrecLand  // returns target position relative to the EKF origin
+    {
         target_pos.x = inertial_nav.get_position().x;
         target_pos.y = inertial_nav.get_position().y;
     }
-    if (!copter.precland.get_target_velocity_relative_cms(target_vel_rel)) {
+    if (!copter.precland.get_target_velocity_relative_cms(target_vel_rel))  //coment from AC_PrecLand  // returns target velocity relative to vehicle
+    {
         target_vel_rel.x = -inertial_nav.get_velocity().x;
         target_vel_rel.y = -inertial_nav.get_velocity().y;
     }
@@ -157,19 +160,20 @@ void Copter::ModeModeTest::run()
             motors->set_desired_spool_state(AP_Motors::DESIRED_SHUT_DOWN);
 #if FRAME_CONFIG == HELI_FRAME
         // force descent rate and call position controller
-        pos_control->set_alt_target_from_climb_rate(-abs(g.land_speed), G_Dt, false);
-        if (ap.land_complete_maybe) {
-            pos_control->relax_alt_hold_controllers(0.0f);
+        pos_control->set_alt_target_from_climb_rate(-abs(g.land_speed), G_Dt, false);  //apelata continuu spre a mentine pozitia
+        if (ap.land_complete_maybe) //we may have landed (less strict version of land_complete)
+        {
+            pos_control->relax_alt_hold_controllers(0.0f);  //set all desired and targets to measured
         }
 #else
             loiter_nav->init_target();
-            attitude_control->reset_rate_controller_I_terms();
-            attitude_control->set_yaw_target_to_current_heading();
+            attitude_control->reset_rate_controller_I_terms(); // reset I terms(rate_roll_pid, rate-pitch_pid,rate_yaw_pid)
+            attitude_control->set_yaw_target_to_current_heading(); //// Sets yaw target to vehicle heading
             pos_control->relax_alt_hold_controllers(0.0f);   // forces throttle output to go to zero
 #endif
             loiter_nav->update();
-            attitude_control->input_euler_angle_roll_pitch_euler_rate_yaw(loiter_nav->get_roll(), loiter_nav->get_pitch(), target_yaw_rate);
-            pos_control->update_z_controller();
+            attitude_control->input_euler_angle_roll_pitch_euler_rate_yaw(loiter_nav->get_roll(), loiter_nav->get_pitch(), target_yaw_rate);//Command an euler roll and pitch angle and an euler yaw rate with angular velocity feedforward and smoothing
+            pos_control->update_z_controller();  // update_z_controller - fly to altitude in cm above home AC_PosControl.cpp
             break;
 
         case Loiter_Takeoff:
@@ -253,7 +257,7 @@ uint32_t Copter::ModeModeTest::wp_distance() const
     return loiter_nav->get_distance_to_target();
 }
 
-int32_t Copter::ModeModeTest::wp_bearing() const
+int32_t Copter::ModeModeTest::wp_bearing() const // distanta pana la tinta dorita
 {
     return loiter_nav->get_bearing_to_target();
 }
