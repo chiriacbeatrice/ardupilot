@@ -117,9 +117,11 @@ void Copter::ModeModeTest::run()
     // process pilot inputs unless we are in radio failsafe
     if (!copter.failsafe.radio) {
         // apply SIMPLE mode transform to pilot inputs
-        update_simple_mode();
+        update_simple_mode();  // update_simple_mode - rotates pilot input if we are in simple mode
 
         // convert pilot input to lean angles
+        // get_pilot_desired_angle_rates - transform pilot's roll pitch and yaw input into a desired lean angle rates
+        // returns desired angle rates in centi-degrees-per-second
         get_pilot_desired_lean_angles(target_roll, target_pitch, loiter_nav->get_angle_max_cd(), attitude_control->get_althold_lean_angle_max());
 
         // process pilot's roll and pitch input
@@ -131,6 +133,33 @@ void Copter::ModeModeTest::run()
         // get pilot desired climb rate
         target_climb_rate = get_pilot_desired_climb_rate(channel_throttle->get_control_in());
         target_climb_rate = constrain_float(target_climb_rate, -get_pilot_speed_dn(), g.pilot_speed_up);
+
+ //////////////////////code added by betty 02.03.2019//////////////////////////////////////////////////////////
+        Vector3f position_ok;
+        if  ((inertial_nav.get_latitude()>=(45.316173*powf(10,6)))
+          && (inertial_nav.get_longitude()<=(25.987522*powf(10,6))))
+        {
+            position_ok = inertial_nav.get_position(); // remains set to the value of the last correct position which was recorded
+        }
+
+        DataFlash_Class::instance()->Log_Write("PosUAV", "Pos.x,Pos.y,TESTBetty",
+                                                   "mm", // units: meters
+                                                   "BB", // mult:  1e-2
+                                                   "ff", // format: float
+                                                    (double)position_ok.x,
+                                                    (double)position_ok.y);
+        //I verified if the UAV is orients:lat S and long W
+        //In this part of code if the UAV current lat and long are not in the correct parameters then it will return to an accepted area
+        if(inertial_nav.get_latitude()<(45.316173*powf(10,6)))
+        {
+            pos_control->set_xy_target(position_ok.x,inertial_nav.get_position().y);
+        }
+        if(inertial_nav.get_longitude()>(25.987522*powf(10,6)))
+        {
+            pos_control->set_xy_target(inertial_nav.get_position().x,position_ok.y);
+        }
+        ////code added by betty//////////////////////////////////////////////////////////////
+
     } else {
         // clear out pilot desired acceleration in case radio failsafe event occurs and we do not switch to RTL for some reason
         loiter_nav->clear_pilot_desired_acceleration();
@@ -171,7 +200,7 @@ void Copter::ModeModeTest::run()
             attitude_control->set_yaw_target_to_current_heading(); //// Sets yaw target to vehicle heading
             pos_control->relax_alt_hold_controllers(0.0f);   // forces throttle output to go to zero
 #endif
-            loiter_nav->update();
+            loiter_nav->update();  //calculate dt = time since last_xy_update
             attitude_control->input_euler_angle_roll_pitch_euler_rate_yaw(loiter_nav->get_roll(), loiter_nav->get_pitch(), target_yaw_rate);//Command an euler roll and pitch angle and an euler yaw rate with angular velocity feedforward and smoothing
             pos_control->update_z_controller();  // update_z_controller - fly to altitude in cm above home AC_PosControl.cpp
             break;
@@ -232,7 +261,7 @@ void Copter::ModeModeTest::run()
                 precision_loiter_xy();
             }
 #endif
-
+          
             // run loiter controller
             loiter_nav->update();
 
