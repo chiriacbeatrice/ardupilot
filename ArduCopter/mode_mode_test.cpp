@@ -158,7 +158,7 @@ void Copter::ModeModeTest::run()
         {
             pos_control->set_xy_target(inertial_nav.get_position().x,position_ok.y);
         }
-        ////code added by betty//////////////////////////////////////////////////////////////
+        ////code added by betty 02.03.2019//////////////////////////////////////////////////////////////
 
     } else {
         // clear out pilot desired acceleration in case radio failsafe event occurs and we do not switch to RTL for some reason
