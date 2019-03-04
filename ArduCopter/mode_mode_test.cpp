@@ -109,6 +109,7 @@ void Copter::ModeModeTest::run()
     float target_yaw_rate = 0.0f;
     float target_climb_rate = 0.0f;
     float takeoff_climb_rate = 0.0f;
+    Vector3f position_ok;
 
     // initialize vertical speed and acceleration
     pos_control->set_max_speed_z(-get_pilot_speed_dn(), g.pilot_speed_up);
@@ -134,12 +135,12 @@ void Copter::ModeModeTest::run()
         target_climb_rate = get_pilot_desired_climb_rate(channel_throttle->get_control_in());
         target_climb_rate = constrain_float(target_climb_rate, -get_pilot_speed_dn(), g.pilot_speed_up);
 
- //////////////////////code added by betty 02.03.2019//////////////////////////////////////////////////////////
-        Vector3f position_ok;
-        if  ((inertial_nav.get_latitude()>=(45.316173*powf(10,6)))
-          && (inertial_nav.get_longitude()<=(25.987522*powf(10,6))))
+ /*//////////////////////code added by betty 02.03.2019//////////////////////////////////////////////////////////
+
+        if  ((inertial_nav.get_latitude()>=(44.434753*powf(10,6)))
+          && (inertial_nav.get_longitude()<=(26.046537*powf(10,6))))
         {
-            position_ok = inertial_nav.get_position(); // remains set to the value of the last correct position which was recorded
+          position_ok = inertial_nav.get_position(); // remains set to the value of the last correct position which was recorded
         }
 
         DataFlash_Class::instance()->Log_Write("PosUAV", "Pos.x,Pos.y,TESTBetty",
@@ -150,16 +151,16 @@ void Copter::ModeModeTest::run()
                                                     (double)position_ok.y);
         //I verified if the UAV is orients:lat S and long W
         //In this part of code if the UAV current lat and long are not in the correct parameters then it will return to an accepted area
-        if(inertial_nav.get_latitude()<(45.316173*powf(10,6)))
+        if(inertial_nav.get_latitude()<(44.434753*powf(10,6)))
         {
             pos_control->set_xy_target(position_ok.x,inertial_nav.get_position().y);
         }
-        if(inertial_nav.get_longitude()>(25.987522*powf(10,6)))
+        if(inertial_nav.get_longitude()>(26.046537*powf(10,6)))
         {
             pos_control->set_xy_target(inertial_nav.get_position().x,position_ok.y);
         }
         ////code added by betty 02.03.2019//////////////////////////////////////////////////////////////
-
+*/
     } else {
         // clear out pilot desired acceleration in case radio failsafe event occurs and we do not switch to RTL for some reason
         loiter_nav->clear_pilot_desired_acceleration();
@@ -277,6 +278,32 @@ void Copter::ModeModeTest::run()
             // update altitude target and call position controller
             pos_control->set_alt_target_from_climb_rate_ff(target_climb_rate, G_Dt, false);
             pos_control->update_z_controller();
+
+///////////////////////////////code added by betty 02.03.2019//////////////////////////////////////////////////////////
+
+            if  ((inertial_nav.get_latitude()>=(44.434753*powf(10,6)))
+              && (inertial_nav.get_longitude()<=(26.046537*powf(10,6))))
+            {
+              position_ok = inertial_nav.get_position(); // remains set to the value of the last correct position which was recorded
+            }
+
+            DataFlash_Class::instance()->Log_Write("PosUAV", "Pos.x,Pos.y,TESTBetty",
+                                                       "mm", // units: meters
+                                                       "BB", // mult:  1e-2
+                                                       "ff", // format: float
+                                                        (double)position_ok.x,
+                                                        (double)position_ok.y);
+            //I verified if the UAV is orients:lat S and long W
+            //In this part of code if the UAV current lat and long are not in the correct parameters then it will return to an accepted area
+            if(inertial_nav.get_latitude()<(44.434753*powf(10,6)))
+            {
+                pos_control->set_xy_target(position_ok.x,inertial_nav.get_position().y);
+            }
+            if(inertial_nav.get_longitude()>(26.046537*powf(10,6)))
+            {
+                pos_control->set_xy_target(inertial_nav.get_position().x,position_ok.y);
+            }
+//////////////////////////code added by betty 02.03.2019//////////////////////////////////////////////////////////////
             break;
     }
 }
