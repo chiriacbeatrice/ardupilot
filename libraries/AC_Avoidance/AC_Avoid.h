@@ -44,7 +44,7 @@ public:
      * before the fence/object.
      * Note: Vector3f version is for convenience and only adjusts x and y axis
      */
-    void adjust_velocity(float kP, float accel_cmss, Vector2f &desired_vel_cms, float dt);
+    virtual void adjust_velocity(float kP, float accel_cmss, Vector2f &desired_vel_cms, float dt); // virtual put by betty on 05.03.2019
     void adjust_velocity(float kP, float accel_cmss, Vector3f &desired_vel_cms, float dt);
 
     // adjust desired horizontal speed so that the vehicle stops before the fence or object
