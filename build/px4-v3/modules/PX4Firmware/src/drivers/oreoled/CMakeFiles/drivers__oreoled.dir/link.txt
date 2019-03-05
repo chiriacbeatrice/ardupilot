@@ -1,0 +1,2 @@
+/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ar qc libdrivers__oreoled.a  CMakeFiles/drivers__oreoled.dir/oreoled.cpp.obj
+/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ranlib libdrivers__oreoled.a
