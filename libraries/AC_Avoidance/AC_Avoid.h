@@ -16,6 +16,7 @@
 #define AC_AVOID_STOP_AT_FENCE          1       // stop at fence
 #define AC_AVOID_USE_PROXIMITY_SENSOR   2       // stop based on proximity sensor output
 #define AC_AVOID_STOP_AT_BEACON_FENCE   4       // stop based on beacon perimeter
+#define AC_AVOID_STOP_VIRTUAL_GATE      5       // code added by betty for a virtual gate
 #define AC_AVOID_DEFAULT                (AC_AVOID_STOP_AT_FENCE | AC_AVOID_USE_PROXIMITY_SENSOR)
 
 // definitions for non-GPS avoidance
@@ -44,7 +45,7 @@ public:
      * before the fence/object.
      * Note: Vector3f version is for convenience and only adjusts x and y axis
      */
-    virtual void adjust_velocity(float kP, float accel_cmss, Vector2f &desired_vel_cms, float dt); // virtual put by betty on 05.03.2019
+    void adjust_velocity(float kP, float accel_cmss, Vector2f &desired_vel_cms, float dt);
     void adjust_velocity(float kP, float accel_cmss, Vector3f &desired_vel_cms, float dt);
 
     // adjust desired horizontal speed so that the vehicle stops before the fence or object
@@ -83,11 +84,19 @@ public:
     static const struct AP_Param::GroupInfo var_info[];
 
 private:
+    //code added by betty
+    friend class Obstacle;
+    friend class Circle;
+    friend class Rectangle;
+    friend class Line;
+
     // behaviour types (see BEHAVE parameter)
     enum BehaviourType {
         BEHAVIOR_SLIDE = 0,
         BEHAVIOR_STOP = 1
     };
+
+   // void adjust_velocity_virtual_gate(float kP, float accel_cmss, Vector2f &desired_vel_cms,float margin, float dt);///code added by betty
 
     /*
      * Adjusts the desired velocity for the circular fence.
@@ -109,7 +118,7 @@ private:
      */
     void adjust_velocity_proximity(float kP, float accel_cmss, Vector2f &desired_vel_cms, float dt);
 
-    /*
+    /*avoid
      * Adjusts the desired velocity given an array of boundary points
      *   earth_frame should be true if boundary is in earth-frame, false for body-frame
      *   margin is the distance (in meters) that the vehicle should stop short of the polygon
@@ -143,6 +152,8 @@ private:
     AP_Float _dist_max;         // distance (in meters) from object at which obstacle avoidance will begin in non-GPS modes
     AP_Float _margin;           // vehicle will attempt to stay this distance (in meters) from objects while in GPS modes
     AP_Int8 _behavior;          // avoidance behaviour (slide or stop)
+
+
 
     bool _proximity_enabled = true; // true if proximity sensor based avoidance is enabled (used to allow pilot to enable/disable)
 

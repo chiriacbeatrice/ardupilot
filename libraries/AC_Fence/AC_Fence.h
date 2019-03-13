@@ -13,6 +13,7 @@
 #define AC_FENCE_TYPE_ALT_MAX                       1       // high alt fence which usually initiates an RTL
 #define AC_FENCE_TYPE_CIRCLE                        2       // circular horizontal fence (usually initiates an RTL)
 #define AC_FENCE_TYPE_POLYGON                       4       // polygon horizontal fence
+#define AC_FENCE_TYPE_OBJECT                        7       // parameter added by betty
 
 // valid actions should a fence be breached
 #define AC_FENCE_ACTION_REPORT_ONLY                 0       // report to GCS that boundary has been breached but take no further action
@@ -25,6 +26,7 @@
 #define AC_FENCE_ALT_MAX_BACKUP_DISTANCE            20.0f   // after fence is broken we recreate the fence 20m further up
 #define AC_FENCE_CIRCLE_RADIUS_BACKUP_DISTANCE      20.0f   // after fence is broken we recreate the fence 20m further out
 #define AC_FENCE_MARGIN_DEFAULT                     2.0f    // default distance in meters that autopilot's should maintain from the fence to avoid a breach
+
 
 // give up distance
 #define AC_FENCE_GIVE_UP_DISTANCE                   100.0f  // distance outside the fence at which we should give up and just land.  Note: this is not used by library directly but is intended to be used by the main code
@@ -123,6 +125,11 @@ private:
 
     /// check_fence_circle - true if circle fence has been newly breached
     bool check_fence_circle();
+
+    /////////////code added by betty////////////////////
+    ///ckeck_fence_virtual_gate - true if
+    bool check_fence_virtual_gate();
+    ///////////////////////////////////////////////////
 
     /// record_breach - update breach bitmask, time and count
     void record_breach(uint8_t fence_type);

@@ -84,8 +84,34 @@ AC_Avoid::AC_Avoid(const AP_AHRS& ahrs, const AC_Fence& fence, const AP_Proximit
     if ((_enabled & AC_AVOID_USE_PROXIMITY_SENSOR) > 0 && _proximity_enabled) {
         adjust_velocity_proximity(kP, accel_cmss_limited, desired_vel_cms, dt);
     }
+
+
+    /////////////////////////////code added by betty////////////////////////////////////////////
+    DataFlash_Class::instance()->Log_Write("TEST", "TimeUS,Alt,BettyAC_AvoidObjInput",
+                                                    "ms", // units: meters per second
+                                                    "F", // mult: 1e-6, 1e-2
+                                                    "Q", // format: uint64_t, float
+                                                    desired_vel_cms);      // exit immediately if disabled
+
+     AC_Avoid::adjust_velocity(kP,accel_cmss,desired_vel_cms,dt);
+
+    /* if ((_enabled & AC_AVOID_STOP_VIRTUAL_GATE) > 0) {
+         adjust_velocity_virtual_gate(kP, accel_cmss_limited, desired_vel_cms,_fence.get_margin(), dt);
+     }*/
+
+     //Aici se va aduga un nou parametru si se face o implementare de tipul celor din circle si polygon, dar
+     //pentru o bara imaginara
+     //chiar daca dupa mine deja face asta....
+
+     DataFlash_Class::instance()->Log_Write("TEST", "TimeUS,Alt,BettyAC_AvoidObjOutput",
+                                                  "ms", // units: meters per second
+                                                  "F", // mult: 1e-6, 1e-2
+                                                  "Q", // format: uint64_t, float
+                                                  desired_vel_cms);      // exit immediately if disabled
+
 }
 
+  ////////////////////////////////////////code addedby betty/////////////////////////////////////////////
 // convenience function to accept Vector3f.  Only x and y are adjusted
 void AC_Avoid::adjust_velocity(float kP, float accel_cmss, Vector3f &desired_vel_cms, float dt)
 {
@@ -260,8 +286,110 @@ float AC_Avoid::get_max_speed(float kP, float accel_cmss, float distance_cm, flo
     } else {
         return AC_AttitudeControl::sqrt_controller(distance_cm, kP, accel_cmss, dt);
     }
-}
+}/////////////////////////////////////
 
+/*void AC_Avoid:: adjust_velocity_virtual_gate(float kP, float accel_cmss, Vector2f &desired_vel_cms, float margin, float dt)
+{
+
+   // exit if the virtual gate
+
+///////////////////////code added by bettyfence is not enabled
+  if ((_fence.get_enabled_fences() & AC_FENCE_TYPE_VIRTUAL_GATE) == 0) {
+      return;
+  }
+
+  // exit if the virtual gate fence has already been breached
+  if ((_fence.get_breaches() & AC_FENCE_TYPE_VIRTUAL_GATE) != 0) {
+      return;
+  }
+
+  // exit immediately if no desired velocity
+  if (desired_vel_cms.is_zero()) {
+      return;
+  }
+
+  // get position as a 2D offset from ahrs home
+    Vector2f position_xy;
+       // return a position relative to home in meters, North/East
+      // order. Return true if estimate is valid
+    if (!_ahrs.get_relative_position_NE_home(position_xy)) {
+
+       return;
+    }
+
+    position_xy *= 100.0f; // m -> cm
+
+       // Safe_vel will be adjusted to remain within fence.
+       // We need a separate vector in case adjustment fails,
+       // e.g. if we are exactly on the boundary.
+       Vector2f safe_vel(desired_vel_cms);
+
+       // if boundary points are in body-frame, rotate velocity vector from earth frame to body-frame
+       if (!earth_frame) {
+           safe_vel.x = desired_vel_cms.y * _ahrs.sin_yaw() + desired_vel_cms.x * _ahrs.cos_yaw(); // right
+           safe_vel.y = desired_vel_cms.y * _ahrs.cos_yaw() - desired_vel_cms.x * _ahrs.sin_yaw(); // forward
+       }
+
+       // calc margin in cm
+       const float margin_cm = _fence.get_margin() * 100.0f;
+
+       // for stopping
+       const float speed = safe_vel.length();
+       // end points of current edge
+       const Vector2f* boundary = _fence.get_polygon_points(num_points);
+       Vector2f start = boundary[0];
+       Vector2f end = boundary[1];
+      if ((AC_Avoid::BehaviourType)_behavior.get() == BEHAVIOR_SLIDE) {
+          // vector from current position to closest point on current edge
+          Vector2f limit_direction = Vector2f::closest_point(position_xy, start, end) - position_xy;
+          // distance to closest point
+          const float limit_distance_cm = limit_direction.length();
+          if (!is_zero(limit_distance_cm)) {
+              // We are strictly inside the given edge.
+              // Adjust velocity to not violate this edge.
+              limit_direction /= limit_distance_cm;
+              limit_velocity(kP, accel_cmss, safe_vel, limit_direction, MAX(limit_distance_cm - margin_cm, 0.0f), dt);
+          } else {
+              // We are exactly on the edge - treat this as a fence breach.
+              // i.e. do not adjust velocity.
+              return;
+          }
+      } else {
+          // find intersection with line segment
+          Vector2f intersection;
+          if (Vector2f::segment_intersection(position_xy, stopping_point_plus_margin, start, end, intersection)) {
+              // vector from current position to point on current edge
+              Vector2f limit_direction = intersection - position_xy;
+              const float limit_distance_cm = limit_direction.length();
+              if (!is_zero(limit_distance_cm)) {
+                  if (limit_distance_cm <= margin_cm) {
+                      // we are within the margin so stop vehicle
+                      safe_vel.zero();
+                  } else {
+                      // vehicle inside the given edge, adjust velocity to not violate this edge
+                      limit_direction /= limit_distance_cm;
+                      limit_velocity(kP, accel_cmss, safe_vel, limit_direction, MAX(limit_distance_cm - margin_cm, 0.0f), dt);
+                  }
+              } else {
+                  // We are exactly on the edge - treat this as a fence breach.
+                  // i.e. do not adjust velocity.
+                  return;
+              }
+          }
+      }
+
+  // set modified desired velocity vector
+  if (earth_frame) {
+      desired_vel_cms = safe_vel;
+  } else {
+      // if points were in body-frame, rotate resulting vector back to earth-frame
+      desired_vel_cms.x = safe_vel.x * _ahrs.cos_yaw() - safe_vel.y * _ahrs.sin_yaw();
+      desired_vel_cms.y = safe_vel.x * _ahrs.sin_yaw() + safe_vel.y * _ahrs.cos_yaw();
+  }
+
+}
+*/
+/////////////////////////////////////////////////////////////////////////////
 /*
  * Adjusts the desired velocity for the circular fence.
  */
@@ -279,6 +407,8 @@ void AC_Avoid::adjust_velocity_circle_fence(float kP, float accel_cmss, Vector2f
 
     // get position as a 2D offset from ahrs home
     Vector2f position_xy;
+        // return a position relative to home in meters, North/East
+        // order. Return true if estimate is valid
     if (!_ahrs.get_relative_position_NE_home(position_xy)) {
         // we have no idea where we are....
         return;
@@ -287,24 +417,27 @@ void AC_Avoid::adjust_velocity_circle_fence(float kP, float accel_cmss, Vector2f
 
     const float speed = desired_vel_cms.length();
     // get the fence radius in cm
-    const float fence_radius = _fence.get_radius() * 100.0f;
+    const float fence_radius = _fence.get_radius() * 100.0f; // raza cercului in metri in meters
+
     // get the margin to the fence in cm
-    const float margin_cm = _fence.get_margin() * 100.0f;
+    const float margin_cm = _fence.get_margin() * 100.0f;  // cu cat sa se opreasca inainte de bariera
 
     if (!is_zero(speed) && position_xy.length() <= fence_radius) {
         // Currently inside circular fence
         Vector2f stopping_point = position_xy + desired_vel_cms*(get_stopping_distance(kP, accel_cmss, speed)/speed);
         float stopping_point_length = stopping_point.length();
-        if (stopping_point_length > fence_radius - margin_cm) {
+        if (stopping_point_length > fence_radius - margin_cm) //daca s-a depasit punctul ce reprezinta distanta la care
+                                                             //ar trebui sa se opreasca
+        {
             // Unsafe desired velocity - will not be able to stop before fence breach
             if ((AC_Avoid::BehaviourType)_behavior.get() == BEHAVIOR_SLIDE) {
                 // Project stopping point radially onto fence boundary
                 // Adjusted velocity will point towards this projected point at a safe speed
                 const Vector2f target = stopping_point * ((fence_radius - margin_cm) / stopping_point_length);
                 const Vector2f target_direction = target - position_xy;
-                const float distance_to_target = target_direction.length();
-                const float max_speed = get_max_speed(kP, accel_cmss, distance_to_target, dt);
-                desired_vel_cms = target_direction * (MIN(speed,max_speed) / distance_to_target);
+                const float distance_to_target = target_direction.length(); // calculeaza cat trebuie sa inainteze pe baza liniei anterioare de cod
+                const float max_speed = get_max_speed(kP, accel_cmss, distance_to_target, dt);  //calculeaza viteza maxima cu care poate inainta
+                desired_vel_cms = target_direction * (MIN(speed,max_speed) / distance_to_target); // item
             } else {
                 // shorten vector without adjusting its direction
                 Vector2f intersection;

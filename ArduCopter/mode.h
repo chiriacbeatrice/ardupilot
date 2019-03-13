@@ -952,7 +952,7 @@ public:
     bool init(bool ignore_checks) override;
     void run() override;
 
-    bool requires_GPS() const override { return false; }  //aici l-am pus pe false pentru testarea in cladire in mode normal el trebuie pe true
+    bool requires_GPS() const override { return true; }  //aici l-am pus pe false pentru testarea in cladire in mode normal el trebuie pe true
                                                          //functia asta face urmatorul lucru: ii spune ca are nevoie de  coordonatele gps
                                                          // pentru a putea trece in modul respectiv cand se face din interfata comanda
                                                          // de switch pe respectivul mode din MissionPlanner

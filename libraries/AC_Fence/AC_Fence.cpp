@@ -8,7 +8,7 @@ extern const AP_HAL::HAL& hal;
 #if APM_BUILD_TYPE(APM_BUILD_APMrover2)
 #define AC_FENCE_TYPE_DEFAULT AC_FENCE_TYPE_CIRCLE | AC_FENCE_TYPE_POLYGON
 #else
-#define AC_FENCE_TYPE_DEFAULT AC_FENCE_TYPE_ALT_MAX | AC_FENCE_TYPE_CIRCLE | AC_FENCE_TYPE_POLYGON
+#define AC_FENCE_TYPE_DEFAULT AC_FENCE_TYPE_ALT_MAX | AC_FENCE_TYPE_CIRCLE | AC_FENCE_TYPE_POLYGON | AC_FENCE_TYPE_OBJECT  //the lastone added by betty
 #endif
 
 const AP_Param::GroupInfo AC_Fence::var_info[] = {
@@ -22,7 +22,7 @@ const AP_Param::GroupInfo AC_Fence::var_info[] = {
     // @Param: TYPE
     // @DisplayName: Fence Type
     // @Description: Enabled fence types held as bitmask
-    // @Values: 0:None,1:Altitude,2:Circle,3:Altitude and Circle,4:Polygon,5:Altitude and Polygon,6:Circle and Polygon,7:All
+    // @Values: 0:None,1:Altitude,2:Circle,3:Altitude and Circle,4:Polygon,5:Altitude and Polygon,6:Circle and Polygon,7:Object,8:All
     // @Bitmask: 0:Altitude,1:Circle,2:Polygon
     // @User: Standard
     AP_GROUPINFO("TYPE",        1,  AC_Fence,   _enabled_fences,  AC_FENCE_TYPE_DEFAULT),
@@ -75,6 +75,15 @@ const AP_Param::GroupInfo AC_Fence::var_info[] = {
     // @User: Standard
     AP_GROUPINFO_FRAME("ALT_MIN",     7,  AC_Fence,   _alt_min,       AC_FENCE_ALT_MIN_DEFAULT, AP_PARAM_FRAME_SUB),
 
+    // @Param: RADIUS
+   // @DisplayName: Virtual gate
+   // @Description: Virtual gate added by beatrice
+   // @Units: m
+   // @Range: 20 100
+   // @User: Standard
+      // AP_GROUPINFO("GATE",      8,  AC_Fence,   _virtual_gate, AC_FENCE_GATE_DEFAULT),
+
+
     AP_GROUPEND
 };
 
@@ -89,7 +98,7 @@ void AC_Fence::enable(bool value)
 {
     _enabled = value;
     if (!value) {
-        clear_breach(AC_FENCE_TYPE_ALT_MAX | AC_FENCE_TYPE_CIRCLE | AC_FENCE_TYPE_POLYGON);
+        clear_breach(AC_FENCE_TYPE_ALT_MAX | AC_FENCE_TYPE_CIRCLE | AC_FENCE_TYPE_POLYGON | AC_FENCE_TYPE_OBJECT);
     }
 }
 
@@ -128,6 +137,8 @@ bool AC_Fence::pre_arm_check_circle(const char* &fail_msg) const
     return true;
 }
 
+
+
 // additional checks for the alt fence:
 bool AC_Fence::pre_arm_check_alt(const char* &fail_msg) const
 {
@@ -158,7 +169,8 @@ bool AC_Fence::pre_arm_check(const char* &fail_msg) const
     // if we have horizontal limits enabled, check we can get a
     // relative position from the EKF
     if ((_enabled_fences & AC_FENCE_TYPE_CIRCLE) ||
-        (_enabled_fences & AC_FENCE_TYPE_POLYGON)) {
+        (_enabled_fences & AC_FENCE_TYPE_POLYGON)||
+        (_enabled_fences & AC_FENCE_TYPE_OBJECT)) {
         Vector2f position;
         if (!_ahrs.get_relative_position_NE_home(position)) {
             fail_msg = "fence requires position";
@@ -316,8 +328,17 @@ bool AC_Fence::check_fence_circle()
 
     return false;
 }
+///////////////////code added by betty////////////////////////
 
-
+/*bool AC_Fence::check_fence_virtual_gate()
+{
+    if (!(_enabled_fences & AC_FENCE_TYPE_VIRTUAL_GATE)) {
+       // not enabled; no breach
+       return false;
+    }
+   return false;
+}
+*/
 /// check - returns bitmask of fence types breached (if any)
 uint8_t AC_Fence::check()
 {
@@ -353,6 +374,9 @@ uint8_t AC_Fence::check()
     if (check_fence_polygon()) {
         ret |= AC_FENCE_TYPE_POLYGON;
     }
+    //code added by betty
+    // object fence check
+
 
     // return any new breaches that have occurred
     return ret;
@@ -603,6 +627,7 @@ bool AC_Fence::sys_status_failed() const
             return true;
         }
     }
+
     if (_enabled_fences & AC_FENCE_TYPE_ALT_MAX) {
         if (_alt_max < 0.0f) {
             return true;
