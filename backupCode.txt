@@ -1,0 +1,58 @@
+#define AC_FENCE_GATE_DEFAULT                       20.0f   // default maximum distance for a virtual gate added by betty
+                                                            // it represents the distanse in meters from home   -Avoid.h line 29
+
+  //code added by betty///////////
+    //get_gate -return the gate in meters
+    float get_gate() const { return _virtual_gate.get(); }      Avoid.h -line93
+
+
+
+/////////code added by betty///////                                            AC_Fence.cpp line 151
+//additional checks for the circle fence
+
+bool AC_Fence::pre_arm_check_virtual_gate(const char* &fail_msg) const
+{
+    if (!(_enabled_fences & AC_FENCE_TYPE_VIRTUAL_GATE)) {
+      // not enabled; all good
+        return true;
+    }
+    if(_virtual_gate < 0){
+        fail_msg = "Invalid FENCE_VIRTUAL_GATE value";
+        return false;
+    }
+        return true;
+
+}
+ 
+referinta la 
+bool pre_arm_check_virtual_gate(const char* &fail_msg) const; //code added by betty     AC_Fence.h -line143
+
+
+
+
+ AP_Float        _virtual_gate;          // parameter added by betty  -AC_Fence.h line160
+
+
+
+
+
+  ////////////code added by betty//////////////////             AC_Fence.cpp  line653
+    if (_enabled_fences & AC_FENCE_TYPE_VIRTUAL_GATE) {
+          if (_virtual_gate < 0) {
+              return true;
+          }
+      }
+   //////////////////////////////////////////////////
+
+
+  ////////////code added by betty//////////////////
+    if (_enabled_fences & AC_FENCE_TYPE_VIRTUAL_GATE) {    AC_Fence.cpp line400
+          if (_virtual_gate < 0) {
+              return true;
+          }
+      }
+   //////////////////////////////////////////////////
+
+
+
+
