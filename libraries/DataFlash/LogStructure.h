@@ -66,7 +66,7 @@ struct PACKED log_Format_Units {
 };
 
 /////////////////////////cod adaugat de betty pentru loguri HardWay ////////////////////////
-struct PACKED log_Test {
+struct PACKED log_TestBC {
         LOG_PACKET_HEADER;
         uint64_t time_us;
         float a_value;

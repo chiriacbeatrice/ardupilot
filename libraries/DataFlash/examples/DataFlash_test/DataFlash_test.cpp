@@ -123,3 +123,4 @@ const struct AP_Param::GroupInfo        GCS_MAVLINK::var_info[] = {
 GCS_Dummy _gcs;
 
 AP_HAL_MAIN();
+

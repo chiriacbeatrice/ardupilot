@@ -15,4 +15,5 @@ TEST(Vector2Test, IsEqual)
     EXPECT_TRUE(v_float1 == v_float1);
 }
 
+
 AP_GTEST_MAIN()

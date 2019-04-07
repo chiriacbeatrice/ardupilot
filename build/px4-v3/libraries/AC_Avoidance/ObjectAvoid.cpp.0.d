@@ -2,6 +2,8 @@ libraries/AC_Avoidance/ObjectAvoid.cpp.0.o: \
  ../../libraries/AC_Avoidance/ObjectAvoid.cpp \
  ../../modules/PX4Firmware/src/include/visibility.h ap_config.h \
  ../../libraries/AC_Avoidance/ObjectAvoid.h \
+ ../../libraries/AC_Avoidance/Obstacle.h \
+ ../../libraries/AC_Avoidance/AC_Avoid.h \
  ../../libraries/AP_Common/AP_Common.h \
  ../../libraries/AP_HAL/AP_HAL_Boards.h \
  ../../libraries/AP_HAL/board/px4.h \
@@ -405,6 +407,4 @@ libraries/AC_Avoidance/ObjectAvoid.cpp.0.o: \
  ../../libraries/DataFlash/DataFlash_Backend.h \
  ../../libraries/AC_PID/AC_P.h ../../libraries/AC_Fence/AC_Fence.h \
  ../../libraries/AC_Fence/AC_PolyFence_loader.h \
- ../../libraries/AP_Common/Location.h \
- ../../libraries/AC_Avoidance/Obstacle.h \
- ../../libraries/AC_Avoidance/AC_Avoid.h
+ ../../libraries/AP_Common/Location.h ../../libraries/AC_Avoidance/Line.h

@@ -29,8 +29,8 @@
 #define HAVE_AP_BLHELI_SUPPORT
 
 #include <AP_Param/AP_Param.h>
-#include "msp_protocol.h"
-#include "blheli_4way_protocol.h"
+#include "../../AP_BLHeli/msp_protocol.h"
+#include "../../AP_BLHeli/blheli_4way_protocol.h"
 
 #define AP_BLHELI_MAX_ESCS 8
 

@@ -21,7 +21,7 @@
   betaflight equivalent functions
  */
 
-#include "AP_BLHeli.h"
+#include "../../AP_BLHeli/AP_BLHeli.h"
 
 #ifdef HAVE_AP_BLHELI_SUPPORT
 

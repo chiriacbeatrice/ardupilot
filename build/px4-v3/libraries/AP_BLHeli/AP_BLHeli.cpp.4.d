@@ -1,7 +1,7 @@
 libraries/AP_BLHeli/AP_BLHeli.cpp.4.o: \
  ../../libraries/AP_BLHeli/AP_BLHeli.cpp \
  ../../modules/PX4Firmware/src/include/visibility.h ap_config.h \
- ../../libraries/AP_BLHeli/AP_BLHeli.h \
+ ../../libraries/AP_Common/missing/../../AP_BLHeli/AP_BLHeli.h \
  ../../libraries/AP_Common/AP_Common.h \
  ../../libraries/AP_HAL/AP_HAL_Boards.h \
  ../../libraries/AP_HAL/board/px4.h \

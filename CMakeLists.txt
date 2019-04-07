@@ -18125,6 +18125,7 @@ add_executable(ardupilot
         libraries/AP_Math/tests/test_geodesic_grid.cpp
         libraries/AP_Math/tests/test_math.cpp
         libraries/AP_Math/tests/test_matrix3.cpp
+        libraries/AP_Math/tests/test_line.cpp
         libraries/AP_Math/tests/test_perpendicular.cpp
         libraries/AP_Math/tests/test_segment_intersection.cpp
         libraries/AP_Math/tests/test_vector2.cpp
@@ -18149,6 +18150,11 @@ add_executable(ardupilot
         libraries/AP_Math/location_double.cpp
         libraries/AP_Math/matrix3.cpp
         libraries/AP_Math/matrix3.h
+        libraries/AP_Math/Line.h
+        libraries/AP_Math/Line.cpp
+        libraries/AP_Math/ObjectAvoid.h
+        libraries/AP_Math/ObjectAvoid.cpp
+        libraries/AP_Math/Obstacle.h
         libraries/AP_Math/matrix_alg.cpp
         libraries/AP_Math/matrixN.cpp
         libraries/AP_Math/matrixN.h
