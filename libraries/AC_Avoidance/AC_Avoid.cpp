@@ -112,7 +112,8 @@ AC_Avoid::AC_Avoid(const AP_AHRS& ahrs, const AC_Fence& fence, const AP_Proximit
 }
 
   ////////////////////////////////////////code addedby betty/////////////////////////////////////////////
-// convenience function to accept Vector3f.  Only x and y are adjusted
+
+  // convenience function to accept Vector3f.  Only x and y are adjusted
 void AC_Avoid::adjust_velocity(float kP, float accel_cmss, Vector3f &desired_vel_cms, float dt)
 {
     Vector2f des_vel_xy(desired_vel_cms.x, desired_vel_cms.y);

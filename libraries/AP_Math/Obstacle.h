@@ -5,6 +5,7 @@
  *      Author: beatrice
  */
 
+
 #ifndef LIBRARIES_AP_MATH_OBSTACLE_H_
 #define LIBRARIES_AP_MATH_OBSTACLE_H_
 
@@ -32,6 +33,9 @@ public:
     //pentru vectorul cu 3 dimensiuni(Vector3f) se poate folosi functia de adjust_velosity din Avoid.cpp
       virtual Vector2f adjust_velocity(float kP,Vector2f &currentP,float accel_cmss,
                                        Vector2f &desired_vel_cms, float dt);
+      float get_margin();
+      AC_Avoid::BehaviourType get_behavior();
+
 protected:
       enum BehaviourTypeObstacle {
           BEHAVIOR_SLIDE_OBSTACLE = 0,

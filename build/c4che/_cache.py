@@ -1,7 +1,7 @@
 AUTOCONFIG = True
 BINDIR = '/usr/bin'
 BOARD = 'sitl'
-DEBUG = False
+DEBUG = True
 LIBDIR = '/usr/lib'
 PREFIX = '/usr'
 VARIANT = 'sitl'
