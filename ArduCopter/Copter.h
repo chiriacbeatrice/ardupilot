@@ -82,7 +82,8 @@
 #include <AP_Arming/AP_Arming.h>
 #include <AP_SmartRTL/AP_SmartRTL.h>
 #include <AP_TempCalibration/AP_TempCalibration.h>
-
+//added by betty
+#include "AP_Math/ObjectAvoid.h"
 // Configuration
 #include "defines.h"
 #include "config.h"

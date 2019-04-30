@@ -133,6 +133,7 @@ protected:
     float &G_Dt;
     ap_t &ap;
 
+
     // note that we support two entirely different automatic takeoffs:
 
     // "user-takeoff", which is available in modes such as ALT_HOLD
@@ -986,6 +987,8 @@ private:
 
     ////camp adaugat de betty pentru loguri. Nu are relevanta.Altfel nu trecea la complare//////
     int32_t alt_in_cm ;
+    ObjectAvoid objectAvoid; //added by betty
+
 };
 
 class ModePosHold : public Mode {

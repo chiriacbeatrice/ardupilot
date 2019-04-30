@@ -109,7 +109,7 @@ void Copter::ModeModeTest::run()
     float target_yaw_rate = 0.0f;
     float target_climb_rate = 0.0f;
     float takeoff_climb_rate = 0.0f;
-    Vector3f position_ok;
+    Vector2f currentPosition;   //added by betty
 
     // initialize vertical speed and acceleration
     pos_control->set_max_speed_z(-get_pilot_speed_dn(), g.pilot_speed_up);
@@ -250,6 +250,7 @@ void Copter::ModeModeTest::run()
             attitude_control->input_euler_angle_roll_pitch_euler_rate_yaw(0, 0, 0);
             pos_control->relax_alt_hold_controllers(0.0f);   // forces throttle output to go to zero
             pos_control->update_z_controller();
+
             break;
 
         case Loiter_Flying:
@@ -281,29 +282,40 @@ void Copter::ModeModeTest::run()
 
 ///////////////////////////////code added by betty 02.03.2019//////////////////////////////////////////////////////////
 
-            if  ((inertial_nav.get_latitude()>=(44.434753*powf(10,6)))
-              && (inertial_nav.get_longitude()<=(26.046537*powf(10,6))))
-            {
-              position_ok = inertial_nav.get_position(); // remains set to the value of the last correct position which was recorded
-            }
-
-            DataFlash_Class::instance()->Log_Write("PosUAV", "Pos.x,Pos.y,TESTBetty",
-                                                       "mm", // units: meters
-                                                       "BB", // mult:  1e-2
-                                                       "ff", // format: float
-                                                        (double)position_ok.x,
-                                                        (double)position_ok.y);
-            //I verified if the UAV is orients:lat S and long W
-            //In this part of code if the UAV current lat and long are not in the correct parameters then it will return to an accepted area
-            if(inertial_nav.get_latitude()<(44.434753*powf(10,6)))
-            {
-                pos_control->set_xy_target(position_ok.x,inertial_nav.get_position().y);
-            }
-            if(inertial_nav.get_longitude()>(26.046537*powf(10,6)))
-            {
-                pos_control->set_xy_target(inertial_nav.get_position().x,position_ok.y);
-            }
+//            if  ((inertial_nav.get_latitude()>=(44.434753*powf(10,6)))
+//              && (inertial_nav.get_longitude()<=(26.046537*powf(10,6))))
+//            {
+//              position_ok = inertial_nav.get_position(); // remains set to the value of the last correct position which was recorded
+//            }
+//
+//            DataFlash_Class::instance()->Log_Write("PosUAV", "Pos.x,Pos.y,TESTBetty",
+//                                                       "mm", // units: meters
+//                                                       "BB", // mult:  1e-2
+//                                                       "ff", // format: float
+//                                                        (double)position_ok.x,
+//                                                        (double)position_ok.y);
+//            //I verified if the UAV is orients:lat S and long W
+//            //In this part of code if the UAV current lat and long are not in the correct parameters then it will return to an accepted area
+//            if(inertial_nav.get_latitude()<(44.434753*powf(10,6)))
+//            {
+//                pos_control->set_xy_target(position_ok.x,inertial_nav.get_position().y);
+//            }
+//            if(inertial_nav.get_longitude()>(26.046537*powf(10,6)))
+//            {
+//                pos_control->set_xy_target(inertial_nav.get_position().x,position_ok.y);
+//            }
 //////////////////////////code added by betty 02.03.2019//////////////////////////////////////////////////////////////
+
+
+      //code added by betty
+
+            Vector3f curr_vel_des = pos_control->get_desired_velocity();
+            Vector2f desired_vel_cms(curr_vel_des.x, curr_vel_des.y);
+            ahrs.get_relative_position_NE_home(currentPosition);
+            objectAvoid.adjust_velocity(pos_control->get_pos_xy_p().kP(),currentPosition,pos_control->get_max_accel_xy(),
+                                        desired_vel_cms,pos_control->get_dt());
+     ///code added by betty
+
             break;
     }
 }

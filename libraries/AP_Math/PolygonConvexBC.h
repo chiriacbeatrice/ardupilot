@@ -15,11 +15,12 @@
 
 class PolygonConvex: public Obstacle{
 
+public:
     PolygonConvex(std::vector<Vector2f> points);
     PolygonConvex(const PolygonConvex &other) = default;
     PolygonConvex &operator=(const PolygonConvex&) = default;
     virtual ~PolygonConvex(){}
-    virtual Vector2f adjust_velocity(float kP,Vector2f &currentP, float accel_cmss,
+    virtual void adjust_velocity(float kP,Vector2f &currentP, float accel_cmss,
                                          Vector2f &desired_vel_cms, float dt);
 
 protected:

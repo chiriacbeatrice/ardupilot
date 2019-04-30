@@ -9,7 +9,7 @@
 PolygonConvex::PolygonConvex(std::vector<Vector2f> points):
                _points(points){}
 
-Vector2f PolygonConvex::adjust_velocity(float kP,Vector2f &currentP, float accel_cmss,
+void PolygonConvex::adjust_velocity(float kP,Vector2f &currentP, float accel_cmss,
                                         Vector2f &desired_vel_cms, float dt)
 {
     // nu cred ca e okfiindca astfel viteza mi s-arschimba la fiecare iteratie
@@ -22,5 +22,5 @@ Vector2f PolygonConvex::adjust_velocity(float kP,Vector2f &currentP, float accel
            Line line(start,stop);
            line.adjust_velocity(kP,currentP,accel_cmss,desired_vel_cms,dt);
        }
-    return desired_vel_cms;
+  //  return desired_vel_cms;
 }

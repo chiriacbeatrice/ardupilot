@@ -80,9 +80,10 @@ TEST(LineTest, AdjustVelocityTest0)
     Line line(start,stop);
 
 
-   Vector2f v = line.adjust_velocity(1.0f,start,5.0f,velocity,1.0f);
+   //Vector2f v =
+           line.adjust_velocity(1.0f,start,5.0f,velocity,1.0f);
    EXPECT_TRUE(velocity == zero);
-   EXPECT_TRUE(v == zero);
+  // EXPECT_TRUE(v == zero);
 }
 
 
@@ -97,9 +98,10 @@ TEST(LineTest, AdjustVelocityTest1)
 
    Line line(start,stop);
 
-  Vector2f v = line.adjust_velocity(1.0f,stop,5.0f,velocity,1.0f);
+  //Vector2f v =
+          line.adjust_velocity(1.0f,stop,5.0f,velocity,1.0f);
   EXPECT_TRUE(velocity == zero);
-  EXPECT_TRUE(v == zero);
+  //EXPECT_TRUE(v == zero);
 }
 
 
@@ -115,8 +117,9 @@ TEST(LineTest, AdjustVelocityTest2)
    Line line(start,stop);
 
    Vector2f segment(5.0f,4.0f);
-   Vector2f v4 = line.adjust_velocity(1.0f,segment,5.0f,velocity,1.0f);
-   EXPECT_TRUE(v4 == zero);
+   //Vector2f v4 =
+           line.adjust_velocity(1.0f,segment,5.0f,velocity,1.0f);
+   EXPECT_TRUE(velocity == zero);
 }
 
 
@@ -154,9 +157,10 @@ TEST(LineTest, AdjustVelocityTest3)
 
     Vector2f position(10.0f,9.0f);
 
-    Vector2f v = line.adjust_velocity(1.0f,position,5.0f,velocity,1.0f);
-    EXPECT_TRUE(v != zero);
-    EXPECT_TRUE(v == velocity);
+   // Vector2f v =
+            line.adjust_velocity(1.0f,position,5.0f,velocity,1.0f);
+    EXPECT_TRUE(velocity != zero);
+   //EXPECT_TRUE(v == velocity);
     EXPECT_TRUE(velocity == safevel);
 }
 
@@ -173,9 +177,10 @@ TEST(LineTest, AdjustVelocityTest6)
 
     Vector2f position(2.0f,1.0f);
 
-    Vector2f v = line.adjust_velocity(1.0f,position,5.0f,velocity,1.0f);
-    EXPECT_TRUE(v != zero);
-    EXPECT_TRUE(v == velocity);
+   // Vector2f v =
+            line.adjust_velocity(1.0f,position,5.0f,velocity,1.0f);
+    EXPECT_TRUE(velocity != zero);
+    EXPECT_TRUE(safevel != velocity);
 }
 
 TEST(LineTest, AdjustVelocitySlideTest6)
@@ -212,9 +217,10 @@ TEST(LineTest, AdjustVelocityTest4)
 
     Vector2f position(5.0f,3.9f);
 
-    Vector2f v = line.adjust_velocity(1.0f,position,5.0f,velocity,1.0f);
-    EXPECT_TRUE(v == zero);
-    EXPECT_TRUE(v == velocity);
+   // Vector2f v =
+            line.adjust_velocity(1.0f,position,5.0f,velocity,1.0f);
+    EXPECT_TRUE(velocity == zero);
+   // EXPECT_TRUE(v == velocity);
 }
 
 ////Scenariu s-a atins marginea de siguranta, deci trebuie sa fie zero
@@ -231,9 +237,10 @@ TEST(LineTest, AdjustVelocityTest5)
 
     Vector2f position(4.0f,3.0f);
 
-    Vector2f v = line.adjust_velocity(1.0f,position,5.0f,velocity,1.0f);
-    EXPECT_TRUE(v == zero);
-    EXPECT_TRUE(v == velocity);
+    //Vector2f v =
+            line.adjust_velocity(1.0f,position,5.0f,velocity,1.0f);
+    EXPECT_TRUE(velocity == zero);
+    //EXPECT_TRUE(v == velocity);
 }
 
 ////Scenariu caz foarte aproape de marginea de siguranta

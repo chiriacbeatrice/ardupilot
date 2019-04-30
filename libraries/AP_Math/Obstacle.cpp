@@ -12,8 +12,8 @@
 
 #include "Obstacle.h"
 
-Vector2f Obstacle::adjust_velocity(float kP,Vector2f &currentP,float accel_cmss,
-        Vector2f &desired_vel_cms, float dt){return desired_vel_cms;};
+//Vector2f Obstacle::adjust_velocity(float kP,Vector2f &currentP,float accel_cmss,
+//        Vector2f &desired_vel_cms, float dt){return desired_vel_cms;};
 float Obstacle::get_margin()
 {
     /*INS_STILL_THRESH: Stillness threshold for detecting if we are moving
@@ -49,7 +49,7 @@ AC_Avoid::BehaviourType Obstacle::get_behavior()
     else
     {
       return AC_Avoid::BehaviourType::BEHAVIOR_SLIDE;
-       //return AC_Avoid::BehaviourType::BEHAVIOR_STOP; //- la testul pentru stop cand nue pe drona codul
+      //return AC_Avoid::BehaviourType::BEHAVIOR_STOP; //- la testul pentru stop cand nue pe drona codul
     }
 }
 

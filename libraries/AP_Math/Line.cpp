@@ -14,7 +14,7 @@ Line::Line(Vector2f& start, Vector2f& end):
         _stop(end){}
 
 
-Vector2f Line::adjust_velocity(float kP,Vector2f &currentP, float accel_cmss,
+void Line::adjust_velocity(float kP,Vector2f &currentP, float accel_cmss,
                                Vector2f &desired_vel_cms, float dt)
 {
     // get position as a 2D offset from ahrs home
@@ -44,7 +44,7 @@ Vector2f Line::adjust_velocity(float kP,Vector2f &currentP, float accel_cmss,
 
        }
 
-    return desired_vel_cms;
+    //return desired_vel_cms;
 }
 
 

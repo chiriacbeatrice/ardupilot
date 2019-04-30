@@ -31,8 +31,8 @@ public:
 
    // virtual void adjust_velocity_object(float kP, float accel_cmss, Vector2f &desired_vel_cms, float dt){};
     //pentru vectorul cu 3 dimensiuni(Vector3f) se poate folosi functia de adjust_velosity din Avoid.cpp
-      virtual Vector2f adjust_velocity(float kP,Vector2f &currentP,float accel_cmss,
-                                       Vector2f &desired_vel_cms, float dt);
+      virtual void adjust_velocity(float kP,Vector2f &currentP,float accel_cmss,
+                                       Vector2f &desired_vel_cms, float dt){};
       float get_margin();
       AC_Avoid::BehaviourType get_behavior();
 
