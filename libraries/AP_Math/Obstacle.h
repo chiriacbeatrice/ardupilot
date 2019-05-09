@@ -5,7 +5,7 @@
  *      Author: beatrice
  */
 
-
+#include "AC_Avoidance/AC_Avoid.h"
 #ifndef LIBRARIES_AP_MATH_OBSTACLE_H_
 #define LIBRARIES_AP_MATH_OBSTACLE_H_
 
@@ -16,7 +16,7 @@
 #include <AP_Common/AP_Common.h>
 #include <AP_Param/AP_Param.h>
 #include <AC_AttitudeControl/AC_AttitudeControl.h> // Attitude controller library for sqrt controller
-#include <AC_Avoidance/AC_Avoid.h>
+
 
 class Obstacle {
 
@@ -27,6 +27,7 @@ public:
 //    /* Do not allow copies */
 //    Obstacle(const Obstacle &other) = default;
 //    Obstacle &operator=(const Obstacle&) = default;
+
       virtual ~Obstacle(){};
 
    // virtual void adjust_velocity_object(float kP, float accel_cmss, Vector2f &desired_vel_cms, float dt){};
@@ -35,14 +36,19 @@ public:
                                        Vector2f &desired_vel_cms, float dt){};
       float get_margin();
       AC_Avoid::BehaviourType get_behavior();
+      void setBehaviourStop()
+      {
+          behaviour = AC_Avoid::BehaviourType::BEHAVIOR_STOP;
+      }
+      void setBehaviourSlide()
+      {
+          behaviour = AC_Avoid::BehaviourType::BEHAVIOR_SLIDE;
+      }
 
-protected:
-      enum BehaviourTypeObstacle {
-          BEHAVIOR_SLIDE_OBSTACLE = 0,
-          BEHAVIOR_STOP_OBSTACLE = 1
-      };
+//protected:
+
+       static AC_Avoid::BehaviourType behaviour;
 };
-
 
 
 #endif /* LIBRARIES_AP_MATH_OBSTACLE_H_ */

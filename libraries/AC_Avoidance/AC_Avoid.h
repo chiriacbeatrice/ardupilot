@@ -90,6 +90,7 @@ private:
     friend class Rectangle;
     friend class Line;
 
+
     // behaviour types (see BEHAVE parameter)
     enum BehaviourType {
         BEHAVIOR_SLIDE = 0,

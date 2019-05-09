@@ -30,6 +30,10 @@ public:
                                    Vector2f &desired_vel_cms,Vector2f &stopping_point,
                                    float margin,float speed);
 
+
+//    Vector2f adjust_velocity_Slide(float kP,Vector2f &position_xy, float accel_cmss,
+//                                            Vector2f &desired_vel_cms,
+//                                            float dt,float margin_cm, float radius,float locationDiff, float speed);
     Vector2f adjust_velocity_Stop(float kP,Vector2f &position_xy, float accel_cmss,
                                   Vector2f &desired_vel_cms,Vector2f &stopping_point,
                                   float dt,float margin,float speed);
@@ -51,6 +55,9 @@ public:
 
     Vector2f rotate_velocity(Vector2f &firstPoint, Vector2f &secoundPoint,
                              Vector2f &stopping_point, Vector2f &position_xy, Vector2f &desired_vel_cms);
+
+    Vector2f getStoppingPoint(float kP,float accel_cmss,Vector2f &currentP,
+                                           Vector2f &desired_vel_cms);
 
 protected:
 

@@ -47,7 +47,7 @@ void Circle::adjust_velocity(float kP,Vector2f &currentP, float accel_cmss,
                   std::cout<<"punct de intersectie Y"<<intersectionSegCircle.y;
                   std::cout<<"Distanta de oprire intersecteaza cercul \n\n";
 
-                  if (get_behavior()== AC_Avoid::BehaviourType::BEHAVIOR_SLIDE)
+                  if (get_behavior() == AC_Avoid::BehaviourType::BEHAVIOR_SLIDE)
                   {
                        std::cout<<"A intrat pe slide";
 
@@ -55,9 +55,15 @@ void Circle::adjust_velocity(float kP,Vector2f &currentP, float accel_cmss,
                        desired_vel_cms = adjust_velocity_Slide(kP,currentP, accel_cmss,
                                                               desired_vel_cms,stopping_point,
                                                               margin,speed);
+
+//                       desired_vel_cms = adjust_velocity_Slide(kP,currentP, accel_cmss,
+//                                             desired_vel_cms,
+//                                             dt,margin,_radius,locationDiff,speed);
+
                   }else{
 
-                       desired_vel_cms = adjust_velocity_Stop(kP,currentP,accel_cmss,desired_vel_cms,stopping_point,
+                      std::cout<<"A intrat pe stop";
+                      desired_vel_cms = adjust_velocity_Stop(kP,currentP,accel_cmss,desired_vel_cms,stopping_point,
                                                          dt,margin,speed);
 
                   }
@@ -117,7 +123,7 @@ void Circle::adjust_velocity(float kP,Vector2f &currentP, float accel_cmss,
 //
 //    //rotatia cu unghiul alpha pe tangenta
 //    Vector2f t1,t2;
-//    Vector2f centre = _centre*100;
+//    Vector2f centre = _centre;
 //
 //    //Unghiul dintre  tangenta si distanta pozitie curenta->centru
 //    float alpha = safe_asin((radius+margin_cm)/locationDiff);
@@ -164,7 +170,8 @@ Vector2f Circle::adjust_velocity_Slide(float kP,Vector2f &position_xy, float acc
              secoundIntersection,
              result(desired_vel_cms),
              firstTangentPoint,
-             secoundTangentPoint;
+             secoundTangentPoint,
+             intersectionSegCircle;
 
     float radiusOfObstacle = _radius + margin;
 
@@ -194,6 +201,22 @@ Vector2f Circle::adjust_velocity_Slide(float kP,Vector2f &position_xy, float acc
 
             result = rotate_velocity(firstIntersection,secoundIntersection,
                                      stopping_point, position_xy,desired_vel_cms);
+
+
+            std::cout<<"\n\n  Valoarea vitezei dupa prima rotatie pe X este  "<<result.x;
+            std::cout<<"\n\n  Valoarea vitezei dupa prima rotatie pe Y este  "<<result.y;
+            Vector2f stopping_point_new = position_xy + result*( AC_Avoid::get_singleton()->get_stopping_distance(kP, accel_cmss, result.length())/result.length());
+
+            if(Vector2f::circle_segment_intersection(position_xy, stopping_point_new,_centre, (_radius+margin), intersectionSegCircle))
+            {
+
+                tangentPointsOfCircle(position_xy, _centre, radiusOfObstacle,
+                                       firstTangentPoint,secoundTangentPoint);
+
+                result = rotate_velocity(firstTangentPoint,secoundTangentPoint,
+                                         stopping_point_new, position_xy,result);
+
+            }
          break;
         }
 
@@ -209,6 +232,7 @@ Vector2f Circle::adjust_velocity_Slide(float kP,Vector2f &position_xy, float acc
 
             std::cout<<"secound tangentPoint X"<<secoundTangentPoint.x<<"\n";
             std::cout<<"secound tangentPoint Y"<<secoundTangentPoint.y<<"\n";
+
 
             result = rotate_velocity(firstTangentPoint,secoundTangentPoint,
                                     stopping_point, position_xy,desired_vel_cms);
@@ -414,4 +438,13 @@ Vector2f Circle::limit_velocityCircle(float max_speed,Vector2f &velocity_compone
 
    return velocity_additional;
 
+}
+
+Vector2f Circle::getStoppingPoint(float kP,float accel_cmss,Vector2f &currentP,
+                                       Vector2f &desired_vel_cms)
+{
+    float speed = desired_vel_cms.length();
+    Vector2f stopping_point = currentP + desired_vel_cms*( AC_Avoid::get_singleton()->get_stopping_distance(kP, accel_cmss, speed)/speed);
+
+    return stopping_point;
 }

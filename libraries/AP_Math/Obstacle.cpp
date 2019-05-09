@@ -12,6 +12,8 @@
 
 #include "Obstacle.h"
 
+AC_Avoid::BehaviourType Obstacle::behaviour = AC_Avoid::BehaviourType::BEHAVIOR_SLIDE;
+
 //Vector2f Obstacle::adjust_velocity(float kP,Vector2f &currentP,float accel_cmss,
 //        Vector2f &desired_vel_cms, float dt){return desired_vel_cms;};
 float Obstacle::get_margin()
@@ -42,14 +44,15 @@ float Obstacle::get_margin()
 
 AC_Avoid::BehaviourType Obstacle::get_behavior()
 {
-    if(AC_AVOID_DISABLED != 0)
-    {
-        return (AC_Avoid::BehaviourType)AC_Avoid::get_singleton()->_behavior.get();
-    }
-    else
-    {
-      return AC_Avoid::BehaviourType::BEHAVIOR_SLIDE;
-      //return AC_Avoid::BehaviourType::BEHAVIOR_STOP; //- la testul pentru stop cand nue pe drona codul
-    }
+//    if(AC_AVOID_DISABLED != 0)
+//    {
+//        return (AC_Avoid::BehaviourType)AC_Avoid::get_singleton()->_behavior.get();
+//    }
+//    else
+//    {
+//      //return AC_Avoid::BehaviourType::BEHAVIOR_SLIDE;
+//      //return AC_Avoid::BehaviourType::BEHAVIOR_STOP; //- la testul pentru stop cand nue pe drona codul
+//    }
+    return behaviour;
 }
 
