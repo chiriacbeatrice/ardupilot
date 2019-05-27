@@ -56,8 +56,6 @@ public:
     Vector2f rotate_velocity(Vector2f &firstPoint, Vector2f &secoundPoint,
                              Vector2f &stopping_point, Vector2f &position_xy, Vector2f &desired_vel_cms);
 
-    Vector2f getStoppingPoint(float kP,float accel_cmss,Vector2f &currentP,
-                                           Vector2f &desired_vel_cms);
 
 protected:
 

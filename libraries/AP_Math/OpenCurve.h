@@ -20,6 +20,10 @@ public:
     virtual void adjust_velocity(float kP,Vector2f &currentP, float accel_cmss,
                                          Vector2f &desired_vel_cms, float dt);
 
+//    Vector2f getStoppingPoint(float kP,float accel_cmss,Vector2f &currentP,
+//                                  Vector2f &desired_vel_cms);
+
+
 protected:
     std::vector<Vector2f> _points;
 

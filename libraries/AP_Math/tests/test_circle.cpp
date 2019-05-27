@@ -30,7 +30,7 @@ TEST(CircleTest, ajustVelocityTest0)
     circle.adjust_velocity(1.0f,currentP,5.0f,velocity,1.0f);
 
     EXPECT_TRUE(velocity==safevel);
-    EXPECT_TRUE(is_equal(0.0f,1.0f));//pus intentionat ca sa vedem  logurile
+   // EXPECT_TRUE(is_equal(0.0f,1.0f));//pus intentionat ca sa vedem  logurile
 }
 
 TEST(CircleTest, ajustVelocityTest0_1)
@@ -167,7 +167,7 @@ TEST(CircleTest, ajustVelocityTest4_1)
     circle.setBehaviourSlide();
     EXPECT_TRUE(is_equal(circle.methodaTest(0.0f),1));
     Vector2f currentP(4.0f,2.0f);
-    Vector2f velocity(9.18594f,5.34963f);  //varf in (10,7)
+    Vector2f velocity(9.18594f,5.34963f);
     Vector2f safevel(velocity);
     Vector2f zero;
 
@@ -175,10 +175,7 @@ TEST(CircleTest, ajustVelocityTest4_1)
     circle.adjust_velocity(1.0f,currentP,5.0f,velocity,1.0f);
 
     EXPECT_TRUE(velocity!=safevel);
-//    EXPECT_TRUE(velocity.x > 7.7f);
-//    EXPECT_TRUE(velocity.x < 7.8f);
-//    EXPECT_TRUE(velocity.y > 0.4f);
-//    EXPECT_TRUE(velocity.y < 0.6f);
+
 
 
 
@@ -204,7 +201,7 @@ TEST(CircleTest, ajustVelocityTest5)
     circle.setBehaviourSlide();
     EXPECT_TRUE(is_equal(circle.methodaTest(0.0f),1));
     Vector2f currentP(4.0f,2.0f);
-    Vector2f velocity(6.0f,.0f);  //varf in (7,8)
+    Vector2f velocity(6.0f,5.0f);  //varf in (7,8)
     Vector2f safevel(velocity);
     Vector2f zero;
     circle.adjust_velocity(1.0f,currentP,5.0f,velocity,1.0f);
@@ -329,7 +326,7 @@ TEST(CircleTest, adjustVelocityStop0)
   std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
   std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
 
-  EXPECT_TRUE(is_equal(1.0f,0.0f));
+  //EXPECT_TRUE(is_equal(1.0f,0.0f));
 }
 
 TEST(CircleTest, adjustVelocityStop1)

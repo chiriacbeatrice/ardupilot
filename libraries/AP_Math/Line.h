@@ -34,8 +34,8 @@ public:
     Vector2f limit_velocity(float kP, float accel_cmss, Vector2f &desired_vel_cms,
                             const Vector2f& limit_direction, float limit_distance_cm, float dt) const;
 
-    Vector2f getStoppingPoint(float kP,float accel_cmss,Vector2f &currentP,
-                              Vector2f &desired_vel_cms);
+//    Vector2f getStoppingPoint(float kP,float accel_cmss,Vector2f &currentP,
+//                              Vector2f &desired_vel_cms);
 
     Vector2f get_newPointOnMargin(Vector2f &currentP, float margin);
 

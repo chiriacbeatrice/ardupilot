@@ -24,8 +24,8 @@ public:
     virtual void adjust_velocity(float kP,Vector2f &currentP, float accel_cmss,
                                          Vector2f &desired_vel_cms, float dt);
 
-    Vector2f getStoppingPoint(float kP,float accel_cmss,Vector2f &currentP,
-                                  Vector2f &desired_vel_cms);
+//    Vector2f getStoppingPoint(float kP,float accel_cmss,Vector2f &currentP,
+//                                  Vector2f &desired_vel_cms);
     //bool isPolygonComplete();
     Vector2f intersectionOfTwoLines(Vector2f &start1,Vector2f &stop1,Vector2f &start2,Vector2f &stop2);
     Vector2f vecRotate90CW(Vector2f &vec);

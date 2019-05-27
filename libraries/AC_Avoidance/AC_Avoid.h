@@ -89,6 +89,7 @@ private:
     friend class Circle;
     friend class PolygonConvex;
     friend class Line;
+    friend class OpenCurve;
 
 
     // behaviour types (see BEHAVE parameter)

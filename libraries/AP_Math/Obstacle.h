@@ -45,6 +45,8 @@ public:
           behaviour = AC_Avoid::BehaviourType::BEHAVIOR_SLIDE;
       }
 
+     virtual Vector2f getStoppingPoint(float kP,float accel_cmss,Vector2f &currentP,
+                                        Vector2f &desired_vel_cms);
 //protected:
 
        static AC_Avoid::BehaviourType behaviour;

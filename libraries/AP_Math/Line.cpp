@@ -196,14 +196,14 @@ Vector2f Line::limit_velocity(float kP, float accel_cmss, Vector2f &desired_vel_
     return desired_vel_cms;
 }
 
-Vector2f Line::getStoppingPoint(float kP,float accel_cmss,Vector2f &currentP,
-                                       Vector2f &desired_vel_cms)
-{
-    float speed = desired_vel_cms.length();
-    Vector2f stopping_point = currentP + desired_vel_cms*( AC_Avoid::get_singleton()->get_stopping_distance(kP, accel_cmss, speed)/speed);
-
-    return stopping_point;
-}
+//Vector2f Line::getStoppingPoint(float kP,float accel_cmss,Vector2f &currentP,
+//                                       Vector2f &desired_vel_cms)
+//{
+//    float speed = desired_vel_cms.length();
+//    Vector2f stopping_point = currentP + desired_vel_cms*( AC_Avoid::get_singleton()->get_stopping_distance(kP, accel_cmss, speed)/speed);
+//
+//    return stopping_point;
+//}
 
 Vector2f Line::get_newPointOnMargin(Vector2f &currentP, float margin)
 {
