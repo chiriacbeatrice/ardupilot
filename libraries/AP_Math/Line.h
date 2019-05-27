@@ -13,6 +13,7 @@
 class Line : public Obstacle{
 
     friend class LineTest;
+    friend class PolygonConvex;
 public:
     Line(Vector2f& start, Vector2f& end);
 
@@ -37,6 +38,7 @@ public:
                               Vector2f &desired_vel_cms);
 
     Vector2f get_newPointOnMargin(Vector2f &currentP, float margin);
+
 
 
 protected:

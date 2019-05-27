@@ -87,7 +87,7 @@ private:
     //code added by betty
     friend class Obstacle;
     friend class Circle;
-    friend class Rectangle;
+    friend class PolygonConvex;
     friend class Line;
 
 
