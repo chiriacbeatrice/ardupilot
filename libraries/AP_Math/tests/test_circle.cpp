@@ -20,6 +20,7 @@ TEST(CircleTest, ajustVelocityTest0)
     //pozitia curenta in
     Vector2f centre(10.0f,8.0f);
     Circle circle(4.0f,centre);
+
     circle.setBehaviourSlide();
     EXPECT_TRUE(is_equal(circle.methodaTest(0.0f),1));
     Vector2f currentP(15.0f,14.0f);
@@ -196,7 +197,7 @@ TEST(CircleTest, ajustVelocityTest5)
 {
     std::cout<<"=====================================================\n\n";
     std::cout<<"Test5\n";
-    Vector2f centre(13.0f,12.0f);
+    Vector2f centre(10.0f,8.0f);
     Circle circle(4.0f,centre);
     circle.setBehaviourSlide();
     EXPECT_TRUE(is_equal(circle.methodaTest(0.0f),1));
@@ -204,13 +205,14 @@ TEST(CircleTest, ajustVelocityTest5)
     Vector2f velocity(6.0f,5.0f);  //varf in (7,8)
     Vector2f safevel(velocity);
     Vector2f zero;
+
     circle.adjust_velocity(1.0f,currentP,5.0f,velocity,1.0f);
     EXPECT_TRUE(!is_equal(velocity.x,safevel.x));
     EXPECT_TRUE(!is_equal(velocity.y,safevel.y));
-    EXPECT_TRUE(velocity.x > 1.94);
-    EXPECT_TRUE(velocity.x < 1.95);
-    EXPECT_TRUE(velocity.y > 3.77);
-    EXPECT_TRUE(velocity.y < 3.78);
+    EXPECT_TRUE(velocity.x > 7.8);
+    EXPECT_TRUE(velocity.x < 8.0);
+    EXPECT_TRUE(velocity.y > 0.0);
+    EXPECT_TRUE(velocity.y < 0.01);
 
     std::cout<<"\nViteza in test ("<<velocity.x<<", "<<velocity.y<<")\n";
 

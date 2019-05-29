@@ -24,7 +24,7 @@ public:
     int methodaTest(int param){ return param+1;}
 
     virtual void adjust_velocity(float kP,Vector2f &currentP, float accel_cmss,
-                                     Vector2f &desired_vel_cms, float dt);
+                                     Vector2f &desired_vel_cms, float dt) override;
 
     Vector2f adjust_velocity_Slide(float kP,Vector2f &position_xy, float accel_cmss,
                                    Vector2f &desired_vel_cms,Vector2f &stopping_point,

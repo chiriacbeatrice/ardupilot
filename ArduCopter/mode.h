@@ -950,6 +950,7 @@ private:
 //Betty -class added for bachelor degree
 class ModeModeTest : public Mode{
 public:
+    using Copter::Mode::Mode;
     bool init(bool ignore_checks) override;
     void run() override;
 

@@ -171,7 +171,8 @@ Vector2f Circle::adjust_velocity_Slide(float kP,Vector2f &position_xy, float acc
              result(desired_vel_cms),
              firstTangentPoint,
              secoundTangentPoint,
-             intersectionSegCircle;
+             intersectionSegCircle,
+             intersectionSegCircleNew;
 
     float radiusOfObstacle = _radius + margin;
 
@@ -207,9 +208,12 @@ Vector2f Circle::adjust_velocity_Slide(float kP,Vector2f &position_xy, float acc
             std::cout<<"\n\n  Valoarea vitezei dupa prima rotatie pe Y este  "<<result.y;
             Vector2f stopping_point_new = position_xy + result*( AC_Avoid::get_singleton()->get_stopping_distance(kP, accel_cmss, result.length())/result.length());
 
-            if(Vector2f::circle_segment_intersection(position_xy, stopping_point_new,_centre, (_radius+margin), intersectionSegCircle))
-            {
+            std::cout<<"\n\n  Valoarea noului punct de stop X "<<stopping_point_new.x;
+            std::cout<<"\n\n  Valoarea noului punct de stop Y "<<stopping_point_new.y;
 
+            if(Vector2f::circle_segment_intersection(position_xy, stopping_point_new,_centre, (_radius+margin), intersectionSegCircleNew))
+            {
+                std::cout<<"A intrat in intersectie";
                 tangentPointsOfCircle(position_xy, _centre, radiusOfObstacle,
                                        firstTangentPoint,secoundTangentPoint);
 

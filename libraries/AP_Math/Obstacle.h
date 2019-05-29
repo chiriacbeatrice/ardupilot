@@ -25,15 +25,17 @@ public:
 //    Obstacle(const AC_Avoid& avoid):
 //        _avoid(avoid){}
 //    /* Do not allow copies */
-//    Obstacle(const Obstacle &other) = default;
-//    Obstacle &operator=(const Obstacle&) = default;
+
+    Obstacle(){}
+    Obstacle(const Obstacle &other) = default;
+    Obstacle &operator=(const Obstacle&) = default;
 
       virtual ~Obstacle(){};
 
    // virtual void adjust_velocity_object(float kP, float accel_cmss, Vector2f &desired_vel_cms, float dt){};
     //pentru vectorul cu 3 dimensiuni(Vector3f) se poate folosi functia de adjust_velosity din Avoid.cpp
       virtual void adjust_velocity(float kP,Vector2f &currentP,float accel_cmss,
-                                       Vector2f &desired_vel_cms, float dt){};
+                                       Vector2f &desired_vel_cms, float dt) = 0;
       float get_margin();
       AC_Avoid::BehaviourType get_behavior();
       void setBehaviourStop()

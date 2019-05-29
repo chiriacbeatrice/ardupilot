@@ -5,6 +5,9 @@
  *      Author: beatrice
  */
 
+#include <vector>
+#include <iostream>
+
 #ifndef LIBRARIES_AP_MATH_OBJECTAVOID_H_
 #define LIBRARIES_AP_MATH_OBJECTAVOID_H_
 
@@ -21,16 +24,23 @@ class ObjectAvoid
 
 public:
 
-    bool mT(){return true;}
+//    ObjectAvoid(std::vector<Obstacle *> listOfObstacle);
+//    ObjectAvoid(const ObjectAvoid &other) = default;
+//    ObjectAvoid &operator=(const ObjectAvoid&) = default;
     virtual ~ObjectAvoid(){}
+
     //virtual void adjust_velocity_object(float kP, float accel_cmss, Vector2f &desired_vel_cms, float dt);
     virtual void adjust_velocity(float kP,Vector2f &currentP,float accel_cmss,
                                  Vector2f &desired_vel_cms, float dt);
-    void addObstacle(const Obstacle& value);
+    void addObstacle(Obstacle* const & value);
     void createMap();
+    virtual Vector2f getStoppingPoint(float kP,float accel_cmss,Vector2f &currentP,
+                                            Vector2f &desired_vel_cms);
 
-protected:
-    std::vector<Obstacle> listOfObstacle;
+    bool methodadetest(){ return true; }
+
+//protected:
+    std::vector<Obstacle *> _listOfObstacle;
 };
 
 

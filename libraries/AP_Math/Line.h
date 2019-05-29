@@ -22,7 +22,7 @@ public:
     virtual ~Line(){}
 
     virtual void adjust_velocity(float kP,Vector2f &currentP, float accel_cmss,
-                                     Vector2f &desired_vel_cms, float dt);
+                                     Vector2f &desired_vel_cms, float dt) override;
 
     Vector2f adjust_velocity_Stop(float kP,Vector2f &currentPos, float accel_cmss,
                                    Vector2f &desired_vel_cms,Vector2f &stopping_point,
