@@ -516,9 +516,9 @@ TEST(LineTest, adjust_velocity_Stop6)
 
 TEST(LineTest, adjust_velocity_Stop8)
 {  //linie orizontala. pozitia se afla in lateralul segmentului.
-
+   // atentie aici e un bug, nu merge
    std::cout<<"=====================================================\n\n";
-   std::cout<<"TestStop8\n";
+   std::cout<<"TestStop7\n";
    Vector2f start(4.0f,6.0f);
    Vector2f stop(15.0f, 6.0f);
    Vector2f currentP(20.0f,2.0f);
@@ -550,11 +550,11 @@ TEST(LineTest, adjust_velocity_Stop9)
 {  //se afla in dreapta liniei
 
    std::cout<<"=====================================================\n\n";
-   std::cout<<"TestStop9\n";
-   Vector2f start(7.0f,4.0f);
+   std::cout<<"TestStop8\n";
+   Vector2f start(4.0f,7.0f);
    Vector2f stop(10.0f, 3.0f);
    Vector2f currentP(11.0f,8.0f);
-   Vector2f velocity(-6.0f,-4.0f);
+   Vector2f velocity(-5.0f,-4.0f);
 
    Vector2f safeVelocity(velocity);
    Line line(start,stop);
@@ -570,8 +570,8 @@ TEST(LineTest, adjust_velocity_Stop9)
    std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
    std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
 
-    EXPECT_TRUE(stopping_point_new.x >= 7.0f);
-    EXPECT_TRUE(stopping_point_new.y <= 6.0f);
+    EXPECT_TRUE(stopping_point_new.x >= 8.7f && stopping_point_new.x <= 8.8f);
+    EXPECT_TRUE(stopping_point_new.y <= 6.3f && stopping_point_new.y >= 6.2f);
 }
 
 

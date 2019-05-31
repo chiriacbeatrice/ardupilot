@@ -56,17 +56,18 @@ TEST(PolygonConvex, Test0)
 
     polygon.adjust_velocity(Kp,currentP,acc,velocity,dt);
 
-//    Vector2f stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP,velocity);
-//    std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
-//    std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
+    Vector2f stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP,velocity);
+    std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
+    std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
 
 
 
-//
-//    EXPECT_TRUE(is_equal(stopping_point_new.x,7.0f));
-//    EXPECT_TRUE(stopping_point_new.y <= 8.0f);
 
-    //EXPECT_TRUE(is_equal(1.0f,0.0f));
+    EXPECT_TRUE(stopping_point_new.x>=7.6f && stopping_point_new.x<=7.7f);
+    EXPECT_TRUE(stopping_point_new.y>=7.4f && stopping_point_new.y<=7.5f);
+
+
+  //  EXPECT_TRUE(is_equal(1.0f,0.0f));
 
 }
 
@@ -191,7 +192,7 @@ TEST(PolygonConvex, Test2)
     Vector2f velocity(5.0f,5.0f);
     Vector2f safeVelocity(velocity);
     polygon.adjust_velocity(Kp,currentP,acc,velocity,dt);
-
+    std::cout<<"\nViteza in test ("<<velocity.x<<", "<<velocity.y<<")\n";
     Vector2f stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP,velocity);
     std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
     std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
@@ -207,7 +208,7 @@ TEST(PolygonConvex, Test2)
     Vector2f velocity1(2.0f,-6.0f);
     Vector2f safeVelocity1(velocity1);
     polygon.adjust_velocity(Kp,currentP1,acc,velocity1,dt);
-
+    std::cout<<"\nViteza in test ("<<velocity1.x<<", "<<velocity1.y<<")\n";
     stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP1,velocity1);
     std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
     std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
@@ -222,7 +223,7 @@ TEST(PolygonConvex, Test2)
    Vector2f velocity2(5.0f,-4.0f);
    Vector2f safeVelocity2(velocity2);
    polygon.adjust_velocity(Kp,currentP2,acc,velocity2,dt);
-
+   std::cout<<"\nViteza in test ("<<velocity2.x<<", "<<velocity2.y<<")\n";
    stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP2,velocity2);
    std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
    std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
@@ -238,7 +239,7 @@ TEST(PolygonConvex, Test2)
   Vector2f velocity3(-2.0f,-6.0f);
   Vector2f safeVelocity3(velocity3);
   polygon.adjust_velocity(Kp,currentP3,acc,velocity3,dt);
-
+  std::cout<<"\nViteza in test ("<<velocity3.x<<", "<<velocity3.y<<")\n";
   stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP3,velocity3);
   std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
   std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
@@ -284,7 +285,7 @@ TEST(PolygonConvex, Test3)
 
     polygon.adjust_velocity(Kp,currentP,acc,velocity,dt);
 
-
+    std::cout<<"\nViteza in test ("<<velocity.x<<", "<<velocity.y<<")\n";
     Vector2f stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP,velocity);
     std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
     std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
@@ -305,7 +306,7 @@ TEST(PolygonConvex, Test3)
 
    polygon.adjust_velocity(Kp,currentP1,acc,velocity1,dt);
 
-
+   std::cout<<"\nViteza in test ("<<velocity1.x<<", "<<velocity1.y<<")\n";
    stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP1,velocity1);
    std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
    std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
@@ -326,7 +327,7 @@ TEST(PolygonConvex, Test3)
 
   polygon.adjust_velocity(Kp,currentP2,acc,velocity2,dt);
 
-
+  std::cout<<"\nViteza in test ("<<velocity2.x<<", "<<velocity2.y<<")\n";
   stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP2,velocity2);
   std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
   std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
@@ -347,7 +348,7 @@ TEST(PolygonConvex, Test3)
 
  polygon.adjust_velocity(Kp,currentP3,acc,velocity3,dt);
 
-
+ std::cout<<"\nViteza in test ("<<velocity3.x<<", "<<velocity3.y<<")\n";
  stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP3,velocity3);
  std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
  std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
@@ -399,7 +400,7 @@ TEST(PolygonConvex, Test4)
     Vector2f velocity(-6.5f,3.5f);
     Vector2f safeVelocity(velocity);
     polygon.adjust_velocity(Kp,currentP,acc,velocity,dt);
-
+    std::cout<<"\nViteza in test ("<<velocity.x<<", "<<velocity.y<<")\n";
     Vector2f stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP,velocity);
     std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
     std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
@@ -418,6 +419,7 @@ TEST(PolygonConvex, Test4)
    Vector2f safeVelocity1(velocity1);
    polygon.adjust_velocity(Kp,currentP1,acc,velocity1,dt);
 
+   std::cout<<"\nViteza in test ("<<velocity1.x<<", "<<velocity1.y<<")\n";
    stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP1,velocity1);
    std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
    std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
@@ -435,6 +437,7 @@ TEST(PolygonConvex, Test4)
     Vector2f safeVelocity2(velocity2);
     polygon.adjust_velocity(Kp,currentP2,acc,velocity2,dt);
 
+    std::cout<<"\nViteza in test ("<<velocity2.x<<", "<<velocity2.y<<")\n";
     stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP2,velocity2);
     std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
     std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
@@ -452,6 +455,7 @@ TEST(PolygonConvex, Test4)
      Vector2f safeVelocity3(velocity3);
      polygon.adjust_velocity(Kp,currentP3,acc,velocity3,dt);
 
+     std::cout<<"\nViteza in test ("<<velocity3.x<<", "<<velocity3.y<<")\n";
      stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP3,velocity3);
      std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
      std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
@@ -509,7 +513,7 @@ TEST(PolygonConvex, Test5)
 
     polygon.adjust_velocity(Kp,currentP,acc,velocity,dt);
 
-
+    std::cout<<"\nViteza in test ("<<velocity.x<<", "<<velocity.y<<")\n";
     Vector2f stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP,velocity);
     std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
     std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
@@ -530,7 +534,7 @@ TEST(PolygonConvex, Test5)
 
    polygon.adjust_velocity(Kp,currentP1,acc,velocity1,dt);
 
-
+   std::cout<<"\nViteza in test ("<<velocity1.x<<", "<<velocity1.y<<")\n";
    stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP1,velocity1);
    std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
    std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
@@ -551,7 +555,7 @@ TEST(PolygonConvex, Test5)
 
   polygon.adjust_velocity(Kp,currentP2,acc,velocity2,dt);
 
-
+  std::cout<<"\nViteza in test ("<<velocity2.x<<", "<<velocity2.y<<")\n";
   stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP2,velocity2);
   std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
   std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
@@ -572,7 +576,7 @@ TEST(PolygonConvex, Test5)
 
   polygon.adjust_velocity(Kp,currentP3,acc,velocity3,dt);
 
-
+  std::cout<<"\nViteza in test ("<<velocity3.x<<", "<<velocity3.y<<")\n";
   stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP3,velocity3);
   std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
   std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
@@ -623,7 +627,7 @@ TEST(PolygonConvex, Test6)
     Vector2f safeVelocity(velocity);
 
     polygon.adjust_velocity(Kp,currentP,acc,velocity,dt);
-
+    std::cout<<"\nViteza in test ("<<velocity.x<<", "<<velocity.y<<")\n";
     EXPECT_TRUE(velocity.is_zero());
 
 
@@ -636,7 +640,7 @@ TEST(PolygonConvex, Test6)
     Vector2f safeVelocity1(velocity1);
 
     polygon.adjust_velocity(Kp,currentP1,acc,velocity1,dt);
-
+    std::cout<<"\nViteza in test ("<<velocity1.x<<", "<<velocity1.y<<")\n";
     EXPECT_TRUE(velocity1.is_zero());
 }
 

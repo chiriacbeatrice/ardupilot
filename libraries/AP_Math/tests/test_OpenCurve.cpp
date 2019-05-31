@@ -85,7 +85,7 @@ TEST(ComplexTest, Test1)
 
    EXPECT_TRUE(is_equal(stopping_point_new.x,10.0f));
    EXPECT_TRUE(is_equal(stopping_point_new.y,8.0f));
-  // EXPECT_TRUE(is_equal(1.0f,0.0f));
+   //EXPECT_TRUE(is_equal(1.0f,0.0f));
 }
 
 TEST(ComplexTest, Test2)
@@ -204,7 +204,7 @@ TEST(ComplexTest, Test4)
 TEST(ComplexTest, Test5)
 {
    std::cout<<"=====================================================\n\n";
-   std::cout<<"Test 4 \n";
+   std::cout<<"Test 5 \n";
    std::vector<Vector2f> points;
    Vector2f A(5.0f,8.0f);
    Vector2f B(8.0f,5.0f);

@@ -24,14 +24,14 @@ TEST(CircleTest, ajustVelocityTest0)
     circle.setBehaviourSlide();
     EXPECT_TRUE(is_equal(circle.methodaTest(0.0f),1));
     Vector2f currentP(15.0f,14.0f);
-    Vector2f velocity(0.5f,0.2f);
+    Vector2f velocity(5.0f,2.0f);
     Vector2f safevel(velocity);
     Vector2f zero;
 
     circle.adjust_velocity(1.0f,currentP,5.0f,velocity,1.0f);
 
     EXPECT_TRUE(velocity==safevel);
-   // EXPECT_TRUE(is_equal(0.0f,1.0f));//pus intentionat ca sa vedem  logurile
+ //   EXPECT_TRUE(is_equal(0.0f,1.0f));//pus intentionat ca sa vedem  logurile
 }
 
 TEST(CircleTest, ajustVelocityTest0_1)
@@ -46,7 +46,7 @@ TEST(CircleTest, ajustVelocityTest0_1)
     circle.setBehaviourSlide();
     EXPECT_TRUE(is_equal(circle.methodaTest(0.0f),1));
     Vector2f currentP(15.0f,14.0f);
-    Vector2f velocity(0.5f,0.2f);
+    Vector2f velocity(-1.0f,-1.0f);
     Vector2f safevel(velocity);
     Vector2f zero;
 
@@ -124,7 +124,7 @@ TEST(CircleTest, ajustVelocityTest3)
 
 
 TEST(CircleTest, ajustVelocityTest4)
-{ // Scenariu: in afarasi se face rotatia spre al doilea punct de intersectie;
+{ // Scenariu: in afara si se face rotatia spre al doilea punct de intersectie;
   //Conform calcului online  punctele de intersectie sunt :(4.58,10.58) si (12.58,2.58)
 
     std::cout<<"=====================================================\n\n";
@@ -147,6 +147,12 @@ TEST(CircleTest, ajustVelocityTest4)
     EXPECT_TRUE(velocity.y > 0.0f);
     EXPECT_TRUE(velocity.y < 0.05f);
 
+    Vector2f stopping_point_new = circle.getStoppingPoint(1.0f,5.0f,currentP,velocity);
+    std::cout<<"\n\n StopingPointFinal X= "<<stopping_point_new.x;
+    std::cout<<"\n StopingPointFinal Y= "<<stopping_point_new.y;
+
+    EXPECT_TRUE(stopping_point_new.x>=12.5f && stopping_point_new.x<=12.61f);
+    EXPECT_TRUE(stopping_point_new.y>=2.0f && stopping_point_new.y<=2.1f);
 
 
     std::cout<<"\nViteza in test ("<<velocity.x<<", "<<velocity.y<<")\n";
@@ -174,9 +180,15 @@ TEST(CircleTest, ajustVelocityTest4_1)
 
 
     circle.adjust_velocity(1.0f,currentP,5.0f,velocity,1.0f);
+    Vector2f stopping_point_new = circle.getStoppingPoint(1.0f,5.0f,currentP,velocity);
+    std::cout<<"\n\n StopingPointFinal X= "<<stopping_point_new.x;
+    std::cout<<"\n StopingPointFinal Y= "<<stopping_point_new.y;
+
 
     EXPECT_TRUE(velocity!=safevel);
 
+    EXPECT_TRUE(stopping_point_new.x>=17.7f && stopping_point_new.x<=17.81f);
+    EXPECT_TRUE(stopping_point_new.y>=2.0f && stopping_point_new.y<=2.01f);
 
 
 
@@ -221,6 +233,14 @@ TEST(CircleTest, ajustVelocityTest5)
 
     EXPECT_TRUE(is_equal(velocity.length(),safevel.length()));
 
+    Vector2f stopping_point_new = circle.getStoppingPoint(1.0f,5.0f,currentP,velocity);
+    std::cout<<"\n\n StopingPointFinal X= "<<stopping_point_new.x;
+    std::cout<<"\n StopingPointFinal Y= "<<stopping_point_new.y;
+
+    EXPECT_TRUE(stopping_point_new.x>=12.5f && stopping_point_new.x<=12.61f);
+    EXPECT_TRUE(stopping_point_new.y>=2.0f && stopping_point_new.y<=2.1f);
+
+
    // EXPECT_TRUE(is_equal(0.0f,1.0f));//pus intentionat ca sa vedem  logurile
 }
 
@@ -238,17 +258,22 @@ TEST(CircleTest, ajustVelocityTest6)
       Vector2f velocity(3.0f,3.0f);   // varful are coordonatele (19,6)
       Vector2f safevel(velocity);
       Vector2f zero;
+
+      Vector2f stopping_point = circle.getStoppingPoint(1.0f,0.5f,currentP,velocity);
+
       circle.adjust_velocity(1.0f,currentP,0.5f,velocity,1.0f);
       EXPECT_TRUE(velocity == safevel);
-//      EXPECT_TRUE(velocity.x > 6.7);
-//      EXPECT_TRUE(velocity.x < 7.0);
-//      EXPECT_TRUE(velocity.y > 4.0);
-//      EXPECT_TRUE(velocity.y < 5.0);
 
       std::cout<<"\nViteza in test ("<<velocity.x<<", "<<velocity.y<<")\n";
 
       std::cout<<"Norma inainte de procesare:"<<(float)safevel.length()<<"\n";
       std::cout<<"Norma dupa procesare:" <<(float)velocity.length()<<"\n";
+
+      Vector2f stopping_point_new = circle.getStoppingPoint(1.0f,0.5f,currentP,velocity);
+      std::cout<<"\n\n StopingPointFinal X= "<<stopping_point_new.x;
+      std::cout<<"\n StopingPointFinal Y= "<<stopping_point_new.y;
+
+      EXPECT_TRUE(stopping_point_new == stopping_point);
 
       EXPECT_TRUE(is_equal((float)velocity.length(),(float)safevel.length()));
 }
@@ -271,13 +296,20 @@ TEST(CircleTest, ajustVelocityTest7)
       EXPECT_TRUE(is_equal(velocity.x,safevel.x));
       EXPECT_TRUE(is_equal(velocity.y,safevel.y));
 
-
+      Vector2f stopping_point = circle.getStoppingPoint(1.0f,0.5f,currentP,velocity);
       std::cout<<"\nViteza in test ("<<velocity.x<<", "<<velocity.y<<")\n";
 
       std::cout<<"Norma inainte de procesare:"<<(float)safevel.length()<<"\n";
       std::cout<<"Norma dupa procesare:" <<(float)velocity.length()<<"\n";
 
       EXPECT_TRUE(is_equal((float)velocity.length(),(float)safevel.length()));
+
+      Vector2f stopping_point_new = circle.getStoppingPoint(1.0f,0.5f,currentP,velocity);
+      std::cout<<"\n\n StopingPointFinal X= "<<stopping_point_new.x;
+      std::cout<<"\n StopingPointFinal Y= "<<stopping_point_new.y;
+
+      EXPECT_TRUE(stopping_point_new == stopping_point);
+
 }
 
 
@@ -299,12 +331,20 @@ TEST(CircleTest, ajustVelocityTest8)
       EXPECT_TRUE(!is_equal(velocity.x,safevel.x));
       EXPECT_TRUE(!is_equal(velocity.y,safevel.y));
 
+
       std::cout<<"\nViteza in test ("<<velocity.x<<", "<<velocity.y<<")\n";
 
       std::cout<<"Norma inainte de procesare:"<<(float)safevel.length()<<"\n";
       std::cout<<"Norma dupa procesare:" <<(float)velocity.length()<<"\n";
 
+
+      Vector2f stopping_point_new = circle.getStoppingPoint(1.0f,0.5f,currentP,velocity);
+      std::cout<<"\n\n StopingPointFinal X= "<<stopping_point_new.x;
+      std::cout<<"\n StopingPointFinal Y= "<<stopping_point_new.y;
+
       EXPECT_TRUE(is_equal((float)velocity.length(),(float)safevel.length()));
+      EXPECT_TRUE(stopping_point_new.x>=2.3f && stopping_point_new.x<=2.4f);
+      EXPECT_TRUE(stopping_point_new.y>=12.6f && stopping_point_new.y<=12.7f);
 }
 
 TEST(CircleTest, adjustVelocityStop0)
@@ -328,6 +368,8 @@ TEST(CircleTest, adjustVelocityStop0)
   std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
   std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
 
+  EXPECT_TRUE(stopping_point_new.x>=9.2f && stopping_point_new.x<=9.3f);
+  EXPECT_TRUE(stopping_point_new.y>=7.2f && stopping_point_new.y<=7.3f);
   //EXPECT_TRUE(is_equal(1.0f,0.0f));
 }
 
@@ -352,7 +394,7 @@ TEST(CircleTest, adjustVelocityStop1)
   std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
   std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
 
-  EXPECT_TRUE(stopping_point_new.x<=7.0f);
+  EXPECT_TRUE(is_equal(stopping_point_new.x,7.0f));
   EXPECT_TRUE(is_equal(stopping_point_new.y,0.0f));
 
 }
@@ -366,7 +408,7 @@ TEST(CircleTest, adjustVelocityStop2)
   circle.setBehaviourStop();
   std::cout<<"\nBehaiviourl este "<<(int)circle.get_behavior()<<"\n";
   Vector2f currentP(23.0f,0.0f);
-  Vector2f velocity(-5.0f,0.0f);
+  Vector2f velocity(-7.0f,0.0f);
   float Kp=1.0f;
   float acc=5.0f;
   float dt = 1.0f;
@@ -378,7 +420,7 @@ TEST(CircleTest, adjustVelocityStop2)
   std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
   std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
 
-  EXPECT_TRUE(stopping_point_new.x>=19.0f);
+  EXPECT_TRUE(is_equal(stopping_point_new.x,19.0f));
   EXPECT_TRUE(is_equal(stopping_point_new.y,0.0f));
 
 }
