@@ -311,9 +311,15 @@ void Copter::ModeModeTest::run()
 
             Vector3f curr_vel_des = pos_control->get_desired_velocity();
             Vector2f desired_vel_cms(curr_vel_des.x, curr_vel_des.y);
-            ahrs.get_relative_position_NE_home(currentPosition);
-            objectAvoid.adjust_velocity(pos_control->get_pos_xy_p().kP(),currentPosition,pos_control->get_max_accel_xy(),
-                                        desired_vel_cms,pos_control->get_dt());
+
+            float Kp=pos_control->get_pos_xy_p().kP();//mai este si  float Kp = ahrs._kp;
+
+            ahrs.get_relative_position_NE_origin(currentPosition);  // returneaza pozitie relativa la origine
+
+
+            float acc = pos_control->get_max_accel_xy();// sau :float acc = loiter_nav->get_pilot_desired_acceleration().length();
+            objectAvoid.adjust_velocity(Kp,currentPosition,
+                                        acc,desired_vel_cms, G_Dt);
      ///code added by betty
 
             break;

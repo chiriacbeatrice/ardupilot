@@ -143,22 +143,22 @@ Vector2f Line::adjust_velocity_Slide(float kP,Vector2f &currentPos, float accel_
 
       if (!is_zero(limit_distance)) {
 
-          if(limit_distance <= (margin_cm)){
-
-              desired_vel_cms.zero();
-          }else
-          {
+//          if(limit_distance <= (margin_cm)){
+//
+//              desired_vel_cms.zero();
+//          }else
+//          {
             // We are strictly outside the given edge.
             // Adjust velocity to not violate this edge.
               //am facut-o dupa modelul din Avoid.cpp, nu ii inteleg insa rostul. nusut complet convinsa de ultimele doua linii de cod
 
             limit_direction /= limit_distance;
 
-            Vector2f limit_direction_cm = limit_direction; // m->cm
-            const float limit_distance_cm = limit_distance; // m->cm
+            //Vector2f limit_direction_cm = limit_direction; // m->cm
+            //const float limit_distance_cm = limit_distance; // m->cm
 
-            desired_vel_cms=limit_velocity(kP, accel_cmss, desired_vel_cms, limit_direction_cm, MAX(limit_distance_cm - margin_cm, 0.0f), dt);
-          }
+            desired_vel_cms = limit_velocity(kP, accel_cmss, desired_vel_cms, limit_direction, MAX(limit_distance, 0.0f), dt);
+         // }
       }
       else
       {

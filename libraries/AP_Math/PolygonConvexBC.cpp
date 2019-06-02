@@ -12,7 +12,7 @@ PolygonConvex::PolygonConvex(std::vector<Vector2f> points):
 void PolygonConvex::adjust_velocity(float kP,Vector2f &currentP, float accel_cmss,
                                         Vector2f &desired_vel_cms, float dt)
 {
-    // nu cred ca e okfiindca astfel viteza mi s-arschimba la fiecare iteratie
+    // nu cred ca e okfiindca astfel viteza mi s-arvschimba la fiecare iteratie
 
     std::cout<<"A intrat in functie \n";
     uint16_t i, j;
@@ -72,18 +72,18 @@ void PolygonConvex::adjust_velocity(float kP,Vector2f &currentP, float accel_cms
 
                 if (!is_zero(limit_distance))
                 {
-                    if(limit_distance <= (margin_cm))
-                    {
-                        desired_vel_cms.zero();
-                    }else
-                     {
+//                    if(limit_distance <= (margin_cm))
+//                    {
+//                        desired_vel_cms.zero();
+//                    }else
+//                     {
                         limit_direction /= limit_distance;
 
-                         Vector2f limit_direction_cm = limit_direction; // m->cm
-                         const float limit_distance_cm = limit_distance; // m->cm
+                        //Vector2f limit_direction_cm = limit_direction; // m->cm
+                       //const float limit_distance_cm = limit_distance; // m->cm
 
-                           desired_vel_cms=limit_velocity(kP, accel_cmss, desired_vel_cms, limit_direction_cm, MAX(limit_distance_cm - margin_cm, 0.0f), dt);
-                       }
+                       desired_vel_cms = limit_velocity(kP, accel_cmss, desired_vel_cms, limit_direction, MAX(limit_distance, 0.0f), dt);
+                       //}
                   }
                   else
                    {
