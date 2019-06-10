@@ -60,15 +60,15 @@ include src/drivers/oreoled/CMakeFiles/drivers__oreoled.dir/flags.make
 src/drivers/oreoled/CMakeFiles/drivers__oreoled.dir/oreoled.cpp.obj: src/drivers/oreoled/CMakeFiles/drivers__oreoled.dir/flags.make
 src/drivers/oreoled/CMakeFiles/drivers__oreoled.dir/oreoled.cpp.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/oreoled/oreoled.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/drivers/oreoled/CMakeFiles/drivers__oreoled.dir/oreoled.cpp.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/oreoled && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/drivers__oreoled.dir/oreoled.cpp.obj -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/oreoled/oreoled.cpp
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/oreoled && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/drivers__oreoled.dir/oreoled.cpp.obj -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/oreoled/oreoled.cpp
 
 src/drivers/oreoled/CMakeFiles/drivers__oreoled.dir/oreoled.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drivers__oreoled.dir/oreoled.cpp.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/oreoled && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/oreoled/oreoled.cpp > CMakeFiles/drivers__oreoled.dir/oreoled.cpp.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/oreoled && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/oreoled/oreoled.cpp > CMakeFiles/drivers__oreoled.dir/oreoled.cpp.i
 
 src/drivers/oreoled/CMakeFiles/drivers__oreoled.dir/oreoled.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drivers__oreoled.dir/oreoled.cpp.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/oreoled && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/oreoled/oreoled.cpp -o CMakeFiles/drivers__oreoled.dir/oreoled.cpp.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/oreoled && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/oreoled/oreoled.cpp -o CMakeFiles/drivers__oreoled.dir/oreoled.cpp.s
 
 src/drivers/oreoled/CMakeFiles/drivers__oreoled.dir/oreoled.cpp.obj.requires:
 

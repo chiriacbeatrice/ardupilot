@@ -1,4 +1,4 @@
-set(CMAKE_CXX_COMPILER "/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++")
+set(CMAKE_CXX_COMPILER "/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_COMPILER_VERSION "")
@@ -17,11 +17,11 @@ set(CMAKE_CXX_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ar")
-set(CMAKE_CXX_COMPILER_AR "/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc-ar")
-set(CMAKE_RANLIB "/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ranlib")
-set(CMAKE_CXX_COMPILER_RANLIB "/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc-ranlib")
-set(CMAKE_LINKER "/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ld")
+set(CMAKE_AR "/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-ar")
+set(CMAKE_CXX_COMPILER_AR "/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc-ar")
+set(CMAKE_RANLIB "/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-ranlib")
+set(CMAKE_CXX_COMPILER_RANLIB "/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc-ranlib")
+set(CMAKE_LINKER "/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-ld")
 set(CMAKE_COMPILER_IS_GNUCXX 1)
 set(CMAKE_CXX_COMPILER_LOADED 1)
 set(CMAKE_CXX_COMPILER_WORKS )

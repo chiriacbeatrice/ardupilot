@@ -60,15 +60,15 @@ include src/systemcmds/otp/CMakeFiles/systemcmds__otp.dir/flags.make
 src/systemcmds/otp/CMakeFiles/systemcmds__otp.dir/otp.c.obj: src/systemcmds/otp/CMakeFiles/systemcmds__otp.dir/flags.make
 src/systemcmds/otp/CMakeFiles/systemcmds__otp.dir/otp.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/otp/otp.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/systemcmds/otp/CMakeFiles/systemcmds__otp.dir/otp.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/otp && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/systemcmds__otp.dir/otp.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/otp/otp.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/otp && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/systemcmds__otp.dir/otp.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/otp/otp.c
 
 src/systemcmds/otp/CMakeFiles/systemcmds__otp.dir/otp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/systemcmds__otp.dir/otp.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/otp && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/otp/otp.c > CMakeFiles/systemcmds__otp.dir/otp.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/otp && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/otp/otp.c > CMakeFiles/systemcmds__otp.dir/otp.c.i
 
 src/systemcmds/otp/CMakeFiles/systemcmds__otp.dir/otp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/systemcmds__otp.dir/otp.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/otp && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/otp/otp.c -o CMakeFiles/systemcmds__otp.dir/otp.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/otp && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/otp/otp.c -o CMakeFiles/systemcmds__otp.dir/otp.c.s
 
 src/systemcmds/otp/CMakeFiles/systemcmds__otp.dir/otp.c.obj.requires:
 

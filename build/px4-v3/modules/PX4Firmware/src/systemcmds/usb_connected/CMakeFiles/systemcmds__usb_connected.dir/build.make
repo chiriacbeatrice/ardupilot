@@ -60,15 +60,15 @@ include src/systemcmds/usb_connected/CMakeFiles/systemcmds__usb_connected.dir/fl
 src/systemcmds/usb_connected/CMakeFiles/systemcmds__usb_connected.dir/usb_connected.c.obj: src/systemcmds/usb_connected/CMakeFiles/systemcmds__usb_connected.dir/flags.make
 src/systemcmds/usb_connected/CMakeFiles/systemcmds__usb_connected.dir/usb_connected.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/usb_connected/usb_connected.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/systemcmds/usb_connected/CMakeFiles/systemcmds__usb_connected.dir/usb_connected.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/usb_connected && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/systemcmds__usb_connected.dir/usb_connected.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/usb_connected/usb_connected.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/usb_connected && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/systemcmds__usb_connected.dir/usb_connected.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/usb_connected/usb_connected.c
 
 src/systemcmds/usb_connected/CMakeFiles/systemcmds__usb_connected.dir/usb_connected.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/systemcmds__usb_connected.dir/usb_connected.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/usb_connected && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/usb_connected/usb_connected.c > CMakeFiles/systemcmds__usb_connected.dir/usb_connected.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/usb_connected && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/usb_connected/usb_connected.c > CMakeFiles/systemcmds__usb_connected.dir/usb_connected.c.i
 
 src/systemcmds/usb_connected/CMakeFiles/systemcmds__usb_connected.dir/usb_connected.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/systemcmds__usb_connected.dir/usb_connected.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/usb_connected && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/usb_connected/usb_connected.c -o CMakeFiles/systemcmds__usb_connected.dir/usb_connected.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/usb_connected && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/usb_connected/usb_connected.c -o CMakeFiles/systemcmds__usb_connected.dir/usb_connected.c.s
 
 src/systemcmds/usb_connected/CMakeFiles/systemcmds__usb_connected.dir/usb_connected.c.obj.requires:
 

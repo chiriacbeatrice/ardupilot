@@ -60,15 +60,15 @@ include src/systemcmds/nshterm/CMakeFiles/systemcmds__nshterm.dir/flags.make
 src/systemcmds/nshterm/CMakeFiles/systemcmds__nshterm.dir/nshterm.c.obj: src/systemcmds/nshterm/CMakeFiles/systemcmds__nshterm.dir/flags.make
 src/systemcmds/nshterm/CMakeFiles/systemcmds__nshterm.dir/nshterm.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/nshterm/nshterm.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/systemcmds/nshterm/CMakeFiles/systemcmds__nshterm.dir/nshterm.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/nshterm && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/systemcmds__nshterm.dir/nshterm.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/nshterm/nshterm.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/nshterm && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/systemcmds__nshterm.dir/nshterm.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/nshterm/nshterm.c
 
 src/systemcmds/nshterm/CMakeFiles/systemcmds__nshterm.dir/nshterm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/systemcmds__nshterm.dir/nshterm.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/nshterm && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/nshterm/nshterm.c > CMakeFiles/systemcmds__nshterm.dir/nshterm.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/nshterm && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/nshterm/nshterm.c > CMakeFiles/systemcmds__nshterm.dir/nshterm.c.i
 
 src/systemcmds/nshterm/CMakeFiles/systemcmds__nshterm.dir/nshterm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/systemcmds__nshterm.dir/nshterm.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/nshterm && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/nshterm/nshterm.c -o CMakeFiles/systemcmds__nshterm.dir/nshterm.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/nshterm && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/nshterm/nshterm.c -o CMakeFiles/systemcmds__nshterm.dir/nshterm.c.s
 
 src/systemcmds/nshterm/CMakeFiles/systemcmds__nshterm.dir/nshterm.c.obj.requires:
 

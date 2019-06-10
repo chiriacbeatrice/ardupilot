@@ -5,19 +5,20 @@
  *      Author: beatrice
  */
 
-#include <vector>
-#include <iostream>
+//#include <vector>
+//#include <iostream>
 
 #ifndef LIBRARIES_AP_MATH_OBJECTAVOID_H_
 #define LIBRARIES_AP_MATH_OBJECTAVOID_H_
-
-
 #include <vector>
 #include "Line.h"
 #include "Circle.h"
 #include "PolygonConvexBC.h"
 #include "OpenCurve.h"
 #include "Obstacle.h"
+#include "../AP_Common/AP_Common.h"
+#include "../AP_AHRS/AP_AHRS.h"
+//#include "../AP_InertialNav/AP_InertialNav_NavEKF.h"
 
 class ObjectAvoid
 {
@@ -38,6 +39,10 @@ public:
                                             Vector2f &desired_vel_cms);
 
     bool methodadetest(){ return true; }
+
+    Vector2f location_to_xy(Location loc2);
+    Vector2f location_to_xy(double lat, double lng);
+    float longitude_scale(const struct Location &loc);
 
 //protected:
     std::vector<Obstacle *> _listOfObstacle;

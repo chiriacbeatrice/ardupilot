@@ -1,5 +1,5 @@
 #include "AC_Avoid.h"
-#include <iostream>
+//#include <iostream>
 
 #if APM_BUILD_TYPE(APM_BUILD_APMrover2)
  # define AP_AVOID_BEHAVE_DEFAULT AC_Avoid::BehaviourType::BEHAVIOR_STOP
@@ -636,27 +636,27 @@ void AC_Avoid::adjust_velocity_polygon(float kP, float accel_cmss, Vector2f &des
  */
 float AC_Avoid::get_stopping_distance(float kP, float accel_cmss, float speed_cms) const
 {
-    std::cout<<"A intrat in get_stopping_distance\n";
+   // std::cout<<"A intrat in get_stopping_distance\n";
     // avoid divide by zero by using current position if the velocity is below 10cm/s, kP is very low or acceleration is zero
     if (accel_cmss <= 0.0f || is_zero(speed_cms)) {
-        std::cout<<"A intrat primul if\n";
+       // std::cout<<"A intrat primul if\n";
         return 0.0f;
     }
 
     // handle linear deceleration
     if (kP <= 0.0f) {
-        std::cout<<"A intrat al doilea if\n";
+       // std::cout<<"A intrat al doilea if\n";
         return 0.5f * sq(speed_cms) / accel_cmss;
     }
 
     // calculate distance within which we can stop
     // accel_cmss/kP is the point at which velocity switches from linear to sqrt
     if (speed_cms < accel_cmss/kP) {
-        std::cout<<"A intrat 3.1 if\n";
+       // std::cout<<"A intrat 3.1 if\n";
         return speed_cms/kP;
 
     } else {
-        std::cout<<"A intrat 3.2 if\n";
+       // std::cout<<"A intrat 3.2 if\n";
         // accel_cmss/(2.0f*kP*kP) is the distance at which we switch from linear to sqrt response
         return accel_cmss/(2.0f*kP*kP) + (speed_cms*speed_cms)/(2.0f*accel_cmss);
     }

@@ -101,7 +101,7 @@ stm32_allocateheap.o: chip/stm32_allocateheap.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/assert.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/stdbool.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/arch.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/sched.h \
@@ -203,7 +203,7 @@ stm32_start.o: chip/stm32_start.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/assert.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/stdbool.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/init.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/board/board.h \
@@ -287,7 +287,7 @@ stm32_rcc.o: chip/stm32_rcc.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/limits.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/stdio.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/sys/types.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/sched.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/sched.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/queue.h \
@@ -418,7 +418,7 @@ stm32_gpio.o: chip/stm32_gpio.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/errno.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/irq.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/irq.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/assert.h \
@@ -468,7 +468,7 @@ stm32_exti_gpio.o: chip/stm32_exti_gpio.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/errno.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/arch/arm/src/common/up_arch.h \
  chip/chip.h chip/chip/stm32f100_pinmap.h chip/chip/stm32f10xxx_vectors.h \
  chip/chip/stm32_memorymap.h \
@@ -527,7 +527,7 @@ stm32_irq.o: chip/stm32_irq.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/limits.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/stdbool.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/irq.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/assert.h \
@@ -606,7 +606,7 @@ stm32_timerisr.o: chip/stm32_timerisr.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/sys/types.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/stdbool.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/arch.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/sched.h \
@@ -713,7 +713,7 @@ stm32_dma.o: chip/stm32_dma.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/semaphore.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/errno.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/irq.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/assert.h \
@@ -870,7 +870,7 @@ stm32_serial.o: chip/stm32_serial.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/errno.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/irq.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/assert.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/irq.h \
@@ -976,7 +976,7 @@ stm32_spi.o: chip/stm32_spi.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/errno.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/arch.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/sched.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/sched.h \
@@ -1077,7 +1077,7 @@ stm32_sdio.o: chip/stm32_sdio.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/assert.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/wdog.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/sched.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/sched.h \
@@ -1202,7 +1202,7 @@ stm32_tim.o: chip/stm32_tim.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/errno.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/board/board.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/arch/arm/src/chip/stm32.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/arch/arm/src/common/up_internal.h \
@@ -1274,7 +1274,7 @@ stm32_i2c.o: chip/stm32_i2c.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/limits.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/limits.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/stdio.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/sched.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/sched.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/queue.h \
@@ -1560,7 +1560,7 @@ up_assert.o: armv7-m/up_assert.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/assert.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/stdbool.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/irq.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/irq.h \
@@ -1681,7 +1681,7 @@ up_blocktask.o: armv7-m/up_blocktask.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/net/net.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/arch.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/arch.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/sched/os_internal.h \
@@ -1760,7 +1760,7 @@ up_createstack.o: common/up_createstack.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/net/net.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/kmalloc.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/stdlib.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/mm.h \
@@ -1925,7 +1925,7 @@ up_exit.o: common/up_exit.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/net/net.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/arch.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/arch.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/sched/os_internal.h \
@@ -1943,7 +1943,7 @@ up_initialize.o: common/up_initialize.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/types.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/limits.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/limits.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/stdbool.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/arch.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/sys/types.h \
@@ -2113,7 +2113,7 @@ up_memfault.o: armv7-m/up_memfault.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/limits.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/stdbool.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/irq.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/irq.h \
@@ -2155,7 +2155,7 @@ up_modifyreg8.o: common/up_modifyreg8.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/limits.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/stdbool.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/irq.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/irq.h \
@@ -2191,7 +2191,7 @@ up_modifyreg16.o: common/up_modifyreg16.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/limits.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/stdbool.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/irq.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/irq.h \
@@ -2227,7 +2227,7 @@ up_modifyreg32.o: common/up_modifyreg32.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/limits.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/stdbool.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/irq.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/irq.h \
@@ -2286,7 +2286,7 @@ up_releasepending.o: armv7-m/up_releasepending.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/net/net.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/arch.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/arch.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/sched/os_internal.h \
@@ -2327,7 +2327,7 @@ up_releasestack.o: common/up_releasestack.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/net/net.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/arch.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/arch.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/sched/os_internal.h \
@@ -2368,7 +2368,7 @@ up_reprioritizertr.o: armv7-m/up_reprioritizertr.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/net/net.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/arch.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/arch.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/sched/os_internal.h \
@@ -2409,7 +2409,7 @@ up_schedulesigaction.o: armv7-m/up_schedulesigaction.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/net/net.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/arch.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/arch.h \
  armv7-m/psr.h armv7-m/exc_return.h \
@@ -2452,7 +2452,7 @@ up_sigdeliver.o: armv7-m/up_sigdeliver.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/net/net.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/arch.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/arch.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/board/board.h \
@@ -2562,7 +2562,7 @@ up_unblocktask.o: armv7-m/up_unblocktask.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/net/net.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/arch.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/arch.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/sched/os_internal.h \
@@ -2605,7 +2605,7 @@ up_usestack.o: common/up_usestack.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/net/net.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/kmalloc.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/stdlib.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/mm.h \
@@ -2724,7 +2724,7 @@ up_hardfault.o: armv7-m/up_hardfault.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/assert.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/stdbool.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/userspace.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/signal.h \
@@ -2769,7 +2769,7 @@ up_svcall.o: armv7-m/up_svcall.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/assert.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/stdbool.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/arch/irq.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/irq.h \
@@ -2814,7 +2814,7 @@ up_vfork.o: common/up_vfork.c \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/errno.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/debug.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/syslog.h \
- /opt/gcc-arm-none-eabi-4_9-2015q3/lib/gcc/arm-none-eabi/4.9.3/include/stdarg.h \
+ /opt/gcc-arm-none-eabi-6-2017-q2-update/lib/gcc/arm-none-eabi/6.3.1/include/stdarg.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/stdbool.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/nuttx/sched.h \
  /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4io-v2/NuttX/nuttx/include/queue.h \

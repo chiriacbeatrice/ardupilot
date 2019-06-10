@@ -21,18 +21,18 @@ APM_PROGRAM_LIB:UNINITIALIZED=/home/beatrice/Licenta_FisiereComplete/ardupilot/b
 ARDUPILOT_BUILD:UNINITIALIZED=YES
 
 //Path to a program.
-CMAKE_AR:FILEPATH=/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ar
+CMAKE_AR:FILEPATH=/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-ar
 
 //The ASM compiler
-CMAKE_ASM_COMPILER:FILEPATH=/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc
+CMAKE_ASM_COMPILER:FILEPATH=/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_ASM_COMPILER_AR:FILEPATH=/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc-ar
+CMAKE_ASM_COMPILER_AR:FILEPATH=/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc-ar
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_ASM_COMPILER_RANLIB:FILEPATH=/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc-ranlib
+CMAKE_ASM_COMPILER_RANLIB:FILEPATH=/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc-ranlib
 
 //Flags used by the assembler during all build types.
 CMAKE_ASM_FLAGS:STRING=
@@ -57,11 +57,11 @@ CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_AR:FILEPATH=/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc-ar
+CMAKE_CXX_COMPILER_AR:FILEPATH=/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc-ar
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc-ranlib
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc-ranlib
 
 //Flags used by the compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -81,11 +81,11 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_AR:FILEPATH=/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc-ar
+CMAKE_C_COMPILER_AR:FILEPATH=/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc-ar
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_RANLIB:FILEPATH=/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc-ranlib
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc-ranlib
 
 //Flags used by the compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -125,7 +125,7 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=OFF
 CMAKE_INSTALL_PREFIX:PATH=/usr/local
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ld
+CMAKE_LINKER:FILEPATH=/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-ld
 
 //Path to a program.
 CMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/make
@@ -149,19 +149,19 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_MODULE_PATH:UNINITIALIZED=/home/beatrice/Licenta_FisiereComplete/ardupilot/Tools/ardupilotwaf/px4/cmake
 
 //Path to a program.
-CMAKE_NM:FILEPATH=/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-nm
+CMAKE_NM:FILEPATH=/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-nm
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-objcopy
+CMAKE_OBJCOPY:FILEPATH=/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-objcopy
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-objdump
+CMAKE_OBJDUMP:FILEPATH=/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-objdump
 
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=px4
 
 //Path to a program.
-CMAKE_RANLIB:FILEPATH=/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ranlib
+CMAKE_RANLIB:FILEPATH=/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-ranlib
 
 //Flags used by the linker during the creation of dll's.
 CMAKE_SHARED_LINKER_FLAGS:STRING=
@@ -201,7 +201,7 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_STRIP:FILEPATH=/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-strip
+CMAKE_STRIP:FILEPATH=/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-strip
 
 //The CMake toolchain file
 CMAKE_TOOLCHAIN_FILE:FILEPATH=/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/cmake/toolchains/Toolchain-arm-none-eabi.cmake
@@ -219,10 +219,10 @@ CONFIG:STRING=nuttx_px4fmu-v3_apm
 CP:FILEPATH=/bin/cp
 
 //Path to a program.
-CXX_COMPILER:FILEPATH=/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++
+CXX_COMPILER:FILEPATH=/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++
 
 //Path to a program.
-C_COMPILER:FILEPATH=/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc
+C_COMPILER:FILEPATH=/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc
 
 //Path to a program.
 DDD:FILEPATH=DDD-NOTFOUND
@@ -240,7 +240,7 @@ EXTRA_CXX_FLAGS:UNINITIALIZED=-Wno-error=double-promotion -Wno-error=reorder -DC
 EXTRA_C_FLAGS:UNINITIALIZED=-DCMAKE_BUILD
 
 //Path to a program.
-GDB:FILEPATH=/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gdb
+GDB:FILEPATH=/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gdb
 
 //Path to a program.
 GDBTUI:FILEPATH=GDBTUI-NOTFOUND
@@ -252,7 +252,7 @@ GENROMFS:FILEPATH=/usr/bin/genromfs
 GREP:FILEPATH=/bin/grep
 
 //Path to a program.
-LD:FILEPATH=/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ld
+LD:FILEPATH=/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-ld
 
 //Path to a program.
 MAKE:FILEPATH=/usr/bin/make
@@ -261,13 +261,13 @@ MAKE:FILEPATH=/usr/bin/make
 MKDIR:FILEPATH=/bin/mkdir
 
 //Path to a program.
-NM:FILEPATH=/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-nm
+NM:FILEPATH=/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-nm
 
 //No help, variable specified on the command line.
 NUTTX_SRC:UNINITIALIZED=/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4NuttX
 
 //Path to a program.
-OBJCOPY:FILEPATH=/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-objcopy
+OBJCOPY:FILEPATH=/opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-objcopy
 
 //Path to a program.
 PATCH:FILEPATH=/usr/bin/patch

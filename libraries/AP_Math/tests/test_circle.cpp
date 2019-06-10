@@ -200,9 +200,6 @@ TEST(CircleTest, ajustVelocityTest4_1)
     EXPECT_TRUE(is_equal(velocity.length(),safevel.length()));
 }
 
-
-
-
 //caz in care este in afara, iar stopping_point este in cercul de raza (R+margine)
 //Scenariu intra pe primul punct de intersectie
 TEST(CircleTest, ajustVelocityTest5)

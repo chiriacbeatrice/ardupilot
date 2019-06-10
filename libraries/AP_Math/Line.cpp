@@ -8,7 +8,7 @@
 
 #include "Line.h"
 #include <DataFlash/DataFlash.h>
-#include <iostream>
+//#include <iostream>
 
 Line::Line(Vector2f& start, Vector2f& end):
         _start(start),
@@ -33,20 +33,21 @@ void Line::adjust_velocity(float kP,Vector2f &currentP, float accel_cmss,
 
        //verifiace daca acest stoping_poin e ok???
       //calculul punctului in care ar reusi sa se opreasca
-
-        std::cout<<"\n\n  Valoarea vitezei inainte de procesare pe X este  "<<desired_vel_cms.x;
-        std::cout<<"\n\n  Valoarea vitezei inainte de procesare pe Y este  "<<desired_vel_cms.y;
+//
+//        std::cout<<"\n\n  Valoarea vitezei inainte de procesare pe X este  "<<desired_vel_cms.x;
+//        std::cout<<"\n\n  Valoarea vitezei inainte de procesare pe Y este  "<<desired_vel_cms.y;
 
       Vector2f stopping_point_plus_margin = position_xy +
                 safe_vel*((AC_Avoid::get_singleton()->get_stopping_distance(kP, accel_cmss, speed))/speed);
 
-      std::cout<<"\n\nValoarea StoppingPoint X "<<stopping_point_plus_margin.x<<"\n";
-      std::cout<<"Valoarea StoppingPoint Y "<<stopping_point_plus_margin.y<<"\n";
+//      std::cout<<"\n\nValoarea StoppingPoint X "<<stopping_point_plus_margin.x<<"\n";
+//      std::cout<<"Valoarea StoppingPoint Y "<<stopping_point_plus_margin.y<<"\n";
 
 
       if (get_behavior() == AC_Avoid::BehaviourType::BEHAVIOR_SLIDE) {
 
-          desired_vel_cms = adjust_velocity_Slide (kP,currentP,accel_cmss,desired_vel_cms,dt,margin_cm);
+          desired_vel_cms =adjust_velocity_Stop(kP,currentP,accel_cmss,desired_vel_cms,stopping_point_plus_margin,dt,margin_cm);
+          // desired_vel_cms = adjust_velocity_Slide (kP,currentP,accel_cmss,desired_vel_cms,dt,margin_cm);
 
        }
          else{
@@ -56,9 +57,9 @@ void Line::adjust_velocity(float kP,Vector2f &currentP, float accel_cmss,
 
        }
 
-
-      std::cout<<"\n\n  Valoarea vitezei dupa procesare pe X este  "<<desired_vel_cms.x;
-      std::cout<<"\n\n  Valoarea vitezei dupa procesare pe Y este  "<<desired_vel_cms.y<<"\n";
+//
+//      std::cout<<"\n\n  Valoarea vitezei dupa procesare pe X este  "<<desired_vel_cms.x;
+//      std::cout<<"\n\n  Valoarea vitezei dupa procesare pe Y este  "<<desired_vel_cms.y<<"\n";
     //return desired_vel_cms;
 }
 
@@ -74,10 +75,10 @@ Vector2f Line::adjust_velocity_Stop(float kP,Vector2f &currentPos, float accel_c
 
 
 
-    std::cout<<"new stop.x "<<new_stop.x<<"\n";
-    std::cout<<"new stop.y "<<new_stop.y<<"\n";
-    std::cout<<"new start.x "<<new_start.x<<"\n";
-    std::cout<<"new start.y "<<new_start.y<<"\n";
+//    std::cout<<"new stop.x "<<new_stop.x<<"\n";
+//    std::cout<<"new stop.y "<<new_stop.y<<"\n";
+//    std::cout<<"new start.x "<<new_start.x<<"\n";
+//    std::cout<<"new start.y "<<new_start.y<<"\n";
  //   float closed_distance = (Vector2f::closest_point(currentPos, new_start, new_stop) - currentPos).length();
 
 
@@ -129,10 +130,10 @@ Vector2f Line::adjust_velocity_Slide(float kP,Vector2f &currentPos, float accel_
 
 
 
-    std::cout<<"new stop.x "<<new_stop.x<<"\n";
-    std::cout<<"new stop.y "<<new_stop.y<<"\n";
-    std::cout<<"new start.x "<<new_start.x<<"\n";
-    std::cout<<"new start.y "<<new_start.y<<"\n";
+//    std::cout<<"new stop.x "<<new_stop.x<<"\n";
+//    std::cout<<"new stop.y "<<new_stop.y<<"\n";
+//    std::cout<<"new start.x "<<new_start.x<<"\n";
+//    std::cout<<"new start.y "<<new_start.y<<"\n";
 
 
     //nu sunt convinsa ca e bine am urmat exemplul de la polygon

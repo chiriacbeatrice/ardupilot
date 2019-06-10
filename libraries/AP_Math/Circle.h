@@ -9,7 +9,7 @@
 #define LIBRARIES_AP_MATH_CIRCLE_H_
 
 #include "Obstacle.h"
-
+#include <math.h>
 class Circle : public Obstacle
 {
 

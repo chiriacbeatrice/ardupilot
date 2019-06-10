@@ -60,15 +60,15 @@ include src/drivers/stm32/CMakeFiles/drivers__stm32.dir/flags.make
 src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_hrt.c.obj: src/drivers/stm32/CMakeFiles/drivers__stm32.dir/flags.make
 src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_hrt.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_hrt.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_hrt.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/drivers__stm32.dir/drv_hrt.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_hrt.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/drivers__stm32.dir/drv_hrt.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_hrt.c
 
 src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_hrt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/drivers__stm32.dir/drv_hrt.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_hrt.c > CMakeFiles/drivers__stm32.dir/drv_hrt.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_hrt.c > CMakeFiles/drivers__stm32.dir/drv_hrt.c.i
 
 src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_hrt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/drivers__stm32.dir/drv_hrt.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_hrt.c -o CMakeFiles/drivers__stm32.dir/drv_hrt.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_hrt.c -o CMakeFiles/drivers__stm32.dir/drv_hrt.c.s
 
 src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_hrt.c.obj.requires:
 
@@ -84,15 +84,15 @@ src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_hrt.c.obj.provides.build: sr
 src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_io_timer.c.obj: src/drivers/stm32/CMakeFiles/drivers__stm32.dir/flags.make
 src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_io_timer.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_io_timer.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_io_timer.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/drivers__stm32.dir/drv_io_timer.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_io_timer.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/drivers__stm32.dir/drv_io_timer.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_io_timer.c
 
 src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_io_timer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/drivers__stm32.dir/drv_io_timer.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_io_timer.c > CMakeFiles/drivers__stm32.dir/drv_io_timer.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_io_timer.c > CMakeFiles/drivers__stm32.dir/drv_io_timer.c.i
 
 src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_io_timer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/drivers__stm32.dir/drv_io_timer.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_io_timer.c -o CMakeFiles/drivers__stm32.dir/drv_io_timer.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_io_timer.c -o CMakeFiles/drivers__stm32.dir/drv_io_timer.c.s
 
 src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_io_timer.c.obj.requires:
 
@@ -108,15 +108,15 @@ src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_io_timer.c.obj.provides.buil
 src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_pwm_servo.c.obj: src/drivers/stm32/CMakeFiles/drivers__stm32.dir/flags.make
 src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_pwm_servo.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_pwm_servo.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_pwm_servo.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/drivers__stm32.dir/drv_pwm_servo.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_pwm_servo.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/drivers__stm32.dir/drv_pwm_servo.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_pwm_servo.c
 
 src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_pwm_servo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/drivers__stm32.dir/drv_pwm_servo.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_pwm_servo.c > CMakeFiles/drivers__stm32.dir/drv_pwm_servo.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_pwm_servo.c > CMakeFiles/drivers__stm32.dir/drv_pwm_servo.c.i
 
 src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_pwm_servo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/drivers__stm32.dir/drv_pwm_servo.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_pwm_servo.c -o CMakeFiles/drivers__stm32.dir/drv_pwm_servo.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_pwm_servo.c -o CMakeFiles/drivers__stm32.dir/drv_pwm_servo.c.s
 
 src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_pwm_servo.c.obj.requires:
 
@@ -132,15 +132,15 @@ src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_pwm_servo.c.obj.provides.bui
 src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_input_capture.c.obj: src/drivers/stm32/CMakeFiles/drivers__stm32.dir/flags.make
 src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_input_capture.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_input_capture.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_input_capture.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/drivers__stm32.dir/drv_input_capture.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_input_capture.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/drivers__stm32.dir/drv_input_capture.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_input_capture.c
 
 src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_input_capture.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/drivers__stm32.dir/drv_input_capture.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_input_capture.c > CMakeFiles/drivers__stm32.dir/drv_input_capture.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_input_capture.c > CMakeFiles/drivers__stm32.dir/drv_input_capture.c.i
 
 src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_input_capture.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/drivers__stm32.dir/drv_input_capture.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_input_capture.c -o CMakeFiles/drivers__stm32.dir/drv_input_capture.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32 && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/drv_input_capture.c -o CMakeFiles/drivers__stm32.dir/drv_input_capture.c.s
 
 src/drivers/stm32/CMakeFiles/drivers__stm32.dir/drv_input_capture.c.obj.requires:
 

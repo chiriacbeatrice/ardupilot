@@ -60,15 +60,15 @@ include src/modules/systemlib/CMakeFiles/modules__systemlib.dir/flags.make
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/perf_counter.c.obj: src/modules/systemlib/CMakeFiles/modules__systemlib.dir/flags.make
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/perf_counter.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/perf_counter.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/modules/systemlib/CMakeFiles/modules__systemlib.dir/perf_counter.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/perf_counter.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/perf_counter.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/perf_counter.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/perf_counter.c
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/perf_counter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/modules__systemlib.dir/perf_counter.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/perf_counter.c > CMakeFiles/modules__systemlib.dir/perf_counter.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/perf_counter.c > CMakeFiles/modules__systemlib.dir/perf_counter.c.i
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/perf_counter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/modules__systemlib.dir/perf_counter.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/perf_counter.c -o CMakeFiles/modules__systemlib.dir/perf_counter.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/perf_counter.c -o CMakeFiles/modules__systemlib.dir/perf_counter.c.s
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/perf_counter.c.obj.requires:
 
@@ -84,15 +84,15 @@ src/modules/systemlib/CMakeFiles/modules__systemlib.dir/perf_counter.c.obj.provi
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/conversions.c.obj: src/modules/systemlib/CMakeFiles/modules__systemlib.dir/flags.make
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/conversions.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/conversions.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/modules/systemlib/CMakeFiles/modules__systemlib.dir/conversions.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/conversions.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/conversions.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/conversions.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/conversions.c
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/conversions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/modules__systemlib.dir/conversions.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/conversions.c > CMakeFiles/modules__systemlib.dir/conversions.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/conversions.c > CMakeFiles/modules__systemlib.dir/conversions.c.i
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/conversions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/modules__systemlib.dir/conversions.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/conversions.c -o CMakeFiles/modules__systemlib.dir/conversions.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/conversions.c -o CMakeFiles/modules__systemlib.dir/conversions.c.s
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/conversions.c.obj.requires:
 
@@ -108,15 +108,15 @@ src/modules/systemlib/CMakeFiles/modules__systemlib.dir/conversions.c.obj.provid
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/cpuload.c.obj: src/modules/systemlib/CMakeFiles/modules__systemlib.dir/flags.make
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/cpuload.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/cpuload.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/modules/systemlib/CMakeFiles/modules__systemlib.dir/cpuload.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/cpuload.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/cpuload.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/cpuload.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/cpuload.c
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/cpuload.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/modules__systemlib.dir/cpuload.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/cpuload.c > CMakeFiles/modules__systemlib.dir/cpuload.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/cpuload.c > CMakeFiles/modules__systemlib.dir/cpuload.c.i
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/cpuload.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/modules__systemlib.dir/cpuload.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/cpuload.c -o CMakeFiles/modules__systemlib.dir/cpuload.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/cpuload.c -o CMakeFiles/modules__systemlib.dir/cpuload.c.s
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/cpuload.c.obj.requires:
 
@@ -132,15 +132,15 @@ src/modules/systemlib/CMakeFiles/modules__systemlib.dir/cpuload.c.obj.provides.b
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/pid/pid.c.obj: src/modules/systemlib/CMakeFiles/modules__systemlib.dir/flags.make
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/pid/pid.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/pid/pid.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/modules/systemlib/CMakeFiles/modules__systemlib.dir/pid/pid.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/pid/pid.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/pid/pid.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/pid/pid.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/pid/pid.c
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/pid/pid.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/modules__systemlib.dir/pid/pid.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/pid/pid.c > CMakeFiles/modules__systemlib.dir/pid/pid.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/pid/pid.c > CMakeFiles/modules__systemlib.dir/pid/pid.c.i
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/pid/pid.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/modules__systemlib.dir/pid/pid.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/pid/pid.c -o CMakeFiles/modules__systemlib.dir/pid/pid.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/pid/pid.c -o CMakeFiles/modules__systemlib.dir/pid/pid.c.s
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/pid/pid.c.obj.requires:
 
@@ -156,15 +156,15 @@ src/modules/systemlib/CMakeFiles/modules__systemlib.dir/pid/pid.c.obj.provides.b
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/airspeed.c.obj: src/modules/systemlib/CMakeFiles/modules__systemlib.dir/flags.make
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/airspeed.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/airspeed.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/modules/systemlib/CMakeFiles/modules__systemlib.dir/airspeed.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/airspeed.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/airspeed.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/airspeed.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/airspeed.c
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/airspeed.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/modules__systemlib.dir/airspeed.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/airspeed.c > CMakeFiles/modules__systemlib.dir/airspeed.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/airspeed.c > CMakeFiles/modules__systemlib.dir/airspeed.c.i
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/airspeed.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/modules__systemlib.dir/airspeed.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/airspeed.c -o CMakeFiles/modules__systemlib.dir/airspeed.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/airspeed.c -o CMakeFiles/modules__systemlib.dir/airspeed.c.s
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/airspeed.c.obj.requires:
 
@@ -180,15 +180,15 @@ src/modules/systemlib/CMakeFiles/modules__systemlib.dir/airspeed.c.obj.provides.
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/mavlink_log.c.obj: src/modules/systemlib/CMakeFiles/modules__systemlib.dir/flags.make
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/mavlink_log.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mavlink_log.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/modules/systemlib/CMakeFiles/modules__systemlib.dir/mavlink_log.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/mavlink_log.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mavlink_log.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/mavlink_log.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mavlink_log.c
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/mavlink_log.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/modules__systemlib.dir/mavlink_log.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mavlink_log.c > CMakeFiles/modules__systemlib.dir/mavlink_log.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mavlink_log.c > CMakeFiles/modules__systemlib.dir/mavlink_log.c.i
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/mavlink_log.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/modules__systemlib.dir/mavlink_log.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mavlink_log.c -o CMakeFiles/modules__systemlib.dir/mavlink_log.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mavlink_log.c -o CMakeFiles/modules__systemlib.dir/mavlink_log.c.s
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/mavlink_log.c.obj.requires:
 
@@ -204,15 +204,15 @@ src/modules/systemlib/CMakeFiles/modules__systemlib.dir/mavlink_log.c.obj.provid
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/rc_check.c.obj: src/modules/systemlib/CMakeFiles/modules__systemlib.dir/flags.make
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/rc_check.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/rc_check.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object src/modules/systemlib/CMakeFiles/modules__systemlib.dir/rc_check.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/rc_check.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/rc_check.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/rc_check.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/rc_check.c
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/rc_check.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/modules__systemlib.dir/rc_check.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/rc_check.c > CMakeFiles/modules__systemlib.dir/rc_check.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/rc_check.c > CMakeFiles/modules__systemlib.dir/rc_check.c.i
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/rc_check.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/modules__systemlib.dir/rc_check.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/rc_check.c -o CMakeFiles/modules__systemlib.dir/rc_check.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/rc_check.c -o CMakeFiles/modules__systemlib.dir/rc_check.c.s
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/rc_check.c.obj.requires:
 
@@ -228,15 +228,15 @@ src/modules/systemlib/CMakeFiles/modules__systemlib.dir/rc_check.c.obj.provides.
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/otp.c.obj: src/modules/systemlib/CMakeFiles/modules__systemlib.dir/flags.make
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/otp.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/otp.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object src/modules/systemlib/CMakeFiles/modules__systemlib.dir/otp.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/otp.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/otp.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/otp.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/otp.c
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/otp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/modules__systemlib.dir/otp.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/otp.c > CMakeFiles/modules__systemlib.dir/otp.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/otp.c > CMakeFiles/modules__systemlib.dir/otp.c.i
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/otp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/modules__systemlib.dir/otp.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/otp.c -o CMakeFiles/modules__systemlib.dir/otp.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/otp.c -o CMakeFiles/modules__systemlib.dir/otp.c.s
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/otp.c.obj.requires:
 
@@ -252,15 +252,15 @@ src/modules/systemlib/CMakeFiles/modules__systemlib.dir/otp.c.obj.provides.build
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/board_serial.c.obj: src/modules/systemlib/CMakeFiles/modules__systemlib.dir/flags.make
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/board_serial.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/board_serial.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object src/modules/systemlib/CMakeFiles/modules__systemlib.dir/board_serial.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/board_serial.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/board_serial.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/board_serial.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/board_serial.c
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/board_serial.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/modules__systemlib.dir/board_serial.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/board_serial.c > CMakeFiles/modules__systemlib.dir/board_serial.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/board_serial.c > CMakeFiles/modules__systemlib.dir/board_serial.c.i
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/board_serial.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/modules__systemlib.dir/board_serial.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/board_serial.c -o CMakeFiles/modules__systemlib.dir/board_serial.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/board_serial.c -o CMakeFiles/modules__systemlib.dir/board_serial.c.s
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/board_serial.c.obj.requires:
 
@@ -276,15 +276,15 @@ src/modules/systemlib/CMakeFiles/modules__systemlib.dir/board_serial.c.obj.provi
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/pwm_limit/pwm_limit.c.obj: src/modules/systemlib/CMakeFiles/modules__systemlib.dir/flags.make
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/pwm_limit/pwm_limit.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/pwm_limit/pwm_limit.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object src/modules/systemlib/CMakeFiles/modules__systemlib.dir/pwm_limit/pwm_limit.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/pwm_limit/pwm_limit.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/pwm_limit/pwm_limit.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/pwm_limit/pwm_limit.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/pwm_limit/pwm_limit.c
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/pwm_limit/pwm_limit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/modules__systemlib.dir/pwm_limit/pwm_limit.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/pwm_limit/pwm_limit.c > CMakeFiles/modules__systemlib.dir/pwm_limit/pwm_limit.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/pwm_limit/pwm_limit.c > CMakeFiles/modules__systemlib.dir/pwm_limit/pwm_limit.c.i
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/pwm_limit/pwm_limit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/modules__systemlib.dir/pwm_limit/pwm_limit.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/pwm_limit/pwm_limit.c -o CMakeFiles/modules__systemlib.dir/pwm_limit/pwm_limit.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/pwm_limit/pwm_limit.c -o CMakeFiles/modules__systemlib.dir/pwm_limit/pwm_limit.c.s
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/pwm_limit/pwm_limit.c.obj.requires:
 
@@ -300,15 +300,15 @@ src/modules/systemlib/CMakeFiles/modules__systemlib.dir/pwm_limit/pwm_limit.c.ob
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/mcu_version.c.obj: src/modules/systemlib/CMakeFiles/modules__systemlib.dir/flags.make
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/mcu_version.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mcu_version.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object src/modules/systemlib/CMakeFiles/modules__systemlib.dir/mcu_version.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/mcu_version.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mcu_version.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/mcu_version.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mcu_version.c
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/mcu_version.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/modules__systemlib.dir/mcu_version.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mcu_version.c > CMakeFiles/modules__systemlib.dir/mcu_version.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mcu_version.c > CMakeFiles/modules__systemlib.dir/mcu_version.c.i
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/mcu_version.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/modules__systemlib.dir/mcu_version.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mcu_version.c -o CMakeFiles/modules__systemlib.dir/mcu_version.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mcu_version.c -o CMakeFiles/modules__systemlib.dir/mcu_version.c.s
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/mcu_version.c.obj.requires:
 
@@ -324,15 +324,15 @@ src/modules/systemlib/CMakeFiles/modules__systemlib.dir/mcu_version.c.obj.provid
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/bson/tinybson.c.obj: src/modules/systemlib/CMakeFiles/modules__systemlib.dir/flags.make
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/bson/tinybson.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/bson/tinybson.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object src/modules/systemlib/CMakeFiles/modules__systemlib.dir/bson/tinybson.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/bson/tinybson.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/bson/tinybson.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/bson/tinybson.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/bson/tinybson.c
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/bson/tinybson.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/modules__systemlib.dir/bson/tinybson.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/bson/tinybson.c > CMakeFiles/modules__systemlib.dir/bson/tinybson.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/bson/tinybson.c > CMakeFiles/modules__systemlib.dir/bson/tinybson.c.i
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/bson/tinybson.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/modules__systemlib.dir/bson/tinybson.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/bson/tinybson.c -o CMakeFiles/modules__systemlib.dir/bson/tinybson.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/bson/tinybson.c -o CMakeFiles/modules__systemlib.dir/bson/tinybson.c.s
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/bson/tinybson.c.obj.requires:
 
@@ -348,15 +348,15 @@ src/modules/systemlib/CMakeFiles/modules__systemlib.dir/bson/tinybson.c.obj.prov
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/circuit_breaker.cpp.obj: src/modules/systemlib/CMakeFiles/modules__systemlib.dir/flags.make
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/circuit_breaker.cpp.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/circuit_breaker.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/modules/systemlib/CMakeFiles/modules__systemlib.dir/circuit_breaker.cpp.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/modules__systemlib.dir/circuit_breaker.cpp.obj -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/circuit_breaker.cpp
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/modules__systemlib.dir/circuit_breaker.cpp.obj -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/circuit_breaker.cpp
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/circuit_breaker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/modules__systemlib.dir/circuit_breaker.cpp.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/circuit_breaker.cpp > CMakeFiles/modules__systemlib.dir/circuit_breaker.cpp.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/circuit_breaker.cpp > CMakeFiles/modules__systemlib.dir/circuit_breaker.cpp.i
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/circuit_breaker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/modules__systemlib.dir/circuit_breaker.cpp.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/circuit_breaker.cpp -o CMakeFiles/modules__systemlib.dir/circuit_breaker.cpp.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/circuit_breaker.cpp -o CMakeFiles/modules__systemlib.dir/circuit_breaker.cpp.s
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/circuit_breaker.cpp.obj.requires:
 
@@ -372,15 +372,15 @@ src/modules/systemlib/CMakeFiles/modules__systemlib.dir/circuit_breaker.cpp.obj.
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/err.c.obj: src/modules/systemlib/CMakeFiles/modules__systemlib.dir/flags.make
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/err.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/err.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object src/modules/systemlib/CMakeFiles/modules__systemlib.dir/err.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/err.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/err.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/err.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/err.c
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/err.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/modules__systemlib.dir/err.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/err.c > CMakeFiles/modules__systemlib.dir/err.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/err.c > CMakeFiles/modules__systemlib.dir/err.c.i
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/err.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/modules__systemlib.dir/err.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/err.c -o CMakeFiles/modules__systemlib.dir/err.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/err.c -o CMakeFiles/modules__systemlib.dir/err.c.s
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/err.c.obj.requires:
 
@@ -396,15 +396,15 @@ src/modules/systemlib/CMakeFiles/modules__systemlib.dir/err.c.obj.provides.build
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/printload.c.obj: src/modules/systemlib/CMakeFiles/modules__systemlib.dir/flags.make
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/printload.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/printload.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object src/modules/systemlib/CMakeFiles/modules__systemlib.dir/printload.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/printload.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/printload.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/printload.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/printload.c
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/printload.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/modules__systemlib.dir/printload.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/printload.c > CMakeFiles/modules__systemlib.dir/printload.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/printload.c > CMakeFiles/modules__systemlib.dir/printload.c.i
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/printload.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/modules__systemlib.dir/printload.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/printload.c -o CMakeFiles/modules__systemlib.dir/printload.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/printload.c -o CMakeFiles/modules__systemlib.dir/printload.c.s
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/printload.c.obj.requires:
 
@@ -420,15 +420,15 @@ src/modules/systemlib/CMakeFiles/modules__systemlib.dir/printload.c.obj.provides
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/up_cxxinitialize.c.obj: src/modules/systemlib/CMakeFiles/modules__systemlib.dir/flags.make
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/up_cxxinitialize.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/up_cxxinitialize.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object src/modules/systemlib/CMakeFiles/modules__systemlib.dir/up_cxxinitialize.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/up_cxxinitialize.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/up_cxxinitialize.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/up_cxxinitialize.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/up_cxxinitialize.c
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/up_cxxinitialize.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/modules__systemlib.dir/up_cxxinitialize.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/up_cxxinitialize.c > CMakeFiles/modules__systemlib.dir/up_cxxinitialize.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/up_cxxinitialize.c > CMakeFiles/modules__systemlib.dir/up_cxxinitialize.c.i
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/up_cxxinitialize.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/modules__systemlib.dir/up_cxxinitialize.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/up_cxxinitialize.c -o CMakeFiles/modules__systemlib.dir/up_cxxinitialize.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/up_cxxinitialize.c -o CMakeFiles/modules__systemlib.dir/up_cxxinitialize.c.s
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/up_cxxinitialize.c.obj.requires:
 
@@ -444,15 +444,15 @@ src/modules/systemlib/CMakeFiles/modules__systemlib.dir/up_cxxinitialize.c.obj.p
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/hx_stream.c.obj: src/modules/systemlib/CMakeFiles/modules__systemlib.dir/flags.make
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/hx_stream.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/hx_stream.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object src/modules/systemlib/CMakeFiles/modules__systemlib.dir/hx_stream.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/hx_stream.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/hx_stream.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib.dir/hx_stream.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/hx_stream.c
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/hx_stream.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/modules__systemlib.dir/hx_stream.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/hx_stream.c > CMakeFiles/modules__systemlib.dir/hx_stream.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/hx_stream.c > CMakeFiles/modules__systemlib.dir/hx_stream.c.i
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/hx_stream.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/modules__systemlib.dir/hx_stream.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/hx_stream.c -o CMakeFiles/modules__systemlib.dir/hx_stream.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/hx_stream.c -o CMakeFiles/modules__systemlib.dir/hx_stream.c.s
 
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/hx_stream.c.obj.requires:
 

@@ -60,15 +60,15 @@ include src/drivers/px4io/CMakeFiles/drivers__px4io.dir/flags.make
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io.cpp.obj: src/drivers/px4io/CMakeFiles/drivers__px4io.dir/flags.make
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io.cpp.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io.cpp.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/drivers__px4io.dir/px4io.cpp.obj -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io.cpp
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/drivers__px4io.dir/px4io.cpp.obj -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io.cpp
 
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drivers__px4io.dir/px4io.cpp.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io.cpp > CMakeFiles/drivers__px4io.dir/px4io.cpp.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io.cpp > CMakeFiles/drivers__px4io.dir/px4io.cpp.i
 
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drivers__px4io.dir/px4io.cpp.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io.cpp -o CMakeFiles/drivers__px4io.dir/px4io.cpp.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io.cpp -o CMakeFiles/drivers__px4io.dir/px4io.cpp.s
 
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io.cpp.obj.requires:
 
@@ -84,15 +84,15 @@ src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io.cpp.obj.provides.build: sr
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_uploader.cpp.obj: src/drivers/px4io/CMakeFiles/drivers__px4io.dir/flags.make
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_uploader.cpp.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_uploader.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_uploader.cpp.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/drivers__px4io.dir/px4io_uploader.cpp.obj -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_uploader.cpp
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/drivers__px4io.dir/px4io_uploader.cpp.obj -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_uploader.cpp
 
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_uploader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drivers__px4io.dir/px4io_uploader.cpp.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_uploader.cpp > CMakeFiles/drivers__px4io.dir/px4io_uploader.cpp.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_uploader.cpp > CMakeFiles/drivers__px4io.dir/px4io_uploader.cpp.i
 
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_uploader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drivers__px4io.dir/px4io_uploader.cpp.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_uploader.cpp -o CMakeFiles/drivers__px4io.dir/px4io_uploader.cpp.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_uploader.cpp -o CMakeFiles/drivers__px4io.dir/px4io_uploader.cpp.s
 
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_uploader.cpp.obj.requires:
 
@@ -108,15 +108,15 @@ src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_uploader.cpp.obj.provides.
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_serial.cpp.obj: src/drivers/px4io/CMakeFiles/drivers__px4io.dir/flags.make
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_serial.cpp.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_serial.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_serial.cpp.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/drivers__px4io.dir/px4io_serial.cpp.obj -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_serial.cpp
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/drivers__px4io.dir/px4io_serial.cpp.obj -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_serial.cpp
 
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_serial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drivers__px4io.dir/px4io_serial.cpp.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_serial.cpp > CMakeFiles/drivers__px4io.dir/px4io_serial.cpp.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_serial.cpp > CMakeFiles/drivers__px4io.dir/px4io_serial.cpp.i
 
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_serial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drivers__px4io.dir/px4io_serial.cpp.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_serial.cpp -o CMakeFiles/drivers__px4io.dir/px4io_serial.cpp.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_serial.cpp -o CMakeFiles/drivers__px4io.dir/px4io_serial.cpp.s
 
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_serial.cpp.obj.requires:
 
@@ -132,15 +132,15 @@ src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_serial.cpp.obj.provides.bu
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_i2c.cpp.obj: src/drivers/px4io/CMakeFiles/drivers__px4io.dir/flags.make
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_i2c.cpp.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_i2c.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_i2c.cpp.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/drivers__px4io.dir/px4io_i2c.cpp.obj -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_i2c.cpp
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/drivers__px4io.dir/px4io_i2c.cpp.obj -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_i2c.cpp
 
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_i2c.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drivers__px4io.dir/px4io_i2c.cpp.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_i2c.cpp > CMakeFiles/drivers__px4io.dir/px4io_i2c.cpp.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_i2c.cpp > CMakeFiles/drivers__px4io.dir/px4io_i2c.cpp.i
 
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_i2c.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drivers__px4io.dir/px4io_i2c.cpp.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_i2c.cpp -o CMakeFiles/drivers__px4io.dir/px4io_i2c.cpp.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_i2c.cpp -o CMakeFiles/drivers__px4io.dir/px4io_i2c.cpp.s
 
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_i2c.cpp.obj.requires:
 
@@ -156,15 +156,15 @@ src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_i2c.cpp.obj.provides.build
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_params.c.obj: src/drivers/px4io/CMakeFiles/drivers__px4io.dir/flags.make
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_params.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_params.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_params.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/drivers__px4io.dir/px4io_params.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_params.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/drivers__px4io.dir/px4io_params.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_params.c
 
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_params.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/drivers__px4io.dir/px4io_params.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_params.c > CMakeFiles/drivers__px4io.dir/px4io_params.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_params.c > CMakeFiles/drivers__px4io.dir/px4io_params.c.i
 
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_params.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/drivers__px4io.dir/px4io_params.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_params.c -o CMakeFiles/drivers__px4io.dir/px4io_params.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/px4io && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_params.c -o CMakeFiles/drivers__px4io.dir/px4io_params.c.s
 
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/px4io_params.c.obj.requires:
 

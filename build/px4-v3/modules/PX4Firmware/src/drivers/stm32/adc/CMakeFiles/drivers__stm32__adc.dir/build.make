@@ -60,15 +60,15 @@ include src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/flags.make
 src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/adc.cpp.obj: src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/flags.make
 src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/adc.cpp.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/adc/adc.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/adc.cpp.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32/adc && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/drivers__stm32__adc.dir/adc.cpp.obj -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/adc/adc.cpp
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32/adc && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/drivers__stm32__adc.dir/adc.cpp.obj -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/adc/adc.cpp
 
 src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/adc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drivers__stm32__adc.dir/adc.cpp.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32/adc && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/adc/adc.cpp > CMakeFiles/drivers__stm32__adc.dir/adc.cpp.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32/adc && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/adc/adc.cpp > CMakeFiles/drivers__stm32__adc.dir/adc.cpp.i
 
 src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/adc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drivers__stm32__adc.dir/adc.cpp.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32/adc && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/adc/adc.cpp -o CMakeFiles/drivers__stm32__adc.dir/adc.cpp.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32/adc && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/stm32/adc/adc.cpp -o CMakeFiles/drivers__stm32__adc.dir/adc.cpp.s
 
 src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/adc.cpp.obj.requires:
 

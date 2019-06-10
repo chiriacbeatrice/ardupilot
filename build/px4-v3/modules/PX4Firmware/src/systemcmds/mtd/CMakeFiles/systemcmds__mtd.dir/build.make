@@ -60,15 +60,15 @@ include src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/flags.make
 src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/mtd.c.obj: src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/flags.make
 src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/mtd.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/mtd/mtd.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/mtd.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mtd && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/systemcmds__mtd.dir/mtd.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/mtd/mtd.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mtd && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/systemcmds__mtd.dir/mtd.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/mtd/mtd.c
 
 src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/mtd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/systemcmds__mtd.dir/mtd.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mtd && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/mtd/mtd.c > CMakeFiles/systemcmds__mtd.dir/mtd.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mtd && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/mtd/mtd.c > CMakeFiles/systemcmds__mtd.dir/mtd.c.i
 
 src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/mtd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/systemcmds__mtd.dir/mtd.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mtd && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/mtd/mtd.c -o CMakeFiles/systemcmds__mtd.dir/mtd.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mtd && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/mtd/mtd.c -o CMakeFiles/systemcmds__mtd.dir/mtd.c.s
 
 src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/mtd.c.obj.requires:
 
@@ -84,15 +84,15 @@ src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/mtd.c.obj.provides.build: src/
 src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/24xxxx_mtd.c.obj: src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/flags.make
 src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/24xxxx_mtd.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/mtd/24xxxx_mtd.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/24xxxx_mtd.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mtd && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/systemcmds__mtd.dir/24xxxx_mtd.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/mtd/24xxxx_mtd.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mtd && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/systemcmds__mtd.dir/24xxxx_mtd.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/mtd/24xxxx_mtd.c
 
 src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/24xxxx_mtd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/systemcmds__mtd.dir/24xxxx_mtd.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mtd && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/mtd/24xxxx_mtd.c > CMakeFiles/systemcmds__mtd.dir/24xxxx_mtd.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mtd && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/mtd/24xxxx_mtd.c > CMakeFiles/systemcmds__mtd.dir/24xxxx_mtd.c.i
 
 src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/24xxxx_mtd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/systemcmds__mtd.dir/24xxxx_mtd.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mtd && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/mtd/24xxxx_mtd.c -o CMakeFiles/systemcmds__mtd.dir/24xxxx_mtd.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mtd && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/mtd/24xxxx_mtd.c -o CMakeFiles/systemcmds__mtd.dir/24xxxx_mtd.c.s
 
 src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/24xxxx_mtd.c.obj.requires:
 

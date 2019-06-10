@@ -55,7 +55,7 @@ include src/firmware/nuttx/CMakeFiles/debug_io.dir/progress.make
 
 src/firmware/nuttx/CMakeFiles/debug_io: src/firmware/nuttx/firmware_nuttx
 src/firmware/nuttx/CMakeFiles/debug_io: src/firmware/nuttx/.gdbinit
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gdb /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/px4iofirmware/px4io-v2
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gdb /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/px4iofirmware/px4io-v2
 
 debug_io: src/firmware/nuttx/CMakeFiles/debug_io
 debug_io: src/firmware/nuttx/CMakeFiles/debug_io.dir/build.make

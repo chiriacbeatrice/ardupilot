@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3
 include src/firmware/nuttx/CMakeFiles/check_weak.dir/progress.make
 
 src/firmware/nuttx/CMakeFiles/check_weak: src/firmware/nuttx/firmware_nuttx
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-nm firmware_nuttx | /bin/grep " w " | cat
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-nm firmware_nuttx | /bin/grep " w " | cat
 
 check_weak: src/firmware/nuttx/CMakeFiles/check_weak
 check_weak: src/firmware/nuttx/CMakeFiles/check_weak.dir/build.make

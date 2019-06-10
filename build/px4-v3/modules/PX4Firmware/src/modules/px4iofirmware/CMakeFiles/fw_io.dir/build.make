@@ -58,7 +58,7 @@ src/modules/px4iofirmware/CMakeFiles/fw_io: src/modules/px4iofirmware/px4io-v2.b
 
 src/modules/px4iofirmware/px4io-v2.bin: src/modules/px4iofirmware/px4io-v2
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating px4io-v2.bin"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/px4iofirmware && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-objcopy -O binary px4io-v2 px4io-v2.bin
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/px4iofirmware && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-objcopy -O binary px4io-v2 px4io-v2.bin
 
 fw_io: src/modules/px4iofirmware/CMakeFiles/fw_io
 fw_io: src/modules/px4iofirmware/px4io-v2.bin

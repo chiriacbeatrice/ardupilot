@@ -1,7 +1,7 @@
 AUTOCONFIG = True
 BINDIR = '/usr/bin'
-BOARD = 'sitl'
+BOARD = 'px4-v3'
 DEBUG = False
 LIBDIR = '/usr/lib'
 PREFIX = '/usr'
-VARIANT = 'sitl'
+VARIANT = 'px4-v3'

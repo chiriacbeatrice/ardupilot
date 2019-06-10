@@ -5,14 +5,15 @@
  *      Author: beatrice
  */
 
-#include <vector>
-#include <iostream>
+
 
 #ifndef LIBRARIES_AP_MATH_POLYGONCONVEXBC_H_
 #define LIBRARIES_AP_MATH_POLYGONCONVEXBC_H_
 
 #include "Obstacle.h"
 #include "Line.h"
+#include <vector>
+//#include <iostream>
 
 class PolygonConvex: public Obstacle{
 

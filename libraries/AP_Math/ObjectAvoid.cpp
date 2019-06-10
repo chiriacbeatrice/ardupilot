@@ -6,6 +6,7 @@
  */
 
 #include "ObjectAvoid.h"
+
 //ObjectAvoid::ObjectAvoid(std::vector<Obstacle*> listOfObstacle):
 //                         _listOfObstacle(listOfObstacle){}
 
@@ -32,29 +33,61 @@ void ObjectAvoid::addObstacle(Obstacle* const & value)
     _listOfObstacle.push_back(value);
 }
 
+Vector2f ObjectAvoid::location_to_xy(Location loc2)
+{
+    static Location loc1;
+    loc1.lat = 44.434973*1e7;
+    loc1.lng = 26.047265*1e7;
+
+        return Vector2f((loc2.lat - loc1.lat) * LOCATION_SCALING_FACTOR,
+                        (loc2.lng - loc1.lng) * LOCATION_SCALING_FACTOR * longitude_scale(loc1));
+
+
+}
+
+
+Vector2f ObjectAvoid::location_to_xy(double lat, double lng)
+{
+    static Location loc;
+    loc.lat = lat*(double)1e7;
+    loc.lng = lng*(double)1e7;
+
+        return location_to_xy(loc);
+}
+
+float ObjectAvoid::longitude_scale(const struct Location &loc)
+{
+    float scale = cosf(loc.lat * (1.0e-7f * DEG_TO_RAD));
+    return constrain_float(scale, 0.01f, 1.0f);
+}
+
+
+
 void ObjectAvoid::createMap()
 {
-    Vector2f A(44.434665,26.046532);
-    Vector2f B(44.4349,26.046532);
-    Line line(A,B);
+    Vector2f a = location_to_xy(44.434665,26.046532);
+    Vector2f b = location_to_xy(44.4349,26.046532);
+
+    Line line(a,b);
 
 
     //creare cerc
-    Vector2f centre(44.435143,26.046603);
+
+    Vector2f centre = location_to_xy(44.435143,26.046603);
     Circle circle(3.0f,centre);
 
     //creare patrat
+
     std::vector<Vector2f> points;
+    Vector2f c =location_to_xy(44.434772,26.047177);
+    Vector2f d =location_to_xy(44.435009,26.047172);
+    Vector2f e =location_to_xy(44.435036,26.046962);
+    Vector2f f =location_to_xy(44.046962,26.046952);
 
-    Vector2f C(44.434772,26.047177);
-    Vector2f D(44.435009,26.047172);
-    Vector2f E(44.435036,26.046962);
-    Vector2f F(44.434898,26.046952);
-
-    points.push_back(C);
-    points.push_back(D);
-    points.push_back(E);
-    points.push_back(F);
+    points.push_back(c);
+    points.push_back(d);
+    points.push_back(e);
+    points.push_back(f);
     PolygonConvex polygon(points);
 
 

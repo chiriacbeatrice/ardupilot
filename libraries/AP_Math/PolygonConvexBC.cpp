@@ -14,7 +14,7 @@ void PolygonConvex::adjust_velocity(float kP,Vector2f &currentP, float accel_cms
 {
     // nu cred ca e okfiindca astfel viteza mi s-arvschimba la fiecare iteratie
 
-    std::cout<<"A intrat in functie \n";
+    //std::cout<<"A intrat in functie \n";
     uint16_t i, j;
     std::vector<Line> segments;
     std::vector<Vector2f>polygonWithMargins;
@@ -28,37 +28,37 @@ void PolygonConvex::adjust_velocity(float kP,Vector2f &currentP, float accel_cms
     const float speed = safe_vel.length();
 
 
-    std::cout<<"\n\n  Valoarea vitezei inainte de procesare pe X este  "<<desired_vel_cms.x;
-    std::cout<<"\n\n  Valoarea vitezei inainte de procesare pe Y este  "<<desired_vel_cms.y;
+//    std::cout<<"\n\n  Valoarea vitezei inainte de procesare pe X este  "<<desired_vel_cms.x;
+//    std::cout<<"\n\n  Valoarea vitezei inainte de procesare pe Y este  "<<desired_vel_cms.y;
 
     Vector2f stopping_point = currentP +
               safe_vel*((AC_Avoid::get_singleton()->get_stopping_distance(kP, accel_cmss, speed))/speed);
 
-    std::cout<<"\n\nValoarea StoppingPoint inainte X "<<stopping_point.x<<"\n";
-    std::cout<<"Valoarea StoppingPoint inainte Y "<<stopping_point.y<<"\n";
+//    std::cout<<"\n\nValoarea StoppingPoint inainte X "<<stopping_point.x<<"\n";
+//    std::cout<<"Valoarea StoppingPoint inainte Y "<<stopping_point.y<<"\n";
 
-    std::cout<<"Poligon vechi \n";
+    //std::cout<<"Poligon vechi \n";
     for(uint16_t i1 =0; i1<_points.size();i1++)
      {
-        std::cout<<"Se afiseaza poligonul initial.\n";
-        std::cout<<"poligon_initial = "<<_points[i1].x<<" "<<_points[i1].y<<"\n";
+//        std::cout<<"Se afiseaza poligonul initial.\n";
+//        std::cout<<"poligon_initial = "<<_points[i1].x<<" "<<_points[i1].y<<"\n";
      }
 
     polygonWithMargins = polygonWithMargin(margin_cm);
-    std::cout<<"A creat poligonul \n";
-
-    for(uint16_t i1 =0; i1<polygonWithMargins.size();i1++)
-   {
-       std::cout<<"Se afiseaza poligonul mare.\n";
-       std::cout<<"poligon_nou = "<<polygonWithMargins[i1].x<<" "<<polygonWithMargins[i1].y<<"\n";
-   }
+   // std::cout<<"A creat poligonul \n";
+//
+//    for(uint16_t i1 =0; i1<polygonWithMargins.size();i1++)
+//   {
+//       std::cout<<"Se afiseaza poligonul mare.\n";
+//       std::cout<<"poligon_nou = "<<polygonWithMargins[i1].x<<" "<<polygonWithMargins[i1].y<<"\n";
+//   }
 
 
 
 
     if(!pointInsideThePolygon(currentP,polygonWithMargins))
     {
-       std::cout<<"A ajuns inainte de for.\n";
+       //std::cout<<"A ajuns inainte de for.\n";
        for (i = 0, j = polygonWithMargins.size()-1; i < polygonWithMargins.size(); j = i++) {
 
            Vector2f start = polygonWithMargins[j];
@@ -66,31 +66,48 @@ void PolygonConvex::adjust_velocity(float kP,Vector2f &currentP, float accel_cms
 
            if (get_behavior() == AC_Avoid::BehaviourType::BEHAVIOR_SLIDE)
            {
-               Vector2f limit_direction = (Vector2f::closest_point(currentP, start, stop) - currentP);
+//               Vector2f limit_direction = (Vector2f::closest_point(currentP, start, stop) - currentP);
+//
+//               const float limit_distance = limit_direction.length();
+//
+//                if (!is_zero(limit_distance))
+//                {
+////                    if(limit_distance <= (margin_cm))
+////                    {
+////                        desired_vel_cms.zero();
+////                    }else
+////                     {
+//                        limit_direction /= limit_distance;
+//
+//                        //Vector2f limit_direction_cm = limit_direction; // m->cm
+//                       //const float limit_distance_cm = limit_distance; // m->cm
+//
+//                       desired_vel_cms = limit_velocity(kP, accel_cmss, desired_vel_cms, limit_direction, MAX(limit_distance, 0.0f), dt);
+//                       //}
+//                  }
+//                  else
+//                   {
+//
+//                      desired_vel_cms.zero();
+//
+////                   }
+               if (Vector2f::segment_intersection(currentP, stopping_point, start, stop, intersection))
+                  {
 
-               const float limit_distance = limit_direction.length();
+                         Vector2f limit_direction = intersection - currentP;
+                         const float limit_distance = limit_direction.length();
+                         if (!is_zero(limit_distance))
+                         {
 
-                if (!is_zero(limit_distance))
-                {
-//                    if(limit_distance <= (margin_cm))
-//                    {
-//                        desired_vel_cms.zero();
-//                    }else
-//                     {
-                        limit_direction /= limit_distance;
+                           limit_direction /= limit_distance;
+                           desired_vel_cms = limit_velocity(kP, accel_cmss, desired_vel_cms, limit_direction, MAX(limit_distance, 0.0f), dt);
 
-                        //Vector2f limit_direction_cm = limit_direction; // m->cm
-                       //const float limit_distance_cm = limit_distance; // m->cm
+                          }else
+                          {
+                             desired_vel_cms.zero();
+                          }
+                 }
 
-                       desired_vel_cms = limit_velocity(kP, accel_cmss, desired_vel_cms, limit_direction, MAX(limit_distance, 0.0f), dt);
-                       //}
-                  }
-                  else
-                   {
-
-                      desired_vel_cms.zero();
-
-                   }
            }
            else
            {
@@ -203,12 +220,12 @@ std::vector<Vector2f> PolygonConvex::polygonWithMargin(float margin)
 
         if(polygonIsCw())
         {
-            std::cout<<"Rotatie CW \n";
+           // std::cout<<"Rotatie CW \n";
             rotation01 = vecRotate90CW(var01);
             rotation12 = vecRotate90CW(var12);
 
         }else
-        {   std::cout<<"Rotatie CCW \n";
+        {  // std::cout<<"Rotatie CCW \n";
             rotation01 = vecRotate90CCW(var01);
             rotation12 = vecRotate90CCW(var12);
 
@@ -279,6 +296,6 @@ bool PolygonConvex::pointInsideThePolygon(Vector2f &point, PolygonConvex polygon
        }
     }
 
-    std::cout<<"%d este in poligon este: %d" << inside <<"\n";
+    //std::cout<<"%d este in poligon este: %d" << inside <<"\n";
     return inside;
 }

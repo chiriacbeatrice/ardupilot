@@ -64,15 +64,15 @@ src/modules/systemlib/mixer/mixer_multirotor.generated.h:
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer.cpp.obj: src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/flags.make
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer.cpp.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer.cpp.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/modules__systemlib__mixer.dir/mixer.cpp.obj -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer.cpp
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/modules__systemlib__mixer.dir/mixer.cpp.obj -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer.cpp
 
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/modules__systemlib__mixer.dir/mixer.cpp.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer.cpp > CMakeFiles/modules__systemlib__mixer.dir/mixer.cpp.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer.cpp > CMakeFiles/modules__systemlib__mixer.dir/mixer.cpp.i
 
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/modules__systemlib__mixer.dir/mixer.cpp.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer.cpp -o CMakeFiles/modules__systemlib__mixer.dir/mixer.cpp.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer.cpp -o CMakeFiles/modules__systemlib__mixer.dir/mixer.cpp.s
 
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer.cpp.obj.requires:
 
@@ -88,15 +88,15 @@ src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer.cpp.o
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_group.cpp.obj: src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/flags.make
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_group.cpp.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_group.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_group.cpp.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/modules__systemlib__mixer.dir/mixer_group.cpp.obj -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_group.cpp
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/modules__systemlib__mixer.dir/mixer_group.cpp.obj -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_group.cpp
 
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_group.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/modules__systemlib__mixer.dir/mixer_group.cpp.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_group.cpp > CMakeFiles/modules__systemlib__mixer.dir/mixer_group.cpp.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_group.cpp > CMakeFiles/modules__systemlib__mixer.dir/mixer_group.cpp.i
 
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_group.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/modules__systemlib__mixer.dir/mixer_group.cpp.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_group.cpp -o CMakeFiles/modules__systemlib__mixer.dir/mixer_group.cpp.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_group.cpp -o CMakeFiles/modules__systemlib__mixer.dir/mixer_group.cpp.s
 
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_group.cpp.obj.requires:
 
@@ -112,15 +112,15 @@ src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_group
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_multirotor.cpp.obj: src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/flags.make
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_multirotor.cpp.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_multirotor.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_multirotor.cpp.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/modules__systemlib__mixer.dir/mixer_multirotor.cpp.obj -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_multirotor.cpp
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/modules__systemlib__mixer.dir/mixer_multirotor.cpp.obj -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_multirotor.cpp
 
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_multirotor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/modules__systemlib__mixer.dir/mixer_multirotor.cpp.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_multirotor.cpp > CMakeFiles/modules__systemlib__mixer.dir/mixer_multirotor.cpp.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_multirotor.cpp > CMakeFiles/modules__systemlib__mixer.dir/mixer_multirotor.cpp.i
 
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_multirotor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/modules__systemlib__mixer.dir/mixer_multirotor.cpp.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_multirotor.cpp -o CMakeFiles/modules__systemlib__mixer.dir/mixer_multirotor.cpp.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_multirotor.cpp -o CMakeFiles/modules__systemlib__mixer.dir/mixer_multirotor.cpp.s
 
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_multirotor.cpp.obj.requires:
 
@@ -136,15 +136,15 @@ src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_multi
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_simple.cpp.obj: src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/flags.make
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_simple.cpp.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_simple.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_simple.cpp.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/modules__systemlib__mixer.dir/mixer_simple.cpp.obj -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_simple.cpp
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/modules__systemlib__mixer.dir/mixer_simple.cpp.obj -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_simple.cpp
 
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_simple.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/modules__systemlib__mixer.dir/mixer_simple.cpp.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_simple.cpp > CMakeFiles/modules__systemlib__mixer.dir/mixer_simple.cpp.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_simple.cpp > CMakeFiles/modules__systemlib__mixer.dir/mixer_simple.cpp.i
 
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_simple.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/modules__systemlib__mixer.dir/mixer_simple.cpp.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_simple.cpp -o CMakeFiles/modules__systemlib__mixer.dir/mixer_simple.cpp.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_simple.cpp -o CMakeFiles/modules__systemlib__mixer.dir/mixer_simple.cpp.s
 
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_simple.cpp.obj.requires:
 
@@ -160,15 +160,15 @@ src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_simpl
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_load.c.obj: src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/flags.make
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_load.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_load.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_load.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib__mixer.dir/mixer_load.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_load.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/modules__systemlib__mixer.dir/mixer_load.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_load.c
 
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_load.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/modules__systemlib__mixer.dir/mixer_load.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_load.c > CMakeFiles/modules__systemlib__mixer.dir/mixer_load.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_load.c > CMakeFiles/modules__systemlib__mixer.dir/mixer_load.c.i
 
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_load.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/modules__systemlib__mixer.dir/mixer_load.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_load.c -o CMakeFiles/modules__systemlib__mixer.dir/mixer_load.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_load.c -o CMakeFiles/modules__systemlib__mixer.dir/mixer_load.c.s
 
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/mixer_load.c.obj.requires:
 

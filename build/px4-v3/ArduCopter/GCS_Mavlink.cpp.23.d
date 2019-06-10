@@ -441,11 +441,14 @@ ArduCopter/GCS_Mavlink.cpp.23.o: ../../ArduCopter/GCS_Mavlink.cpp \
  ../../libraries/AP_Arming/AP_Arming.h \
  ../../libraries/AP_SmartRTL/AP_SmartRTL.h \
  ../../libraries/AP_TempCalibration/AP_TempCalibration.h \
- ../../ArduCopter/defines.h ../../ArduCopter/config.h \
- ../../ArduCopter/APM_Config.h ../../ArduCopter/RC_Channel.h \
- ../../ArduCopter/GCS_Mavlink.h ../../ArduCopter/GCS_Copter.h \
- ../../ArduCopter/AP_Rally.h ../../ArduCopter/AP_Arming.h \
- ../../libraries/AC_Sprayer/AC_Sprayer.h \
+ ../../libraries/AP_Math/ObjectAvoid.h ../../libraries/AP_Math/Line.h \
+ ../../libraries/AP_Math/Obstacle.h ../../libraries/AP_Math/Circle.h \
+ ../../libraries/AP_Math/PolygonConvexBC.h \
+ ../../libraries/AP_Math/OpenCurve.h ../../ArduCopter/defines.h \
+ ../../ArduCopter/config.h ../../ArduCopter/APM_Config.h \
+ ../../ArduCopter/RC_Channel.h ../../ArduCopter/GCS_Mavlink.h \
+ ../../ArduCopter/GCS_Copter.h ../../ArduCopter/AP_Rally.h \
+ ../../ArduCopter/AP_Arming.h ../../libraries/AC_Sprayer/AC_Sprayer.h \
  ../../libraries/AP_Gripper/AP_Gripper.h \
  ../../libraries/AP_Parachute/AP_Parachute.h \
  ../../libraries/AC_PrecLand/AC_PrecLand.h \

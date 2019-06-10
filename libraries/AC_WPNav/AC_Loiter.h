@@ -50,6 +50,7 @@ public:
     /// get maximum lean angle when using loiter
     float get_angle_max_cd() const;
 
+    void prepUpdate();
     /// run the loiter controller
     void update();
 

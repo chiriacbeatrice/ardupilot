@@ -60,15 +60,15 @@ include src/systemcmds/bl_update/CMakeFiles/systemcmds__bl_update.dir/flags.make
 src/systemcmds/bl_update/CMakeFiles/systemcmds__bl_update.dir/bl_update.c.obj: src/systemcmds/bl_update/CMakeFiles/systemcmds__bl_update.dir/flags.make
 src/systemcmds/bl_update/CMakeFiles/systemcmds__bl_update.dir/bl_update.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/bl_update/bl_update.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/systemcmds/bl_update/CMakeFiles/systemcmds__bl_update.dir/bl_update.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/bl_update && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/systemcmds__bl_update.dir/bl_update.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/bl_update/bl_update.c
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/bl_update && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/systemcmds__bl_update.dir/bl_update.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/bl_update/bl_update.c
 
 src/systemcmds/bl_update/CMakeFiles/systemcmds__bl_update.dir/bl_update.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/systemcmds__bl_update.dir/bl_update.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/bl_update && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/bl_update/bl_update.c > CMakeFiles/systemcmds__bl_update.dir/bl_update.c.i
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/bl_update && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/bl_update/bl_update.c > CMakeFiles/systemcmds__bl_update.dir/bl_update.c.i
 
 src/systemcmds/bl_update/CMakeFiles/systemcmds__bl_update.dir/bl_update.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/systemcmds__bl_update.dir/bl_update.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/bl_update && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/bl_update/bl_update.c -o CMakeFiles/systemcmds__bl_update.dir/bl_update.c.s
+	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/bl_update && /opt/gcc-arm-none-eabi-6-2017-q2-update/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/bl_update/bl_update.c -o CMakeFiles/systemcmds__bl_update.dir/bl_update.c.s
 
 src/systemcmds/bl_update/CMakeFiles/systemcmds__bl_update.dir/bl_update.c.obj.requires:
 
