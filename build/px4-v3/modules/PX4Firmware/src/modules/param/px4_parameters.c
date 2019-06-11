@@ -374,6 +374,24 @@ struct px4_parameters_t px4_parameters = {
 	 * Data Link Loss
 	 ****************************************************************/
 	{
+		"NAV_AH_LAT",
+		PARAM_TYPE_INT32,
+		.val.i = -265847810
+	},
+
+	{
+		"NAV_AH_LON",
+		PARAM_TYPE_INT32,
+		.val.i = 1518423250
+	},
+
+	{
+		"NAV_AH_ALT",
+		PARAM_TYPE_FLOAT,
+		.val.f = 600.0
+	},
+
+	{
 		"NAV_DLL_CH_T",
 		PARAM_TYPE_FLOAT,
 		.val.f = 120.0
@@ -413,24 +431,6 @@ struct px4_parameters_t px4_parameters = {
 		"NAV_DLL_CHSK",
 		PARAM_TYPE_INT32,
 		.val.i = 0
-	},
-
-	{
-		"NAV_AH_LAT",
-		PARAM_TYPE_INT32,
-		.val.i = -265847810
-	},
-
-	{
-		"NAV_AH_LON",
-		PARAM_TYPE_INT32,
-		.val.i = 1518423250
-	},
-
-	{
-		"NAV_AH_ALT",
-		PARAM_TYPE_FLOAT,
-		.val.f = 600.0
 	},
 
 	/*****************************************************************
@@ -1622,6 +1622,24 @@ struct px4_parameters_t px4_parameters = {
 	 * Multicopter Attitude Control
 	 ****************************************************************/
 	{
+		"MPP_MAN_R_MAX",
+		PARAM_TYPE_FLOAT,
+		.val.f = 35.0
+	},
+
+	{
+		"MPP_MAN_P_MAX",
+		PARAM_TYPE_FLOAT,
+		.val.f = 35.0
+	},
+
+	{
+		"MPP_MAN_Y_MAX",
+		PARAM_TYPE_FLOAT,
+		.val.f = 120.0
+	},
+
+	{
 		"MC_ROLL_TC",
 		PARAM_TYPE_FLOAT,
 		.val.f = 0.2
@@ -1879,27 +1897,111 @@ struct px4_parameters_t px4_parameters = {
 		.val.f = 120.0
 	},
 
-	{
-		"MPP_MAN_R_MAX",
-		PARAM_TYPE_FLOAT,
-		.val.f = 35.0
-	},
-
-	{
-		"MPP_MAN_P_MAX",
-		PARAM_TYPE_FLOAT,
-		.val.f = 35.0
-	},
-
-	{
-		"MPP_MAN_Y_MAX",
-		PARAM_TYPE_FLOAT,
-		.val.f = 120.0
-	},
-
 	/*****************************************************************
 	 * Multicopter Position Control
 	 ****************************************************************/
+	{
+		"MPP_THR_MIN",
+		PARAM_TYPE_FLOAT,
+		.val.f = 0.1
+	},
+
+	{
+		"MPP_THR_MAX",
+		PARAM_TYPE_FLOAT,
+		.val.f = 1.0
+	},
+
+	{
+		"MPP_Z_P",
+		PARAM_TYPE_FLOAT,
+		.val.f = 1.0
+	},
+
+	{
+		"MPP_Z_VEL_P",
+		PARAM_TYPE_FLOAT,
+		.val.f = 0.1
+	},
+
+	{
+		"MPP_Z_VEL_I",
+		PARAM_TYPE_FLOAT,
+		.val.f = 0.02
+	},
+
+	{
+		"MPP_Z_VEL_D",
+		PARAM_TYPE_FLOAT,
+		.val.f = 0.0
+	},
+
+	{
+		"MPP_Z_VEL_MAX",
+		PARAM_TYPE_FLOAT,
+		.val.f = 5.0
+	},
+
+	{
+		"MPP_Z_FF",
+		PARAM_TYPE_FLOAT,
+		.val.f = 0.5
+	},
+
+	{
+		"MPP_XY_P",
+		PARAM_TYPE_FLOAT,
+		.val.f = 1.0
+	},
+
+	{
+		"MPP_XY_VEL_P",
+		PARAM_TYPE_FLOAT,
+		.val.f = 0.1
+	},
+
+	{
+		"MPP_XY_VEL_I",
+		PARAM_TYPE_FLOAT,
+		.val.f = 0.02
+	},
+
+	{
+		"MPP_XY_VEL_D",
+		PARAM_TYPE_FLOAT,
+		.val.f = 0.01
+	},
+
+	{
+		"MPP_XY_VEL_MAX",
+		PARAM_TYPE_FLOAT,
+		.val.f = 5.0
+	},
+
+	{
+		"MPP_XY_FF",
+		PARAM_TYPE_FLOAT,
+		.val.f = 0.5
+	},
+
+	{
+		"MPP_TILTMAX_AIR",
+		PARAM_TYPE_FLOAT,
+		.val.f = 45.0
+	},
+
+	{
+		"MPP_TILTMAX_LND",
+		PARAM_TYPE_FLOAT,
+		.val.f = 15.0
+	},
+
+	{
+		"MPP_LAND_SPEED",
+		PARAM_TYPE_FLOAT,
+		.val.f = 1.0
+	},
+
 	{
 		"MPC_THR_MIN",
 		PARAM_TYPE_FLOAT,
@@ -2092,183 +2194,9 @@ struct px4_parameters_t px4_parameters = {
 		.val.f = 10.0
 	},
 
-	{
-		"MPP_THR_MIN",
-		PARAM_TYPE_FLOAT,
-		.val.f = 0.1
-	},
-
-	{
-		"MPP_THR_MAX",
-		PARAM_TYPE_FLOAT,
-		.val.f = 1.0
-	},
-
-	{
-		"MPP_Z_P",
-		PARAM_TYPE_FLOAT,
-		.val.f = 1.0
-	},
-
-	{
-		"MPP_Z_VEL_P",
-		PARAM_TYPE_FLOAT,
-		.val.f = 0.1
-	},
-
-	{
-		"MPP_Z_VEL_I",
-		PARAM_TYPE_FLOAT,
-		.val.f = 0.02
-	},
-
-	{
-		"MPP_Z_VEL_D",
-		PARAM_TYPE_FLOAT,
-		.val.f = 0.0
-	},
-
-	{
-		"MPP_Z_VEL_MAX",
-		PARAM_TYPE_FLOAT,
-		.val.f = 5.0
-	},
-
-	{
-		"MPP_Z_FF",
-		PARAM_TYPE_FLOAT,
-		.val.f = 0.5
-	},
-
-	{
-		"MPP_XY_P",
-		PARAM_TYPE_FLOAT,
-		.val.f = 1.0
-	},
-
-	{
-		"MPP_XY_VEL_P",
-		PARAM_TYPE_FLOAT,
-		.val.f = 0.1
-	},
-
-	{
-		"MPP_XY_VEL_I",
-		PARAM_TYPE_FLOAT,
-		.val.f = 0.02
-	},
-
-	{
-		"MPP_XY_VEL_D",
-		PARAM_TYPE_FLOAT,
-		.val.f = 0.01
-	},
-
-	{
-		"MPP_XY_VEL_MAX",
-		PARAM_TYPE_FLOAT,
-		.val.f = 5.0
-	},
-
-	{
-		"MPP_XY_FF",
-		PARAM_TYPE_FLOAT,
-		.val.f = 0.5
-	},
-
-	{
-		"MPP_TILTMAX_AIR",
-		PARAM_TYPE_FLOAT,
-		.val.f = 45.0
-	},
-
-	{
-		"MPP_TILTMAX_LND",
-		PARAM_TYPE_FLOAT,
-		.val.f = 15.0
-	},
-
-	{
-		"MPP_LAND_SPEED",
-		PARAM_TYPE_FLOAT,
-		.val.f = 1.0
-	},
-
 	/*****************************************************************
 	 * PWM Outputs
 	 ****************************************************************/
-	{
-		"PWM_MIN",
-		PARAM_TYPE_INT32,
-		.val.i = 1000
-	},
-
-	{
-		"PWM_MAX",
-		PARAM_TYPE_INT32,
-		.val.i = 2000
-	},
-
-	{
-		"PWM_DISARMED",
-		PARAM_TYPE_INT32,
-		.val.i = 0
-	},
-
-	{
-		"PWM_AUX_MIN",
-		PARAM_TYPE_INT32,
-		.val.i = 1000
-	},
-
-	{
-		"PWM_AUX_MAX",
-		PARAM_TYPE_INT32,
-		.val.i = 2000
-	},
-
-	{
-		"PWM_AUX_DISARMED",
-		PARAM_TYPE_INT32,
-		.val.i = 1000
-	},
-
-	{
-		"PWM_AUX_REV1",
-		PARAM_TYPE_INT32,
-		.val.i = 0
-	},
-
-	{
-		"PWM_AUX_REV2",
-		PARAM_TYPE_INT32,
-		.val.i = 0
-	},
-
-	{
-		"PWM_AUX_REV3",
-		PARAM_TYPE_INT32,
-		.val.i = 0
-	},
-
-	{
-		"PWM_AUX_REV4",
-		PARAM_TYPE_INT32,
-		.val.i = 0
-	},
-
-	{
-		"PWM_AUX_REV5",
-		PARAM_TYPE_INT32,
-		.val.i = 0
-	},
-
-	{
-		"PWM_AUX_REV6",
-		PARAM_TYPE_INT32,
-		.val.i = 0
-	},
-
 	{
 		"PWM_MAIN_REV1",
 		PARAM_TYPE_INT32,
@@ -2321,6 +2249,78 @@ struct px4_parameters_t px4_parameters = {
 		"PWM_SBUS_MODE",
 		PARAM_TYPE_INT32,
 		.val.i = 0
+	},
+
+	{
+		"PWM_AUX_REV1",
+		PARAM_TYPE_INT32,
+		.val.i = 0
+	},
+
+	{
+		"PWM_AUX_REV2",
+		PARAM_TYPE_INT32,
+		.val.i = 0
+	},
+
+	{
+		"PWM_AUX_REV3",
+		PARAM_TYPE_INT32,
+		.val.i = 0
+	},
+
+	{
+		"PWM_AUX_REV4",
+		PARAM_TYPE_INT32,
+		.val.i = 0
+	},
+
+	{
+		"PWM_AUX_REV5",
+		PARAM_TYPE_INT32,
+		.val.i = 0
+	},
+
+	{
+		"PWM_AUX_REV6",
+		PARAM_TYPE_INT32,
+		.val.i = 0
+	},
+
+	{
+		"PWM_MIN",
+		PARAM_TYPE_INT32,
+		.val.i = 1000
+	},
+
+	{
+		"PWM_MAX",
+		PARAM_TYPE_INT32,
+		.val.i = 2000
+	},
+
+	{
+		"PWM_DISARMED",
+		PARAM_TYPE_INT32,
+		.val.i = 0
+	},
+
+	{
+		"PWM_AUX_MIN",
+		PARAM_TYPE_INT32,
+		.val.i = 1000
+	},
+
+	{
+		"PWM_AUX_MAX",
+		PARAM_TYPE_INT32,
+		.val.i = 2000
+	},
+
+	{
+		"PWM_AUX_DISARMED",
+		PARAM_TYPE_INT32,
+		.val.i = 1000
 	},
 
 	/*****************************************************************
@@ -4085,6 +4085,12 @@ struct px4_parameters_t px4_parameters = {
 	 * System
 	 ****************************************************************/
 	{
+		"LED_RGB_MAXBRT",
+		PARAM_TYPE_INT32,
+		.val.i = 15
+	},
+
+	{
 		"SYS_AUTOSTART",
 		PARAM_TYPE_INT32,
 		.val.i = 0
@@ -4120,12 +4126,6 @@ struct px4_parameters_t px4_parameters = {
 		.val.i = 1
 	},
 
-	{
-		"LED_RGB_MAXBRT",
-		PARAM_TYPE_INT32,
-		.val.i = 15
-	},
-
 	/*****************************************************************
 	 * UAVCAN
 	 ****************************************************************/
@@ -4154,6 +4154,36 @@ struct px4_parameters_t px4_parameters = {
 		"VT_TRANS_THR",
 		PARAM_TYPE_FLOAT,
 		.val.f = 0.6
+	},
+
+	{
+		"VT_TILT_MC",
+		PARAM_TYPE_FLOAT,
+		.val.f = 0.0
+	},
+
+	{
+		"VT_TILT_TRANS",
+		PARAM_TYPE_FLOAT,
+		.val.f = 0.3
+	},
+
+	{
+		"VT_TILT_FW",
+		PARAM_TYPE_FLOAT,
+		.val.f = 1.0
+	},
+
+	{
+		"VT_TRANS_P2_DUR",
+		PARAM_TYPE_FLOAT,
+		.val.f = 0.5
+	},
+
+	{
+		"VT_FW_MOT_OFFID",
+		PARAM_TYPE_INT32,
+		.val.i = 0
 	},
 
 	{
@@ -4292,36 +4322,6 @@ struct px4_parameters_t px4_parameters = {
 		"VT_NAV_FORCE_VT",
 		PARAM_TYPE_INT32,
 		.val.i = 1
-	},
-
-	{
-		"VT_TILT_MC",
-		PARAM_TYPE_FLOAT,
-		.val.f = 0.0
-	},
-
-	{
-		"VT_TILT_TRANS",
-		PARAM_TYPE_FLOAT,
-		.val.f = 0.3
-	},
-
-	{
-		"VT_TILT_FW",
-		PARAM_TYPE_FLOAT,
-		.val.f = 1.0
-	},
-
-	{
-		"VT_TRANS_P2_DUR",
-		PARAM_TYPE_FLOAT,
-		.val.f = 0.5
-	},
-
-	{
-		"VT_FW_MOT_OFFID",
-		PARAM_TYPE_INT32,
-		.val.i = 0
 	},
 
 	/*****************************************************************
@@ -4577,72 +4577,6 @@ struct px4_parameters_t px4_parameters = {
 	 * Miscellaneous
 	 ****************************************************************/
 	{
-		"SEG_TH2V_P",
-		PARAM_TYPE_FLOAT,
-		.val.f = 10.0
-	},
-
-	{
-		"SEG_TH2V_I",
-		PARAM_TYPE_FLOAT,
-		.val.f = 0.0
-	},
-
-	{
-		"SEG_TH2V_I_MAX",
-		PARAM_TYPE_FLOAT,
-		.val.f = 0.0
-	},
-
-	{
-		"SEG_Q2V",
-		PARAM_TYPE_FLOAT,
-		.val.f = 1.0
-	},
-
-	{
-		"RC_MAP_FAILSAFE",
-		PARAM_TYPE_INT32,
-		.val.i = 0
-	},
-
-	{
-		"COM_FLTMODE1",
-		PARAM_TYPE_INT32,
-		.val.i = -1
-	},
-
-	{
-		"COM_FLTMODE2",
-		PARAM_TYPE_INT32,
-		.val.i = -1
-	},
-
-	{
-		"COM_FLTMODE3",
-		PARAM_TYPE_INT32,
-		.val.i = -1
-	},
-
-	{
-		"COM_FLTMODE4",
-		PARAM_TYPE_INT32,
-		.val.i = -1
-	},
-
-	{
-		"COM_FLTMODE5",
-		PARAM_TYPE_INT32,
-		.val.i = -1
-	},
-
-	{
-		"COM_FLTMODE6",
-		PARAM_TYPE_INT32,
-		.val.i = -1
-	},
-
-	{
 		"TEST_MIN",
 		PARAM_TYPE_FLOAT,
 		.val.f = -1.0
@@ -4712,6 +4646,72 @@ struct px4_parameters_t px4_parameters = {
 		"TEST_DEV",
 		PARAM_TYPE_FLOAT,
 		.val.f = 2.0
+	},
+
+	{
+		"SEG_TH2V_P",
+		PARAM_TYPE_FLOAT,
+		.val.f = 10.0
+	},
+
+	{
+		"SEG_TH2V_I",
+		PARAM_TYPE_FLOAT,
+		.val.f = 0.0
+	},
+
+	{
+		"SEG_TH2V_I_MAX",
+		PARAM_TYPE_FLOAT,
+		.val.f = 0.0
+	},
+
+	{
+		"SEG_Q2V",
+		PARAM_TYPE_FLOAT,
+		.val.f = 1.0
+	},
+
+	{
+		"RC_MAP_FAILSAFE",
+		PARAM_TYPE_INT32,
+		.val.i = 0
+	},
+
+	{
+		"COM_FLTMODE1",
+		PARAM_TYPE_INT32,
+		.val.i = -1
+	},
+
+	{
+		"COM_FLTMODE2",
+		PARAM_TYPE_INT32,
+		.val.i = -1
+	},
+
+	{
+		"COM_FLTMODE3",
+		PARAM_TYPE_INT32,
+		.val.i = -1
+	},
+
+	{
+		"COM_FLTMODE4",
+		PARAM_TYPE_INT32,
+		.val.i = -1
+	},
+
+	{
+		"COM_FLTMODE5",
+		PARAM_TYPE_INT32,
+		.val.i = -1
+	},
+
+	{
+		"COM_FLTMODE6",
+		PARAM_TYPE_INT32,
+		.val.i = -1
 	},
 
 	{

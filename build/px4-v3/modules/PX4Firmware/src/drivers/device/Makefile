@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware
+CMAKE_SOURCE_DIR = /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware
+CMAKE_BINARY_DIR = /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -93,7 +93,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -104,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CPackSourceConfig.cmake
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/device/CMakeFiles/progress.marks
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/drivers/device/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/device/CMakeFiles/progress.marks
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/drivers/device/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/drivers/device/clean
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/drivers/device/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/drivers/device/preinstall
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/drivers/device/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/drivers/device/preinstall
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/drivers/device/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/drivers/device/CMakeFiles/drivers__device.dir/rule:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/drivers/device/CMakeFiles/drivers__device.dir/rule
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/drivers/device/CMakeFiles/drivers__device.dir/rule
 .PHONY : src/drivers/device/CMakeFiles/drivers__device.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ drivers__device: src/drivers/device/CMakeFiles/drivers__device.dir/rule
 
 # fast build rule for target.
 drivers__device/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/build
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/build
 .PHONY : drivers__device/fast
 
 cdev.obj: cdev.cpp.obj
@@ -210,7 +210,7 @@ cdev.obj: cdev.cpp.obj
 
 # target to build an object file
 cdev.cpp.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/cdev.cpp.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/cdev.cpp.obj
 .PHONY : cdev.cpp.obj
 
 cdev.i: cdev.cpp.i
@@ -219,7 +219,7 @@ cdev.i: cdev.cpp.i
 
 # target to preprocess a source file
 cdev.cpp.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/cdev.cpp.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/cdev.cpp.i
 .PHONY : cdev.cpp.i
 
 cdev.s: cdev.cpp.s
@@ -228,7 +228,7 @@ cdev.s: cdev.cpp.s
 
 # target to generate assembly for a file
 cdev.cpp.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/cdev.cpp.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/cdev.cpp.s
 .PHONY : cdev.cpp.s
 
 device_nuttx.obj: device_nuttx.cpp.obj
@@ -237,7 +237,7 @@ device_nuttx.obj: device_nuttx.cpp.obj
 
 # target to build an object file
 device_nuttx.cpp.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/device_nuttx.cpp.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/device_nuttx.cpp.obj
 .PHONY : device_nuttx.cpp.obj
 
 device_nuttx.i: device_nuttx.cpp.i
@@ -246,7 +246,7 @@ device_nuttx.i: device_nuttx.cpp.i
 
 # target to preprocess a source file
 device_nuttx.cpp.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/device_nuttx.cpp.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/device_nuttx.cpp.i
 .PHONY : device_nuttx.cpp.i
 
 device_nuttx.s: device_nuttx.cpp.s
@@ -255,7 +255,7 @@ device_nuttx.s: device_nuttx.cpp.s
 
 # target to generate assembly for a file
 device_nuttx.cpp.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/device_nuttx.cpp.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/device_nuttx.cpp.s
 .PHONY : device_nuttx.cpp.s
 
 i2c_nuttx.obj: i2c_nuttx.cpp.obj
@@ -264,7 +264,7 @@ i2c_nuttx.obj: i2c_nuttx.cpp.obj
 
 # target to build an object file
 i2c_nuttx.cpp.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/i2c_nuttx.cpp.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/i2c_nuttx.cpp.obj
 .PHONY : i2c_nuttx.cpp.obj
 
 i2c_nuttx.i: i2c_nuttx.cpp.i
@@ -273,7 +273,7 @@ i2c_nuttx.i: i2c_nuttx.cpp.i
 
 # target to preprocess a source file
 i2c_nuttx.cpp.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/i2c_nuttx.cpp.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/i2c_nuttx.cpp.i
 .PHONY : i2c_nuttx.cpp.i
 
 i2c_nuttx.s: i2c_nuttx.cpp.s
@@ -282,7 +282,7 @@ i2c_nuttx.s: i2c_nuttx.cpp.s
 
 # target to generate assembly for a file
 i2c_nuttx.cpp.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/i2c_nuttx.cpp.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/i2c_nuttx.cpp.s
 .PHONY : i2c_nuttx.cpp.s
 
 integrator.obj: integrator.cpp.obj
@@ -291,7 +291,7 @@ integrator.obj: integrator.cpp.obj
 
 # target to build an object file
 integrator.cpp.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/integrator.cpp.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/integrator.cpp.obj
 .PHONY : integrator.cpp.obj
 
 integrator.i: integrator.cpp.i
@@ -300,7 +300,7 @@ integrator.i: integrator.cpp.i
 
 # target to preprocess a source file
 integrator.cpp.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/integrator.cpp.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/integrator.cpp.i
 .PHONY : integrator.cpp.i
 
 integrator.s: integrator.cpp.s
@@ -309,7 +309,7 @@ integrator.s: integrator.cpp.s
 
 # target to generate assembly for a file
 integrator.cpp.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/integrator.cpp.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/integrator.cpp.s
 .PHONY : integrator.cpp.s
 
 pio.obj: pio.cpp.obj
@@ -318,7 +318,7 @@ pio.obj: pio.cpp.obj
 
 # target to build an object file
 pio.cpp.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/pio.cpp.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/pio.cpp.obj
 .PHONY : pio.cpp.obj
 
 pio.i: pio.cpp.i
@@ -327,7 +327,7 @@ pio.i: pio.cpp.i
 
 # target to preprocess a source file
 pio.cpp.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/pio.cpp.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/pio.cpp.i
 .PHONY : pio.cpp.i
 
 pio.s: pio.cpp.s
@@ -336,7 +336,7 @@ pio.s: pio.cpp.s
 
 # target to generate assembly for a file
 pio.cpp.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/pio.cpp.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/pio.cpp.s
 .PHONY : pio.cpp.s
 
 ringbuffer.obj: ringbuffer.cpp.obj
@@ -345,7 +345,7 @@ ringbuffer.obj: ringbuffer.cpp.obj
 
 # target to build an object file
 ringbuffer.cpp.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/ringbuffer.cpp.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/ringbuffer.cpp.obj
 .PHONY : ringbuffer.cpp.obj
 
 ringbuffer.i: ringbuffer.cpp.i
@@ -354,7 +354,7 @@ ringbuffer.i: ringbuffer.cpp.i
 
 # target to preprocess a source file
 ringbuffer.cpp.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/ringbuffer.cpp.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/ringbuffer.cpp.i
 .PHONY : ringbuffer.cpp.i
 
 ringbuffer.s: ringbuffer.cpp.s
@@ -363,7 +363,7 @@ ringbuffer.s: ringbuffer.cpp.s
 
 # target to generate assembly for a file
 ringbuffer.cpp.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/ringbuffer.cpp.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/ringbuffer.cpp.s
 .PHONY : ringbuffer.cpp.s
 
 spi.obj: spi.cpp.obj
@@ -372,7 +372,7 @@ spi.obj: spi.cpp.obj
 
 # target to build an object file
 spi.cpp.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/spi.cpp.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/spi.cpp.obj
 .PHONY : spi.cpp.obj
 
 spi.i: spi.cpp.i
@@ -381,7 +381,7 @@ spi.i: spi.cpp.i
 
 # target to preprocess a source file
 spi.cpp.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/spi.cpp.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/spi.cpp.i
 .PHONY : spi.cpp.i
 
 spi.s: spi.cpp.s
@@ -390,7 +390,7 @@ spi.s: spi.cpp.s
 
 # target to generate assembly for a file
 spi.cpp.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/spi.cpp.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/spi.cpp.s
 .PHONY : spi.cpp.s
 
 # Help Target
@@ -441,6 +441,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

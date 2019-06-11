@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware
+CMAKE_SOURCE_DIR = /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware
+CMAKE_BINARY_DIR = /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -93,7 +93,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -104,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CPackSourceConfig.cmake
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32/adc/CMakeFiles/progress.marks
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/drivers/stm32/adc/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/stm32/adc/CMakeFiles/progress.marks
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/drivers/stm32/adc/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/drivers/stm32/adc/clean
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/drivers/stm32/adc/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/drivers/stm32/adc/preinstall
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/drivers/stm32/adc/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/drivers/stm32/adc/preinstall
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/drivers/stm32/adc/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/rule:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/rule
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/rule
 .PHONY : src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ drivers__stm32__adc: src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/ru
 
 # fast build rule for target.
 drivers__stm32__adc/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/build.make src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/build
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/build.make src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/build
 .PHONY : drivers__stm32__adc/fast
 
 adc.obj: adc.cpp.obj
@@ -210,7 +210,7 @@ adc.obj: adc.cpp.obj
 
 # target to build an object file
 adc.cpp.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/build.make src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/adc.cpp.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/build.make src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/adc.cpp.obj
 .PHONY : adc.cpp.obj
 
 adc.i: adc.cpp.i
@@ -219,7 +219,7 @@ adc.i: adc.cpp.i
 
 # target to preprocess a source file
 adc.cpp.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/build.make src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/adc.cpp.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/build.make src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/adc.cpp.i
 .PHONY : adc.cpp.i
 
 adc.s: adc.cpp.s
@@ -228,7 +228,7 @@ adc.s: adc.cpp.s
 
 # target to generate assembly for a file
 adc.cpp.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/build.make src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/adc.cpp.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/build.make src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/adc.cpp.s
 .PHONY : adc.cpp.s
 
 # Help Target
@@ -261,6 +261,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

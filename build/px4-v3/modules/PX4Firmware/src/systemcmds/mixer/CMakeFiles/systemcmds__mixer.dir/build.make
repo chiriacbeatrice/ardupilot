@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware
+CMAKE_SOURCE_DIR = /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware
+CMAKE_BINARY_DIR = /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware
 
 # Include any dependencies generated for this target.
 include src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/depend.make
@@ -58,17 +58,17 @@ include src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/progress.make
 include src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/flags.make
 
 src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/mixer.cpp.obj: src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/flags.make
-src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/mixer.cpp.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/mixer/mixer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/mixer.cpp.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mixer && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/systemcmds__mixer.dir/mixer.cpp.obj -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/mixer/mixer.cpp
+src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/mixer.cpp.obj: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/systemcmds/mixer/mixer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/mixer.cpp.obj"
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mixer && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/systemcmds__mixer.dir/mixer.cpp.obj -c /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/systemcmds/mixer/mixer.cpp
 
 src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/mixer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/systemcmds__mixer.dir/mixer.cpp.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mixer && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/mixer/mixer.cpp > CMakeFiles/systemcmds__mixer.dir/mixer.cpp.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mixer && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/systemcmds/mixer/mixer.cpp > CMakeFiles/systemcmds__mixer.dir/mixer.cpp.i
 
 src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/mixer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/systemcmds__mixer.dir/mixer.cpp.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mixer && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/mixer/mixer.cpp -o CMakeFiles/systemcmds__mixer.dir/mixer.cpp.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mixer && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/systemcmds/mixer/mixer.cpp -o CMakeFiles/systemcmds__mixer.dir/mixer.cpp.s
 
 src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/mixer.cpp.obj.requires:
 
@@ -91,9 +91,9 @@ systemcmds__mixer_EXTERNAL_OBJECTS =
 src/systemcmds/mixer/libsystemcmds__mixer.a: src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/mixer.cpp.obj
 src/systemcmds/mixer/libsystemcmds__mixer.a: src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/build.make
 src/systemcmds/mixer/libsystemcmds__mixer.a: src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libsystemcmds__mixer.a"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mixer && $(CMAKE_COMMAND) -P CMakeFiles/systemcmds__mixer.dir/cmake_clean_target.cmake
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mixer && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/systemcmds__mixer.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libsystemcmds__mixer.a"
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mixer && $(CMAKE_COMMAND) -P CMakeFiles/systemcmds__mixer.dir/cmake_clean_target.cmake
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mixer && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/systemcmds__mixer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/build: src/systemcmds/mixer/libsystemcmds__mixer.a
@@ -105,10 +105,10 @@ src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/requires: src/systemcmds/m
 .PHONY : src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/requires
 
 src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/clean:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mixer && $(CMAKE_COMMAND) -P CMakeFiles/systemcmds__mixer.dir/cmake_clean.cmake
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mixer && $(CMAKE_COMMAND) -P CMakeFiles/systemcmds__mixer.dir/cmake_clean.cmake
 .PHONY : src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/clean
 
 src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/depend:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/mixer /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mixer /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/systemcmds/mixer /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mixer /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/depend
 

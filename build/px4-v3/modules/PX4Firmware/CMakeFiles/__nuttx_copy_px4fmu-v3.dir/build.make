@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware
+CMAKE_SOURCE_DIR = /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware
+CMAKE_BINARY_DIR = /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware
 
 # Utility rule file for __nuttx_copy_px4fmu-v3.
 
@@ -57,11 +57,11 @@ CMakeFiles/__nuttx_copy_px4fmu-v3: nuttx_copy_px4fmu-v3.stamp
 
 
 nuttx_copy_px4fmu-v3.stamp:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating nuttx_copy_px4fmu-v3.stamp"
-	/bin/mkdir -p /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3
-	/bin/mkdir -p /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3/NuttX
-	/bin/cp -a /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4NuttX/. /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3/NuttX/
-	/bin/rm -rf /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3/NuttX/.git
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating nuttx_copy_px4fmu-v3.stamp"
+	/bin/mkdir -p /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3
+	/bin/mkdir -p /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3/NuttX
+	/bin/cp -a /home/beatricec/LicentaBetty/ardupilot/modules/PX4NuttX/. /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3/NuttX/
+	/bin/rm -rf /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3/NuttX/.git
 	/usr/bin/touch nuttx_copy_px4fmu-v3.stamp
 
 __nuttx_copy_px4fmu-v3: CMakeFiles/__nuttx_copy_px4fmu-v3
@@ -80,6 +80,6 @@ CMakeFiles/__nuttx_copy_px4fmu-v3.dir/clean:
 .PHONY : CMakeFiles/__nuttx_copy_px4fmu-v3.dir/clean
 
 CMakeFiles/__nuttx_copy_px4fmu-v3.dir/depend:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles/__nuttx_copy_px4fmu-v3.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles/__nuttx_copy_px4fmu-v3.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/__nuttx_copy_px4fmu-v3.dir/depend
 

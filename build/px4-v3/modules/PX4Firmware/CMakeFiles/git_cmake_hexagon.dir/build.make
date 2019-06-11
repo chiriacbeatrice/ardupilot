@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware
+CMAKE_SOURCE_DIR = /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware
+CMAKE_BINARY_DIR = /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware
 
 # Utility rule file for git_cmake_hexagon.
 
@@ -56,9 +56,9 @@ include CMakeFiles/git_cmake_hexagon.dir/progress.make
 CMakeFiles/git_cmake_hexagon: git_init_cmake_cmake_hexagon.stamp
 
 
-git_init_cmake_cmake_hexagon.stamp: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/.gitmodules
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating git_init_cmake_cmake_hexagon.stamp"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware && touch /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/git_init_cmake_cmake_hexagon.stamp
+git_init_cmake_cmake_hexagon.stamp: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/.gitmodules
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating git_init_cmake_cmake_hexagon.stamp"
+	cd /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware && touch /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/git_init_cmake_cmake_hexagon.stamp
 
 git_cmake_hexagon: CMakeFiles/git_cmake_hexagon
 git_cmake_hexagon: git_init_cmake_cmake_hexagon.stamp
@@ -76,6 +76,6 @@ CMakeFiles/git_cmake_hexagon.dir/clean:
 .PHONY : CMakeFiles/git_cmake_hexagon.dir/clean
 
 CMakeFiles/git_cmake_hexagon.dir/depend:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles/git_cmake_hexagon.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles/git_cmake_hexagon.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/git_cmake_hexagon.dir/depend
 

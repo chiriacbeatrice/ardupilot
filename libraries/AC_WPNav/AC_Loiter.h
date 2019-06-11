@@ -50,8 +50,10 @@ public:
     /// get maximum lean angle when using loiter
     float get_angle_max_cd() const;
 
+    void prepUpdate();
     /// run the loiter controller
     void update();
+
 
     /// get desired roll, pitch which should be fed into stabilize controllers
     int32_t get_roll() const { return _pos_control.get_roll(); }

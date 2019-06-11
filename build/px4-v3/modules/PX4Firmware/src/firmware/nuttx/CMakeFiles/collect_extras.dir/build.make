@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware
+CMAKE_SOURCE_DIR = /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware
+CMAKE_BINARY_DIR = /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware
 
 # Utility rule file for collect_extras.
 
@@ -63,10 +63,10 @@ src/firmware/nuttx/CMakeFiles/collect_extras.dir/build: collect_extras
 .PHONY : src/firmware/nuttx/CMakeFiles/collect_extras.dir/build
 
 src/firmware/nuttx/CMakeFiles/collect_extras.dir/clean:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && $(CMAKE_COMMAND) -P CMakeFiles/collect_extras.dir/cmake_clean.cmake
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && $(CMAKE_COMMAND) -P CMakeFiles/collect_extras.dir/cmake_clean.cmake
 .PHONY : src/firmware/nuttx/CMakeFiles/collect_extras.dir/clean
 
 src/firmware/nuttx/CMakeFiles/collect_extras.dir/depend:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/firmware/nuttx /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/CMakeFiles/collect_extras.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/firmware/nuttx /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/CMakeFiles/collect_extras.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/firmware/nuttx/CMakeFiles/collect_extras.dir/depend
 

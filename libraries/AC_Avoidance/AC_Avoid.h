@@ -83,6 +83,13 @@ public:
     static const struct AP_Param::GroupInfo var_info[];
 
 private:
+    //code added by betty
+    friend class Obstacle;
+    friend class Circle;
+    friend class PolygonConvex;
+    friend class Line;
+    friend class OpenCurve;
+
     // behaviour types (see BEHAVE parameter)
     enum BehaviourType {
         BEHAVIOR_SLIDE = 0,

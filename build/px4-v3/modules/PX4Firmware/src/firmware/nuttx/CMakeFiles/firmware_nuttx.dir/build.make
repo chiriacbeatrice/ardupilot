@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware
+CMAKE_SOURCE_DIR = /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware
+CMAKE_BINARY_DIR = /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware
 
 # Include any dependencies generated for this target.
 include src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/depend.make
@@ -59,16 +59,16 @@ include src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/flags.make
 
 src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/builtin_commands.c.obj: src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/flags.make
 src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/builtin_commands.c.obj: src/firmware/nuttx/builtin_commands.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/builtin_commands.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/firmware_nuttx.dir/builtin_commands.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/builtin_commands.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/builtin_commands.c.obj"
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/firmware_nuttx.dir/builtin_commands.c.obj   -c /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/builtin_commands.c
 
 src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/builtin_commands.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/firmware_nuttx.dir/builtin_commands.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/builtin_commands.c > CMakeFiles/firmware_nuttx.dir/builtin_commands.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/builtin_commands.c > CMakeFiles/firmware_nuttx.dir/builtin_commands.c.i
 
 src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/builtin_commands.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/firmware_nuttx.dir/builtin_commands.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/builtin_commands.c -o CMakeFiles/firmware_nuttx.dir/builtin_commands.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/builtin_commands.c -o CMakeFiles/firmware_nuttx.dir/builtin_commands.c.s
 
 src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/builtin_commands.c.obj.requires:
 
@@ -117,11 +117,11 @@ src/firmware/nuttx/firmware_nuttx: src/drivers/boards/px4fmu-v2/libdrivers__boar
 src/firmware/nuttx/firmware_nuttx: src/drivers/pwm_input/libdrivers__pwm_input.a
 src/firmware/nuttx/firmware_nuttx: src/drivers/px4io/libdrivers__px4io.a
 src/firmware/nuttx/firmware_nuttx: src/drivers/oreoled/libdrivers__oreoled.a
-src/firmware/nuttx/firmware_nuttx: /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/lib/bin/libarducopter.a
+src/firmware/nuttx/firmware_nuttx: /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/lib/bin/libarducopter.a
 src/firmware/nuttx/firmware_nuttx: src/firmware/nuttx/libromfs.a
 src/firmware/nuttx/firmware_nuttx: src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable firmware_nuttx"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/firmware_nuttx.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable firmware_nuttx"
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/firmware_nuttx.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/build: src/firmware/nuttx/firmware_nuttx
@@ -133,10 +133,10 @@ src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/requires: src/firmware/nuttx/CM
 .PHONY : src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/requires
 
 src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/clean:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && $(CMAKE_COMMAND) -P CMakeFiles/firmware_nuttx.dir/cmake_clean.cmake
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && $(CMAKE_COMMAND) -P CMakeFiles/firmware_nuttx.dir/cmake_clean.cmake
 .PHONY : src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/clean
 
 src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/depend:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/firmware/nuttx /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/firmware/nuttx /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/depend
 

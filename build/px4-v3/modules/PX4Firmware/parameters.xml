@@ -535,6 +535,26 @@ velocity</short_desc>
     </parameter>
   </group>
   <group name="Data Link Loss">
+    <parameter default="-265847810" name="NAV_AH_LAT" type="INT32">
+      <short_desc>Airfield home Lat</short_desc>
+      <long_desc>Latitude of airfield home waypoint</long_desc>
+      <min>-900000000</min>
+      <max>900000000</max>
+      <unit>deg * 1e7</unit>
+    </parameter>
+    <parameter default="1518423250" name="NAV_AH_LON" type="INT32">
+      <short_desc>Airfield home Lon</short_desc>
+      <long_desc>Longitude of airfield home waypoint</long_desc>
+      <min>-1800000000</min>
+      <max>1800000000</max>
+      <unit>deg * 1e7</unit>
+    </parameter>
+    <parameter default="600.0" name="NAV_AH_ALT" type="FLOAT">
+      <short_desc>Airfield home alt</short_desc>
+      <long_desc>Altitude of airfield home waypoint</long_desc>
+      <min>-50</min>
+      <unit>m</unit>
+    </parameter>
     <parameter default="120.0" name="NAV_DLL_CH_T" type="FLOAT">
       <short_desc>Comms hold wait time</short_desc>
       <long_desc>The amount of time in seconds the system should wait at the comms hold waypoint</long_desc>
@@ -578,26 +598,6 @@ velocity</short_desc>
       <short_desc>Skip comms hold wp</short_desc>
       <long_desc>If set to 1 the system will skip the comms hold wp on data link loss and will directly fly to airfield home</long_desc>
       <boolean />
-    </parameter>
-    <parameter default="-265847810" name="NAV_AH_LAT" type="INT32">
-      <short_desc>Airfield home Lat</short_desc>
-      <long_desc>Latitude of airfield home waypoint</long_desc>
-      <min>-900000000</min>
-      <max>900000000</max>
-      <unit>deg * 1e7</unit>
-    </parameter>
-    <parameter default="1518423250" name="NAV_AH_LON" type="INT32">
-      <short_desc>Airfield home Lon</short_desc>
-      <long_desc>Longitude of airfield home waypoint</long_desc>
-      <min>-1800000000</min>
-      <max>1800000000</max>
-      <unit>deg * 1e7</unit>
-    </parameter>
-    <parameter default="600.0" name="NAV_AH_ALT" type="FLOAT">
-      <short_desc>Airfield home alt</short_desc>
-      <long_desc>Altitude of airfield home waypoint</long_desc>
-      <min>-50</min>
-      <unit>m</unit>
     </parameter>
   </group>
   <group name="EKF2">
@@ -1832,6 +1832,23 @@ velocity</short_desc>
     </parameter>
   </group>
   <group name="Multicopter Attitude Control">
+    <parameter default="35.0" name="MPP_MAN_R_MAX" type="FLOAT">
+      <short_desc>Max manual roll</short_desc>
+      <min>0.0</min>
+      <max>90.0</max>
+      <unit>deg</unit>
+    </parameter>
+    <parameter default="35.0" name="MPP_MAN_P_MAX" type="FLOAT">
+      <short_desc>Max manual pitch</short_desc>
+      <min>0.0</min>
+      <max>90.0</max>
+      <unit>deg</unit>
+    </parameter>
+    <parameter default="120.0" name="MPP_MAN_Y_MAX" type="FLOAT">
+      <short_desc>Max manual yaw rate</short_desc>
+      <min>0.0</min>
+      <unit>deg/s</unit>
+    </parameter>
     <parameter default="0.2" name="MC_ROLL_TC" type="FLOAT">
       <short_desc>Roll time constant</short_desc>
       <long_desc>Reduce if the system is too twitchy, increase if the response is too slow and sluggish.</long_desc>
@@ -2130,25 +2147,97 @@ velocity</short_desc>
       <min>0.0</min>
       <unit>deg/s</unit>
     </parameter>
-    <parameter default="35.0" name="MPP_MAN_R_MAX" type="FLOAT">
-      <short_desc>Max manual roll</short_desc>
-      <min>0.0</min>
-      <max>90.0</max>
-      <unit>deg</unit>
-    </parameter>
-    <parameter default="35.0" name="MPP_MAN_P_MAX" type="FLOAT">
-      <short_desc>Max manual pitch</short_desc>
-      <min>0.0</min>
-      <max>90.0</max>
-      <unit>deg</unit>
-    </parameter>
-    <parameter default="120.0" name="MPP_MAN_Y_MAX" type="FLOAT">
-      <short_desc>Max manual yaw rate</short_desc>
-      <min>0.0</min>
-      <unit>deg/s</unit>
-    </parameter>
   </group>
   <group name="Multicopter Position Control">
+    <parameter default="0.1" name="MPP_THR_MIN" type="FLOAT">
+      <short_desc>Minimum thrust</short_desc>
+      <long_desc>Minimum vertical thrust. It's recommended to set it &gt; 0 to avoid free fall with zero thrust.</long_desc>
+      <min>0.0</min>
+      <max>1.0</max>
+    </parameter>
+    <parameter default="1.0" name="MPP_THR_MAX" type="FLOAT">
+      <short_desc>Maximum thrust</short_desc>
+      <long_desc>Limit max allowed thrust.</long_desc>
+      <min>0.0</min>
+      <max>1.0</max>
+    </parameter>
+    <parameter default="1.0" name="MPP_Z_P" type="FLOAT">
+      <short_desc>Proportional gain for vertical position error</short_desc>
+      <min>0.0</min>
+    </parameter>
+    <parameter default="0.1" name="MPP_Z_VEL_P" type="FLOAT">
+      <short_desc>Proportional gain for vertical velocity error</short_desc>
+      <min>0.0</min>
+    </parameter>
+    <parameter default="0.02" name="MPP_Z_VEL_I" type="FLOAT">
+      <short_desc>Integral gain for vertical velocity error</short_desc>
+      <long_desc>Non zero value allows hovering thrust estimation on stabilized or autonomous takeoff.</long_desc>
+      <min>0.0</min>
+    </parameter>
+    <parameter default="0.0" name="MPP_Z_VEL_D" type="FLOAT">
+      <short_desc>Differential gain for vertical velocity error</short_desc>
+      <min>0.0</min>
+    </parameter>
+    <parameter default="5.0" name="MPP_Z_VEL_MAX" type="FLOAT">
+      <short_desc>Maximum vertical velocity</short_desc>
+      <long_desc>Maximum vertical velocity in AUTO mode and endpoint for stabilized modes (ALTCTRL).</long_desc>
+      <min>0.0</min>
+      <unit>m/s</unit>
+    </parameter>
+    <parameter default="0.5" name="MPP_Z_FF" type="FLOAT">
+      <short_desc>Vertical velocity feed forward</short_desc>
+      <long_desc>Feed forward weight for altitude control in stabilized modes (ALTCTRL). 0 will give slow responce and no overshot, 1 - fast responce and big overshot.</long_desc>
+      <min>0.0</min>
+      <max>1.0</max>
+    </parameter>
+    <parameter default="1.0" name="MPP_XY_P" type="FLOAT">
+      <short_desc>Proportional gain for horizontal position error</short_desc>
+      <min>0.0</min>
+    </parameter>
+    <parameter default="0.1" name="MPP_XY_VEL_P" type="FLOAT">
+      <short_desc>Proportional gain for horizontal velocity error</short_desc>
+      <min>0.0</min>
+    </parameter>
+    <parameter default="0.02" name="MPP_XY_VEL_I" type="FLOAT">
+      <short_desc>Integral gain for horizontal velocity error</short_desc>
+      <long_desc>Non-zero value allows to resist wind.</long_desc>
+      <min>0.0</min>
+    </parameter>
+    <parameter default="0.01" name="MPP_XY_VEL_D" type="FLOAT">
+      <short_desc>Differential gain for horizontal velocity error. Small values help reduce fast oscillations. If value is too big oscillations will appear again</short_desc>
+      <min>0.0</min>
+    </parameter>
+    <parameter default="5.0" name="MPP_XY_VEL_MAX" type="FLOAT">
+      <short_desc>Maximum horizontal velocity</short_desc>
+      <long_desc>Maximum horizontal velocity in AUTO mode and endpoint for position stabilized mode (POSCTRL).</long_desc>
+      <min>0.0</min>
+      <unit>m/s</unit>
+    </parameter>
+    <parameter default="0.5" name="MPP_XY_FF" type="FLOAT">
+      <short_desc>Horizontal velocity feed forward</short_desc>
+      <long_desc>Feed forward weight for position control in position control mode (POSCTRL). 0 will give slow responce and no overshot, 1 - fast responce and big overshot.</long_desc>
+      <min>0.0</min>
+      <max>1.0</max>
+    </parameter>
+    <parameter default="45.0" name="MPP_TILTMAX_AIR" type="FLOAT">
+      <short_desc>Maximum tilt angle in air</short_desc>
+      <long_desc>Limits maximum tilt in AUTO and POSCTRL modes during flight.</long_desc>
+      <min>0.0</min>
+      <max>90.0</max>
+      <unit>deg</unit>
+    </parameter>
+    <parameter default="15.0" name="MPP_TILTMAX_LND" type="FLOAT">
+      <short_desc>Maximum tilt during landing</short_desc>
+      <long_desc>Limits maximum tilt angle on landing.</long_desc>
+      <min>0.0</min>
+      <max>90.0</max>
+      <unit>deg</unit>
+    </parameter>
+    <parameter default="1.0" name="MPP_LAND_SPEED" type="FLOAT">
+      <short_desc>Landing descend rate</short_desc>
+      <min>0.0</min>
+      <unit>m/s</unit>
+    </parameter>
     <parameter default="0.12" name="MPC_THR_MIN" type="FLOAT">
       <short_desc>Minimum thrust in auto thrust control</short_desc>
       <long_desc>It's recommended to set it &gt; 0 to avoid free fall with zero thrust.</long_desc>
@@ -2355,181 +2444,8 @@ velocity</short_desc>
       <decimal>2</decimal>
       <increment>1</increment>
     </parameter>
-    <parameter default="0.1" name="MPP_THR_MIN" type="FLOAT">
-      <short_desc>Minimum thrust</short_desc>
-      <long_desc>Minimum vertical thrust. It's recommended to set it &gt; 0 to avoid free fall with zero thrust.</long_desc>
-      <min>0.0</min>
-      <max>1.0</max>
-    </parameter>
-    <parameter default="1.0" name="MPP_THR_MAX" type="FLOAT">
-      <short_desc>Maximum thrust</short_desc>
-      <long_desc>Limit max allowed thrust.</long_desc>
-      <min>0.0</min>
-      <max>1.0</max>
-    </parameter>
-    <parameter default="1.0" name="MPP_Z_P" type="FLOAT">
-      <short_desc>Proportional gain for vertical position error</short_desc>
-      <min>0.0</min>
-    </parameter>
-    <parameter default="0.1" name="MPP_Z_VEL_P" type="FLOAT">
-      <short_desc>Proportional gain for vertical velocity error</short_desc>
-      <min>0.0</min>
-    </parameter>
-    <parameter default="0.02" name="MPP_Z_VEL_I" type="FLOAT">
-      <short_desc>Integral gain for vertical velocity error</short_desc>
-      <long_desc>Non zero value allows hovering thrust estimation on stabilized or autonomous takeoff.</long_desc>
-      <min>0.0</min>
-    </parameter>
-    <parameter default="0.0" name="MPP_Z_VEL_D" type="FLOAT">
-      <short_desc>Differential gain for vertical velocity error</short_desc>
-      <min>0.0</min>
-    </parameter>
-    <parameter default="5.0" name="MPP_Z_VEL_MAX" type="FLOAT">
-      <short_desc>Maximum vertical velocity</short_desc>
-      <long_desc>Maximum vertical velocity in AUTO mode and endpoint for stabilized modes (ALTCTRL).</long_desc>
-      <min>0.0</min>
-      <unit>m/s</unit>
-    </parameter>
-    <parameter default="0.5" name="MPP_Z_FF" type="FLOAT">
-      <short_desc>Vertical velocity feed forward</short_desc>
-      <long_desc>Feed forward weight for altitude control in stabilized modes (ALTCTRL). 0 will give slow responce and no overshot, 1 - fast responce and big overshot.</long_desc>
-      <min>0.0</min>
-      <max>1.0</max>
-    </parameter>
-    <parameter default="1.0" name="MPP_XY_P" type="FLOAT">
-      <short_desc>Proportional gain for horizontal position error</short_desc>
-      <min>0.0</min>
-    </parameter>
-    <parameter default="0.1" name="MPP_XY_VEL_P" type="FLOAT">
-      <short_desc>Proportional gain for horizontal velocity error</short_desc>
-      <min>0.0</min>
-    </parameter>
-    <parameter default="0.02" name="MPP_XY_VEL_I" type="FLOAT">
-      <short_desc>Integral gain for horizontal velocity error</short_desc>
-      <long_desc>Non-zero value allows to resist wind.</long_desc>
-      <min>0.0</min>
-    </parameter>
-    <parameter default="0.01" name="MPP_XY_VEL_D" type="FLOAT">
-      <short_desc>Differential gain for horizontal velocity error. Small values help reduce fast oscillations. If value is too big oscillations will appear again</short_desc>
-      <min>0.0</min>
-    </parameter>
-    <parameter default="5.0" name="MPP_XY_VEL_MAX" type="FLOAT">
-      <short_desc>Maximum horizontal velocity</short_desc>
-      <long_desc>Maximum horizontal velocity in AUTO mode and endpoint for position stabilized mode (POSCTRL).</long_desc>
-      <min>0.0</min>
-      <unit>m/s</unit>
-    </parameter>
-    <parameter default="0.5" name="MPP_XY_FF" type="FLOAT">
-      <short_desc>Horizontal velocity feed forward</short_desc>
-      <long_desc>Feed forward weight for position control in position control mode (POSCTRL). 0 will give slow responce and no overshot, 1 - fast responce and big overshot.</long_desc>
-      <min>0.0</min>
-      <max>1.0</max>
-    </parameter>
-    <parameter default="45.0" name="MPP_TILTMAX_AIR" type="FLOAT">
-      <short_desc>Maximum tilt angle in air</short_desc>
-      <long_desc>Limits maximum tilt in AUTO and POSCTRL modes during flight.</long_desc>
-      <min>0.0</min>
-      <max>90.0</max>
-      <unit>deg</unit>
-    </parameter>
-    <parameter default="15.0" name="MPP_TILTMAX_LND" type="FLOAT">
-      <short_desc>Maximum tilt during landing</short_desc>
-      <long_desc>Limits maximum tilt angle on landing.</long_desc>
-      <min>0.0</min>
-      <max>90.0</max>
-      <unit>deg</unit>
-    </parameter>
-    <parameter default="1.0" name="MPP_LAND_SPEED" type="FLOAT">
-      <short_desc>Landing descend rate</short_desc>
-      <min>0.0</min>
-      <unit>m/s</unit>
-    </parameter>
   </group>
   <group name="PWM Outputs">
-    <parameter default="1000" name="PWM_MIN" type="INT32">
-      <short_desc>Set the minimum PWM for the MAIN outputs</short_desc>
-      <long_desc>IMPORTANT: CHANGING THIS PARAMETER REQUIRES A COMPLETE SYSTEM REBOOT IN ORDER TO APPLY THE CHANGES. COMPLETELY POWER-CYCLE THE SYSTEM TO PUT CHANGES INTO EFFECT. Set to 1000 for industry default or 900 to increase servo travel.</long_desc>
-      <min>800</min>
-      <max>1400</max>
-      <unit>us</unit>
-      <reboot_required>true</reboot_required>
-    </parameter>
-    <parameter default="2000" name="PWM_MAX" type="INT32">
-      <short_desc>Set the maximum PWM for the MAIN outputs</short_desc>
-      <long_desc>IMPORTANT: CHANGING THIS PARAMETER REQUIRES A COMPLETE SYSTEM REBOOT IN ORDER TO APPLY THE CHANGES. COMPLETELY POWER-CYCLE THE SYSTEM TO PUT CHANGES INTO EFFECT. Set to 2000 for industry default or 2100 to increase servo travel.</long_desc>
-      <min>1600</min>
-      <max>2200</max>
-      <unit>us</unit>
-      <reboot_required>true</reboot_required>
-    </parameter>
-    <parameter default="0" name="PWM_DISARMED" type="INT32">
-      <short_desc>Set the disarmed PWM for MAIN outputs</short_desc>
-      <long_desc>IMPORTANT: CHANGING THIS PARAMETER REQUIRES A COMPLETE SYSTEM REBOOT IN ORDER TO APPLY THE CHANGES. COMPLETELY POWER-CYCLE THE SYSTEM TO PUT CHANGES INTO EFFECT. This is the PWM pulse the autopilot is outputting if not armed. The main use of this parameter is to silence ESCs when they are disarmed.</long_desc>
-      <min>0</min>
-      <max>2200</max>
-      <unit>us</unit>
-      <reboot_required>true</reboot_required>
-    </parameter>
-    <parameter default="1000" name="PWM_AUX_MIN" type="INT32">
-      <short_desc>Set the minimum PWM for the MAIN outputs</short_desc>
-      <long_desc>IMPORTANT: CHANGING THIS PARAMETER REQUIRES A COMPLETE SYSTEM REBOOT IN ORDER TO APPLY THE CHANGES. COMPLETELY POWER-CYCLE THE SYSTEM TO PUT CHANGES INTO EFFECT. Set to 1000 for default or 900 to increase servo travel</long_desc>
-      <min>800</min>
-      <max>1400</max>
-      <unit>us</unit>
-      <reboot_required>true</reboot_required>
-    </parameter>
-    <parameter default="2000" name="PWM_AUX_MAX" type="INT32">
-      <short_desc>Set the maximum PWM for the MAIN outputs</short_desc>
-      <long_desc>IMPORTANT: CHANGING THIS PARAMETER REQUIRES A COMPLETE SYSTEM REBOOT IN ORDER TO APPLY THE CHANGES. COMPLETELY POWER-CYCLE THE SYSTEM TO PUT CHANGES INTO EFFECT. Set to 2000 for default or 2100 to increase servo travel</long_desc>
-      <min>1600</min>
-      <max>2200</max>
-      <unit>us</unit>
-      <reboot_required>true</reboot_required>
-    </parameter>
-    <parameter default="1000" name="PWM_AUX_DISARMED" type="INT32">
-      <short_desc>Set the disarmed PWM for AUX outputs</short_desc>
-      <long_desc>IMPORTANT: CHANGING THIS PARAMETER REQUIRES A COMPLETE SYSTEM REBOOT IN ORDER TO APPLY THE CHANGES. COMPLETELY POWER-CYCLE THE SYSTEM TO PUT CHANGES INTO EFFECT. This is the PWM pulse the autopilot is outputting if not armed. The main use of this parameter is to silence ESCs when they are disarmed.</long_desc>
-      <min>0</min>
-      <max>2200</max>
-      <unit>us</unit>
-      <reboot_required>true</reboot_required>
-    </parameter>
-    <parameter default="0" name="PWM_AUX_REV1" type="INT32">
-      <short_desc>Invert direction of aux output channel 1</short_desc>
-      <long_desc>Set to 1 to invert the channel, 0 for default direction.</long_desc>
-      <boolean />
-      <reboot_required>true</reboot_required>
-    </parameter>
-    <parameter default="0" name="PWM_AUX_REV2" type="INT32">
-      <short_desc>Invert direction of aux output channel 2</short_desc>
-      <long_desc>Set to 1 to invert the channel, 0 for default direction.</long_desc>
-      <boolean />
-      <reboot_required>true</reboot_required>
-    </parameter>
-    <parameter default="0" name="PWM_AUX_REV3" type="INT32">
-      <short_desc>Invert direction of aux output channel 3</short_desc>
-      <long_desc>Set to 1 to invert the channel, 0 for default direction.</long_desc>
-      <boolean />
-      <reboot_required>true</reboot_required>
-    </parameter>
-    <parameter default="0" name="PWM_AUX_REV4" type="INT32">
-      <short_desc>Invert direction of aux output channel 4</short_desc>
-      <long_desc>Set to 1 to invert the channel, 0 for default direction.</long_desc>
-      <boolean />
-      <reboot_required>true</reboot_required>
-    </parameter>
-    <parameter default="0" name="PWM_AUX_REV5" type="INT32">
-      <short_desc>Invert direction of aux output channel 5</short_desc>
-      <long_desc>Set to 1 to invert the channel, 0 for default direction.</long_desc>
-      <boolean />
-      <reboot_required>true</reboot_required>
-    </parameter>
-    <parameter default="0" name="PWM_AUX_REV6" type="INT32">
-      <short_desc>Invert direction of aux output channel 6</short_desc>
-      <long_desc>Set to 1 to invert the channel, 0 for default direction.</long_desc>
-      <boolean />
-      <reboot_required>true</reboot_required>
-    </parameter>
     <parameter default="0" name="PWM_MAIN_REV1" type="INT32">
       <short_desc>Invert direction of main output channel 1</short_desc>
       <long_desc>Set to 1 to invert the channel, 0 for default direction.</long_desc>
@@ -2582,6 +2498,90 @@ velocity</short_desc>
       <short_desc>Enable S.BUS out</short_desc>
       <long_desc>Set to 1 to enable S.BUS version 1 output instead of RSSI.</long_desc>
       <boolean />
+    </parameter>
+    <parameter default="0" name="PWM_AUX_REV1" type="INT32">
+      <short_desc>Invert direction of aux output channel 1</short_desc>
+      <long_desc>Set to 1 to invert the channel, 0 for default direction.</long_desc>
+      <boolean />
+      <reboot_required>true</reboot_required>
+    </parameter>
+    <parameter default="0" name="PWM_AUX_REV2" type="INT32">
+      <short_desc>Invert direction of aux output channel 2</short_desc>
+      <long_desc>Set to 1 to invert the channel, 0 for default direction.</long_desc>
+      <boolean />
+      <reboot_required>true</reboot_required>
+    </parameter>
+    <parameter default="0" name="PWM_AUX_REV3" type="INT32">
+      <short_desc>Invert direction of aux output channel 3</short_desc>
+      <long_desc>Set to 1 to invert the channel, 0 for default direction.</long_desc>
+      <boolean />
+      <reboot_required>true</reboot_required>
+    </parameter>
+    <parameter default="0" name="PWM_AUX_REV4" type="INT32">
+      <short_desc>Invert direction of aux output channel 4</short_desc>
+      <long_desc>Set to 1 to invert the channel, 0 for default direction.</long_desc>
+      <boolean />
+      <reboot_required>true</reboot_required>
+    </parameter>
+    <parameter default="0" name="PWM_AUX_REV5" type="INT32">
+      <short_desc>Invert direction of aux output channel 5</short_desc>
+      <long_desc>Set to 1 to invert the channel, 0 for default direction.</long_desc>
+      <boolean />
+      <reboot_required>true</reboot_required>
+    </parameter>
+    <parameter default="0" name="PWM_AUX_REV6" type="INT32">
+      <short_desc>Invert direction of aux output channel 6</short_desc>
+      <long_desc>Set to 1 to invert the channel, 0 for default direction.</long_desc>
+      <boolean />
+      <reboot_required>true</reboot_required>
+    </parameter>
+    <parameter default="1000" name="PWM_MIN" type="INT32">
+      <short_desc>Set the minimum PWM for the MAIN outputs</short_desc>
+      <long_desc>IMPORTANT: CHANGING THIS PARAMETER REQUIRES A COMPLETE SYSTEM REBOOT IN ORDER TO APPLY THE CHANGES. COMPLETELY POWER-CYCLE THE SYSTEM TO PUT CHANGES INTO EFFECT. Set to 1000 for industry default or 900 to increase servo travel.</long_desc>
+      <min>800</min>
+      <max>1400</max>
+      <unit>us</unit>
+      <reboot_required>true</reboot_required>
+    </parameter>
+    <parameter default="2000" name="PWM_MAX" type="INT32">
+      <short_desc>Set the maximum PWM for the MAIN outputs</short_desc>
+      <long_desc>IMPORTANT: CHANGING THIS PARAMETER REQUIRES A COMPLETE SYSTEM REBOOT IN ORDER TO APPLY THE CHANGES. COMPLETELY POWER-CYCLE THE SYSTEM TO PUT CHANGES INTO EFFECT. Set to 2000 for industry default or 2100 to increase servo travel.</long_desc>
+      <min>1600</min>
+      <max>2200</max>
+      <unit>us</unit>
+      <reboot_required>true</reboot_required>
+    </parameter>
+    <parameter default="0" name="PWM_DISARMED" type="INT32">
+      <short_desc>Set the disarmed PWM for MAIN outputs</short_desc>
+      <long_desc>IMPORTANT: CHANGING THIS PARAMETER REQUIRES A COMPLETE SYSTEM REBOOT IN ORDER TO APPLY THE CHANGES. COMPLETELY POWER-CYCLE THE SYSTEM TO PUT CHANGES INTO EFFECT. This is the PWM pulse the autopilot is outputting if not armed. The main use of this parameter is to silence ESCs when they are disarmed.</long_desc>
+      <min>0</min>
+      <max>2200</max>
+      <unit>us</unit>
+      <reboot_required>true</reboot_required>
+    </parameter>
+    <parameter default="1000" name="PWM_AUX_MIN" type="INT32">
+      <short_desc>Set the minimum PWM for the MAIN outputs</short_desc>
+      <long_desc>IMPORTANT: CHANGING THIS PARAMETER REQUIRES A COMPLETE SYSTEM REBOOT IN ORDER TO APPLY THE CHANGES. COMPLETELY POWER-CYCLE THE SYSTEM TO PUT CHANGES INTO EFFECT. Set to 1000 for default or 900 to increase servo travel</long_desc>
+      <min>800</min>
+      <max>1400</max>
+      <unit>us</unit>
+      <reboot_required>true</reboot_required>
+    </parameter>
+    <parameter default="2000" name="PWM_AUX_MAX" type="INT32">
+      <short_desc>Set the maximum PWM for the MAIN outputs</short_desc>
+      <long_desc>IMPORTANT: CHANGING THIS PARAMETER REQUIRES A COMPLETE SYSTEM REBOOT IN ORDER TO APPLY THE CHANGES. COMPLETELY POWER-CYCLE THE SYSTEM TO PUT CHANGES INTO EFFECT. Set to 2000 for default or 2100 to increase servo travel</long_desc>
+      <min>1600</min>
+      <max>2200</max>
+      <unit>us</unit>
+      <reboot_required>true</reboot_required>
+    </parameter>
+    <parameter default="1000" name="PWM_AUX_DISARMED" type="INT32">
+      <short_desc>Set the disarmed PWM for AUX outputs</short_desc>
+      <long_desc>IMPORTANT: CHANGING THIS PARAMETER REQUIRES A COMPLETE SYSTEM REBOOT IN ORDER TO APPLY THE CHANGES. COMPLETELY POWER-CYCLE THE SYSTEM TO PUT CHANGES INTO EFFECT. This is the PWM pulse the autopilot is outputting if not armed. The main use of this parameter is to silence ESCs when they are disarmed.</long_desc>
+      <min>0</min>
+      <max>2200</max>
+      <unit>us</unit>
+      <reboot_required>true</reboot_required>
     </parameter>
   </group>
   <group name="Payload drop">
@@ -4867,6 +4867,12 @@ This is used for gathering replay logs for the ekf2 module</short_desc>
     </parameter>
   </group>
   <group name="System">
+    <parameter default="15" name="LED_RGB_MAXBRT" type="INT32">
+      <short_desc>RGB Led brightness limit</short_desc>
+      <long_desc>Set to 0 to disable, 1 for minimum brightness up to 15 (max)</long_desc>
+      <min>0</min>
+      <max>15</max>
+    </parameter>
     <parameter default="0" name="SYS_AUTOSTART" type="INT32">
       <short_desc>Auto-start script index</short_desc>
       <long_desc>CHANGING THIS VALUE REQUIRES A RESTART. Defines the auto-start script used to bootstrap the system.</long_desc>
@@ -4909,12 +4915,6 @@ This is used for gathering replay logs for the ekf2 module</short_desc>
       <long_desc>This monotonically increasing number encodes the parameter compatibility set. whenever it increases parameters might not be backwards compatible and ground control stations should suggest a fresh configuration.</long_desc>
       <min>0</min>
     </parameter>
-    <parameter default="15" name="LED_RGB_MAXBRT" type="INT32">
-      <short_desc>RGB Led brightness limit</short_desc>
-      <long_desc>Set to 0 to disable, 1 for minimum brightness up to 15 (max)</long_desc>
-      <min>0</min>
-      <max>15</max>
-    </parameter>
   </group>
   <group name="UAVCAN">
     <parameter default="0" name="UAVCAN_ENABLE" type="INT32">
@@ -4949,6 +4949,43 @@ This is used for gathering replay logs for the ekf2 module</short_desc>
       <max>1.0</max>
       <decimal>3</decimal>
       <increment>0.01</increment>
+    </parameter>
+    <parameter default="0.0" name="VT_TILT_MC" type="FLOAT">
+      <short_desc>Position of tilt servo in mc mode</short_desc>
+      <min>0.0</min>
+      <max>1.0</max>
+      <decimal>3</decimal>
+      <increment>0.01</increment>
+    </parameter>
+    <parameter default="0.3" name="VT_TILT_TRANS" type="FLOAT">
+      <short_desc>Position of tilt servo in transition mode</short_desc>
+      <min>0.0</min>
+      <max>1.0</max>
+      <decimal>3</decimal>
+      <increment>0.01</increment>
+    </parameter>
+    <parameter default="1.0" name="VT_TILT_FW" type="FLOAT">
+      <short_desc>Position of tilt servo in fw mode</short_desc>
+      <min>0.0</min>
+      <max>1.0</max>
+      <decimal>3</decimal>
+      <increment>0.01</increment>
+    </parameter>
+    <parameter default="0.5" name="VT_TRANS_P2_DUR" type="FLOAT">
+      <short_desc>Duration of front transition phase 2</short_desc>
+      <long_desc>Time in seconds it should take for the rotors to rotate forward completely from the point when the plane has picked up enough airspeed and is ready to go into fixed wind mode.</long_desc>
+      <min>0.1</min>
+      <max>5.0</max>
+      <unit>s</unit>
+      <decimal>3</decimal>
+      <increment>0.01</increment>
+    </parameter>
+    <parameter default="0" name="VT_FW_MOT_OFFID" type="INT32">
+      <short_desc>The channel number of motors that must be turned off in fixed wing mode</short_desc>
+      <min>0</min>
+      <max>12345678</max>
+      <decimal>0</decimal>
+      <increment>1</increment>
     </parameter>
     <parameter default="0" name="VT_MOT_COUNT" type="INT32">
       <short_desc>VTOL number of engines</short_desc>
@@ -5122,43 +5159,6 @@ This is used for gathering replay logs for the ekf2 module</short_desc>
       <short_desc>Force VTOL mode takeoff and land</short_desc>
       <min>0</min>
       <max>1</max>
-    </parameter>
-    <parameter default="0.0" name="VT_TILT_MC" type="FLOAT">
-      <short_desc>Position of tilt servo in mc mode</short_desc>
-      <min>0.0</min>
-      <max>1.0</max>
-      <decimal>3</decimal>
-      <increment>0.01</increment>
-    </parameter>
-    <parameter default="0.3" name="VT_TILT_TRANS" type="FLOAT">
-      <short_desc>Position of tilt servo in transition mode</short_desc>
-      <min>0.0</min>
-      <max>1.0</max>
-      <decimal>3</decimal>
-      <increment>0.01</increment>
-    </parameter>
-    <parameter default="1.0" name="VT_TILT_FW" type="FLOAT">
-      <short_desc>Position of tilt servo in fw mode</short_desc>
-      <min>0.0</min>
-      <max>1.0</max>
-      <decimal>3</decimal>
-      <increment>0.01</increment>
-    </parameter>
-    <parameter default="0.5" name="VT_TRANS_P2_DUR" type="FLOAT">
-      <short_desc>Duration of front transition phase 2</short_desc>
-      <long_desc>Time in seconds it should take for the rotors to rotate forward completely from the point when the plane has picked up enough airspeed and is ready to go into fixed wind mode.</long_desc>
-      <min>0.1</min>
-      <max>5.0</max>
-      <unit>s</unit>
-      <decimal>3</decimal>
-      <increment>0.01</increment>
-    </parameter>
-    <parameter default="0" name="VT_FW_MOT_OFFID" type="INT32">
-      <short_desc>The channel number of motors that must be turned off in fixed wing mode</short_desc>
-      <min>0</min>
-      <max>12345678</max>
-      <decimal>0</decimal>
-      <increment>1</increment>
     </parameter>
   </group>
   <group name="mTECS">
@@ -5377,6 +5377,42 @@ Maps the change of airspeed error to the acceleration setpoint</short_desc>
     </parameter>
   </group>
   <group name="Miscellaneous">
+    <parameter default="-1.0" name="TEST_MIN" type="FLOAT">
+      <short_desc>TEST_MIN</short_desc>
+    </parameter>
+    <parameter default="1.0" name="TEST_MAX" type="FLOAT">
+      <short_desc>TEST_MAX</short_desc>
+    </parameter>
+    <parameter default="0.5" name="TEST_TRIM" type="FLOAT">
+      <short_desc>TEST_TRIM</short_desc>
+    </parameter>
+    <parameter default="10.0" name="TEST_HP" type="FLOAT">
+      <short_desc>TEST_HP</short_desc>
+    </parameter>
+    <parameter default="10.0" name="TEST_LP" type="FLOAT">
+      <short_desc>TEST_LP</short_desc>
+    </parameter>
+    <parameter default="0.2" name="TEST_P" type="FLOAT">
+      <short_desc>TEST_P</short_desc>
+    </parameter>
+    <parameter default="0.1" name="TEST_I" type="FLOAT">
+      <short_desc>TEST_I</short_desc>
+    </parameter>
+    <parameter default="1.0" name="TEST_I_MAX" type="FLOAT">
+      <short_desc>TEST_I_MAX</short_desc>
+    </parameter>
+    <parameter default="0.01" name="TEST_D" type="FLOAT">
+      <short_desc>TEST_D</short_desc>
+    </parameter>
+    <parameter default="10.0" name="TEST_D_LP" type="FLOAT">
+      <short_desc>TEST_D_LP</short_desc>
+    </parameter>
+    <parameter default="1.0" name="TEST_MEAN" type="FLOAT">
+      <short_desc>TEST_MEAN</short_desc>
+    </parameter>
+    <parameter default="2.0" name="TEST_DEV" type="FLOAT">
+      <short_desc>TEST_DEV</short_desc>
+    </parameter>
     <parameter default="10.0" name="SEG_TH2V_P" type="FLOAT">
       <short_desc>SEG_TH2V_P</short_desc>
     </parameter>
@@ -5529,42 +5565,6 @@ Maps the change of airspeed error to the acceleration setpoint</short_desc>
         <value code="5">Return</value>
         <value code="8">Stabilized</value>
       </values>
-    </parameter>
-    <parameter default="-1.0" name="TEST_MIN" type="FLOAT">
-      <short_desc>TEST_MIN</short_desc>
-    </parameter>
-    <parameter default="1.0" name="TEST_MAX" type="FLOAT">
-      <short_desc>TEST_MAX</short_desc>
-    </parameter>
-    <parameter default="0.5" name="TEST_TRIM" type="FLOAT">
-      <short_desc>TEST_TRIM</short_desc>
-    </parameter>
-    <parameter default="10.0" name="TEST_HP" type="FLOAT">
-      <short_desc>TEST_HP</short_desc>
-    </parameter>
-    <parameter default="10.0" name="TEST_LP" type="FLOAT">
-      <short_desc>TEST_LP</short_desc>
-    </parameter>
-    <parameter default="0.2" name="TEST_P" type="FLOAT">
-      <short_desc>TEST_P</short_desc>
-    </parameter>
-    <parameter default="0.1" name="TEST_I" type="FLOAT">
-      <short_desc>TEST_I</short_desc>
-    </parameter>
-    <parameter default="1.0" name="TEST_I_MAX" type="FLOAT">
-      <short_desc>TEST_I_MAX</short_desc>
-    </parameter>
-    <parameter default="0.01" name="TEST_D" type="FLOAT">
-      <short_desc>TEST_D</short_desc>
-    </parameter>
-    <parameter default="10.0" name="TEST_D_LP" type="FLOAT">
-      <short_desc>TEST_D_LP</short_desc>
-    </parameter>
-    <parameter default="1.0" name="TEST_MEAN" type="FLOAT">
-      <short_desc>TEST_MEAN</short_desc>
-    </parameter>
-    <parameter default="2.0" name="TEST_DEV" type="FLOAT">
-      <short_desc>TEST_DEV</short_desc>
     </parameter>
     <parameter default="0.1" name="RV_YAW_P" type="FLOAT">
       <short_desc>RV_YAW_P</short_desc>

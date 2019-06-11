@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/platforms/common/px4_getopt.c
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/platforms/common/px4_getopt.c
 px4_getopt.h
 -
 stdio.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/platforms/px4_getopt.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/platforms/px4_getopt.h
 
 px4fmu-v3/NuttX/nuttx-export/include/arch/arm/irq.h
 nuttx/irq.h

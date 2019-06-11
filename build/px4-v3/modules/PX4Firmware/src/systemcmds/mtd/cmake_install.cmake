@@ -1,4 +1,4 @@
-# Install script for directory: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/mtd
+# Install script for directory: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/systemcmds/mtd
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

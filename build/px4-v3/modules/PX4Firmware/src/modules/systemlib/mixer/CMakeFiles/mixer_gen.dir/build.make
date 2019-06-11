@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware
+CMAKE_SOURCE_DIR = /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware
+CMAKE_BINARY_DIR = /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware
 
 # Utility rule file for mixer_gen.
 
@@ -54,12 +54,12 @@ CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3
 include src/modules/systemlib/mixer/CMakeFiles/mixer_gen.dir/progress.make
 
 src/modules/systemlib/mixer/CMakeFiles/mixer_gen: src/modules/systemlib/mixer/mixer_multirotor.generated.h
-src/modules/systemlib/mixer/CMakeFiles/mixer_gen: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/multi_tables.py
+src/modules/systemlib/mixer/CMakeFiles/mixer_gen: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/multi_tables.py
 
 
 src/modules/systemlib/mixer/mixer_multirotor.generated.h:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating mixer_multirotor.generated.h"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /usr/bin/python /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/multi_tables.py > mixer_multirotor.generated.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating mixer_multirotor.generated.h"
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && /usr/bin/python /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/multi_tables.py > mixer_multirotor.generated.h
 
 mixer_gen: src/modules/systemlib/mixer/CMakeFiles/mixer_gen
 mixer_gen: src/modules/systemlib/mixer/mixer_multirotor.generated.h
@@ -73,10 +73,10 @@ src/modules/systemlib/mixer/CMakeFiles/mixer_gen.dir/build: mixer_gen
 .PHONY : src/modules/systemlib/mixer/CMakeFiles/mixer_gen.dir/build
 
 src/modules/systemlib/mixer/CMakeFiles/mixer_gen.dir/clean:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && $(CMAKE_COMMAND) -P CMakeFiles/mixer_gen.dir/cmake_clean.cmake
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer && $(CMAKE_COMMAND) -P CMakeFiles/mixer_gen.dir/cmake_clean.cmake
 .PHONY : src/modules/systemlib/mixer/CMakeFiles/mixer_gen.dir/clean
 
 src/modules/systemlib/mixer/CMakeFiles/mixer_gen.dir/depend:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer/CMakeFiles/mixer_gen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/systemlib/mixer/CMakeFiles/mixer_gen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/modules/systemlib/mixer/CMakeFiles/mixer_gen.dir/depend
 

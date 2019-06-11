@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware
+CMAKE_SOURCE_DIR = /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware
+CMAKE_BINARY_DIR = /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware
 
 # Utility rule file for submodule_clean.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3
 include CMakeFiles/submodule_clean.dir/progress.make
 
 CMakeFiles/submodule_clean:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware && git submodule deinit -f .
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware && rm -rf .git/modules/*
+	cd /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware && git submodule deinit -f .
+	cd /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware && rm -rf .git/modules/*
 
 submodule_clean: CMakeFiles/submodule_clean
 submodule_clean: CMakeFiles/submodule_clean.dir/build.make
@@ -72,6 +72,6 @@ CMakeFiles/submodule_clean.dir/clean:
 .PHONY : CMakeFiles/submodule_clean.dir/clean
 
 CMakeFiles/submodule_clean.dir/depend:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles/submodule_clean.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles/submodule_clean.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/submodule_clean.dir/depend
 

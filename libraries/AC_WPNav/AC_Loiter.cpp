@@ -202,20 +202,27 @@ float AC_Loiter::get_angle_max_cd() const
     return MIN(_angle_max*100.0f, _pos_control.get_lean_angle_max_cd());
 }
 
+void AC_Loiter::prepUpdate()
+{
+	// calculate dt
+	   float dt = _pos_control.time_since_last_xy_update();
+	   if (dt >= 0.2f) {
+		   dt = 0.0f;
+	   }
+
+	// initialise pos controller speed and acceleration
+	   _pos_control.set_max_speed_xy(_speed_cms);
+	   _pos_control.set_max_accel_xy(_accel_cmss);
+
+	   calc_desired_velocity(dt);
+}
+
+
 /// run the loiter controller
 void AC_Loiter::update()
 {
     // calculate dt
-    float dt = _pos_control.time_since_last_xy_update();
-    if (dt >= 0.2f) {
-        dt = 0.0f;
-    }
-
-    // initialise pos controller speed and acceleration
-    _pos_control.set_max_speed_xy(_speed_cms);
-    _pos_control.set_max_accel_xy(_accel_cmss);
-
-    calc_desired_velocity(dt);
+     prepUpdate();
     _pos_control.update_xy_controller();
 }
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware
+CMAKE_SOURCE_DIR = /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware
+CMAKE_BINARY_DIR = /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware
 
 # Include any dependencies generated for this target.
 include src/firmware/nuttx/CMakeFiles/romfs.dir/depend.make
@@ -57,34 +57,34 @@ include src/firmware/nuttx/CMakeFiles/romfs.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/firmware/nuttx/CMakeFiles/romfs.dir/flags.make
 
-src/firmware/nuttx/romfs.o: /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/px4-extra-files/ROMFS/bootloader/fmu_bl.bin
-src/firmware/nuttx/romfs.o: /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/px4-extra-files/ROMFS/init.d/rc.APM
-src/firmware/nuttx/romfs.o: /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/px4-extra-files/ROMFS/init.d/rc.error
-src/firmware/nuttx/romfs.o: /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/px4-extra-files/ROMFS/init.d/rcS
-src/firmware/nuttx/romfs.o: /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/px4-extra-files/ROMFS/px4io/px4io.bin
-src/firmware/nuttx/romfs.o: /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/px4-extra-files/ROMFS/tones/startup
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating romfs.o"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && cmake -E remove_directory /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/tmp/custom-ROMFS
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && cmake -E copy_directory /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/px4-extra-files/ROMFS /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/tmp/custom-ROMFS
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && cmake -E copy_directory /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/extras /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/tmp/custom-ROMFS/extras || ( exit 0 )
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && /usr/bin/python /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/Tools/px_process_airframes.py -a /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/tmp/custom-ROMFS/init.d -s /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/tmp/custom-ROMFS/init.d/rc.autostart
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && /usr/bin/python /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/Tools/px_romfs_pruner.py --folder /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/tmp/custom-ROMFS
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && /usr/bin/genromfs -f /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/romfs.bin -d /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/tmp/custom-ROMFS -V NSHInitVol
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && /usr/bin/python /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/cmake/nuttx/bin_to_obj.py --ld /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ld --c_flags -g\ -std=gnu99\ -fno-common\ -Wall\ -Werror\ -Wextra\ -Wno-sign-compare\ -Wfloat-equal\ -Wpointer-arith\ -Wmissing-declarations\ -Wno-unused-parameter\ -Werror=format-security\ -Werror=array-bounds\ -Wfatal-errors\ -Werror=unused-variable\ -Werror=reorder\ -Werror=uninitialized\ -Werror=init-self\ -Wframe-larger-than=1024\ -Werror=unused-but-set-variable\ -Wformat=1\ -Wdouble-promotion\ -Werror=double-promotion\ -Wbad-function-cast\ -Wstrict-prototypes\ -Wmissing-prototypes\ -Wnested-externs\ -Wold-style-declaration\ -Wmissing-parameter-type\ -Os\ -fno-strict-aliasing\ -fomit-frame-pointer\ -funsafe-math-optimizations\ -ffunction-sections\ -fdata-sections\ -fno-strength-reduce\ -fno-builtin-printf\ -fvisibility=hidden\ -include\ visibility.h\ -mcpu=cortex-m4\ -mthumb\ -march=armv7e-m\ -mfpu=fpv4-sp-d16\ -mfloat-abi=hard\ -nodefaultlibs\ -nostdlib\ -DCMAKE_BUILD --include_path /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/include --c_compiler /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc --nm /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-nm --objcopy /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-objcopy --obj romfs.o --var romfs_img --bin romfs.bin
+src/firmware/nuttx/romfs.o: /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/px4-extra-files/ROMFS/bootloader/fmu_bl.bin
+src/firmware/nuttx/romfs.o: /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/px4-extra-files/ROMFS/init.d/rc.APM
+src/firmware/nuttx/romfs.o: /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/px4-extra-files/ROMFS/init.d/rc.error
+src/firmware/nuttx/romfs.o: /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/px4-extra-files/ROMFS/init.d/rcS
+src/firmware/nuttx/romfs.o: /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/px4-extra-files/ROMFS/px4io/px4io.bin
+src/firmware/nuttx/romfs.o: /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/px4-extra-files/ROMFS/tones/startup
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating romfs.o"
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && cmake -E remove_directory /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/tmp/custom-ROMFS
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && cmake -E copy_directory /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/px4-extra-files/ROMFS /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/tmp/custom-ROMFS
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && cmake -E copy_directory /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/extras /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/tmp/custom-ROMFS/extras || ( exit 0 )
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && /usr/bin/python /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/Tools/px_process_airframes.py -a /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/tmp/custom-ROMFS/init.d -s /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/tmp/custom-ROMFS/init.d/rc.autostart
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && /usr/bin/python /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/Tools/px_romfs_pruner.py --folder /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/tmp/custom-ROMFS
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && /usr/bin/genromfs -f /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/romfs.bin -d /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/tmp/custom-ROMFS -V NSHInitVol
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && /usr/bin/python /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/cmake/nuttx/bin_to_obj.py --ld /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ld --c_flags -g\ -std=gnu99\ -fno-common\ -Wall\ -Werror\ -Wextra\ -Wno-sign-compare\ -Wfloat-equal\ -Wpointer-arith\ -Wmissing-declarations\ -Wno-unused-parameter\ -Werror=format-security\ -Werror=array-bounds\ -Wfatal-errors\ -Werror=unused-variable\ -Werror=reorder\ -Werror=uninitialized\ -Werror=init-self\ -Wframe-larger-than=1024\ -Werror=unused-but-set-variable\ -Wformat=1\ -Wdouble-promotion\ -Werror=double-promotion\ -Wbad-function-cast\ -Wstrict-prototypes\ -Wmissing-prototypes\ -Wnested-externs\ -Wold-style-declaration\ -Wmissing-parameter-type\ -Os\ -fno-strict-aliasing\ -fomit-frame-pointer\ -funsafe-math-optimizations\ -ffunction-sections\ -fdata-sections\ -fno-strength-reduce\ -fno-builtin-printf\ -fvisibility=hidden\ -include\ visibility.h\ -mcpu=cortex-m4\ -mthumb\ -march=armv7e-m\ -mfpu=fpv4-sp-d16\ -mfloat-abi=hard\ -nodefaultlibs\ -nostdlib\ -DCMAKE_BUILD --include_path /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/include --c_compiler /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc --nm /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-nm --objcopy /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-objcopy --obj romfs.o --var romfs_img --bin romfs.bin
 
 # Object files for target romfs
 romfs_OBJECTS =
 
 # External object files for target romfs
 romfs_EXTERNAL_OBJECTS = \
-"/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/romfs.o"
+"/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/romfs.o"
 
 src/firmware/nuttx/libromfs.a: src/firmware/nuttx/romfs.o
 src/firmware/nuttx/libromfs.a: src/firmware/nuttx/CMakeFiles/romfs.dir/build.make
 src/firmware/nuttx/libromfs.a: src/firmware/nuttx/CMakeFiles/romfs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libromfs.a"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && $(CMAKE_COMMAND) -P CMakeFiles/romfs.dir/cmake_clean_target.cmake
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/romfs.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libromfs.a"
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && $(CMAKE_COMMAND) -P CMakeFiles/romfs.dir/cmake_clean_target.cmake
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/romfs.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/firmware/nuttx/CMakeFiles/romfs.dir/build: src/firmware/nuttx/libromfs.a
@@ -96,10 +96,10 @@ src/firmware/nuttx/CMakeFiles/romfs.dir/requires:
 .PHONY : src/firmware/nuttx/CMakeFiles/romfs.dir/requires
 
 src/firmware/nuttx/CMakeFiles/romfs.dir/clean:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && $(CMAKE_COMMAND) -P CMakeFiles/romfs.dir/cmake_clean.cmake
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && $(CMAKE_COMMAND) -P CMakeFiles/romfs.dir/cmake_clean.cmake
 .PHONY : src/firmware/nuttx/CMakeFiles/romfs.dir/clean
 
 src/firmware/nuttx/CMakeFiles/romfs.dir/depend: src/firmware/nuttx/romfs.o
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/firmware/nuttx /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/CMakeFiles/romfs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/firmware/nuttx /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/CMakeFiles/romfs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/firmware/nuttx/CMakeFiles/romfs.dir/depend
 

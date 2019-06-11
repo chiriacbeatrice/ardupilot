@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware
+CMAKE_SOURCE_DIR = /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware
+CMAKE_BINARY_DIR = /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware
 
 #=============================================================================
 # Target rules for target CMakeFiles/xml_gen.dir
@@ -66,14 +66,14 @@ CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3
 CMakeFiles/xml_gen.dir/all:
 	$(MAKE) -f CMakeFiles/xml_gen.dir/build.make CMakeFiles/xml_gen.dir/depend
 	$(MAKE) -f CMakeFiles/xml_gen.dir/build.make CMakeFiles/xml_gen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=99,100 "Built target xml_gen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=99,100 "Built target xml_gen"
 .PHONY : CMakeFiles/xml_gen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/xml_gen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/xml_gen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : CMakeFiles/xml_gen.dir/rule
 
 # Convenience name for target.
@@ -99,14 +99,14 @@ CMakeFiles/msg_gen.dir/all: CMakeFiles/git_gencpp.dir/all
 CMakeFiles/msg_gen.dir/all: CMakeFiles/git_genmsg.dir/all
 	$(MAKE) -f CMakeFiles/msg_gen.dir/build.make CMakeFiles/msg_gen.dir/depend
 	$(MAKE) -f CMakeFiles/msg_gen.dir/build.make CMakeFiles/msg_gen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=60 "Built target msg_gen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=60 "Built target msg_gen"
 .PHONY : CMakeFiles/msg_gen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/msg_gen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/msg_gen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : CMakeFiles/msg_gen.dir/rule
 
 # Convenience name for target.
@@ -131,14 +131,14 @@ clean: CMakeFiles/msg_gen.dir/clean
 CMakeFiles/prebuild_targets.dir/all: CMakeFiles/nuttx_export_px4fmu-v3.dir/all
 	$(MAKE) -f CMakeFiles/prebuild_targets.dir/build.make CMakeFiles/prebuild_targets.dir/depend
 	$(MAKE) -f CMakeFiles/prebuild_targets.dir/build.make CMakeFiles/prebuild_targets.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target prebuild_targets"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target prebuild_targets"
 .PHONY : CMakeFiles/prebuild_targets.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/prebuild_targets.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/prebuild_targets.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : CMakeFiles/prebuild_targets.dir/rule
 
 # Convenience name for target.
@@ -163,14 +163,14 @@ clean: CMakeFiles/prebuild_targets.dir/clean
 CMakeFiles/nuttx_export_px4fmu-v3.dir/all: CMakeFiles/__nuttx_copy_px4fmu-v3.dir/all
 	$(MAKE) -f CMakeFiles/nuttx_export_px4fmu-v3.dir/build.make CMakeFiles/nuttx_export_px4fmu-v3.dir/depend
 	$(MAKE) -f CMakeFiles/nuttx_export_px4fmu-v3.dir/build.make CMakeFiles/nuttx_export_px4fmu-v3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=61 "Built target nuttx_export_px4fmu-v3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=61 "Built target nuttx_export_px4fmu-v3"
 .PHONY : CMakeFiles/nuttx_export_px4fmu-v3.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/nuttx_export_px4fmu-v3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/nuttx_export_px4fmu-v3.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : CMakeFiles/nuttx_export_px4fmu-v3.dir/rule
 
 # Convenience name for target.
@@ -195,14 +195,14 @@ clean: CMakeFiles/nuttx_export_px4fmu-v3.dir/clean
 CMakeFiles/__nuttx_copy_px4fmu-v3.dir/all: CMakeFiles/__nuttx_patch_px4fmu-v3.dir/all
 	$(MAKE) -f CMakeFiles/__nuttx_copy_px4fmu-v3.dir/build.make CMakeFiles/__nuttx_copy_px4fmu-v3.dir/depend
 	$(MAKE) -f CMakeFiles/__nuttx_copy_px4fmu-v3.dir/build.make CMakeFiles/__nuttx_copy_px4fmu-v3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target __nuttx_copy_px4fmu-v3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target __nuttx_copy_px4fmu-v3"
 .PHONY : CMakeFiles/__nuttx_copy_px4fmu-v3.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/__nuttx_copy_px4fmu-v3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/__nuttx_copy_px4fmu-v3.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : CMakeFiles/__nuttx_copy_px4fmu-v3.dir/rule
 
 # Convenience name for target.
@@ -227,14 +227,14 @@ clean: CMakeFiles/__nuttx_copy_px4fmu-v3.dir/clean
 CMakeFiles/config.dir/all:
 	$(MAKE) -f CMakeFiles/config.dir/build.make CMakeFiles/config.dir/depend
 	$(MAKE) -f CMakeFiles/config.dir/build.make CMakeFiles/config.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target config"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target config"
 .PHONY : CMakeFiles/config.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/config.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/config.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : CMakeFiles/config.dir/rule
 
 # Convenience name for target.
@@ -259,14 +259,14 @@ clean: CMakeFiles/config.dir/clean
 CMakeFiles/git_gencpp.dir/all:
 	$(MAKE) -f CMakeFiles/git_gencpp.dir/build.make CMakeFiles/git_gencpp.dir/depend
 	$(MAKE) -f CMakeFiles/git_gencpp.dir/build.make CMakeFiles/git_gencpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target git_gencpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target git_gencpp"
 .PHONY : CMakeFiles/git_gencpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/git_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/git_gencpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : CMakeFiles/git_gencpp.dir/rule
 
 # Convenience name for target.
@@ -291,14 +291,14 @@ clean: CMakeFiles/git_gencpp.dir/clean
 CMakeFiles/git_gtest.dir/all:
 	$(MAKE) -f CMakeFiles/git_gtest.dir/build.make CMakeFiles/git_gtest.dir/depend
 	$(MAKE) -f CMakeFiles/git_gtest.dir/build.make CMakeFiles/git_gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=32 "Built target git_gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=32 "Built target git_gtest"
 .PHONY : CMakeFiles/git_gtest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/git_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/git_gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : CMakeFiles/git_gtest.dir/rule
 
 # Convenience name for target.
@@ -323,14 +323,14 @@ clean: CMakeFiles/git_gtest.dir/clean
 CMakeFiles/git_genmsg.dir/all:
 	$(MAKE) -f CMakeFiles/git_genmsg.dir/build.make CMakeFiles/git_genmsg.dir/depend
 	$(MAKE) -f CMakeFiles/git_genmsg.dir/build.make CMakeFiles/git_genmsg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=31 "Built target git_genmsg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=31 "Built target git_genmsg"
 .PHONY : CMakeFiles/git_genmsg.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/git_genmsg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/git_genmsg.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : CMakeFiles/git_genmsg.dir/rule
 
 # Convenience name for target.
@@ -355,14 +355,14 @@ clean: CMakeFiles/git_genmsg.dir/clean
 CMakeFiles/git_nuttx.dir/all:
 	$(MAKE) -f CMakeFiles/git_nuttx.dir/build.make CMakeFiles/git_nuttx.dir/depend
 	$(MAKE) -f CMakeFiles/git_nuttx.dir/build.make CMakeFiles/git_nuttx.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=34 "Built target git_nuttx"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=34 "Built target git_nuttx"
 .PHONY : CMakeFiles/git_nuttx.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/git_nuttx.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/git_nuttx.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : CMakeFiles/git_nuttx.dir/rule
 
 # Convenience name for target.
@@ -387,14 +387,14 @@ clean: CMakeFiles/git_nuttx.dir/clean
 CMakeFiles/check_format.dir/all:
 	$(MAKE) -f CMakeFiles/check_format.dir/build.make CMakeFiles/check_format.dir/depend
 	$(MAKE) -f CMakeFiles/check_format.dir/build.make CMakeFiles/check_format.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target check_format"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target check_format"
 .PHONY : CMakeFiles/check_format.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/check_format.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/check_format.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : CMakeFiles/check_format.dir/rule
 
 # Convenience name for target.
@@ -419,14 +419,14 @@ clean: CMakeFiles/check_format.dir/clean
 CMakeFiles/sercon.dir/all:
 	$(MAKE) -f CMakeFiles/sercon.dir/build.make CMakeFiles/sercon.dir/depend
 	$(MAKE) -f CMakeFiles/sercon.dir/build.make CMakeFiles/sercon.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target sercon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target sercon"
 .PHONY : CMakeFiles/sercon.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sercon.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sercon.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : CMakeFiles/sercon.dir/rule
 
 # Convenience name for target.
@@ -451,14 +451,14 @@ clean: CMakeFiles/sercon.dir/clean
 CMakeFiles/git_mavlink.dir/all:
 	$(MAKE) -f CMakeFiles/git_mavlink.dir/build.make CMakeFiles/git_mavlink.dir/depend
 	$(MAKE) -f CMakeFiles/git_mavlink.dir/build.make CMakeFiles/git_mavlink.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target git_mavlink"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target git_mavlink"
 .PHONY : CMakeFiles/git_mavlink.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/git_mavlink.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/git_mavlink.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : CMakeFiles/git_mavlink.dir/rule
 
 # Convenience name for target.
@@ -483,14 +483,14 @@ clean: CMakeFiles/git_mavlink.dir/clean
 CMakeFiles/git_uavcan.dir/all:
 	$(MAKE) -f CMakeFiles/git_uavcan.dir/build.make CMakeFiles/git_uavcan.dir/depend
 	$(MAKE) -f CMakeFiles/git_uavcan.dir/build.make CMakeFiles/git_uavcan.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=35 "Built target git_uavcan"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=35 "Built target git_uavcan"
 .PHONY : CMakeFiles/git_uavcan.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/git_uavcan.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/git_uavcan.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : CMakeFiles/git_uavcan.dir/rule
 
 # Convenience name for target.
@@ -515,14 +515,14 @@ clean: CMakeFiles/git_uavcan.dir/clean
 CMakeFiles/ArduPilot.dir/all:
 	$(MAKE) -f CMakeFiles/ArduPilot.dir/build.make CMakeFiles/ArduPilot.dir/depend
 	$(MAKE) -f CMakeFiles/ArduPilot.dir/build.make CMakeFiles/ArduPilot.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target ArduPilot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target ArduPilot"
 .PHONY : CMakeFiles/ArduPilot.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ArduPilot.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ArduPilot.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : CMakeFiles/ArduPilot.dir/rule
 
 # Convenience name for target.
@@ -547,14 +547,14 @@ clean: CMakeFiles/ArduPilot.dir/clean
 CMakeFiles/git_ecl.dir/all:
 	$(MAKE) -f CMakeFiles/git_ecl.dir/build.make CMakeFiles/git_ecl.dir/depend
 	$(MAKE) -f CMakeFiles/git_ecl.dir/build.make CMakeFiles/git_ecl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target git_ecl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target git_ecl"
 .PHONY : CMakeFiles/git_ecl.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/git_ecl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/git_ecl.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : CMakeFiles/git_ecl.dir/rule
 
 # Convenience name for target.
@@ -579,14 +579,14 @@ clean: CMakeFiles/git_ecl.dir/clean
 CMakeFiles/git_driverframework.dir/all:
 	$(MAKE) -f CMakeFiles/git_driverframework.dir/build.make CMakeFiles/git_driverframework.dir/depend
 	$(MAKE) -f CMakeFiles/git_driverframework.dir/build.make CMakeFiles/git_driverframework.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=29 "Built target git_driverframework"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=29 "Built target git_driverframework"
 .PHONY : CMakeFiles/git_driverframework.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/git_driverframework.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/git_driverframework.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : CMakeFiles/git_driverframework.dir/rule
 
 # Convenience name for target.
@@ -611,14 +611,14 @@ clean: CMakeFiles/git_driverframework.dir/clean
 CMakeFiles/__nuttx_patch_px4fmu-v3.dir/all:
 	$(MAKE) -f CMakeFiles/__nuttx_patch_px4fmu-v3.dir/build.make CMakeFiles/__nuttx_patch_px4fmu-v3.dir/depend
 	$(MAKE) -f CMakeFiles/__nuttx_patch_px4fmu-v3.dir/build.make CMakeFiles/__nuttx_patch_px4fmu-v3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target __nuttx_patch_px4fmu-v3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target __nuttx_patch_px4fmu-v3"
 .PHONY : CMakeFiles/__nuttx_patch_px4fmu-v3.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/__nuttx_patch_px4fmu-v3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/__nuttx_patch_px4fmu-v3.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : CMakeFiles/__nuttx_patch_px4fmu-v3.dir/rule
 
 # Convenience name for target.
@@ -643,14 +643,14 @@ clean: CMakeFiles/__nuttx_patch_px4fmu-v3.dir/clean
 CMakeFiles/git_jmavsim.dir/all:
 	$(MAKE) -f CMakeFiles/git_jmavsim.dir/build.make CMakeFiles/git_jmavsim.dir/depend
 	$(MAKE) -f CMakeFiles/git_jmavsim.dir/build.make CMakeFiles/git_jmavsim.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target git_jmavsim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target git_jmavsim"
 .PHONY : CMakeFiles/git_jmavsim.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/git_jmavsim.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/git_jmavsim.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : CMakeFiles/git_jmavsim.dir/rule
 
 # Convenience name for target.
@@ -675,14 +675,14 @@ clean: CMakeFiles/git_jmavsim.dir/clean
 CMakeFiles/git_gazebo.dir/all:
 	$(MAKE) -f CMakeFiles/git_gazebo.dir/build.make CMakeFiles/git_gazebo.dir/depend
 	$(MAKE) -f CMakeFiles/git_gazebo.dir/build.make CMakeFiles/git_gazebo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=30 "Built target git_gazebo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=30 "Built target git_gazebo"
 .PHONY : CMakeFiles/git_gazebo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/git_gazebo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/git_gazebo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : CMakeFiles/git_gazebo.dir/rule
 
 # Convenience name for target.
@@ -707,14 +707,14 @@ clean: CMakeFiles/git_gazebo.dir/clean
 CMakeFiles/submodule_clean.dir/all:
 	$(MAKE) -f CMakeFiles/submodule_clean.dir/build.make CMakeFiles/submodule_clean.dir/depend
 	$(MAKE) -f CMakeFiles/submodule_clean.dir/build.make CMakeFiles/submodule_clean.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target submodule_clean"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target submodule_clean"
 .PHONY : CMakeFiles/submodule_clean.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/submodule_clean.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/submodule_clean.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : CMakeFiles/submodule_clean.dir/rule
 
 # Convenience name for target.
@@ -739,14 +739,14 @@ clean: CMakeFiles/submodule_clean.dir/clean
 CMakeFiles/git_matrix.dir/all:
 	$(MAKE) -f CMakeFiles/git_matrix.dir/build.make CMakeFiles/git_matrix.dir/depend
 	$(MAKE) -f CMakeFiles/git_matrix.dir/build.make CMakeFiles/git_matrix.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=33 "Built target git_matrix"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=33 "Built target git_matrix"
 .PHONY : CMakeFiles/git_matrix.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/git_matrix.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/git_matrix.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : CMakeFiles/git_matrix.dir/rule
 
 # Convenience name for target.
@@ -771,14 +771,14 @@ clean: CMakeFiles/git_matrix.dir/clean
 CMakeFiles/git_cmake_hexagon.dir/all:
 	$(MAKE) -f CMakeFiles/git_cmake_hexagon.dir/build.make CMakeFiles/git_cmake_hexagon.dir/depend
 	$(MAKE) -f CMakeFiles/git_cmake_hexagon.dir/build.make CMakeFiles/git_cmake_hexagon.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=28 "Built target git_cmake_hexagon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=28 "Built target git_cmake_hexagon"
 .PHONY : CMakeFiles/git_cmake_hexagon.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/git_cmake_hexagon.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/git_cmake_hexagon.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : CMakeFiles/git_cmake_hexagon.dir/rule
 
 # Convenience name for target.
@@ -825,14 +825,14 @@ src/platforms/common/CMakeFiles/platforms__common.dir/all: CMakeFiles/git_uavcan
 src/platforms/common/CMakeFiles/platforms__common.dir/all: CMakeFiles/git_matrix.dir/all
 	$(MAKE) -f src/platforms/common/CMakeFiles/platforms__common.dir/build.make src/platforms/common/CMakeFiles/platforms__common.dir/depend
 	$(MAKE) -f src/platforms/common/CMakeFiles/platforms__common.dir/build.make src/platforms/common/CMakeFiles/platforms__common.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=63,64 "Built target platforms__common"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=63,64 "Built target platforms__common"
 .PHONY : src/platforms/common/CMakeFiles/platforms__common.dir/all
 
 # Build rule for subdir invocation for target.
 src/platforms/common/CMakeFiles/platforms__common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 src/platforms/common/CMakeFiles/platforms__common.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/platforms/common/CMakeFiles/platforms__common.dir/rule
 
 # Convenience name for target.
@@ -875,14 +875,14 @@ src/platforms/nuttx/preinstall:
 src/platforms/nuttx/CMakeFiles/platforms__nuttx.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/platforms/nuttx/CMakeFiles/platforms__nuttx.dir/build.make src/platforms/nuttx/CMakeFiles/platforms__nuttx.dir/depend
 	$(MAKE) -f src/platforms/nuttx/CMakeFiles/platforms__nuttx.dir/build.make src/platforms/nuttx/CMakeFiles/platforms__nuttx.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=65 "Built target platforms__nuttx"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=65 "Built target platforms__nuttx"
 .PHONY : src/platforms/nuttx/CMakeFiles/platforms__nuttx.dir/all
 
 # Build rule for subdir invocation for target.
 src/platforms/nuttx/CMakeFiles/platforms__nuttx.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 src/platforms/nuttx/CMakeFiles/platforms__nuttx.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/platforms/nuttx/CMakeFiles/platforms__nuttx.dir/rule
 
 # Convenience name for target.
@@ -925,14 +925,14 @@ src/platforms/nuttx/px4_layer/preinstall:
 src/platforms/nuttx/px4_layer/CMakeFiles/platforms__nuttx__px4_layer.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/platforms/nuttx/px4_layer/CMakeFiles/platforms__nuttx__px4_layer.dir/build.make src/platforms/nuttx/px4_layer/CMakeFiles/platforms__nuttx__px4_layer.dir/depend
 	$(MAKE) -f src/platforms/nuttx/px4_layer/CMakeFiles/platforms__nuttx__px4_layer.dir/build.make src/platforms/nuttx/px4_layer/CMakeFiles/platforms__nuttx__px4_layer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=66,67 "Built target platforms__nuttx__px4_layer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=66,67 "Built target platforms__nuttx__px4_layer"
 .PHONY : src/platforms/nuttx/px4_layer/CMakeFiles/platforms__nuttx__px4_layer.dir/all
 
 # Build rule for subdir invocation for target.
 src/platforms/nuttx/px4_layer/CMakeFiles/platforms__nuttx__px4_layer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 src/platforms/nuttx/px4_layer/CMakeFiles/platforms__nuttx__px4_layer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/platforms/nuttx/px4_layer/CMakeFiles/platforms__nuttx__px4_layer.dir/rule
 
 # Convenience name for target.
@@ -976,14 +976,14 @@ src/modules/param/CMakeFiles/modules__param.dir/all: CMakeFiles/xml_gen.dir/all
 src/modules/param/CMakeFiles/modules__param.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/modules/param/CMakeFiles/modules__param.dir/build.make src/modules/param/CMakeFiles/modules__param.dir/depend
 	$(MAKE) -f src/modules/param/CMakeFiles/modules__param.dir/build.make src/modules/param/CMakeFiles/modules__param.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=36,37 "Built target modules__param"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=36,37 "Built target modules__param"
 .PHONY : src/modules/param/CMakeFiles/modules__param.dir/all
 
 # Build rule for subdir invocation for target.
 src/modules/param/CMakeFiles/modules__param.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 src/modules/param/CMakeFiles/modules__param.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/modules/param/CMakeFiles/modules__param.dir/rule
 
 # Convenience name for target.
@@ -1026,14 +1026,14 @@ src/drivers/device/preinstall:
 src/drivers/device/CMakeFiles/drivers__device.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/depend
 	$(MAKE) -f src/drivers/device/CMakeFiles/drivers__device.dir/build.make src/drivers/device/CMakeFiles/drivers__device.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=7,8,9,10,11 "Built target drivers__device"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=7,8,9,10,11 "Built target drivers__device"
 .PHONY : src/drivers/device/CMakeFiles/drivers__device.dir/all
 
 # Build rule for subdir invocation for target.
 src/drivers/device/CMakeFiles/drivers__device.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 src/drivers/device/CMakeFiles/drivers__device.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/drivers/device/CMakeFiles/drivers__device.dir/rule
 
 # Convenience name for target.
@@ -1076,14 +1076,14 @@ src/drivers/stm32/preinstall:
 src/drivers/stm32/CMakeFiles/drivers__stm32.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/drivers/stm32/CMakeFiles/drivers__stm32.dir/build.make src/drivers/stm32/CMakeFiles/drivers__stm32.dir/depend
 	$(MAKE) -f src/drivers/stm32/CMakeFiles/drivers__stm32.dir/build.make src/drivers/stm32/CMakeFiles/drivers__stm32.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=21,22,23 "Built target drivers__stm32"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=21,22,23 "Built target drivers__stm32"
 .PHONY : src/drivers/stm32/CMakeFiles/drivers__stm32.dir/all
 
 # Build rule for subdir invocation for target.
 src/drivers/stm32/CMakeFiles/drivers__stm32.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 src/drivers/stm32/CMakeFiles/drivers__stm32.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/drivers/stm32/CMakeFiles/drivers__stm32.dir/rule
 
 # Convenience name for target.
@@ -1126,14 +1126,14 @@ src/drivers/stm32/adc/preinstall:
 src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/build.make src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/depend
 	$(MAKE) -f src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/build.make src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=24 "Built target drivers__stm32__adc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=24 "Built target drivers__stm32__adc"
 .PHONY : src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/all
 
 # Build rule for subdir invocation for target.
 src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/drivers/stm32/adc/CMakeFiles/drivers__stm32__adc.dir/rule
 
 # Convenience name for target.
@@ -1176,14 +1176,14 @@ src/drivers/stm32/tone_alarm/preinstall:
 src/drivers/stm32/tone_alarm/CMakeFiles/drivers__stm32__tone_alarm.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/drivers/stm32/tone_alarm/CMakeFiles/drivers__stm32__tone_alarm.dir/build.make src/drivers/stm32/tone_alarm/CMakeFiles/drivers__stm32__tone_alarm.dir/depend
 	$(MAKE) -f src/drivers/stm32/tone_alarm/CMakeFiles/drivers__stm32__tone_alarm.dir/build.make src/drivers/stm32/tone_alarm/CMakeFiles/drivers__stm32__tone_alarm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=25 "Built target drivers__stm32__tone_alarm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=25 "Built target drivers__stm32__tone_alarm"
 .PHONY : src/drivers/stm32/tone_alarm/CMakeFiles/drivers__stm32__tone_alarm.dir/all
 
 # Build rule for subdir invocation for target.
 src/drivers/stm32/tone_alarm/CMakeFiles/drivers__stm32__tone_alarm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 src/drivers/stm32/tone_alarm/CMakeFiles/drivers__stm32__tone_alarm.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/drivers/stm32/tone_alarm/CMakeFiles/drivers__stm32__tone_alarm.dir/rule
 
 # Convenience name for target.
@@ -1226,14 +1226,14 @@ src/drivers/led/preinstall:
 src/drivers/led/CMakeFiles/drivers__led.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/drivers/led/CMakeFiles/drivers__led.dir/build.make src/drivers/led/CMakeFiles/drivers__led.dir/depend
 	$(MAKE) -f src/drivers/led/CMakeFiles/drivers__led.dir/build.make src/drivers/led/CMakeFiles/drivers__led.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=12 "Built target drivers__led"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=12 "Built target drivers__led"
 .PHONY : src/drivers/led/CMakeFiles/drivers__led.dir/all
 
 # Build rule for subdir invocation for target.
 src/drivers/led/CMakeFiles/drivers__led.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 src/drivers/led/CMakeFiles/drivers__led.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/drivers/led/CMakeFiles/drivers__led.dir/rule
 
 # Convenience name for target.
@@ -1276,14 +1276,14 @@ src/drivers/px4fmu/preinstall:
 src/drivers/px4fmu/CMakeFiles/drivers__px4fmu.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/drivers/px4fmu/CMakeFiles/drivers__px4fmu.dir/build.make src/drivers/px4fmu/CMakeFiles/drivers__px4fmu.dir/depend
 	$(MAKE) -f src/drivers/px4fmu/CMakeFiles/drivers__px4fmu.dir/build.make src/drivers/px4fmu/CMakeFiles/drivers__px4fmu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=15,16 "Built target drivers__px4fmu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=15,16 "Built target drivers__px4fmu"
 .PHONY : src/drivers/px4fmu/CMakeFiles/drivers__px4fmu.dir/all
 
 # Build rule for subdir invocation for target.
 src/drivers/px4fmu/CMakeFiles/drivers__px4fmu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 src/drivers/px4fmu/CMakeFiles/drivers__px4fmu.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/drivers/px4fmu/CMakeFiles/drivers__px4fmu.dir/rule
 
 # Convenience name for target.
@@ -1326,14 +1326,14 @@ src/systemcmds/bl_update/preinstall:
 src/systemcmds/bl_update/CMakeFiles/systemcmds__bl_update.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/systemcmds/bl_update/CMakeFiles/systemcmds__bl_update.dir/build.make src/systemcmds/bl_update/CMakeFiles/systemcmds__bl_update.dir/depend
 	$(MAKE) -f src/systemcmds/bl_update/CMakeFiles/systemcmds__bl_update.dir/build.make src/systemcmds/bl_update/CMakeFiles/systemcmds__bl_update.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=85 "Built target systemcmds__bl_update"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=85 "Built target systemcmds__bl_update"
 .PHONY : src/systemcmds/bl_update/CMakeFiles/systemcmds__bl_update.dir/all
 
 # Build rule for subdir invocation for target.
 src/systemcmds/bl_update/CMakeFiles/systemcmds__bl_update.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 src/systemcmds/bl_update/CMakeFiles/systemcmds__bl_update.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/systemcmds/bl_update/CMakeFiles/systemcmds__bl_update.dir/rule
 
 # Convenience name for target.
@@ -1376,14 +1376,14 @@ src/systemcmds/mixer/preinstall:
 src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/build.make src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/depend
 	$(MAKE) -f src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/build.make src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=86,87 "Built target systemcmds__mixer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=86,87 "Built target systemcmds__mixer"
 .PHONY : src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/all
 
 # Build rule for subdir invocation for target.
 src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/systemcmds/mixer/CMakeFiles/systemcmds__mixer.dir/rule
 
 # Convenience name for target.
@@ -1426,14 +1426,14 @@ src/systemcmds/perf/preinstall:
 src/systemcmds/perf/CMakeFiles/systemcmds__perf.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/systemcmds/perf/CMakeFiles/systemcmds__perf.dir/build.make src/systemcmds/perf/CMakeFiles/systemcmds__perf.dir/depend
 	$(MAKE) -f src/systemcmds/perf/CMakeFiles/systemcmds__perf.dir/build.make src/systemcmds/perf/CMakeFiles/systemcmds__perf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=92 "Built target systemcmds__perf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=92 "Built target systemcmds__perf"
 .PHONY : src/systemcmds/perf/CMakeFiles/systemcmds__perf.dir/all
 
 # Build rule for subdir invocation for target.
 src/systemcmds/perf/CMakeFiles/systemcmds__perf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 src/systemcmds/perf/CMakeFiles/systemcmds__perf.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/systemcmds/perf/CMakeFiles/systemcmds__perf.dir/rule
 
 # Convenience name for target.
@@ -1476,14 +1476,14 @@ src/systemcmds/reboot/preinstall:
 src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/build.make src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/depend
 	$(MAKE) -f src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/build.make src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=93 "Built target systemcmds__reboot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=93 "Built target systemcmds__reboot"
 .PHONY : src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/all
 
 # Build rule for subdir invocation for target.
 src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/rule
 
 # Convenience name for target.
@@ -1526,14 +1526,14 @@ src/systemcmds/top/preinstall:
 src/systemcmds/top/CMakeFiles/systemcmds__top.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/systemcmds/top/CMakeFiles/systemcmds__top.dir/build.make src/systemcmds/top/CMakeFiles/systemcmds__top.dir/depend
 	$(MAKE) -f src/systemcmds/top/CMakeFiles/systemcmds__top.dir/build.make src/systemcmds/top/CMakeFiles/systemcmds__top.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=94,95 "Built target systemcmds__top"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=94,95 "Built target systemcmds__top"
 .PHONY : src/systemcmds/top/CMakeFiles/systemcmds__top.dir/all
 
 # Build rule for subdir invocation for target.
 src/systemcmds/top/CMakeFiles/systemcmds__top.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 src/systemcmds/top/CMakeFiles/systemcmds__top.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/systemcmds/top/CMakeFiles/systemcmds__top.dir/rule
 
 # Convenience name for target.
@@ -1576,14 +1576,14 @@ src/systemcmds/nshterm/preinstall:
 src/systemcmds/nshterm/CMakeFiles/systemcmds__nshterm.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/systemcmds/nshterm/CMakeFiles/systemcmds__nshterm.dir/build.make src/systemcmds/nshterm/CMakeFiles/systemcmds__nshterm.dir/depend
 	$(MAKE) -f src/systemcmds/nshterm/CMakeFiles/systemcmds__nshterm.dir/build.make src/systemcmds/nshterm/CMakeFiles/systemcmds__nshterm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=89,90 "Built target systemcmds__nshterm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=89,90 "Built target systemcmds__nshterm"
 .PHONY : src/systemcmds/nshterm/CMakeFiles/systemcmds__nshterm.dir/all
 
 # Build rule for subdir invocation for target.
 src/systemcmds/nshterm/CMakeFiles/systemcmds__nshterm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 src/systemcmds/nshterm/CMakeFiles/systemcmds__nshterm.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/systemcmds/nshterm/CMakeFiles/systemcmds__nshterm.dir/rule
 
 # Convenience name for target.
@@ -1626,14 +1626,14 @@ src/systemcmds/mtd/preinstall:
 src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/build.make src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/depend
 	$(MAKE) -f src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/build.make src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=88 "Built target systemcmds__mtd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=88 "Built target systemcmds__mtd"
 .PHONY : src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/all
 
 # Build rule for subdir invocation for target.
 src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/systemcmds/mtd/CMakeFiles/systemcmds__mtd.dir/rule
 
 # Convenience name for target.
@@ -1676,14 +1676,14 @@ src/systemcmds/ver/preinstall:
 src/systemcmds/ver/CMakeFiles/systemcmds__ver.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/systemcmds/ver/CMakeFiles/systemcmds__ver.dir/build.make src/systemcmds/ver/CMakeFiles/systemcmds__ver.dir/depend
 	$(MAKE) -f src/systemcmds/ver/CMakeFiles/systemcmds__ver.dir/build.make src/systemcmds/ver/CMakeFiles/systemcmds__ver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=97 "Built target systemcmds__ver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=97 "Built target systemcmds__ver"
 .PHONY : src/systemcmds/ver/CMakeFiles/systemcmds__ver.dir/all
 
 # Build rule for subdir invocation for target.
 src/systemcmds/ver/CMakeFiles/systemcmds__ver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 src/systemcmds/ver/CMakeFiles/systemcmds__ver.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/systemcmds/ver/CMakeFiles/systemcmds__ver.dir/rule
 
 # Convenience name for target.
@@ -1726,14 +1726,14 @@ src/systemcmds/usb_connected/preinstall:
 src/systemcmds/usb_connected/CMakeFiles/systemcmds__usb_connected.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/systemcmds/usb_connected/CMakeFiles/systemcmds__usb_connected.dir/build.make src/systemcmds/usb_connected/CMakeFiles/systemcmds__usb_connected.dir/depend
 	$(MAKE) -f src/systemcmds/usb_connected/CMakeFiles/systemcmds__usb_connected.dir/build.make src/systemcmds/usb_connected/CMakeFiles/systemcmds__usb_connected.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=96 "Built target systemcmds__usb_connected"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=96 "Built target systemcmds__usb_connected"
 .PHONY : src/systemcmds/usb_connected/CMakeFiles/systemcmds__usb_connected.dir/all
 
 # Build rule for subdir invocation for target.
 src/systemcmds/usb_connected/CMakeFiles/systemcmds__usb_connected.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 src/systemcmds/usb_connected/CMakeFiles/systemcmds__usb_connected.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/systemcmds/usb_connected/CMakeFiles/systemcmds__usb_connected.dir/rule
 
 # Convenience name for target.
@@ -1776,14 +1776,14 @@ src/systemcmds/otp/preinstall:
 src/systemcmds/otp/CMakeFiles/systemcmds__otp.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/systemcmds/otp/CMakeFiles/systemcmds__otp.dir/build.make src/systemcmds/otp/CMakeFiles/systemcmds__otp.dir/depend
 	$(MAKE) -f src/systemcmds/otp/CMakeFiles/systemcmds__otp.dir/build.make src/systemcmds/otp/CMakeFiles/systemcmds__otp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=91 "Built target systemcmds__otp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=91 "Built target systemcmds__otp"
 .PHONY : src/systemcmds/otp/CMakeFiles/systemcmds__otp.dir/all
 
 # Build rule for subdir invocation for target.
 src/systemcmds/otp/CMakeFiles/systemcmds__otp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 src/systemcmds/otp/CMakeFiles/systemcmds__otp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/systemcmds/otp/CMakeFiles/systemcmds__otp.dir/rule
 
 # Convenience name for target.
@@ -1827,14 +1827,14 @@ src/modules/systemlib/CMakeFiles/modules__systemlib.dir/all: src/platforms/commo
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/all: src/modules/param/CMakeFiles/modules__param.dir/all
 	$(MAKE) -f src/modules/systemlib/CMakeFiles/modules__systemlib.dir/build.make src/modules/systemlib/CMakeFiles/modules__systemlib.dir/depend
 	$(MAKE) -f src/modules/systemlib/CMakeFiles/modules__systemlib.dir/build.make src/modules/systemlib/CMakeFiles/modules__systemlib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=38,39,40,41,42,43,44,45,46,47,48 "Built target modules__systemlib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=38,39,40,41,42,43,44,45,46,47,48 "Built target modules__systemlib"
 .PHONY : src/modules/systemlib/CMakeFiles/modules__systemlib.dir/all
 
 # Build rule for subdir invocation for target.
 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 22
 	$(MAKE) -f CMakeFiles/Makefile2 src/modules/systemlib/CMakeFiles/modules__systemlib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/modules/systemlib/CMakeFiles/modules__systemlib.dir/rule
 
 # Convenience name for target.
@@ -1879,14 +1879,14 @@ src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/all: src/pl
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/all: src/modules/systemlib/mixer/CMakeFiles/mixer_gen.dir/all
 	$(MAKE) -f src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/build.make src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/depend
 	$(MAKE) -f src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/build.make src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=49,50,51,52,53 "Built target modules__systemlib__mixer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=49,50,51,52,53 "Built target modules__systemlib__mixer"
 .PHONY : src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/all
 
 # Build rule for subdir invocation for target.
 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/rule
 
 # Convenience name for target.
@@ -1911,14 +1911,14 @@ clean: src/modules/systemlib/mixer/CMakeFiles/modules__systemlib__mixer.dir/clea
 src/modules/systemlib/mixer/CMakeFiles/mixer_gen.dir/all:
 	$(MAKE) -f src/modules/systemlib/mixer/CMakeFiles/mixer_gen.dir/build.make src/modules/systemlib/mixer/CMakeFiles/mixer_gen.dir/depend
 	$(MAKE) -f src/modules/systemlib/mixer/CMakeFiles/mixer_gen.dir/build.make src/modules/systemlib/mixer/CMakeFiles/mixer_gen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target mixer_gen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target mixer_gen"
 .PHONY : src/modules/systemlib/mixer/CMakeFiles/mixer_gen.dir/all
 
 # Build rule for subdir invocation for target.
 src/modules/systemlib/mixer/CMakeFiles/mixer_gen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 src/modules/systemlib/mixer/CMakeFiles/mixer_gen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/modules/systemlib/mixer/CMakeFiles/mixer_gen.dir/rule
 
 # Convenience name for target.
@@ -1961,14 +1961,14 @@ src/modules/uORB/preinstall:
 src/modules/uORB/CMakeFiles/modules__uORB.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/modules/uORB/CMakeFiles/modules__uORB.dir/build.make src/modules/uORB/CMakeFiles/modules__uORB.dir/depend
 	$(MAKE) -f src/modules/uORB/CMakeFiles/modules__uORB.dir/build.make src/modules/uORB/CMakeFiles/modules__uORB.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=54,55,56,57,58,59 "Built target modules__uORB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=54,55,56,57,58,59 "Built target modules__uORB"
 .PHONY : src/modules/uORB/CMakeFiles/modules__uORB.dir/all
 
 # Build rule for subdir invocation for target.
 src/modules/uORB/CMakeFiles/modules__uORB.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 src/modules/uORB/CMakeFiles/modules__uORB.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/modules/uORB/CMakeFiles/modules__uORB.dir/rule
 
 # Convenience name for target.
@@ -2011,14 +2011,14 @@ src/drivers/boards/px4fmu-v2/preinstall:
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/build.make src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/depend
 	$(MAKE) -f src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/build.make src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=2,3,4,5,6 "Built target drivers__boards__px4fmu-v2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=2,3,4,5,6 "Built target drivers__boards__px4fmu-v2"
 .PHONY : src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/all
 
 # Build rule for subdir invocation for target.
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/rule
 
 # Convenience name for target.
@@ -2061,14 +2061,14 @@ src/drivers/pwm_input/preinstall:
 src/drivers/pwm_input/CMakeFiles/drivers__pwm_input.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/drivers/pwm_input/CMakeFiles/drivers__pwm_input.dir/build.make src/drivers/pwm_input/CMakeFiles/drivers__pwm_input.dir/depend
 	$(MAKE) -f src/drivers/pwm_input/CMakeFiles/drivers__pwm_input.dir/build.make src/drivers/pwm_input/CMakeFiles/drivers__pwm_input.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=14 "Built target drivers__pwm_input"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=14 "Built target drivers__pwm_input"
 .PHONY : src/drivers/pwm_input/CMakeFiles/drivers__pwm_input.dir/all
 
 # Build rule for subdir invocation for target.
 src/drivers/pwm_input/CMakeFiles/drivers__pwm_input.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 src/drivers/pwm_input/CMakeFiles/drivers__pwm_input.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/drivers/pwm_input/CMakeFiles/drivers__pwm_input.dir/rule
 
 # Convenience name for target.
@@ -2111,14 +2111,14 @@ src/drivers/px4io/preinstall:
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/drivers/px4io/CMakeFiles/drivers__px4io.dir/build.make src/drivers/px4io/CMakeFiles/drivers__px4io.dir/depend
 	$(MAKE) -f src/drivers/px4io/CMakeFiles/drivers__px4io.dir/build.make src/drivers/px4io/CMakeFiles/drivers__px4io.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=17,18,19,20 "Built target drivers__px4io"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=17,18,19,20 "Built target drivers__px4io"
 .PHONY : src/drivers/px4io/CMakeFiles/drivers__px4io.dir/all
 
 # Build rule for subdir invocation for target.
 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 src/drivers/px4io/CMakeFiles/drivers__px4io.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/drivers/px4io/CMakeFiles/drivers__px4io.dir/rule
 
 # Convenience name for target.
@@ -2161,14 +2161,14 @@ src/drivers/oreoled/preinstall:
 src/drivers/oreoled/CMakeFiles/drivers__oreoled.dir/all: src/platforms/common/CMakeFiles/platforms__common.dir/all
 	$(MAKE) -f src/drivers/oreoled/CMakeFiles/drivers__oreoled.dir/build.make src/drivers/oreoled/CMakeFiles/drivers__oreoled.dir/depend
 	$(MAKE) -f src/drivers/oreoled/CMakeFiles/drivers__oreoled.dir/build.make src/drivers/oreoled/CMakeFiles/drivers__oreoled.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=13 "Built target drivers__oreoled"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=13 "Built target drivers__oreoled"
 .PHONY : src/drivers/oreoled/CMakeFiles/drivers__oreoled.dir/all
 
 # Build rule for subdir invocation for target.
 src/drivers/oreoled/CMakeFiles/drivers__oreoled.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 src/drivers/oreoled/CMakeFiles/drivers__oreoled.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/drivers/oreoled/CMakeFiles/drivers__oreoled.dir/rule
 
 # Convenience name for target.
@@ -2224,7 +2224,7 @@ src/firmware/nuttx/preinstall:
 src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/all: src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/all
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/build.make src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/depend
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/build.make src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target build_firmware_px4fmu-v3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target build_firmware_px4fmu-v3"
 .PHONY : src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/all
 
 # Include target in all.
@@ -2234,9 +2234,9 @@ all: src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/all
 
 # Build rule for subdir invocation for target.
 src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 76
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 76
 	$(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/rule
 
 # Convenience name for target.
@@ -2261,14 +2261,14 @@ clean: src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/clean
 src/firmware/nuttx/CMakeFiles/check_weak.dir/all: src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/all
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/check_weak.dir/build.make src/firmware/nuttx/CMakeFiles/check_weak.dir/depend
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/check_weak.dir/build.make src/firmware/nuttx/CMakeFiles/check_weak.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target check_weak"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target check_weak"
 .PHONY : src/firmware/nuttx/CMakeFiles/check_weak.dir/all
 
 # Build rule for subdir invocation for target.
 src/firmware/nuttx/CMakeFiles/check_weak.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 76
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 76
 	$(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/check_weak.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/firmware/nuttx/CMakeFiles/check_weak.dir/rule
 
 # Convenience name for target.
@@ -2293,14 +2293,14 @@ clean: src/firmware/nuttx/CMakeFiles/check_weak.dir/clean
 src/firmware/nuttx/CMakeFiles/collect_extras.dir/all:
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/collect_extras.dir/build.make src/firmware/nuttx/CMakeFiles/collect_extras.dir/depend
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/collect_extras.dir/build.make src/firmware/nuttx/CMakeFiles/collect_extras.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target collect_extras"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target collect_extras"
 .PHONY : src/firmware/nuttx/CMakeFiles/collect_extras.dir/all
 
 # Build rule for subdir invocation for target.
 src/firmware/nuttx/CMakeFiles/collect_extras.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/collect_extras.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/firmware/nuttx/CMakeFiles/collect_extras.dir/rule
 
 # Convenience name for target.
@@ -2325,14 +2325,14 @@ clean: src/firmware/nuttx/CMakeFiles/collect_extras.dir/clean
 src/firmware/nuttx/CMakeFiles/debug.dir/all: src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/all
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/debug.dir/build.make src/firmware/nuttx/CMakeFiles/debug.dir/depend
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/debug.dir/build.make src/firmware/nuttx/CMakeFiles/debug.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target debug"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target debug"
 .PHONY : src/firmware/nuttx/CMakeFiles/debug.dir/all
 
 # Build rule for subdir invocation for target.
 src/firmware/nuttx/CMakeFiles/debug.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 76
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 76
 	$(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/debug.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/firmware/nuttx/CMakeFiles/debug.dir/rule
 
 # Convenience name for target.
@@ -2357,14 +2357,14 @@ clean: src/firmware/nuttx/CMakeFiles/debug.dir/clean
 src/firmware/nuttx/CMakeFiles/debug_io.dir/all: src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/all
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/debug_io.dir/build.make src/firmware/nuttx/CMakeFiles/debug_io.dir/depend
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/debug_io.dir/build.make src/firmware/nuttx/CMakeFiles/debug_io.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target debug_io"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target debug_io"
 .PHONY : src/firmware/nuttx/CMakeFiles/debug_io.dir/all
 
 # Build rule for subdir invocation for target.
 src/firmware/nuttx/CMakeFiles/debug_io.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 76
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 76
 	$(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/debug_io.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/firmware/nuttx/CMakeFiles/debug_io.dir/rule
 
 # Convenience name for target.
@@ -2389,14 +2389,14 @@ clean: src/firmware/nuttx/CMakeFiles/debug_io.dir/clean
 src/firmware/nuttx/CMakeFiles/debug_tui.dir/all: src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/all
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/debug_tui.dir/build.make src/firmware/nuttx/CMakeFiles/debug_tui.dir/depend
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/debug_tui.dir/build.make src/firmware/nuttx/CMakeFiles/debug_tui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target debug_tui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target debug_tui"
 .PHONY : src/firmware/nuttx/CMakeFiles/debug_tui.dir/all
 
 # Build rule for subdir invocation for target.
 src/firmware/nuttx/CMakeFiles/debug_tui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 76
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 76
 	$(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/debug_tui.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/firmware/nuttx/CMakeFiles/debug_tui.dir/rule
 
 # Convenience name for target.
@@ -2421,14 +2421,14 @@ clean: src/firmware/nuttx/CMakeFiles/debug_tui.dir/clean
 src/firmware/nuttx/CMakeFiles/debug_ddd.dir/all: src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/all
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/debug_ddd.dir/build.make src/firmware/nuttx/CMakeFiles/debug_ddd.dir/depend
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/debug_ddd.dir/build.make src/firmware/nuttx/CMakeFiles/debug_ddd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target debug_ddd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target debug_ddd"
 .PHONY : src/firmware/nuttx/CMakeFiles/debug_ddd.dir/all
 
 # Build rule for subdir invocation for target.
 src/firmware/nuttx/CMakeFiles/debug_ddd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 76
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 76
 	$(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/debug_ddd.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/firmware/nuttx/CMakeFiles/debug_ddd.dir/rule
 
 # Convenience name for target.
@@ -2453,7 +2453,7 @@ clean: src/firmware/nuttx/CMakeFiles/debug_ddd.dir/clean
 src/firmware/nuttx/CMakeFiles/romfs.dir/all:
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/romfs.dir/build.make src/firmware/nuttx/CMakeFiles/romfs.dir/depend
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/romfs.dir/build.make src/firmware/nuttx/CMakeFiles/romfs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=84 "Built target romfs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=84 "Built target romfs"
 .PHONY : src/firmware/nuttx/CMakeFiles/romfs.dir/all
 
 # Include target in all.
@@ -2463,9 +2463,9 @@ all: src/firmware/nuttx/CMakeFiles/romfs.dir/all
 
 # Build rule for subdir invocation for target.
 src/firmware/nuttx/CMakeFiles/romfs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/romfs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/firmware/nuttx/CMakeFiles/romfs.dir/rule
 
 # Convenience name for target.
@@ -2490,14 +2490,14 @@ clean: src/firmware/nuttx/CMakeFiles/romfs.dir/clean
 src/firmware/nuttx/CMakeFiles/debug_io_tui.dir/all: src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/all
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/debug_io_tui.dir/build.make src/firmware/nuttx/CMakeFiles/debug_io_tui.dir/depend
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/debug_io_tui.dir/build.make src/firmware/nuttx/CMakeFiles/debug_io_tui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target debug_io_tui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target debug_io_tui"
 .PHONY : src/firmware/nuttx/CMakeFiles/debug_io_tui.dir/all
 
 # Build rule for subdir invocation for target.
 src/firmware/nuttx/CMakeFiles/debug_io_tui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 76
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 76
 	$(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/debug_io_tui.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/firmware/nuttx/CMakeFiles/debug_io_tui.dir/rule
 
 # Convenience name for target.
@@ -2522,14 +2522,14 @@ clean: src/firmware/nuttx/CMakeFiles/debug_io_tui.dir/clean
 src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/all: src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/all
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/build.make src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/depend
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/build.make src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target debug_io_ddd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target debug_io_ddd"
 .PHONY : src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/all
 
 # Build rule for subdir invocation for target.
 src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 76
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 76
 	$(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/rule
 
 # Convenience name for target.
@@ -2554,14 +2554,14 @@ clean: src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/clean
 src/firmware/nuttx/CMakeFiles/upload.dir/all: src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/all
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/upload.dir/build.make src/firmware/nuttx/CMakeFiles/upload.dir/depend
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/upload.dir/build.make src/firmware/nuttx/CMakeFiles/upload.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=98 "Built target upload"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=98 "Built target upload"
 .PHONY : src/firmware/nuttx/CMakeFiles/upload.dir/all
 
 # Build rule for subdir invocation for target.
 src/firmware/nuttx/CMakeFiles/upload.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 77
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 77
 	$(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/upload.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/firmware/nuttx/CMakeFiles/upload.dir/rule
 
 # Convenience name for target.
@@ -2613,7 +2613,7 @@ src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/all: src/drivers/oreoled/CMakeF
 src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/all: src/firmware/nuttx/CMakeFiles/romfs.dir/all
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/build.make src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/depend
 	$(MAKE) -f src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/build.make src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=26,27 "Built target firmware_nuttx"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=26,27 "Built target firmware_nuttx"
 .PHONY : src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/all
 
 # Include target in all.
@@ -2623,9 +2623,9 @@ all: src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/all
 
 # Build rule for subdir invocation for target.
 src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 76
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 76
 	$(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/rule
 
 # Convenience name for target.
@@ -2673,14 +2673,14 @@ src/modules/px4iofirmware/preinstall:
 src/modules/px4iofirmware/CMakeFiles/__nuttx_copy_px4io-v2.dir/all: src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/all
 	$(MAKE) -f src/modules/px4iofirmware/CMakeFiles/__nuttx_copy_px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/__nuttx_copy_px4io-v2.dir/depend
 	$(MAKE) -f src/modules/px4iofirmware/CMakeFiles/__nuttx_copy_px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/__nuttx_copy_px4io-v2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=1 "Built target __nuttx_copy_px4io-v2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=1 "Built target __nuttx_copy_px4io-v2"
 .PHONY : src/modules/px4iofirmware/CMakeFiles/__nuttx_copy_px4io-v2.dir/all
 
 # Build rule for subdir invocation for target.
 src/modules/px4iofirmware/CMakeFiles/__nuttx_copy_px4io-v2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/CMakeFiles/__nuttx_copy_px4io-v2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/modules/px4iofirmware/CMakeFiles/__nuttx_copy_px4io-v2.dir/rule
 
 # Convenience name for target.
@@ -2705,14 +2705,14 @@ clean: src/modules/px4iofirmware/CMakeFiles/__nuttx_copy_px4io-v2.dir/clean
 src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/all:
 	$(MAKE) -f src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/depend
 	$(MAKE) -f src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target __nuttx_patch_px4io-v2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target __nuttx_patch_px4io-v2"
 .PHONY : src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/all
 
 # Build rule for subdir invocation for target.
 src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/rule
 
 # Convenience name for target.
@@ -2740,7 +2740,7 @@ src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/all: src/modules/px4iofirmware
 src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/all: src/modules/px4iofirmware/CMakeFiles/io_prebuild_targets.dir/all
 	$(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/depend
 	$(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83 "Built target px4io-v2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83 "Built target px4io-v2"
 .PHONY : src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/all
 
 # Include target in all.
@@ -2750,9 +2750,9 @@ all: src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/all
 
 # Build rule for subdir invocation for target.
 src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 20
 	$(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/rule
 
 # Convenience name for target.
@@ -2777,14 +2777,14 @@ clean: src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/clean
 src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v2.dir/all: src/modules/px4iofirmware/CMakeFiles/__nuttx_copy_px4io-v2.dir/all
 	$(MAKE) -f src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v2.dir/depend
 	$(MAKE) -f src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=62 "Built target nuttx_export_px4io-v2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=62 "Built target nuttx_export_px4io-v2"
 .PHONY : src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v2.dir/all
 
 # Build rule for subdir invocation for target.
 src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v2.dir/rule
 
 # Convenience name for target.
@@ -2809,14 +2809,14 @@ clean: src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v2.dir/clean
 src/modules/px4iofirmware/CMakeFiles/io_prebuild_targets.dir/all: src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v2.dir/all
 	$(MAKE) -f src/modules/px4iofirmware/CMakeFiles/io_prebuild_targets.dir/build.make src/modules/px4iofirmware/CMakeFiles/io_prebuild_targets.dir/depend
 	$(MAKE) -f src/modules/px4iofirmware/CMakeFiles/io_prebuild_targets.dir/build.make src/modules/px4iofirmware/CMakeFiles/io_prebuild_targets.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target io_prebuild_targets"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target io_prebuild_targets"
 .PHONY : src/modules/px4iofirmware/CMakeFiles/io_prebuild_targets.dir/all
 
 # Build rule for subdir invocation for target.
 src/modules/px4iofirmware/CMakeFiles/io_prebuild_targets.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/CMakeFiles/io_prebuild_targets.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/modules/px4iofirmware/CMakeFiles/io_prebuild_targets.dir/rule
 
 # Convenience name for target.
@@ -2841,14 +2841,14 @@ clean: src/modules/px4iofirmware/CMakeFiles/io_prebuild_targets.dir/clean
 src/modules/px4iofirmware/CMakeFiles/fw_io.dir/all: src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/all
 	$(MAKE) -f src/modules/px4iofirmware/CMakeFiles/fw_io.dir/build.make src/modules/px4iofirmware/CMakeFiles/fw_io.dir/depend
 	$(MAKE) -f src/modules/px4iofirmware/CMakeFiles/fw_io.dir/build.make src/modules/px4iofirmware/CMakeFiles/fw_io.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target fw_io"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num= "Built target fw_io"
 .PHONY : src/modules/px4iofirmware/CMakeFiles/fw_io.dir/all
 
 # Build rule for subdir invocation for target.
 src/modules/px4iofirmware/CMakeFiles/fw_io.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 20
 	$(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/CMakeFiles/fw_io.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : src/modules/px4iofirmware/CMakeFiles/fw_io.dir/rule
 
 # Convenience name for target.

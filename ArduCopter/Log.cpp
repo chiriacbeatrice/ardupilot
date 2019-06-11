@@ -556,7 +556,7 @@ void Copter::Log_Write_Vehicle_Startup_Messages()
 //Hard Way to add a log cod adaugat de betty//////
 void Copter::Log_Write_Test()
 {
-    struct log_Test pkt = {
+    struct log_TestBC pkt = {
             LOG_PACKET_HEADER_INIT(LOG_TEST_MSG_BETTY),
             time_us  : AP_HAL::micros64(),
             a_value  : 1234

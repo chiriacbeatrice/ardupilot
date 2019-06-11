@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware
+CMAKE_SOURCE_DIR = /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware
+CMAKE_BINARY_DIR = /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware
 
 # Utility rule file for __nuttx_patch_px4io-v2.
 
@@ -63,10 +63,10 @@ src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/build: __nuttx_p
 .PHONY : src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/build
 
 src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/clean:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/px4iofirmware && $(CMAKE_COMMAND) -P CMakeFiles/__nuttx_patch_px4io-v2.dir/cmake_clean.cmake
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/px4iofirmware && $(CMAKE_COMMAND) -P CMakeFiles/__nuttx_patch_px4io-v2.dir/cmake_clean.cmake
 .PHONY : src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/clean
 
 src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/depend:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/px4iofirmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/px4iofirmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules/px4iofirmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/px4iofirmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/depend
 

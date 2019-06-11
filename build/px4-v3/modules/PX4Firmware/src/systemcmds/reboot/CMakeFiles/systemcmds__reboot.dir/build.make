@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware
+CMAKE_SOURCE_DIR = /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware
+CMAKE_BINARY_DIR = /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware
 
 # Include any dependencies generated for this target.
 include src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/depend.make
@@ -58,17 +58,17 @@ include src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/progress.make
 include src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/flags.make
 
 src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/reboot.c.obj: src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/flags.make
-src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/reboot.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/reboot/reboot.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/reboot.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/reboot && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/systemcmds__reboot.dir/reboot.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/reboot/reboot.c
+src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/reboot.c.obj: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/systemcmds/reboot/reboot.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/reboot.c.obj"
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/reboot && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/systemcmds__reboot.dir/reboot.c.obj   -c /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/systemcmds/reboot/reboot.c
 
 src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/reboot.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/systemcmds__reboot.dir/reboot.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/reboot && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/reboot/reboot.c > CMakeFiles/systemcmds__reboot.dir/reboot.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/reboot && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/systemcmds/reboot/reboot.c > CMakeFiles/systemcmds__reboot.dir/reboot.c.i
 
 src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/reboot.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/systemcmds__reboot.dir/reboot.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/reboot && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/reboot/reboot.c -o CMakeFiles/systemcmds__reboot.dir/reboot.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/reboot && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/systemcmds/reboot/reboot.c -o CMakeFiles/systemcmds__reboot.dir/reboot.c.s
 
 src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/reboot.c.obj.requires:
 
@@ -91,9 +91,9 @@ systemcmds__reboot_EXTERNAL_OBJECTS =
 src/systemcmds/reboot/libsystemcmds__reboot.a: src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/reboot.c.obj
 src/systemcmds/reboot/libsystemcmds__reboot.a: src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/build.make
 src/systemcmds/reboot/libsystemcmds__reboot.a: src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libsystemcmds__reboot.a"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/reboot && $(CMAKE_COMMAND) -P CMakeFiles/systemcmds__reboot.dir/cmake_clean_target.cmake
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/reboot && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/systemcmds__reboot.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libsystemcmds__reboot.a"
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/reboot && $(CMAKE_COMMAND) -P CMakeFiles/systemcmds__reboot.dir/cmake_clean_target.cmake
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/reboot && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/systemcmds__reboot.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/build: src/systemcmds/reboot/libsystemcmds__reboot.a
@@ -105,10 +105,10 @@ src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/requires: src/systemcmds
 .PHONY : src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/requires
 
 src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/clean:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/reboot && $(CMAKE_COMMAND) -P CMakeFiles/systemcmds__reboot.dir/cmake_clean.cmake
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/reboot && $(CMAKE_COMMAND) -P CMakeFiles/systemcmds__reboot.dir/cmake_clean.cmake
 .PHONY : src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/clean
 
 src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/depend:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/reboot /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/reboot /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/systemcmds/reboot /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/reboot /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/systemcmds/reboot/CMakeFiles/systemcmds__reboot.dir/depend
 

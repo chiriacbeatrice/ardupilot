@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware
+CMAKE_SOURCE_DIR = /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware
+CMAKE_BINARY_DIR = /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware
 
 # Include any dependencies generated for this target.
 include src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/depend.make
@@ -58,17 +58,17 @@ include src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/p
 include src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/flags.make
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_can.c.obj: src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/flags.make
-src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_can.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_can.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_can.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_can.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_can.c
+src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_can.c.obj: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_can.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_can.c.obj"
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_can.c.obj   -c /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_can.c
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_can.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_can.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_can.c > CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_can.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_can.c > CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_can.c.i
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_can.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_can.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_can.c -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_can.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_can.c -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_can.c.s
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_can.c.obj.requires:
 
@@ -82,17 +82,17 @@ src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_ca
 
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_init.c.obj: src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/flags.make
-src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_init.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu2_init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_init.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_init.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu2_init.c
+src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_init.c.obj: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu2_init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_init.c.obj"
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_init.c.obj   -c /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu2_init.c
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_init.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu2_init.c > CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_init.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu2_init.c > CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_init.c.i
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_init.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu2_init.c -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_init.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu2_init.c -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_init.c.s
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_init.c.obj.requires:
 
@@ -106,17 +106,17 @@ src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_i
 
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_timer_config.c.obj: src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/flags.make
-src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_timer_config.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_timer_config.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_timer_config.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_timer_config.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_timer_config.c
+src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_timer_config.c.obj: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_timer_config.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_timer_config.c.obj"
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_timer_config.c.obj   -c /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_timer_config.c
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_timer_config.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_timer_config.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_timer_config.c > CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_timer_config.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_timer_config.c > CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_timer_config.c.i
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_timer_config.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_timer_config.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_timer_config.c -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_timer_config.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_timer_config.c -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_timer_config.c.s
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_timer_config.c.obj.requires:
 
@@ -130,17 +130,17 @@ src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_ti
 
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_spi.c.obj: src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/flags.make
-src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_spi.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_spi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_spi.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_spi.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_spi.c
+src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_spi.c.obj: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_spi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_spi.c.obj"
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_spi.c.obj   -c /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_spi.c
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_spi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_spi.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_spi.c > CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_spi.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_spi.c > CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_spi.c.i
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_spi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_spi.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_spi.c -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_spi.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_spi.c -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_spi.c.s
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_spi.c.obj.requires:
 
@@ -154,17 +154,17 @@ src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_sp
 
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_usb.c.obj: src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/flags.make
-src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_usb.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_usb.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_usb.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_usb.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_usb.c
+src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_usb.c.obj: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_usb.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_usb.c.obj"
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_usb.c.obj   -c /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_usb.c
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_usb.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_usb.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_usb.c > CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_usb.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_usb.c > CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_usb.c.i
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_usb.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_usb.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_usb.c -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_usb.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu_usb.c -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_usb.c.s
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_usb.c.obj.requires:
 
@@ -178,17 +178,17 @@ src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu_us
 
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_led.c.obj: src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/flags.make
-src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_led.c.obj: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu2_led.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_led.c.obj"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_led.c.obj   -c /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu2_led.c
+src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_led.c.obj: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu2_led.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_led.c.obj"
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_led.c.obj   -c /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu2_led.c
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_led.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_led.c.i"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu2_led.c > CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_led.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu2_led.c > CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_led.c.i
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_led.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_led.c.s"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu2_led.c -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_led.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/px4fmu2_led.c -o CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_led.c.s
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_led.c.obj.requires:
 
@@ -221,9 +221,9 @@ src/drivers/boards/px4fmu-v2/libdrivers__boards__px4fmu-v2.a: src/drivers/boards
 src/drivers/boards/px4fmu-v2/libdrivers__boards__px4fmu-v2.a: src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/px4fmu2_led.c.obj
 src/drivers/boards/px4fmu-v2/libdrivers__boards__px4fmu-v2.a: src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/build.make
 src/drivers/boards/px4fmu-v2/libdrivers__boards__px4fmu-v2.a: src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C static library libdrivers__boards__px4fmu-v2.a"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && $(CMAKE_COMMAND) -P CMakeFiles/drivers__boards__px4fmu-v2.dir/cmake_clean_target.cmake
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/drivers__boards__px4fmu-v2.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C static library libdrivers__boards__px4fmu-v2.a"
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && $(CMAKE_COMMAND) -P CMakeFiles/drivers__boards__px4fmu-v2.dir/cmake_clean_target.cmake
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/drivers__boards__px4fmu-v2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/build: src/drivers/boards/px4fmu-v2/libdrivers__boards__px4fmu-v2.a
@@ -240,10 +240,10 @@ src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/requires:
 .PHONY : src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/requires
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/clean:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && $(CMAKE_COMMAND) -P CMakeFiles/drivers__boards__px4fmu-v2.dir/cmake_clean.cmake
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 && $(CMAKE_COMMAND) -P CMakeFiles/drivers__boards__px4fmu-v2.dir/cmake_clean.cmake
 .PHONY : src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/clean
 
 src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/depend:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2 /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/drivers/boards/px4fmu-v2/CMakeFiles/drivers__boards__px4fmu-v2.dir/depend
 

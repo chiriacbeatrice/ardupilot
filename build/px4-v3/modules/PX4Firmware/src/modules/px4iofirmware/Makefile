@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware
+CMAKE_SOURCE_DIR = /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware
+CMAKE_BINARY_DIR = /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -116,7 +116,7 @@ test/fast: test
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CPackSourceConfig.cmake
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -149,7 +149,7 @@ install/strip/fast: preinstall/fast
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -159,14 +159,14 @@ package/fast: package
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/px4iofirmware/CMakeFiles/progress.marks
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/px4iofirmware/CMakeFiles/progress.marks
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/clean
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/preinstall
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/preinstall
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/modules/px4iofirmware/CMakeFiles/__nuttx_copy_px4io-v2.dir/rule:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/CMakeFiles/__nuttx_copy_px4io-v2.dir/rule
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/CMakeFiles/__nuttx_copy_px4io-v2.dir/rule
 .PHONY : src/modules/px4iofirmware/CMakeFiles/__nuttx_copy_px4io-v2.dir/rule
 
 # Convenience name for target.
@@ -201,12 +201,12 @@ __nuttx_copy_px4io-v2: src/modules/px4iofirmware/CMakeFiles/__nuttx_copy_px4io-v
 
 # fast build rule for target.
 __nuttx_copy_px4io-v2/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/__nuttx_copy_px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/__nuttx_copy_px4io-v2.dir/build
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/__nuttx_copy_px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/__nuttx_copy_px4io-v2.dir/build
 .PHONY : __nuttx_copy_px4io-v2/fast
 
 # Convenience name for target.
 src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/rule:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/rule
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/rule
 .PHONY : src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/rule
 
 # Convenience name for target.
@@ -216,12 +216,12 @@ __nuttx_patch_px4io-v2: src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io
 
 # fast build rule for target.
 __nuttx_patch_px4io-v2/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/build
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/__nuttx_patch_px4io-v2.dir/build
 .PHONY : __nuttx_patch_px4io-v2/fast
 
 # Convenience name for target.
 src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/rule:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/rule
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/rule
 .PHONY : src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/rule
 
 # Convenience name for target.
@@ -231,12 +231,12 @@ px4io-v2: src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/rule
 
 # fast build rule for target.
 px4io-v2/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build
 .PHONY : px4io-v2/fast
 
 # Convenience name for target.
 src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v2.dir/rule:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v2.dir/rule
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v2.dir/rule
 .PHONY : src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v2.dir/rule
 
 # Convenience name for target.
@@ -246,12 +246,12 @@ nuttx_export_px4io-v2: src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v
 
 # fast build rule for target.
 nuttx_export_px4io-v2/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v2.dir/build
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/nuttx_export_px4io-v2.dir/build
 .PHONY : nuttx_export_px4io-v2/fast
 
 # Convenience name for target.
 src/modules/px4iofirmware/CMakeFiles/io_prebuild_targets.dir/rule:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/CMakeFiles/io_prebuild_targets.dir/rule
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/CMakeFiles/io_prebuild_targets.dir/rule
 .PHONY : src/modules/px4iofirmware/CMakeFiles/io_prebuild_targets.dir/rule
 
 # Convenience name for target.
@@ -261,12 +261,12 @@ io_prebuild_targets: src/modules/px4iofirmware/CMakeFiles/io_prebuild_targets.di
 
 # fast build rule for target.
 io_prebuild_targets/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/io_prebuild_targets.dir/build.make src/modules/px4iofirmware/CMakeFiles/io_prebuild_targets.dir/build
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/io_prebuild_targets.dir/build.make src/modules/px4iofirmware/CMakeFiles/io_prebuild_targets.dir/build
 .PHONY : io_prebuild_targets/fast
 
 # Convenience name for target.
 src/modules/px4iofirmware/CMakeFiles/fw_io.dir/rule:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/CMakeFiles/fw_io.dir/rule
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/modules/px4iofirmware/CMakeFiles/fw_io.dir/rule
 .PHONY : src/modules/px4iofirmware/CMakeFiles/fw_io.dir/rule
 
 # Convenience name for target.
@@ -276,7 +276,7 @@ fw_io: src/modules/px4iofirmware/CMakeFiles/fw_io.dir/rule
 
 # fast build rule for target.
 fw_io/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/fw_io.dir/build.make src/modules/px4iofirmware/CMakeFiles/fw_io.dir/build
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/fw_io.dir/build.make src/modules/px4iofirmware/CMakeFiles/fw_io.dir/build
 .PHONY : fw_io/fast
 
 __/__/drivers/boards/px4io-v2/px4io_init.obj: __/__/drivers/boards/px4io-v2/px4io_init.c.obj
@@ -285,7 +285,7 @@ __/__/drivers/boards/px4io-v2/px4io_init.obj: __/__/drivers/boards/px4io-v2/px4i
 
 # target to build an object file
 __/__/drivers/boards/px4io-v2/px4io_init.c.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/boards/px4io-v2/px4io_init.c.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/boards/px4io-v2/px4io_init.c.obj
 .PHONY : __/__/drivers/boards/px4io-v2/px4io_init.c.obj
 
 __/__/drivers/boards/px4io-v2/px4io_init.i: __/__/drivers/boards/px4io-v2/px4io_init.c.i
@@ -294,7 +294,7 @@ __/__/drivers/boards/px4io-v2/px4io_init.i: __/__/drivers/boards/px4io-v2/px4io_
 
 # target to preprocess a source file
 __/__/drivers/boards/px4io-v2/px4io_init.c.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/boards/px4io-v2/px4io_init.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/boards/px4io-v2/px4io_init.c.i
 .PHONY : __/__/drivers/boards/px4io-v2/px4io_init.c.i
 
 __/__/drivers/boards/px4io-v2/px4io_init.s: __/__/drivers/boards/px4io-v2/px4io_init.c.s
@@ -303,7 +303,7 @@ __/__/drivers/boards/px4io-v2/px4io_init.s: __/__/drivers/boards/px4io-v2/px4io_
 
 # target to generate assembly for a file
 __/__/drivers/boards/px4io-v2/px4io_init.c.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/boards/px4io-v2/px4io_init.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/boards/px4io-v2/px4io_init.c.s
 .PHONY : __/__/drivers/boards/px4io-v2/px4io_init.c.s
 
 __/__/drivers/boards/px4io-v2/px4io_timer_config.obj: __/__/drivers/boards/px4io-v2/px4io_timer_config.c.obj
@@ -312,7 +312,7 @@ __/__/drivers/boards/px4io-v2/px4io_timer_config.obj: __/__/drivers/boards/px4io
 
 # target to build an object file
 __/__/drivers/boards/px4io-v2/px4io_timer_config.c.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/boards/px4io-v2/px4io_timer_config.c.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/boards/px4io-v2/px4io_timer_config.c.obj
 .PHONY : __/__/drivers/boards/px4io-v2/px4io_timer_config.c.obj
 
 __/__/drivers/boards/px4io-v2/px4io_timer_config.i: __/__/drivers/boards/px4io-v2/px4io_timer_config.c.i
@@ -321,7 +321,7 @@ __/__/drivers/boards/px4io-v2/px4io_timer_config.i: __/__/drivers/boards/px4io-v
 
 # target to preprocess a source file
 __/__/drivers/boards/px4io-v2/px4io_timer_config.c.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/boards/px4io-v2/px4io_timer_config.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/boards/px4io-v2/px4io_timer_config.c.i
 .PHONY : __/__/drivers/boards/px4io-v2/px4io_timer_config.c.i
 
 __/__/drivers/boards/px4io-v2/px4io_timer_config.s: __/__/drivers/boards/px4io-v2/px4io_timer_config.c.s
@@ -330,7 +330,7 @@ __/__/drivers/boards/px4io-v2/px4io_timer_config.s: __/__/drivers/boards/px4io-v
 
 # target to generate assembly for a file
 __/__/drivers/boards/px4io-v2/px4io_timer_config.c.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/boards/px4io-v2/px4io_timer_config.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/boards/px4io-v2/px4io_timer_config.c.s
 .PHONY : __/__/drivers/boards/px4io-v2/px4io_timer_config.c.s
 
 __/__/drivers/stm32/drv_hrt.obj: __/__/drivers/stm32/drv_hrt.c.obj
@@ -339,7 +339,7 @@ __/__/drivers/stm32/drv_hrt.obj: __/__/drivers/stm32/drv_hrt.c.obj
 
 # target to build an object file
 __/__/drivers/stm32/drv_hrt.c.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/stm32/drv_hrt.c.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/stm32/drv_hrt.c.obj
 .PHONY : __/__/drivers/stm32/drv_hrt.c.obj
 
 __/__/drivers/stm32/drv_hrt.i: __/__/drivers/stm32/drv_hrt.c.i
@@ -348,7 +348,7 @@ __/__/drivers/stm32/drv_hrt.i: __/__/drivers/stm32/drv_hrt.c.i
 
 # target to preprocess a source file
 __/__/drivers/stm32/drv_hrt.c.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/stm32/drv_hrt.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/stm32/drv_hrt.c.i
 .PHONY : __/__/drivers/stm32/drv_hrt.c.i
 
 __/__/drivers/stm32/drv_hrt.s: __/__/drivers/stm32/drv_hrt.c.s
@@ -357,7 +357,7 @@ __/__/drivers/stm32/drv_hrt.s: __/__/drivers/stm32/drv_hrt.c.s
 
 # target to generate assembly for a file
 __/__/drivers/stm32/drv_hrt.c.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/stm32/drv_hrt.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/stm32/drv_hrt.c.s
 .PHONY : __/__/drivers/stm32/drv_hrt.c.s
 
 __/__/drivers/stm32/drv_io_timer.obj: __/__/drivers/stm32/drv_io_timer.c.obj
@@ -366,7 +366,7 @@ __/__/drivers/stm32/drv_io_timer.obj: __/__/drivers/stm32/drv_io_timer.c.obj
 
 # target to build an object file
 __/__/drivers/stm32/drv_io_timer.c.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/stm32/drv_io_timer.c.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/stm32/drv_io_timer.c.obj
 .PHONY : __/__/drivers/stm32/drv_io_timer.c.obj
 
 __/__/drivers/stm32/drv_io_timer.i: __/__/drivers/stm32/drv_io_timer.c.i
@@ -375,7 +375,7 @@ __/__/drivers/stm32/drv_io_timer.i: __/__/drivers/stm32/drv_io_timer.c.i
 
 # target to preprocess a source file
 __/__/drivers/stm32/drv_io_timer.c.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/stm32/drv_io_timer.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/stm32/drv_io_timer.c.i
 .PHONY : __/__/drivers/stm32/drv_io_timer.c.i
 
 __/__/drivers/stm32/drv_io_timer.s: __/__/drivers/stm32/drv_io_timer.c.s
@@ -384,7 +384,7 @@ __/__/drivers/stm32/drv_io_timer.s: __/__/drivers/stm32/drv_io_timer.c.s
 
 # target to generate assembly for a file
 __/__/drivers/stm32/drv_io_timer.c.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/stm32/drv_io_timer.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/stm32/drv_io_timer.c.s
 .PHONY : __/__/drivers/stm32/drv_io_timer.c.s
 
 __/__/drivers/stm32/drv_pwm_servo.obj: __/__/drivers/stm32/drv_pwm_servo.c.obj
@@ -393,7 +393,7 @@ __/__/drivers/stm32/drv_pwm_servo.obj: __/__/drivers/stm32/drv_pwm_servo.c.obj
 
 # target to build an object file
 __/__/drivers/stm32/drv_pwm_servo.c.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/stm32/drv_pwm_servo.c.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/stm32/drv_pwm_servo.c.obj
 .PHONY : __/__/drivers/stm32/drv_pwm_servo.c.obj
 
 __/__/drivers/stm32/drv_pwm_servo.i: __/__/drivers/stm32/drv_pwm_servo.c.i
@@ -402,7 +402,7 @@ __/__/drivers/stm32/drv_pwm_servo.i: __/__/drivers/stm32/drv_pwm_servo.c.i
 
 # target to preprocess a source file
 __/__/drivers/stm32/drv_pwm_servo.c.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/stm32/drv_pwm_servo.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/stm32/drv_pwm_servo.c.i
 .PHONY : __/__/drivers/stm32/drv_pwm_servo.c.i
 
 __/__/drivers/stm32/drv_pwm_servo.s: __/__/drivers/stm32/drv_pwm_servo.c.s
@@ -411,7 +411,7 @@ __/__/drivers/stm32/drv_pwm_servo.s: __/__/drivers/stm32/drv_pwm_servo.c.s
 
 # target to generate assembly for a file
 __/__/drivers/stm32/drv_pwm_servo.c.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/stm32/drv_pwm_servo.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/drivers/stm32/drv_pwm_servo.c.s
 .PHONY : __/__/drivers/stm32/drv_pwm_servo.c.s
 
 __/__/lib/rc/dsm.obj: __/__/lib/rc/dsm.c.obj
@@ -420,7 +420,7 @@ __/__/lib/rc/dsm.obj: __/__/lib/rc/dsm.c.obj
 
 # target to build an object file
 __/__/lib/rc/dsm.c.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/dsm.c.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/dsm.c.obj
 .PHONY : __/__/lib/rc/dsm.c.obj
 
 __/__/lib/rc/dsm.i: __/__/lib/rc/dsm.c.i
@@ -429,7 +429,7 @@ __/__/lib/rc/dsm.i: __/__/lib/rc/dsm.c.i
 
 # target to preprocess a source file
 __/__/lib/rc/dsm.c.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/dsm.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/dsm.c.i
 .PHONY : __/__/lib/rc/dsm.c.i
 
 __/__/lib/rc/dsm.s: __/__/lib/rc/dsm.c.s
@@ -438,7 +438,7 @@ __/__/lib/rc/dsm.s: __/__/lib/rc/dsm.c.s
 
 # target to generate assembly for a file
 __/__/lib/rc/dsm.c.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/dsm.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/dsm.c.s
 .PHONY : __/__/lib/rc/dsm.c.s
 
 __/__/lib/rc/sbus.obj: __/__/lib/rc/sbus.c.obj
@@ -447,7 +447,7 @@ __/__/lib/rc/sbus.obj: __/__/lib/rc/sbus.c.obj
 
 # target to build an object file
 __/__/lib/rc/sbus.c.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/sbus.c.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/sbus.c.obj
 .PHONY : __/__/lib/rc/sbus.c.obj
 
 __/__/lib/rc/sbus.i: __/__/lib/rc/sbus.c.i
@@ -456,7 +456,7 @@ __/__/lib/rc/sbus.i: __/__/lib/rc/sbus.c.i
 
 # target to preprocess a source file
 __/__/lib/rc/sbus.c.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/sbus.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/sbus.c.i
 .PHONY : __/__/lib/rc/sbus.c.i
 
 __/__/lib/rc/sbus.s: __/__/lib/rc/sbus.c.s
@@ -465,7 +465,7 @@ __/__/lib/rc/sbus.s: __/__/lib/rc/sbus.c.s
 
 # target to generate assembly for a file
 __/__/lib/rc/sbus.c.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/sbus.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/sbus.c.s
 .PHONY : __/__/lib/rc/sbus.c.s
 
 __/__/lib/rc/srxl.obj: __/__/lib/rc/srxl.c.obj
@@ -474,7 +474,7 @@ __/__/lib/rc/srxl.obj: __/__/lib/rc/srxl.c.obj
 
 # target to build an object file
 __/__/lib/rc/srxl.c.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/srxl.c.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/srxl.c.obj
 .PHONY : __/__/lib/rc/srxl.c.obj
 
 __/__/lib/rc/srxl.i: __/__/lib/rc/srxl.c.i
@@ -483,7 +483,7 @@ __/__/lib/rc/srxl.i: __/__/lib/rc/srxl.c.i
 
 # target to preprocess a source file
 __/__/lib/rc/srxl.c.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/srxl.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/srxl.c.i
 .PHONY : __/__/lib/rc/srxl.c.i
 
 __/__/lib/rc/srxl.s: __/__/lib/rc/srxl.c.s
@@ -492,7 +492,7 @@ __/__/lib/rc/srxl.s: __/__/lib/rc/srxl.c.s
 
 # target to generate assembly for a file
 __/__/lib/rc/srxl.c.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/srxl.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/srxl.c.s
 .PHONY : __/__/lib/rc/srxl.c.s
 
 __/__/lib/rc/st24.obj: __/__/lib/rc/st24.c.obj
@@ -501,7 +501,7 @@ __/__/lib/rc/st24.obj: __/__/lib/rc/st24.c.obj
 
 # target to build an object file
 __/__/lib/rc/st24.c.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/st24.c.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/st24.c.obj
 .PHONY : __/__/lib/rc/st24.c.obj
 
 __/__/lib/rc/st24.i: __/__/lib/rc/st24.c.i
@@ -510,7 +510,7 @@ __/__/lib/rc/st24.i: __/__/lib/rc/st24.c.i
 
 # target to preprocess a source file
 __/__/lib/rc/st24.c.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/st24.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/st24.c.i
 .PHONY : __/__/lib/rc/st24.c.i
 
 __/__/lib/rc/st24.s: __/__/lib/rc/st24.c.s
@@ -519,7 +519,7 @@ __/__/lib/rc/st24.s: __/__/lib/rc/st24.c.s
 
 # target to generate assembly for a file
 __/__/lib/rc/st24.c.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/st24.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/st24.c.s
 .PHONY : __/__/lib/rc/st24.c.s
 
 __/__/lib/rc/sumd.obj: __/__/lib/rc/sumd.c.obj
@@ -528,7 +528,7 @@ __/__/lib/rc/sumd.obj: __/__/lib/rc/sumd.c.obj
 
 # target to build an object file
 __/__/lib/rc/sumd.c.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/sumd.c.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/sumd.c.obj
 .PHONY : __/__/lib/rc/sumd.c.obj
 
 __/__/lib/rc/sumd.i: __/__/lib/rc/sumd.c.i
@@ -537,7 +537,7 @@ __/__/lib/rc/sumd.i: __/__/lib/rc/sumd.c.i
 
 # target to preprocess a source file
 __/__/lib/rc/sumd.c.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/sumd.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/sumd.c.i
 .PHONY : __/__/lib/rc/sumd.c.i
 
 __/__/lib/rc/sumd.s: __/__/lib/rc/sumd.c.s
@@ -546,7 +546,7 @@ __/__/lib/rc/sumd.s: __/__/lib/rc/sumd.c.s
 
 # target to generate assembly for a file
 __/__/lib/rc/sumd.c.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/sumd.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/__/lib/rc/sumd.c.s
 .PHONY : __/__/lib/rc/sumd.c.s
 
 __/systemlib/hx_stream.obj: __/systemlib/hx_stream.c.obj
@@ -555,7 +555,7 @@ __/systemlib/hx_stream.obj: __/systemlib/hx_stream.c.obj
 
 # target to build an object file
 __/systemlib/hx_stream.c.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/hx_stream.c.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/hx_stream.c.obj
 .PHONY : __/systemlib/hx_stream.c.obj
 
 __/systemlib/hx_stream.i: __/systemlib/hx_stream.c.i
@@ -564,7 +564,7 @@ __/systemlib/hx_stream.i: __/systemlib/hx_stream.c.i
 
 # target to preprocess a source file
 __/systemlib/hx_stream.c.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/hx_stream.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/hx_stream.c.i
 .PHONY : __/systemlib/hx_stream.c.i
 
 __/systemlib/hx_stream.s: __/systemlib/hx_stream.c.s
@@ -573,7 +573,7 @@ __/systemlib/hx_stream.s: __/systemlib/hx_stream.c.s
 
 # target to generate assembly for a file
 __/systemlib/hx_stream.c.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/hx_stream.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/hx_stream.c.s
 .PHONY : __/systemlib/hx_stream.c.s
 
 __/systemlib/mixer/mixer.obj: __/systemlib/mixer/mixer.cpp.obj
@@ -582,7 +582,7 @@ __/systemlib/mixer/mixer.obj: __/systemlib/mixer/mixer.cpp.obj
 
 # target to build an object file
 __/systemlib/mixer/mixer.cpp.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer.cpp.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer.cpp.obj
 .PHONY : __/systemlib/mixer/mixer.cpp.obj
 
 __/systemlib/mixer/mixer.i: __/systemlib/mixer/mixer.cpp.i
@@ -591,7 +591,7 @@ __/systemlib/mixer/mixer.i: __/systemlib/mixer/mixer.cpp.i
 
 # target to preprocess a source file
 __/systemlib/mixer/mixer.cpp.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer.cpp.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer.cpp.i
 .PHONY : __/systemlib/mixer/mixer.cpp.i
 
 __/systemlib/mixer/mixer.s: __/systemlib/mixer/mixer.cpp.s
@@ -600,7 +600,7 @@ __/systemlib/mixer/mixer.s: __/systemlib/mixer/mixer.cpp.s
 
 # target to generate assembly for a file
 __/systemlib/mixer/mixer.cpp.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer.cpp.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer.cpp.s
 .PHONY : __/systemlib/mixer/mixer.cpp.s
 
 __/systemlib/mixer/mixer_group.obj: __/systemlib/mixer/mixer_group.cpp.obj
@@ -609,7 +609,7 @@ __/systemlib/mixer/mixer_group.obj: __/systemlib/mixer/mixer_group.cpp.obj
 
 # target to build an object file
 __/systemlib/mixer/mixer_group.cpp.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer_group.cpp.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer_group.cpp.obj
 .PHONY : __/systemlib/mixer/mixer_group.cpp.obj
 
 __/systemlib/mixer/mixer_group.i: __/systemlib/mixer/mixer_group.cpp.i
@@ -618,7 +618,7 @@ __/systemlib/mixer/mixer_group.i: __/systemlib/mixer/mixer_group.cpp.i
 
 # target to preprocess a source file
 __/systemlib/mixer/mixer_group.cpp.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer_group.cpp.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer_group.cpp.i
 .PHONY : __/systemlib/mixer/mixer_group.cpp.i
 
 __/systemlib/mixer/mixer_group.s: __/systemlib/mixer/mixer_group.cpp.s
@@ -627,7 +627,7 @@ __/systemlib/mixer/mixer_group.s: __/systemlib/mixer/mixer_group.cpp.s
 
 # target to generate assembly for a file
 __/systemlib/mixer/mixer_group.cpp.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer_group.cpp.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer_group.cpp.s
 .PHONY : __/systemlib/mixer/mixer_group.cpp.s
 
 __/systemlib/mixer/mixer_multirotor.obj: __/systemlib/mixer/mixer_multirotor.cpp.obj
@@ -636,7 +636,7 @@ __/systemlib/mixer/mixer_multirotor.obj: __/systemlib/mixer/mixer_multirotor.cpp
 
 # target to build an object file
 __/systemlib/mixer/mixer_multirotor.cpp.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer_multirotor.cpp.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer_multirotor.cpp.obj
 .PHONY : __/systemlib/mixer/mixer_multirotor.cpp.obj
 
 __/systemlib/mixer/mixer_multirotor.i: __/systemlib/mixer/mixer_multirotor.cpp.i
@@ -645,7 +645,7 @@ __/systemlib/mixer/mixer_multirotor.i: __/systemlib/mixer/mixer_multirotor.cpp.i
 
 # target to preprocess a source file
 __/systemlib/mixer/mixer_multirotor.cpp.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer_multirotor.cpp.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer_multirotor.cpp.i
 .PHONY : __/systemlib/mixer/mixer_multirotor.cpp.i
 
 __/systemlib/mixer/mixer_multirotor.s: __/systemlib/mixer/mixer_multirotor.cpp.s
@@ -654,7 +654,7 @@ __/systemlib/mixer/mixer_multirotor.s: __/systemlib/mixer/mixer_multirotor.cpp.s
 
 # target to generate assembly for a file
 __/systemlib/mixer/mixer_multirotor.cpp.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer_multirotor.cpp.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer_multirotor.cpp.s
 .PHONY : __/systemlib/mixer/mixer_multirotor.cpp.s
 
 __/systemlib/mixer/mixer_simple.obj: __/systemlib/mixer/mixer_simple.cpp.obj
@@ -663,7 +663,7 @@ __/systemlib/mixer/mixer_simple.obj: __/systemlib/mixer/mixer_simple.cpp.obj
 
 # target to build an object file
 __/systemlib/mixer/mixer_simple.cpp.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer_simple.cpp.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer_simple.cpp.obj
 .PHONY : __/systemlib/mixer/mixer_simple.cpp.obj
 
 __/systemlib/mixer/mixer_simple.i: __/systemlib/mixer/mixer_simple.cpp.i
@@ -672,7 +672,7 @@ __/systemlib/mixer/mixer_simple.i: __/systemlib/mixer/mixer_simple.cpp.i
 
 # target to preprocess a source file
 __/systemlib/mixer/mixer_simple.cpp.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer_simple.cpp.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer_simple.cpp.i
 .PHONY : __/systemlib/mixer/mixer_simple.cpp.i
 
 __/systemlib/mixer/mixer_simple.s: __/systemlib/mixer/mixer_simple.cpp.s
@@ -681,7 +681,7 @@ __/systemlib/mixer/mixer_simple.s: __/systemlib/mixer/mixer_simple.cpp.s
 
 # target to generate assembly for a file
 __/systemlib/mixer/mixer_simple.cpp.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer_simple.cpp.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/mixer/mixer_simple.cpp.s
 .PHONY : __/systemlib/mixer/mixer_simple.cpp.s
 
 __/systemlib/perf_counter.obj: __/systemlib/perf_counter.c.obj
@@ -690,7 +690,7 @@ __/systemlib/perf_counter.obj: __/systemlib/perf_counter.c.obj
 
 # target to build an object file
 __/systemlib/perf_counter.c.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/perf_counter.c.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/perf_counter.c.obj
 .PHONY : __/systemlib/perf_counter.c.obj
 
 __/systemlib/perf_counter.i: __/systemlib/perf_counter.c.i
@@ -699,7 +699,7 @@ __/systemlib/perf_counter.i: __/systemlib/perf_counter.c.i
 
 # target to preprocess a source file
 __/systemlib/perf_counter.c.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/perf_counter.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/perf_counter.c.i
 .PHONY : __/systemlib/perf_counter.c.i
 
 __/systemlib/perf_counter.s: __/systemlib/perf_counter.c.s
@@ -708,7 +708,7 @@ __/systemlib/perf_counter.s: __/systemlib/perf_counter.c.s
 
 # target to generate assembly for a file
 __/systemlib/perf_counter.c.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/perf_counter.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/perf_counter.c.s
 .PHONY : __/systemlib/perf_counter.c.s
 
 __/systemlib/pwm_limit/pwm_limit.obj: __/systemlib/pwm_limit/pwm_limit.c.obj
@@ -717,7 +717,7 @@ __/systemlib/pwm_limit/pwm_limit.obj: __/systemlib/pwm_limit/pwm_limit.c.obj
 
 # target to build an object file
 __/systemlib/pwm_limit/pwm_limit.c.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/pwm_limit/pwm_limit.c.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/pwm_limit/pwm_limit.c.obj
 .PHONY : __/systemlib/pwm_limit/pwm_limit.c.obj
 
 __/systemlib/pwm_limit/pwm_limit.i: __/systemlib/pwm_limit/pwm_limit.c.i
@@ -726,7 +726,7 @@ __/systemlib/pwm_limit/pwm_limit.i: __/systemlib/pwm_limit/pwm_limit.c.i
 
 # target to preprocess a source file
 __/systemlib/pwm_limit/pwm_limit.c.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/pwm_limit/pwm_limit.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/pwm_limit/pwm_limit.c.i
 .PHONY : __/systemlib/pwm_limit/pwm_limit.c.i
 
 __/systemlib/pwm_limit/pwm_limit.s: __/systemlib/pwm_limit/pwm_limit.c.s
@@ -735,7 +735,7 @@ __/systemlib/pwm_limit/pwm_limit.s: __/systemlib/pwm_limit/pwm_limit.c.s
 
 # target to generate assembly for a file
 __/systemlib/pwm_limit/pwm_limit.c.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/pwm_limit/pwm_limit.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/pwm_limit/pwm_limit.c.s
 .PHONY : __/systemlib/pwm_limit/pwm_limit.c.s
 
 __/systemlib/up_cxxinitialize.obj: __/systemlib/up_cxxinitialize.c.obj
@@ -744,7 +744,7 @@ __/systemlib/up_cxxinitialize.obj: __/systemlib/up_cxxinitialize.c.obj
 
 # target to build an object file
 __/systemlib/up_cxxinitialize.c.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/up_cxxinitialize.c.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/up_cxxinitialize.c.obj
 .PHONY : __/systemlib/up_cxxinitialize.c.obj
 
 __/systemlib/up_cxxinitialize.i: __/systemlib/up_cxxinitialize.c.i
@@ -753,7 +753,7 @@ __/systemlib/up_cxxinitialize.i: __/systemlib/up_cxxinitialize.c.i
 
 # target to preprocess a source file
 __/systemlib/up_cxxinitialize.c.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/up_cxxinitialize.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/up_cxxinitialize.c.i
 .PHONY : __/systemlib/up_cxxinitialize.c.i
 
 __/systemlib/up_cxxinitialize.s: __/systemlib/up_cxxinitialize.c.s
@@ -762,7 +762,7 @@ __/systemlib/up_cxxinitialize.s: __/systemlib/up_cxxinitialize.c.s
 
 # target to generate assembly for a file
 __/systemlib/up_cxxinitialize.c.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/up_cxxinitialize.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/__/systemlib/up_cxxinitialize.c.s
 .PHONY : __/systemlib/up_cxxinitialize.c.s
 
 adc.obj: adc.c.obj
@@ -771,7 +771,7 @@ adc.obj: adc.c.obj
 
 # target to build an object file
 adc.c.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/adc.c.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/adc.c.obj
 .PHONY : adc.c.obj
 
 adc.i: adc.c.i
@@ -780,7 +780,7 @@ adc.i: adc.c.i
 
 # target to preprocess a source file
 adc.c.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/adc.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/adc.c.i
 .PHONY : adc.c.i
 
 adc.s: adc.c.s
@@ -789,7 +789,7 @@ adc.s: adc.c.s
 
 # target to generate assembly for a file
 adc.c.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/adc.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/adc.c.s
 .PHONY : adc.c.s
 
 controls.obj: controls.c.obj
@@ -798,7 +798,7 @@ controls.obj: controls.c.obj
 
 # target to build an object file
 controls.c.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/controls.c.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/controls.c.obj
 .PHONY : controls.c.obj
 
 controls.i: controls.c.i
@@ -807,7 +807,7 @@ controls.i: controls.c.i
 
 # target to preprocess a source file
 controls.c.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/controls.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/controls.c.i
 .PHONY : controls.c.i
 
 controls.s: controls.c.s
@@ -816,7 +816,7 @@ controls.s: controls.c.s
 
 # target to generate assembly for a file
 controls.c.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/controls.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/controls.c.s
 .PHONY : controls.c.s
 
 mixer.obj: mixer.cpp.obj
@@ -825,7 +825,7 @@ mixer.obj: mixer.cpp.obj
 
 # target to build an object file
 mixer.cpp.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/mixer.cpp.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/mixer.cpp.obj
 .PHONY : mixer.cpp.obj
 
 mixer.i: mixer.cpp.i
@@ -834,7 +834,7 @@ mixer.i: mixer.cpp.i
 
 # target to preprocess a source file
 mixer.cpp.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/mixer.cpp.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/mixer.cpp.i
 .PHONY : mixer.cpp.i
 
 mixer.s: mixer.cpp.s
@@ -843,7 +843,7 @@ mixer.s: mixer.cpp.s
 
 # target to generate assembly for a file
 mixer.cpp.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/mixer.cpp.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/mixer.cpp.s
 .PHONY : mixer.cpp.s
 
 px4io.obj: px4io.c.obj
@@ -852,7 +852,7 @@ px4io.obj: px4io.c.obj
 
 # target to build an object file
 px4io.c.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/px4io.c.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/px4io.c.obj
 .PHONY : px4io.c.obj
 
 px4io.i: px4io.c.i
@@ -861,7 +861,7 @@ px4io.i: px4io.c.i
 
 # target to preprocess a source file
 px4io.c.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/px4io.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/px4io.c.i
 .PHONY : px4io.c.i
 
 px4io.s: px4io.c.s
@@ -870,7 +870,7 @@ px4io.s: px4io.c.s
 
 # target to generate assembly for a file
 px4io.c.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/px4io.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/px4io.c.s
 .PHONY : px4io.c.s
 
 registers.obj: registers.c.obj
@@ -879,7 +879,7 @@ registers.obj: registers.c.obj
 
 # target to build an object file
 registers.c.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/registers.c.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/registers.c.obj
 .PHONY : registers.c.obj
 
 registers.i: registers.c.i
@@ -888,7 +888,7 @@ registers.i: registers.c.i
 
 # target to preprocess a source file
 registers.c.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/registers.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/registers.c.i
 .PHONY : registers.c.i
 
 registers.s: registers.c.s
@@ -897,7 +897,7 @@ registers.s: registers.c.s
 
 # target to generate assembly for a file
 registers.c.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/registers.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/registers.c.s
 .PHONY : registers.c.s
 
 safety.obj: safety.c.obj
@@ -906,7 +906,7 @@ safety.obj: safety.c.obj
 
 # target to build an object file
 safety.c.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/safety.c.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/safety.c.obj
 .PHONY : safety.c.obj
 
 safety.i: safety.c.i
@@ -915,7 +915,7 @@ safety.i: safety.c.i
 
 # target to preprocess a source file
 safety.c.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/safety.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/safety.c.i
 .PHONY : safety.c.i
 
 safety.s: safety.c.s
@@ -924,7 +924,7 @@ safety.s: safety.c.s
 
 # target to generate assembly for a file
 safety.c.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/safety.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/safety.c.s
 .PHONY : safety.c.s
 
 serial.obj: serial.c.obj
@@ -933,7 +933,7 @@ serial.obj: serial.c.obj
 
 # target to build an object file
 serial.c.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/serial.c.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/serial.c.obj
 .PHONY : serial.c.obj
 
 serial.i: serial.c.i
@@ -942,7 +942,7 @@ serial.i: serial.c.i
 
 # target to preprocess a source file
 serial.c.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/serial.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/serial.c.i
 .PHONY : serial.c.i
 
 serial.s: serial.c.s
@@ -951,7 +951,7 @@ serial.s: serial.c.s
 
 # target to generate assembly for a file
 serial.c.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/serial.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/build.make src/modules/px4iofirmware/CMakeFiles/px4io-v2.dir/serial.c.s
 .PHONY : serial.c.s
 
 # Help Target
@@ -1061,6 +1061,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

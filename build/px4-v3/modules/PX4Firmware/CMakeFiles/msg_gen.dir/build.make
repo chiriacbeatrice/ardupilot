@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware
+CMAKE_SOURCE_DIR = /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware
+CMAKE_BINARY_DIR = /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware
 
 # Utility rule file for msg_gen.
 
@@ -227,94 +227,94 @@ CMakeFiles/msg_gen: src/modules/uORB/topics/vtol_vehicle_status.h
 CMakeFiles/msg_gen: src/modules/uORB/topics/wind_estimate.h
 
 
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/actuator_armed.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/actuator_controls.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/actuator_controls_0.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/actuator_controls_1.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/actuator_controls_2.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/actuator_controls_3.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/actuator_controls_virtual_fw.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/actuator_controls_virtual_mc.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/actuator_direct.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/actuator_outputs.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/airspeed.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/att_pos_mocap.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/battery_status.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/camera_trigger.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/control_state.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/debug_key_value.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/differential_pressure.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/distance_sensor.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/ekf2_innovations.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/ekf2_replay.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/encoders.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/esc_report.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/esc_status.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/estimator_status.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/fence.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/fence_vertex.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/filtered_bottom_flow.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/follow_target.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/fw_virtual_attitude_setpoint.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/fw_virtual_rates_setpoint.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/geofence_result.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/hil_sensor.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/home_position.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/input_rc.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/manual_control_setpoint.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/mavlink_log.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/mc_att_ctrl_status.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/mc_virtual_attitude_setpoint.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/mc_virtual_rates_setpoint.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/mission.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/mission_result.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/multirotor_motor_limits.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/navigation_capabilities.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/offboard_control_mode.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/optical_flow.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/output_pwm.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/parameter_update.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/position_setpoint.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/position_setpoint_triplet.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/pwm_input.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/qshell_req.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/rc_channels.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/rc_parameter_map.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/safety.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/satellite_info.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/sensor_accel.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/sensor_baro.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/sensor_combined.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/sensor_gyro.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/sensor_mag.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/servorail_status.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/subsystem_info.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/system_power.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/tecs_status.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/telemetry_status.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/test_motor.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/time_offset.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/uavcan_parameter_request.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/uavcan_parameter_value.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_attitude.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_attitude_setpoint.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_command.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_command_ack.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_control_mode.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_force_setpoint.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_global_position.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_global_velocity_setpoint.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_gps_position.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_land_detected.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_local_position.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_local_position_setpoint.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_rates_setpoint.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_status.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vision_position_estimate.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vtol_vehicle_status.msg
-src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/wind_estimate.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating uORB topic multi headers for nuttx"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware && /usr/bin/python Tools/px_generate_uorb_topic_headers.py -q -d msg -o /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/platforms/nuttx/px4_messages -e msg/templates/px4/uorb -t /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/multi_topics_temporary/nuttx -p px4_
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/actuator_armed.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/actuator_controls.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/actuator_controls_0.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/actuator_controls_1.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/actuator_controls_2.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/actuator_controls_3.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/actuator_controls_virtual_fw.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/actuator_controls_virtual_mc.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/actuator_direct.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/actuator_outputs.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/airspeed.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/att_pos_mocap.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/battery_status.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/camera_trigger.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/control_state.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/debug_key_value.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/differential_pressure.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/distance_sensor.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/ekf2_innovations.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/ekf2_replay.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/encoders.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/esc_report.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/esc_status.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/estimator_status.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/fence.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/fence_vertex.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/filtered_bottom_flow.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/follow_target.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/fw_virtual_attitude_setpoint.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/fw_virtual_rates_setpoint.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/geofence_result.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/hil_sensor.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/home_position.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/input_rc.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/manual_control_setpoint.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/mavlink_log.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/mc_att_ctrl_status.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/mc_virtual_attitude_setpoint.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/mc_virtual_rates_setpoint.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/mission.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/mission_result.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/multirotor_motor_limits.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/navigation_capabilities.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/offboard_control_mode.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/optical_flow.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/output_pwm.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/parameter_update.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/position_setpoint.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/position_setpoint_triplet.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/pwm_input.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/qshell_req.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/rc_channels.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/rc_parameter_map.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/safety.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/satellite_info.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/sensor_accel.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/sensor_baro.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/sensor_combined.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/sensor_gyro.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/sensor_mag.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/servorail_status.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/subsystem_info.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/system_power.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/tecs_status.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/telemetry_status.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/test_motor.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/time_offset.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/uavcan_parameter_request.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/uavcan_parameter_value.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_attitude.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_attitude_setpoint.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_command.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_command_ack.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_control_mode.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_force_setpoint.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_global_position.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_global_velocity_setpoint.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_gps_position.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_land_detected.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_local_position.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_local_position_setpoint.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_rates_setpoint.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_status.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vision_position_estimate.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vtol_vehicle_status.msg
+src/platforms/nuttx/px4_messages/px4_actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/wind_estimate.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating uORB topic multi headers for nuttx"
+	cd /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware && /usr/bin/python Tools/px_generate_uorb_topic_headers.py -q -d msg -o /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/platforms/nuttx/px4_messages -e msg/templates/px4/uorb -t /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/multi_topics_temporary/nuttx -p px4_
 
 src/platforms/nuttx/px4_messages/px4_actuator_controls.h: src/platforms/nuttx/px4_messages/px4_actuator_armed.h
 	@$(CMAKE_COMMAND) -E touch_nocreate src/platforms/nuttx/px4_messages/px4_actuator_controls.h
@@ -571,94 +571,94 @@ src/platforms/nuttx/px4_messages/px4_vtol_vehicle_status.h: src/platforms/nuttx/
 src/platforms/nuttx/px4_messages/px4_wind_estimate.h: src/platforms/nuttx/px4_messages/px4_actuator_armed.h
 	@$(CMAKE_COMMAND) -E touch_nocreate src/platforms/nuttx/px4_messages/px4_wind_estimate.h
 
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/actuator_armed.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/actuator_controls.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/actuator_controls_0.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/actuator_controls_1.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/actuator_controls_2.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/actuator_controls_3.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/actuator_controls_virtual_fw.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/actuator_controls_virtual_mc.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/actuator_direct.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/actuator_outputs.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/airspeed.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/att_pos_mocap.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/battery_status.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/camera_trigger.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/control_state.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/debug_key_value.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/differential_pressure.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/distance_sensor.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/ekf2_innovations.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/ekf2_replay.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/encoders.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/esc_report.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/esc_status.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/estimator_status.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/fence.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/fence_vertex.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/filtered_bottom_flow.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/follow_target.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/fw_virtual_attitude_setpoint.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/fw_virtual_rates_setpoint.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/geofence_result.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/hil_sensor.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/home_position.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/input_rc.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/manual_control_setpoint.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/mavlink_log.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/mc_att_ctrl_status.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/mc_virtual_attitude_setpoint.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/mc_virtual_rates_setpoint.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/mission.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/mission_result.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/multirotor_motor_limits.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/navigation_capabilities.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/offboard_control_mode.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/optical_flow.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/output_pwm.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/parameter_update.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/position_setpoint.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/position_setpoint_triplet.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/pwm_input.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/qshell_req.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/rc_channels.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/rc_parameter_map.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/safety.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/satellite_info.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/sensor_accel.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/sensor_baro.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/sensor_combined.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/sensor_gyro.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/sensor_mag.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/servorail_status.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/subsystem_info.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/system_power.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/tecs_status.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/telemetry_status.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/test_motor.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/time_offset.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/uavcan_parameter_request.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/uavcan_parameter_value.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_attitude.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_attitude_setpoint.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_command.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_command_ack.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_control_mode.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_force_setpoint.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_global_position.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_global_velocity_setpoint.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_gps_position.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_land_detected.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_local_position.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_local_position_setpoint.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_rates_setpoint.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vehicle_status.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vision_position_estimate.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/vtol_vehicle_status.msg
-src/modules/uORB/topics/actuator_armed.h: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/msg/wind_estimate.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating uORB topic headers"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware && /usr/bin/python Tools/px_generate_uorb_topic_headers.py -q -d msg -o /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/uORB/topics -e msg/templates/uorb -t /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/topics_temporary
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/actuator_armed.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/actuator_controls.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/actuator_controls_0.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/actuator_controls_1.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/actuator_controls_2.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/actuator_controls_3.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/actuator_controls_virtual_fw.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/actuator_controls_virtual_mc.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/actuator_direct.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/actuator_outputs.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/airspeed.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/att_pos_mocap.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/battery_status.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/camera_trigger.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/control_state.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/debug_key_value.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/differential_pressure.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/distance_sensor.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/ekf2_innovations.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/ekf2_replay.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/encoders.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/esc_report.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/esc_status.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/estimator_status.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/fence.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/fence_vertex.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/filtered_bottom_flow.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/follow_target.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/fw_virtual_attitude_setpoint.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/fw_virtual_rates_setpoint.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/geofence_result.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/hil_sensor.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/home_position.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/input_rc.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/manual_control_setpoint.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/mavlink_log.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/mc_att_ctrl_status.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/mc_virtual_attitude_setpoint.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/mc_virtual_rates_setpoint.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/mission.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/mission_result.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/multirotor_motor_limits.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/navigation_capabilities.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/offboard_control_mode.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/optical_flow.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/output_pwm.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/parameter_update.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/position_setpoint.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/position_setpoint_triplet.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/pwm_input.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/qshell_req.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/rc_channels.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/rc_parameter_map.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/safety.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/satellite_info.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/sensor_accel.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/sensor_baro.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/sensor_combined.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/sensor_gyro.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/sensor_mag.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/servorail_status.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/subsystem_info.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/system_power.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/tecs_status.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/telemetry_status.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/test_motor.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/time_offset.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/uavcan_parameter_request.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/uavcan_parameter_value.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_attitude.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_attitude_setpoint.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_command.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_command_ack.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_control_mode.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_force_setpoint.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_global_position.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_global_velocity_setpoint.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_gps_position.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_land_detected.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_local_position.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_local_position_setpoint.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_rates_setpoint.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vehicle_status.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vision_position_estimate.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/vtol_vehicle_status.msg
+src/modules/uORB/topics/actuator_armed.h: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/msg/wind_estimate.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating uORB topic headers"
+	cd /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware && /usr/bin/python Tools/px_generate_uorb_topic_headers.py -q -d msg -o /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/uORB/topics -e msg/templates/uorb -t /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/topics_temporary
 
 src/modules/uORB/topics/actuator_controls.h: src/modules/uORB/topics/actuator_armed.h
 	@$(CMAKE_COMMAND) -E touch_nocreate src/modules/uORB/topics/actuator_controls.h
@@ -1102,6 +1102,6 @@ CMakeFiles/msg_gen.dir/clean:
 .PHONY : CMakeFiles/msg_gen.dir/clean
 
 CMakeFiles/msg_gen.dir/depend:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles/msg_gen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles/msg_gen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/msg_gen.dir/depend
 

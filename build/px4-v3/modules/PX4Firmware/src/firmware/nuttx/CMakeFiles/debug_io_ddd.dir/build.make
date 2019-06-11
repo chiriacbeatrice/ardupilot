@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware
+CMAKE_SOURCE_DIR = /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware
+CMAKE_BINARY_DIR = /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware
 
 # Utility rule file for debug_io_ddd.
 
@@ -55,7 +55,7 @@ include src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/progress.make
 
 src/firmware/nuttx/CMakeFiles/debug_io_ddd: src/firmware/nuttx/firmware_nuttx
 src/firmware/nuttx/CMakeFiles/debug_io_ddd: src/firmware/nuttx/.gdbinit
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && DDD-NOTFOUND --debugger /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gdb /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/px4iofirmware/px4io-v2
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && DDD-NOTFOUND --debugger /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gdb /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/modules/px4iofirmware/px4io-v2
 
 debug_io_ddd: src/firmware/nuttx/CMakeFiles/debug_io_ddd
 debug_io_ddd: src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/build.make
@@ -68,10 +68,10 @@ src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/build: debug_io_ddd
 .PHONY : src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/build
 
 src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/clean:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && $(CMAKE_COMMAND) -P CMakeFiles/debug_io_ddd.dir/cmake_clean.cmake
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && $(CMAKE_COMMAND) -P CMakeFiles/debug_io_ddd.dir/cmake_clean.cmake
 .PHONY : src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/clean
 
 src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/depend:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/firmware/nuttx /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/firmware/nuttx /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/depend
 

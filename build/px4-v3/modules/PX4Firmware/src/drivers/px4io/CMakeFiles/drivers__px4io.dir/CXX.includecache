@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/board_config.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/board_config.h
 px4_config.h
 -
 nuttx/compiler.h
@@ -18,17 +18,17 @@ stm32.h
 arch/board/board.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v3/board_config.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v3/board_config.h
 ../px4fmu-v2/board_config.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/board_config.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/board_config.h
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/device/device.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/device/device.h
 device_nuttx.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/device/device_nuttx.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/device/device_nuttx.h
 vdev.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/device/vdev.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/device/vdev.h
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/device/device_nuttx.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/device/device_nuttx.h
 px4_config.h
 -
 px4_posix.h
@@ -46,21 +46,21 @@ poll.h
 nuttx/fs/fs.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/device/i2c.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/device/i2c.h
 i2c_nuttx.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/device/i2c_nuttx.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/device/i2c_nuttx.h
 i2c_posix.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/device/i2c_posix.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/device/i2c_posix.h
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/device/i2c_nuttx.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/device/i2c_nuttx.h
 device.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/device/device.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/device/device.h
 px4_i2c.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/device/i2c_posix.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/device/i2c_posix.h
 vdev.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/device/vdev.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/device/vdev.h
 px4_i2c.h
 -
 linux/i2c.h
@@ -70,7 +70,7 @@ linux/i2c-dev.h
 string
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/device/vdev.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/device/vdev.h
 px4_posix.h
 -
 errno.h
@@ -86,11 +86,11 @@ stdint.h
 semaphore.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/drv_gpio.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/drv_gpio.h
 sys/ioctl.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/drv_hrt.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/drv_hrt.h
 sys/types.h
 -
 stdbool.h
@@ -102,7 +102,7 @@ px4_time.h
 queue.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/drv_mixer.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/drv_mixer.h
 px4_defines.h
 -
 stdint.h
@@ -110,7 +110,7 @@ stdint.h
 sys/ioctl.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/drv_orb_dev.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/drv_orb_dev.h
 px4_defines.h
 -
 sys/types.h
@@ -120,9 +120,9 @@ sys/ioctl.h
 stdint.h
 -
 ../modules/uORB/uORB.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/uORB/uORB.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules/uORB/uORB.h
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/drv_pwm_output.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/drv_pwm_output.h
 px4_defines.h
 -
 stdint.h
@@ -130,29 +130,29 @@ stdint.h
 sys/ioctl.h
 -
 drv_orb_dev.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/drv_orb_dev.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/drv_orb_dev.h
 uORB/topics/output_pwm.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/drv_rc_input.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/drv_rc_input.h
 stdint.h
 -
 sys/ioctl.h
 -
 drv_orb_dev.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/drv_orb_dev.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/drv_orb_dev.h
 uORB/topics/input_rc.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/drv_sbus.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/drv_sbus.h
 stdint.h
 -
 sys/ioctl.h
 -
 drv_orb_dev.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/drv_orb_dev.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/drv_orb_dev.h
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io.cpp
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io.cpp
 px4_config.h
 -
 sys/types.h
@@ -252,17 +252,17 @@ debug.h
 modules/px4iofirmware/protocol.h
 -
 uploader.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/uploader.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/px4io/uploader.h
 modules/dataman/dataman.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/modules/dataman/dataman.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/px4io/modules/dataman/dataman.h
 px4io_driver.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_driver.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_driver.h
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_driver.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_driver.h
 board_config.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_i2c.cpp
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_i2c.cpp
 px4_config.h
 -
 sys/types.h
@@ -286,9 +286,9 @@ board_config.h
 drivers/device/i2c.h
 -
 px4io_driver.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_driver.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_driver.h
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_serial.cpp
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_serial.cpp
 px4_config.h
 -
 px4_posix.h
@@ -334,9 +334,9 @@ systemlib/perf_counter.h
 modules/px4iofirmware/protocol.h
 -
 px4io_driver.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_driver.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_driver.h
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_uploader.cpp
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_uploader.cpp
 px4_config.h
 -
 sys/types.h
@@ -372,17 +372,17 @@ nuttx/arch.h
 crc32.h
 -
 uploader.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/uploader.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/px4io/uploader.h
 board_config.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/uploader.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/px4io/uploader.h
 stdint.h
 -
 stdbool.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/dataman/dataman.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules/dataman/dataman.h
 navigator/navigation.h
 -
 uORB/topics/mission.h
@@ -390,7 +390,7 @@ uORB/topics/mission.h
 uORB/topics/fence.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/navigator/navigation.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules/navigator/navigation.h
 stdint.h
 -
 stdbool.h
@@ -398,41 +398,41 @@ stdbool.h
 uORB/topics/mission.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/px4iofirmware/protocol.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules/px4iofirmware/protocol.h
 inttypes.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/circuit_breaker.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules/systemlib/circuit_breaker.h
 stdbool.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/err.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules/systemlib/err.h
 px4_log.h
 -
 stdarg.h
 -
 visibility.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/visibility.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules/systemlib/visibility.h
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mavlink_log.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules/systemlib/mavlink_log.h
 uORB/uORB.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer.h
 px4_config.h
 -
 drivers/drv_mixer.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/drivers/drv_mixer.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/drivers/drv_mixer.h
 uORB/topics/multirotor_motor_limits.h
 -
 mixer_load.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_load.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_load.h
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_load.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules/systemlib/mixer/mixer_load.h
 px4_config.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/param/param.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules/systemlib/param/param.h
 stdint.h
 -
 stdbool.h
@@ -440,17 +440,17 @@ stdbool.h
 sys/types.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/perf_counter.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules/systemlib/perf_counter.h
 stdint.h
 -
 px4_defines.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/scheduling_priorities.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules/systemlib/scheduling_priorities.h
 nuttx/sched.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/systemlib.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules/systemlib/systemlib.h
 float.h
 -
 stdint.h
@@ -460,9 +460,9 @@ sched.h
 px4_tasks.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/visibility.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules/systemlib/visibility.h
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/uORB/uORB.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules/uORB/uORB.h
 sys/types.h
 -
 stdint.h
@@ -472,25 +472,25 @@ stdbool.h
 systemlib/visibility.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/platforms/px4_config.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/platforms/px4_config.h
 nuttx/config.h
 -
 board_config.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/platforms/px4_defines.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/platforms/px4_defines.h
 px4_log.h
 -
 math.h
 -
 ros/ros.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/platforms/ros/ros.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/platforms/ros/ros.h
 platforms/px4_includes.h
 -
 systemlib/param/param.h
 -
 dspal_math.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/platforms/dspal_math.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/platforms/dspal_math.h
 math.h
 -
 math.h
@@ -498,7 +498,7 @@ math.h
 cmath
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/platforms/px4_i2c.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/platforms/px4_i2c.h
 sys/ioctl.h
 -
 nuttx/arch.h
@@ -520,17 +520,17 @@ arch/board/board.h
 arch/chip/chip.h
 -
 up_internal.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/platforms/up_internal.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/platforms/up_internal.h
 up_arch.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/platforms/up_arch.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/platforms/up_arch.h
 stdint.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/platforms/px4_includes.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/platforms/px4_includes.h
 stdbool.h
 -
 ros/ros.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/platforms/ros/ros.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/platforms/ros/ros.h
 px4_rc_channels.h
 -
 px4_vehicle_attitude.h
@@ -728,11 +728,11 @@ systemlib/param/param.h
 systemlib/systemlib.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/platforms/px4_log.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/platforms/px4_log.h
 ros/console.h
 -
 qurt_log.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/platforms/qurt_log.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/platforms/qurt_log.h
 inttypes.h
 -
 stdint.h
@@ -744,11 +744,11 @@ stdio.h
 px4_defines.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/platforms/px4_message.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/platforms/px4_message.h
 uORB/uORB.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/platforms/px4_posix.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/platforms/px4_posix.h
 px4_defines.h
 -
 stdint.h
@@ -768,7 +768,7 @@ dspal_types.h
 sys/types.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/platforms/px4_tasks.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/platforms/px4_tasks.h
 stdbool.h
 -
 sys/prctl.h
@@ -780,7 +780,7 @@ sched.h
 sys/prctl.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/platforms/px4_time.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/platforms/px4_time.h
 sys/types.h
 -
 time.h

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware
+CMAKE_SOURCE_DIR = /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware
+CMAKE_BINARY_DIR = /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware
 
 # Utility rule file for build_firmware_px4fmu-v3.
 
@@ -57,9 +57,9 @@ src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3: src/firmware/nuttx/nuttx
 
 
 src/firmware/nuttx/nuttx-px4fmu-v3-apm.px4: src/firmware/nuttx/firmware_nuttx
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating nuttx-px4fmu-v3-apm.px4"
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-objcopy -O binary /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/firmware_nuttx /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/firmware_nuttx.bin
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && /usr/bin/python /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/Tools/px_mkfw.py --prototype /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/Images/px4fmu-v3.prototype --git_identity /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware --parameter_xml /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/parameters.xml --airframe_xml /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/airframes.xml --image /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/firmware_nuttx.bin > /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/nuttx-px4fmu-v3-apm.px4
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating nuttx-px4fmu-v3-apm.px4"
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-objcopy -O binary /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/firmware_nuttx /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/firmware_nuttx.bin
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && /usr/bin/python /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/Tools/px_mkfw.py --prototype /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/Images/px4fmu-v3.prototype --git_identity /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware --parameter_xml /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/parameters.xml --airframe_xml /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/airframes.xml --image /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/firmware_nuttx.bin > /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/nuttx-px4fmu-v3-apm.px4
 
 build_firmware_px4fmu-v3: src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3
 build_firmware_px4fmu-v3: src/firmware/nuttx/nuttx-px4fmu-v3-apm.px4
@@ -73,10 +73,10 @@ src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/build: build_firmware
 .PHONY : src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/build
 
 src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/clean:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && $(CMAKE_COMMAND) -P CMakeFiles/build_firmware_px4fmu-v3.dir/cmake_clean.cmake
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && $(CMAKE_COMMAND) -P CMakeFiles/build_firmware_px4fmu-v3.dir/cmake_clean.cmake
 .PHONY : src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/clean
 
 src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/depend:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/firmware/nuttx /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/firmware/nuttx /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/depend
 

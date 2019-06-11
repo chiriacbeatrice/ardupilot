@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/device/cdev.cpp" "/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/device/CMakeFiles/drivers__device.dir/cdev.cpp.obj"
-  "/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/device/device_nuttx.cpp" "/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/device/CMakeFiles/drivers__device.dir/device_nuttx.cpp.obj"
-  "/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/device/i2c_nuttx.cpp" "/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/device/CMakeFiles/drivers__device.dir/i2c_nuttx.cpp.obj"
-  "/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/device/integrator.cpp" "/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/device/CMakeFiles/drivers__device.dir/integrator.cpp.obj"
-  "/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/device/pio.cpp" "/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/device/CMakeFiles/drivers__device.dir/pio.cpp.obj"
-  "/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/device/ringbuffer.cpp" "/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/device/CMakeFiles/drivers__device.dir/ringbuffer.cpp.obj"
-  "/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/device/spi.cpp" "/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/device/CMakeFiles/drivers__device.dir/spi.cpp.obj"
+  "/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/device/cdev.cpp" "/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/device/CMakeFiles/drivers__device.dir/cdev.cpp.obj"
+  "/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/device/device_nuttx.cpp" "/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/device/CMakeFiles/drivers__device.dir/device_nuttx.cpp.obj"
+  "/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/device/i2c_nuttx.cpp" "/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/device/CMakeFiles/drivers__device.dir/i2c_nuttx.cpp.obj"
+  "/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/device/integrator.cpp" "/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/device/CMakeFiles/drivers__device.dir/integrator.cpp.obj"
+  "/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/device/pio.cpp" "/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/device/CMakeFiles/drivers__device.dir/pio.cpp.obj"
+  "/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/device/ringbuffer.cpp" "/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/device/CMakeFiles/drivers__device.dir/ringbuffer.cpp.obj"
+  "/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/device/spi.cpp" "/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/drivers/device/CMakeFiles/drivers__device.dir/spi.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -24,19 +24,19 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src"
+  "/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src"
   "."
   "src"
-  "/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules"
-  "/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/include"
-  "/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/lib"
-  "/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/platforms"
-  "/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v3"
+  "/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules"
+  "/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/include"
+  "/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/lib"
+  "/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/platforms"
+  "/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v3"
   "src/modules/px4_messages"
   "src/modules"
-  "/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/mavlink/include/mavlink"
-  "/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/lib/DriverFramework/framework/include"
-  "/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/lib/matrix"
+  "/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/mavlink/include/mavlink"
+  "/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/lib/DriverFramework/framework/include"
+  "/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/lib/matrix"
   "px4fmu-v3/NuttX/nuttx-export/include"
   "px4fmu-v3/NuttX/nuttx-export/include/cxx"
   "px4fmu-v3/NuttX/nuttx-export/arch/chip"

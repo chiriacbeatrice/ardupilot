@@ -3,7 +3,7 @@
 //
 
 #include "Copter.h"
-
+#define MAX_VELOCITY 0.5f
 /*
  * Init and run calls for loiter flight mode
  */
@@ -264,7 +264,44 @@ void Copter::ModeModeTest::run()
 #endif
           
             // run loiter controller
-            loiter_nav->update();
+            //loiter_nav->update();
+
+            //cod adugat 10.06.2019
+            loiter_nav->prepUpdate();
+            DataFlash_Class::instance()->Log_Write("TEST_Viteza_inainte", "TimeUS,Alt,TEST_Viteza_Betty_pe_xyz_inainte",
+												  "cm/s", // units: seconds, meters
+												  "cm/s"
+												  "cm/s"
+												  "FB", // mult: 1e-6, 1e-2
+												  "fff", // format: uint64_t, float
+												(double)pos_control->get_desired_velocity().x,
+												(double)pos_control->get_desired_velocity().y,
+												(double)pos_control->get_desired_velocity().z);
+
+			   Vector2f desired_vel_cms(pos_control->get_desired_velocity().x, pos_control->get_desired_velocity().y);
+
+			   if(desired_vel_cms.length() > MAX_VELOCITY)
+			   {
+				  desired_vel_cms = (desired_vel_cms/desired_vel_cms.length())*MAX_VELOCITY;
+				  pos_control->set_desired_velocity_xy(desired_vel_cms.x,desired_vel_cms.y);
+			   }
+
+			   pos_control->update_xy_controller();
+
+			   DataFlash_Class::instance()->Log_Write("TEST_Viteza_dupa", "TimeUS,Alt,TEST_Viteza_Betty_pe_xyz_dupa",
+													  "cm/s", // units: seconds, meters
+													  "cm/s"
+													  "cm/s"
+													  "FB", // mult: 1e-6, 1e-2
+													  "fff", // format: uint64_t, float
+													(double)pos_control->get_desired_velocity().x,
+													(double)pos_control->get_desired_velocity().y,
+													(double)pos_control->get_desired_velocity().z);
+
+
+
+            //cod adugat 10.06.2019
+
 
             // call attitude controller
             attitude_control->input_euler_angle_roll_pitch_euler_rate_yaw(loiter_nav->get_roll(), loiter_nav->get_pitch(), target_yaw_rate);
@@ -279,31 +316,6 @@ void Copter::ModeModeTest::run()
             pos_control->set_alt_target_from_climb_rate_ff(target_climb_rate, G_Dt, false);
             pos_control->update_z_controller();
 
-///////////////////////////////code added by betty 02.03.2019//////////////////////////////////////////////////////////
-
-            if  ((inertial_nav.get_latitude()>=(44.434753*powf(10,6)))
-              && (inertial_nav.get_longitude()<=(26.046537*powf(10,6))))
-            {
-              position_ok = inertial_nav.get_position(); // remains set to the value of the last correct position which was recorded
-            }
-
-            DataFlash_Class::instance()->Log_Write("PosUAV", "Pos.x,Pos.y,TESTBetty",
-                                                       "mm", // units: meters
-                                                       "BB", // mult:  1e-2
-                                                       "ff", // format: float
-                                                        (double)position_ok.x,
-                                                        (double)position_ok.y);
-            //I verified if the UAV is orients:lat S and long W
-            //In this part of code if the UAV current lat and long are not in the correct parameters then it will return to an accepted area
-            if(inertial_nav.get_latitude()<(44.434753*powf(10,6)))
-            {
-                pos_control->set_xy_target(position_ok.x,inertial_nav.get_position().y);
-            }
-            if(inertial_nav.get_longitude()>(26.046537*powf(10,6)))
-            {
-                pos_control->set_xy_target(inertial_nav.get_position().x,position_ok.y);
-            }
-//////////////////////////code added by betty 02.03.2019//////////////////////////////////////////////////////////////
             break;
     }
 }

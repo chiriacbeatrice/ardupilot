@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/board_config.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/board_config.h
 px4_config.h
 -
 nuttx/compiler.h
@@ -18,21 +18,21 @@ stm32.h
 arch/board/board.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v3/board_config.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v3/board_config.h
 ../px4fmu-v2/board_config.h
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/board_config.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/boards/px4fmu-v2/board_config.h
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/drv_gpio.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/drv_gpio.h
 sys/ioctl.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/platforms/px4_config.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/platforms/px4_config.h
 nuttx/config.h
 -
 board_config.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/systemcmds/usb_connected/usb_connected.c
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/systemcmds/usb_connected/usb_connected.c
 px4_config.h
 -
 unistd.h

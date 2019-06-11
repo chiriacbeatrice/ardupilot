@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware
+CMAKE_SOURCE_DIR = /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware
+CMAKE_BINARY_DIR = /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware
 
 # Utility rule file for nuttx_export_px4fmu-v3.
 
@@ -57,28 +57,28 @@ CMakeFiles/nuttx_export_px4fmu-v3: nuttx_export_px4fmu-v3.stamp
 
 
 nuttx_export_px4fmu-v3.stamp: px4fmu-v3.export
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating nuttx_export_px4fmu-v3.stamp"
-	/bin/rm -rf /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3/NuttX/nuttx-export
-	/usr/bin/unzip -q /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3.export -d /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3/NuttX
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating nuttx_export_px4fmu-v3.stamp"
+	/bin/rm -rf /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3/NuttX/nuttx-export
+	/usr/bin/unzip -q /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3.export -d /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3/NuttX
 	/usr/bin/touch nuttx_export_px4fmu-v3.stamp
 
-px4fmu-v3.export: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/nuttx-configs/px4fmu-v3/include/board.h
-px4fmu-v3.export: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/nuttx-configs/px4fmu-v3/include/nsh_romfsimg.h
-px4fmu-v3.export: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/nuttx-configs/px4fmu-v3/nsh/Make.defs
-px4fmu-v3.export: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/nuttx-configs/px4fmu-v3/nsh/appconfig
-px4fmu-v3.export: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/nuttx-configs/px4fmu-v3/nsh/defconfig
-px4fmu-v3.export: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/nuttx-configs/px4fmu-v3/nsh/setenv.sh
-px4fmu-v3.export: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/nuttx-configs/px4fmu-v3/scripts/ld.script
-px4fmu-v3.export: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/nuttx-configs/px4fmu-v3/src/Makefile
-px4fmu-v3.export: /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/nuttx-configs/px4fmu-v3/src/empty.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating px4fmu-v3.export"
+px4fmu-v3.export: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/nuttx-configs/px4fmu-v3/include/board.h
+px4fmu-v3.export: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/nuttx-configs/px4fmu-v3/include/nsh_romfsimg.h
+px4fmu-v3.export: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/nuttx-configs/px4fmu-v3/nsh/Make.defs
+px4fmu-v3.export: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/nuttx-configs/px4fmu-v3/nsh/appconfig
+px4fmu-v3.export: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/nuttx-configs/px4fmu-v3/nsh/defconfig
+px4fmu-v3.export: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/nuttx-configs/px4fmu-v3/nsh/setenv.sh
+px4fmu-v3.export: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/nuttx-configs/px4fmu-v3/scripts/ld.script
+px4fmu-v3.export: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/nuttx-configs/px4fmu-v3/src/Makefile
+px4fmu-v3.export: /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/nuttx-configs/px4fmu-v3/src/empty.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating px4fmu-v3.export"
 	/bin/echo Configuring NuttX for px4fmu-v3
-	/usr/bin/make --no-print-directory -C/home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3/NuttX/nuttx -r --quiet distclean
-	/bin/cp -r /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/nuttx-configs/px4fmu-v3 /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3/NuttX/nuttx/configs
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3/NuttX/nuttx/tools && /bin/sh ./configure.sh px4fmu-v3/nsh
+	/usr/bin/make --no-print-directory -C/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3/NuttX/nuttx -r --quiet distclean
+	/bin/cp -r /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/nuttx-configs/px4fmu-v3 /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3/NuttX/nuttx/configs
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3/NuttX/nuttx/tools && /bin/sh ./configure.sh px4fmu-v3/nsh
 	/bin/echo Exporting NuttX for px4fmu-v3
-	/usr/bin/make --no-print-directory --quiet -C /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3/NuttX/nuttx -j4 -r CONFIG_ARCH_BOARD=px4fmu-v3 export > /dev/null
-	/bin/cp -r /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3/NuttX/nuttx/nuttx-export.zip /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3.export
+	/usr/bin/make --no-print-directory --quiet -C /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3/NuttX/nuttx -j4 -r CONFIG_ARCH_BOARD=px4fmu-v3 export > /dev/null
+	/bin/cp -r /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3/NuttX/nuttx/nuttx-export.zip /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/px4fmu-v3.export
 
 nuttx_export_px4fmu-v3: CMakeFiles/nuttx_export_px4fmu-v3
 nuttx_export_px4fmu-v3: nuttx_export_px4fmu-v3.stamp
@@ -97,6 +97,6 @@ CMakeFiles/nuttx_export_px4fmu-v3.dir/clean:
 .PHONY : CMakeFiles/nuttx_export_px4fmu-v3.dir/clean
 
 CMakeFiles/nuttx_export_px4fmu-v3.dir/depend:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles/nuttx_export_px4fmu-v3.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles/nuttx_export_px4fmu-v3.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/nuttx_export_px4fmu-v3.dir/depend
 

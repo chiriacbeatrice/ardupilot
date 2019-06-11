@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_params.c
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/drivers/px4io/px4io_params.c
 nuttx/config.h
 -
 systemlib/param/param.h
 -
 
-/home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware/src/modules/systemlib/param/param.h
+/home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware/src/modules/systemlib/param/param.h
 stdint.h
 -
 stdbool.h

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/modules/PX4Firmware
+CMAKE_SOURCE_DIR = /home/beatricec/LicentaBetty/ardupilot/modules/PX4Firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware
+CMAKE_BINARY_DIR = /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -115,7 +115,7 @@ test/fast: test
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -149,7 +149,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CPackSourceConfig.cmake
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ package_source/fast: package_source
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/CMakeFiles/progress.marks
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx/CMakeFiles/progress.marks
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/clean
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/preinstall
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/preinstall
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/rule:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/rule
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/rule
 .PHONY : src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/rule
 
 # Convenience name for target.
@@ -201,12 +201,12 @@ build_firmware_px4fmu-v3: src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3
 
 # fast build rule for target.
 build_firmware_px4fmu-v3/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/build.make src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/build
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/build.make src/firmware/nuttx/CMakeFiles/build_firmware_px4fmu-v3.dir/build
 .PHONY : build_firmware_px4fmu-v3/fast
 
 # Convenience name for target.
 src/firmware/nuttx/CMakeFiles/check_weak.dir/rule:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/check_weak.dir/rule
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/check_weak.dir/rule
 .PHONY : src/firmware/nuttx/CMakeFiles/check_weak.dir/rule
 
 # Convenience name for target.
@@ -216,12 +216,12 @@ check_weak: src/firmware/nuttx/CMakeFiles/check_weak.dir/rule
 
 # fast build rule for target.
 check_weak/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/check_weak.dir/build.make src/firmware/nuttx/CMakeFiles/check_weak.dir/build
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/check_weak.dir/build.make src/firmware/nuttx/CMakeFiles/check_weak.dir/build
 .PHONY : check_weak/fast
 
 # Convenience name for target.
 src/firmware/nuttx/CMakeFiles/collect_extras.dir/rule:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/collect_extras.dir/rule
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/collect_extras.dir/rule
 .PHONY : src/firmware/nuttx/CMakeFiles/collect_extras.dir/rule
 
 # Convenience name for target.
@@ -231,12 +231,12 @@ collect_extras: src/firmware/nuttx/CMakeFiles/collect_extras.dir/rule
 
 # fast build rule for target.
 collect_extras/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/collect_extras.dir/build.make src/firmware/nuttx/CMakeFiles/collect_extras.dir/build
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/collect_extras.dir/build.make src/firmware/nuttx/CMakeFiles/collect_extras.dir/build
 .PHONY : collect_extras/fast
 
 # Convenience name for target.
 src/firmware/nuttx/CMakeFiles/debug.dir/rule:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/debug.dir/rule
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/debug.dir/rule
 .PHONY : src/firmware/nuttx/CMakeFiles/debug.dir/rule
 
 # Convenience name for target.
@@ -246,12 +246,12 @@ debug: src/firmware/nuttx/CMakeFiles/debug.dir/rule
 
 # fast build rule for target.
 debug/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/debug.dir/build.make src/firmware/nuttx/CMakeFiles/debug.dir/build
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/debug.dir/build.make src/firmware/nuttx/CMakeFiles/debug.dir/build
 .PHONY : debug/fast
 
 # Convenience name for target.
 src/firmware/nuttx/CMakeFiles/debug_io.dir/rule:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/debug_io.dir/rule
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/debug_io.dir/rule
 .PHONY : src/firmware/nuttx/CMakeFiles/debug_io.dir/rule
 
 # Convenience name for target.
@@ -261,12 +261,12 @@ debug_io: src/firmware/nuttx/CMakeFiles/debug_io.dir/rule
 
 # fast build rule for target.
 debug_io/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/debug_io.dir/build.make src/firmware/nuttx/CMakeFiles/debug_io.dir/build
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/debug_io.dir/build.make src/firmware/nuttx/CMakeFiles/debug_io.dir/build
 .PHONY : debug_io/fast
 
 # Convenience name for target.
 src/firmware/nuttx/CMakeFiles/debug_tui.dir/rule:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/debug_tui.dir/rule
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/debug_tui.dir/rule
 .PHONY : src/firmware/nuttx/CMakeFiles/debug_tui.dir/rule
 
 # Convenience name for target.
@@ -276,12 +276,12 @@ debug_tui: src/firmware/nuttx/CMakeFiles/debug_tui.dir/rule
 
 # fast build rule for target.
 debug_tui/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/debug_tui.dir/build.make src/firmware/nuttx/CMakeFiles/debug_tui.dir/build
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/debug_tui.dir/build.make src/firmware/nuttx/CMakeFiles/debug_tui.dir/build
 .PHONY : debug_tui/fast
 
 # Convenience name for target.
 src/firmware/nuttx/CMakeFiles/debug_ddd.dir/rule:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/debug_ddd.dir/rule
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/debug_ddd.dir/rule
 .PHONY : src/firmware/nuttx/CMakeFiles/debug_ddd.dir/rule
 
 # Convenience name for target.
@@ -291,12 +291,12 @@ debug_ddd: src/firmware/nuttx/CMakeFiles/debug_ddd.dir/rule
 
 # fast build rule for target.
 debug_ddd/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/debug_ddd.dir/build.make src/firmware/nuttx/CMakeFiles/debug_ddd.dir/build
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/debug_ddd.dir/build.make src/firmware/nuttx/CMakeFiles/debug_ddd.dir/build
 .PHONY : debug_ddd/fast
 
 # Convenience name for target.
 src/firmware/nuttx/CMakeFiles/romfs.dir/rule:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/romfs.dir/rule
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/romfs.dir/rule
 .PHONY : src/firmware/nuttx/CMakeFiles/romfs.dir/rule
 
 # Convenience name for target.
@@ -306,12 +306,12 @@ romfs: src/firmware/nuttx/CMakeFiles/romfs.dir/rule
 
 # fast build rule for target.
 romfs/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/romfs.dir/build.make src/firmware/nuttx/CMakeFiles/romfs.dir/build
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/romfs.dir/build.make src/firmware/nuttx/CMakeFiles/romfs.dir/build
 .PHONY : romfs/fast
 
 # Convenience name for target.
 src/firmware/nuttx/CMakeFiles/debug_io_tui.dir/rule:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/debug_io_tui.dir/rule
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/debug_io_tui.dir/rule
 .PHONY : src/firmware/nuttx/CMakeFiles/debug_io_tui.dir/rule
 
 # Convenience name for target.
@@ -321,12 +321,12 @@ debug_io_tui: src/firmware/nuttx/CMakeFiles/debug_io_tui.dir/rule
 
 # fast build rule for target.
 debug_io_tui/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/debug_io_tui.dir/build.make src/firmware/nuttx/CMakeFiles/debug_io_tui.dir/build
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/debug_io_tui.dir/build.make src/firmware/nuttx/CMakeFiles/debug_io_tui.dir/build
 .PHONY : debug_io_tui/fast
 
 # Convenience name for target.
 src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/rule:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/rule
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/rule
 .PHONY : src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/rule
 
 # Convenience name for target.
@@ -336,12 +336,12 @@ debug_io_ddd: src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/rule
 
 # fast build rule for target.
 debug_io_ddd/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/build.make src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/build
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/build.make src/firmware/nuttx/CMakeFiles/debug_io_ddd.dir/build
 .PHONY : debug_io_ddd/fast
 
 # Convenience name for target.
 src/firmware/nuttx/CMakeFiles/upload.dir/rule:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/upload.dir/rule
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/upload.dir/rule
 .PHONY : src/firmware/nuttx/CMakeFiles/upload.dir/rule
 
 # Convenience name for target.
@@ -351,12 +351,12 @@ upload: src/firmware/nuttx/CMakeFiles/upload.dir/rule
 
 # fast build rule for target.
 upload/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/upload.dir/build.make src/firmware/nuttx/CMakeFiles/upload.dir/build
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/upload.dir/build.make src/firmware/nuttx/CMakeFiles/upload.dir/build
 .PHONY : upload/fast
 
 # Convenience name for target.
 src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/rule:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/rule
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f CMakeFiles/Makefile2 src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/rule
 .PHONY : src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/rule
 
 # Convenience name for target.
@@ -366,7 +366,7 @@ firmware_nuttx: src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/rule
 
 # fast build rule for target.
 firmware_nuttx/fast:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/build.make src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/build
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/build.make src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/build
 .PHONY : firmware_nuttx/fast
 
 builtin_commands.obj: builtin_commands.c.obj
@@ -375,7 +375,7 @@ builtin_commands.obj: builtin_commands.c.obj
 
 # target to build an object file
 builtin_commands.c.obj:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/build.make src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/builtin_commands.c.obj
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/build.make src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/builtin_commands.c.obj
 .PHONY : builtin_commands.c.obj
 
 builtin_commands.i: builtin_commands.c.i
@@ -384,7 +384,7 @@ builtin_commands.i: builtin_commands.c.i
 
 # target to preprocess a source file
 builtin_commands.c.i:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/build.make src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/builtin_commands.c.i
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/build.make src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/builtin_commands.c.i
 .PHONY : builtin_commands.c.i
 
 builtin_commands.s: builtin_commands.c.s
@@ -393,7 +393,7 @@ builtin_commands.s: builtin_commands.c.s
 
 # target to generate assembly for a file
 builtin_commands.c.s:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/build.make src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/builtin_commands.c.s
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(MAKE) -f src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/build.make src/firmware/nuttx/CMakeFiles/firmware_nuttx.dir/builtin_commands.c.s
 .PHONY : builtin_commands.c.s
 
 # Help Target
@@ -437,6 +437,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/beatrice/Licenta_FisiereComplete/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
