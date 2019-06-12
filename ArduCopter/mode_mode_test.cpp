@@ -3,7 +3,9 @@
 //
 
 #include "Copter.h"
-#define MAX_VELOCITY 0.5f
+#include "math.h"
+#include "../libraries/AP_Math/ObjectAvoid.h"
+#define MAX_VELOCITY 50.0f
 /*
  * Init and run calls for loiter flight mode
  */
@@ -18,12 +20,12 @@ bool Copter::ModeModeTest::init(bool ignore_checks)
 {
     /////////////////////////////cod adaugat de betty pentru loguri//////////////////////////////
     //Easy Way to add a log//////
-    DataFlash_Class::instance()->Log_Write("TEST", "TimeUS,Alt,TESTBetty",
-                                           "sm", // units: seconds, meters
-                                           "FB", // mult: 1e-6, 1e-2
-                                           "Qf", // format: uint64_t, float
-                                           AP_HAL::micros64(),
-                                           (double)alt_in_cm);  /// campurile astea le=am pus in header caci altfel nu stie de ele
+//    DataFlash_Class::instance()->Log_Write("TEST", "TimeUS,Alt,TESTBetty",
+//                                           "sm", // units: seconds, meters
+//                                           "FB", // mult: 1e-6, 1e-2
+//                                           "Qf", // format: uint64_t, float
+//                                           AP_HAL::micros64(),
+//                                           (double)alt_in_cm);  /// campurile astea le=am pus in header caci altfel nu stie de ele
 
                                            //Inca nu am setat alt_in_cm nicaieri. Ar trebui eventual un setter pentru el
 
@@ -110,6 +112,12 @@ void Copter::ModeModeTest::run()
     float target_climb_rate = 0.0f;
     float takeoff_climb_rate = 0.0f;
     Vector3f position_ok;
+
+    //added by betty
+   //Vector2f currentPosition;
+   //Location pos; // de decomentat la adaugarea codului
+   // added by betty
+
 
     // initialize vertical speed and acceleration
     pos_control->set_max_speed_z(-get_pilot_speed_dn(), g.pilot_speed_up);
@@ -268,15 +276,15 @@ void Copter::ModeModeTest::run()
 
             //cod adugat 10.06.2019
             loiter_nav->prepUpdate();
-            DataFlash_Class::instance()->Log_Write("TEST_Viteza_inainte", "TimeUS,Alt,TEST_Viteza_Betty_pe_xyz_inainte",
-												  "cm/s", // units: seconds, meters
-												  "cm/s"
-												  "cm/s"
-												  "FB", // mult: 1e-6, 1e-2
-												  "fff", // format: uint64_t, float
-												(double)pos_control->get_desired_velocity().x,
-												(double)pos_control->get_desired_velocity().y,
-												(double)pos_control->get_desired_velocity().z);
+//            DataFlash_Class::instance()->Log_Write("TEST_Viteza_inainte", "TimeUS,Alt,TEST_Viteza_Betty_pe_xyz_inainte",
+//												  "cm/s", // units: seconds, meters
+//												  "cm/s"
+//												  "cm/s"
+//												  "FB", // mult: 1e-6, 1e-2
+//												  "fff", // format: uint64_t, float
+//												(double)pos_control->get_desired_velocity().x,
+//												(double)pos_control->get_desired_velocity().y,
+//												(double)pos_control->get_desired_velocity().z);
 
 			   Vector2f desired_vel_cms(pos_control->get_desired_velocity().x, pos_control->get_desired_velocity().y);
 
@@ -288,21 +296,72 @@ void Copter::ModeModeTest::run()
 
 			   pos_control->update_xy_controller();
 
-			   DataFlash_Class::instance()->Log_Write("TEST_Viteza_dupa", "TimeUS,Alt,TEST_Viteza_Betty_pe_xyz_dupa",
-													  "cm/s", // units: seconds, meters
-													  "cm/s"
-													  "cm/s"
-													  "FB", // mult: 1e-6, 1e-2
-													  "fff", // format: uint64_t, float
-													(double)pos_control->get_desired_velocity().x,
-													(double)pos_control->get_desired_velocity().y,
-													(double)pos_control->get_desired_velocity().z);
+//			   DataFlash_Class::instance()->Log_Write("TEST_Viteza_dupa", "TimeUS,Alt,TEST_Viteza_Betty_pe_xyz_dupa",
+//													  "cm/s", // units: seconds, meters
+//													  "cm/s"
+//													  "cm/s"
+//													  "FB", // mult: 1e-6, 1e-2
+//													  "fff", // format: uint64_t, float
+//													(double)pos_control->get_desired_velocity().x,
+//													(double)pos_control->get_desired_velocity().y,
+//													(double)pos_control->get_desired_velocity().z);
 
 
 
             //cod adugat 10.06.2019
 
+            // cod betty pentru algoritmii propriu zisi -> se adauga partile pentru harta
 
+	            //code added by betty
+//
+//	           Vector3f curr_vel_des = pos_control->get_desired_velocity();
+//	           /////////////////////////////cod adaugat de betty pentru loguri//////////////////////////////
+//	              //Easy Way to add a log//////
+//	           DataFlash_Class::instance()->Log_Write("TEST_Viteza_inainte", "TimeUS,Alt,TEST_Viteza_Betty_pe_xyz_inainte",
+//	                                                  "cm/s", // units: seconds, meters
+//	                                                  "cm/s"
+//	                                                  "cm/s"
+//	                                                  "FB", // mult: 1e-6, 1e-2
+//	                                                  "fff", // format: uint64_t, float
+//	                                                  (double)pos_control->get_desired_velocity().x,
+//	                                                  (double)pos_control->get_desired_velocity().y,
+//	                                                  (double)pos_control->get_desired_velocity().z);  /// campurile astea le=am pus in header caci altfel nu stie de ele
+//
+//	                                                     //Inca nu am setat alt_in_cm nicaieri. Ar trebui eventual un setter pentru el
+//
+//	              //Hard Way to add a log//////
+//	           Vector2f desired_vel_cms(floorf(curr_vel_des.x)/floorf(100),floorf(curr_vel_des.y)/floorf(100));
+//
+//	           //Vector2f desired_vel_cms(curr_vel_des.x,curr_vel_des.y);
+//	           float Kp=pos_control->get_pos_xy_p().kP();//mai este si  float Kp = ahrs._kp;
+//
+//	           //ahrs.get_relative_position_NE_origin(currentPosition);  // returneaza pozitie relativa la origine
+//	           inertial_nav.get_location(pos);
+//	           currentPosition = objectAvoid.location_to_xy(pos.lat,pos.lng);
+//
+//	           float acc = pos_control->get_max_accel_xy();// sau :float acc = loiter_nav->get_pilot_desired_acceleration().length();
+//
+//	           objectAvoid.adjust_velocity(Kp,currentPosition,
+//	                                       acc,desired_vel_cms, G_Dt);
+//
+//	           curr_vel_des.x = desired_vel_cms.x*100;
+//	           curr_vel_des.x = desired_vel_cms.x*100;
+//	           pos_control->set_desired_velocity(curr_vel_des); // <-asta va trebui comentat
+//
+//	           DataFlash_Class::instance()->Log_Write("TEST_Viteza_dupa", "TimeUS,Alt,TEST_Viteza_Betty_pe_xyz_dupa",
+//	                                                  "cm/s", // units: seconds, meters
+//	                                                  "cm/s"
+//	                                                  "cm/s"
+//	                                                  "FB", // mult: 1e-6, 1e-2
+//	                                                  "fff", // format: uint64_t, float
+//	                                                  (double)pos_control->get_desired_velocity().x,
+//	                                                  (double)pos_control->get_desired_velocity().y,
+//	                                                  (double)pos_control->get_desired_velocity().z);
+//	           //code added by betty
+
+
+
+            //////////////////////////////////////////////////////////////////////////////////////////
             // call attitude controller
             attitude_control->input_euler_angle_roll_pitch_euler_rate_yaw(loiter_nav->get_roll(), loiter_nav->get_pitch(), target_yaw_rate);
 

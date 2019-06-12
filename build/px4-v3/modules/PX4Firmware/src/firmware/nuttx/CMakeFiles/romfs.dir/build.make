@@ -61,7 +61,6 @@ src/firmware/nuttx/romfs.o: /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/
 src/firmware/nuttx/romfs.o: /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/px4-extra-files/ROMFS/init.d/rc.APM
 src/firmware/nuttx/romfs.o: /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/px4-extra-files/ROMFS/init.d/rc.error
 src/firmware/nuttx/romfs.o: /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/px4-extra-files/ROMFS/init.d/rcS
-src/firmware/nuttx/romfs.o: /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/px4-extra-files/ROMFS/px4io/px4io.bin
 src/firmware/nuttx/romfs.o: /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/px4-extra-files/ROMFS/tones/startup
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating romfs.o"
 	cd /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/src/firmware/nuttx && cmake -E remove_directory /home/beatricec/LicentaBetty/ardupilot/build/px4-v3/modules/PX4Firmware/tmp/custom-ROMFS

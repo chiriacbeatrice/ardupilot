@@ -1,4 +1,4 @@
-# project  configured on Tue Jun 11 15:22:43 2019 by
+# project  configured on Wed Jun 12 16:38:11 2019 by
 # waf 2.0.9 (abi 20, python 2070ff0 on linux2)
 # using /home/beatricec/LicentaBetty/ardupilot/modules/waf/waf-light configure --board px4-v3
 #
@@ -17,13 +17,13 @@ px4-v3
 ----------------------------------------
 Checking for program 'arm-none-eabi-ar'
 /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ar
-find program=['arm-none-eabi-ar'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/home/beatricec/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='AR' -> ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ar']
+find program=['arm-none-eabi-ar'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='AR' -> ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ar']
 ----------------------------------------
 Using toolchain
 arm-none-eabi
 ----------------------------------------
 Checking for 'g++' (C++ compiler)
-find program=['arm-none-eabi-g++', 'arm-none-eabi-c++'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/home/beatricec/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='CXX' -> ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++']
+find program=['arm-none-eabi-g++', 'arm-none-eabi-c++'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='CXX' -> ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++']
 ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++', '-dM', '-E', '-']
 out: #define __DBL_MIN_EXP__ (-1021)
 #define __HQ_FBIT__ 15
@@ -368,7 +368,7 @@ out: #define __DBL_MIN_EXP__ (-1021)
 #define __ATOMIC_ACQ_REL 4
 #define __ATOMIC_RELEASE 3
 
-find program=['ar'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/home/beatricec/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='AR' -> ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ar']
+find program=['ar'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='AR' -> ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ar']
 ==>
 
 int main(int argc, char **argv) {
@@ -377,16 +377,16 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_861661f772192f7df58dd2dfd7df4f3b/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_40c06d27e35a1db4fb60f72ae91ea32c/test.cpp[0m
 
 ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++', '-fPIC', '-DWAF_BUILD=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_861661f772192f7df58dd2dfd7df4f3b/testbuild/px4-v3/libtestprog.so[0m
+[2/2] Linking [33mbuild/.conf_check_40c06d27e35a1db4fb60f72ae91ea32c/testbuild/px4-v3/libtestprog.so[0m
 
 ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++', '-shared', 'test.cpp.1.o', '-o', 'libtestprog.so', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++
 ----------------------------------------
 Checking for 'gcc' (C compiler)
-find program=['arm-none-eabi-gcc', 'arm-none-eabi-cc'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/home/beatricec/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='CC' -> ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc']
+find program=['arm-none-eabi-gcc', 'arm-none-eabi-cc'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='CC' -> ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc']
 ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc', '-dM', '-E', '-']
 out: #define __DBL_MIN_EXP__ (-1021)
 #define __HQ_FBIT__ 15
@@ -731,7 +731,7 @@ out: #define __DBL_MIN_EXP__ (-1021)
 #define __ATOMIC_ACQ_REL 4
 #define __ATOMIC_RELEASE 3
 
-find program=['ar'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/home/beatricec/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='AR' -> ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ar']
+find program=['ar'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='AR' -> ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-ar']
 ==>
 
 int main(int argc, char **argv) {
@@ -740,10 +740,10 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_8ebc7260ceb0d54e9d299c3c4614bbac/test.c[0m
+[1/2] Compiling [32mbuild/.conf_check_5047513481426c7fa57e335bb9580f37/test.c[0m
 
 ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc', '-fPIC', '-DWAF_BUILD=1', '../../test.c', '-c', '-otest.c.1.o']
-[2/2] Linking [33mbuild/.conf_check_8ebc7260ceb0d54e9d299c3c4614bbac/testbuild/px4-v3/libtestprog.so[0m
+[2/2] Linking [33mbuild/.conf_check_5047513481426c7fa57e335bb9580f37/testbuild/px4-v3/libtestprog.so[0m
 
 ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc', '-shared', 'test.c.1.o', '-o', 'libtestprog.so', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc
@@ -752,7 +752,7 @@ Checking for c flags '-MMD'
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_16685917962bf027eb3e3624f14740b5/test.c[0m
+[1/1] Compiling [32mbuild/.conf_check_cd7486ceb993fa2232aeda68b8c2a3a2/test.c[0m
 
 ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-gcc', '-MMD', '-DWAF_BUILD=1', '../../test.c', '-c', '-otest.c.1.o']
 yes
@@ -761,7 +761,7 @@ Checking for cxx flags '-MMD'
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_9c2ad4503a06b2e0c1fbb9b4757a4c79/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_3cb4766e1526c6d8b61384c5242aab73/test.cpp[0m
 
 ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++', '-MMD', '-DWAF_BUILD=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
 yes
@@ -775,10 +775,10 @@ Checking for HAVE_CMATH_ISFINITE
           return std::isfinite(1.0f);
         }
 <==
-[1/2] Compiling [32mbuild/.conf_check_ae3ebbe965d604fa6a9acaceba1fff0a/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_6cd8c1f499f5d957aa5267a11c458c22/test.cpp[0m
 
 ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wshadow', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=format-security', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=unused-result', '-Werror=return-type', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-Wno-error=cast-align', '-Wlogical-op', '-Wframe-larger-than=1300', '-fsingle-precision-constant', '-Wno-attributes', '-Wno-error=double-promotion', '-Wno-error=missing-declarations', '-Wno-error=float-equal', '-Wno-error=undef', '-Wno-error=cpp', '-MMD', '-I../../../../modules/uavcan/libuavcan/include', '-DCONFIG_HAL_BOARD=HAL_BOARD_PX4', '-DHAVE_OCLOEXEC=0', '-DHAVE_STD_NULLPTR_T=0', '-DUAVCAN_CPP_VERSION=UAVCAN_CPP03', '-DUAVCAN_NO_ASSERTIONS=1', '-DUAVCAN_NULLPTR=nullptr', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_ae3ebbe965d604fa6a9acaceba1fff0a/testbuild/px4-v3/testprog[0m
+[2/2] Linking [33mbuild/.conf_check_6cd8c1f499f5d957aa5267a11c458c22/testbuild/px4-v3/testprog[0m
 
 ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++', '-Wl,--gc-sections', 'test.cpp.1.o', '-o', 'testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 err: /opt/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o): In function `exit':
@@ -792,7 +792,7 @@ from /home/beatricec/LicentaBetty/ardupilot: Test does not build: Traceback (mos
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 139704532997376: cxxprogram test.cpp.1.o -> testprog}
+	{task 140297230005504: cxxprogram test.cpp.1.o -> testprog}
  (run with -v to display more information)
 
 no
@@ -807,10 +807,10 @@ Checking for HAVE_CMATH_ISINF
           return std::isinf(1.0f);
         }
 <==
-[1/2] Compiling [32mbuild/.conf_check_b3043aab80a2639135be1e567772cb1b/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_59b0776607c6b94630485ab4f14c769b/test.cpp[0m
 
 ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wshadow', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=format-security', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=unused-result', '-Werror=return-type', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-Wno-error=cast-align', '-Wlogical-op', '-Wframe-larger-than=1300', '-fsingle-precision-constant', '-Wno-attributes', '-Wno-error=double-promotion', '-Wno-error=missing-declarations', '-Wno-error=float-equal', '-Wno-error=undef', '-Wno-error=cpp', '-MMD', '-I../../../../modules/uavcan/libuavcan/include', '-DCONFIG_HAL_BOARD=HAL_BOARD_PX4', '-DHAVE_OCLOEXEC=0', '-DHAVE_STD_NULLPTR_T=0', '-DUAVCAN_CPP_VERSION=UAVCAN_CPP03', '-DUAVCAN_NO_ASSERTIONS=1', '-DUAVCAN_NULLPTR=nullptr', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_b3043aab80a2639135be1e567772cb1b/testbuild/px4-v3/testprog[0m
+[2/2] Linking [33mbuild/.conf_check_59b0776607c6b94630485ab4f14c769b/testbuild/px4-v3/testprog[0m
 
 ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++', '-Wl,--gc-sections', 'test.cpp.1.o', '-o', 'testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 err: /opt/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o): In function `exit':
@@ -824,7 +824,7 @@ from /home/beatricec/LicentaBetty/ardupilot: Test does not build: Traceback (mos
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 139704515905848: cxxprogram test.cpp.1.o -> testprog}
+	{task 140297212913976: cxxprogram test.cpp.1.o -> testprog}
  (run with -v to display more information)
 
 no
@@ -839,10 +839,10 @@ Checking for HAVE_CMATH_ISNAN
           return std::isnan(1.0f);
         }
 <==
-[1/2] Compiling [32mbuild/.conf_check_ce8f4d9b16cf4095f541c1e526090c1c/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_dbe93fe76d594999a72aca2ec7e09d28/test.cpp[0m
 
 ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wshadow', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=format-security', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=unused-result', '-Werror=return-type', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-Wno-error=cast-align', '-Wlogical-op', '-Wframe-larger-than=1300', '-fsingle-precision-constant', '-Wno-attributes', '-Wno-error=double-promotion', '-Wno-error=missing-declarations', '-Wno-error=float-equal', '-Wno-error=undef', '-Wno-error=cpp', '-MMD', '-I../../../../modules/uavcan/libuavcan/include', '-DCONFIG_HAL_BOARD=HAL_BOARD_PX4', '-DHAVE_OCLOEXEC=0', '-DHAVE_STD_NULLPTR_T=0', '-DUAVCAN_CPP_VERSION=UAVCAN_CPP03', '-DUAVCAN_NO_ASSERTIONS=1', '-DUAVCAN_NULLPTR=nullptr', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_ce8f4d9b16cf4095f541c1e526090c1c/testbuild/px4-v3/testprog[0m
+[2/2] Linking [33mbuild/.conf_check_dbe93fe76d594999a72aca2ec7e09d28/testbuild/px4-v3/testprog[0m
 
 ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++', '-Wl,--gc-sections', 'test.cpp.1.o', '-o', 'testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 err: /opt/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o): In function `exit':
@@ -856,7 +856,7 @@ from /home/beatricec/LicentaBetty/ardupilot: Test does not build: Traceback (mos
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 139704515906328: cxxprogram test.cpp.1.o -> testprog}
+	{task 140297212914456: cxxprogram test.cpp.1.o -> testprog}
  (run with -v to display more information)
 
 no
@@ -874,10 +874,10 @@ Checking for NEED_CMATH_ISFINITE_STD_NAMESPACE
           return isfinite((double)1);
         }
 <==
-[1/2] Compiling [32mbuild/.conf_check_976a0693416e8b5a955b7bd925aabc9d/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_ccdedc53f1baeac09e3f6626a88008de/test.cpp[0m
 
 ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wshadow', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=format-security', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=unused-result', '-Werror=return-type', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-Wno-error=cast-align', '-Wlogical-op', '-Wframe-larger-than=1300', '-fsingle-precision-constant', '-Wno-attributes', '-Wno-error=double-promotion', '-Wno-error=missing-declarations', '-Wno-error=float-equal', '-Wno-error=undef', '-Wno-error=cpp', '-MMD', '-I../../../../modules/uavcan/libuavcan/include', '-DCONFIG_HAL_BOARD=HAL_BOARD_PX4', '-DHAVE_OCLOEXEC=0', '-DHAVE_STD_NULLPTR_T=0', '-DUAVCAN_CPP_VERSION=UAVCAN_CPP03', '-DUAVCAN_NO_ASSERTIONS=1', '-DUAVCAN_NULLPTR=nullptr', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_976a0693416e8b5a955b7bd925aabc9d/testbuild/px4-v3/testprog[0m
+[2/2] Linking [33mbuild/.conf_check_ccdedc53f1baeac09e3f6626a88008de/testbuild/px4-v3/testprog[0m
 
 ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++', '-Wl,--gc-sections', 'test.cpp.1.o', '-o', 'testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 err: /opt/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o): In function `exit':
@@ -891,7 +891,7 @@ from /home/beatricec/LicentaBetty/ardupilot: Test does not build: Traceback (mos
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 139704515906808: cxxprogram test.cpp.1.o -> testprog}
+	{task 140297212914936: cxxprogram test.cpp.1.o -> testprog}
  (run with -v to display more information)
 
 no
@@ -909,10 +909,10 @@ Checking for NEED_CMATH_ISINF_STD_NAMESPACE
           return isinf((double)1);
         }
 <==
-[1/2] Compiling [32mbuild/.conf_check_a88940de9e76d4f94edea6fc3a4d6924/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_2e61a5b07c61f6231ad319c1d8899d5f/test.cpp[0m
 
 ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wshadow', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=format-security', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=unused-result', '-Werror=return-type', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-Wno-error=cast-align', '-Wlogical-op', '-Wframe-larger-than=1300', '-fsingle-precision-constant', '-Wno-attributes', '-Wno-error=double-promotion', '-Wno-error=missing-declarations', '-Wno-error=float-equal', '-Wno-error=undef', '-Wno-error=cpp', '-MMD', '-I../../../../modules/uavcan/libuavcan/include', '-DCONFIG_HAL_BOARD=HAL_BOARD_PX4', '-DHAVE_OCLOEXEC=0', '-DHAVE_STD_NULLPTR_T=0', '-DUAVCAN_CPP_VERSION=UAVCAN_CPP03', '-DUAVCAN_NO_ASSERTIONS=1', '-DUAVCAN_NULLPTR=nullptr', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_a88940de9e76d4f94edea6fc3a4d6924/testbuild/px4-v3/testprog[0m
+[2/2] Linking [33mbuild/.conf_check_2e61a5b07c61f6231ad319c1d8899d5f/testbuild/px4-v3/testprog[0m
 
 ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++', '-Wl,--gc-sections', 'test.cpp.1.o', '-o', 'testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 err: /opt/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o): In function `exit':
@@ -926,7 +926,7 @@ from /home/beatricec/LicentaBetty/ardupilot: Test does not build: Traceback (mos
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 139704515907288: cxxprogram test.cpp.1.o -> testprog}
+	{task 140297212915416: cxxprogram test.cpp.1.o -> testprog}
  (run with -v to display more information)
 
 no
@@ -944,10 +944,10 @@ Checking for NEED_CMATH_ISNAN_STD_NAMESPACE
           return isnan((double)1);
         }
 <==
-[1/2] Compiling [32mbuild/.conf_check_a98086af5447c5ed3f73187f267cdadf/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_a7bf64a84a36f71e033c562979088d34/test.cpp[0m
 
 ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wshadow', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=format-security', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=unused-result', '-Werror=return-type', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-Wno-error=cast-align', '-Wlogical-op', '-Wframe-larger-than=1300', '-fsingle-precision-constant', '-Wno-attributes', '-Wno-error=double-promotion', '-Wno-error=missing-declarations', '-Wno-error=float-equal', '-Wno-error=undef', '-Wno-error=cpp', '-MMD', '-I../../../../modules/uavcan/libuavcan/include', '-DCONFIG_HAL_BOARD=HAL_BOARD_PX4', '-DHAVE_OCLOEXEC=0', '-DHAVE_STD_NULLPTR_T=0', '-DUAVCAN_CPP_VERSION=UAVCAN_CPP03', '-DUAVCAN_NO_ASSERTIONS=1', '-DUAVCAN_NULLPTR=nullptr', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_a98086af5447c5ed3f73187f267cdadf/testbuild/px4-v3/testprog[0m
+[2/2] Linking [33mbuild/.conf_check_a7bf64a84a36f71e033c562979088d34/testbuild/px4-v3/testprog[0m
 
 ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++', '-Wl,--gc-sections', 'test.cpp.1.o', '-o', 'testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 err: /opt/gcc-arm-none-eabi-4_9-2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o): In function `exit':
@@ -961,7 +961,7 @@ from /home/beatricec/LicentaBetty/ardupilot: Test does not build: Traceback (mos
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 139704515906928: cxxprogram test.cpp.1.o -> testprog}
+	{task 140297212915056: cxxprogram test.cpp.1.o -> testprog}
  (run with -v to display more information)
 
 no
@@ -977,7 +977,7 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_ff23366f11596f9e89c54afcab31c13f/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_7e43217f553694e5659657052970670f/test.cpp[0m
 
 ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wshadow', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=format-security', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=unused-result', '-Werror=return-type', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-Wno-error=cast-align', '-Wlogical-op', '-Wframe-larger-than=1300', '-fsingle-precision-constant', '-Wno-attributes', '-Wno-error=double-promotion', '-Wno-error=missing-declarations', '-Wno-error=float-equal', '-Wno-error=undef', '-Wno-error=cpp', '-MMD', '-I../../../../modules/uavcan/libuavcan/include', '-DCONFIG_HAL_BOARD=HAL_BOARD_PX4', '-DHAVE_OCLOEXEC=0', '-DHAVE_STD_NULLPTR_T=0', '-DUAVCAN_CPP_VERSION=UAVCAN_CPP03', '-DUAVCAN_NO_ASSERTIONS=1', '-DUAVCAN_NULLPTR=nullptr', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
 err: ../../test.cpp:1:20: fatal error: endian.h: No such file or directory
@@ -992,7 +992,7 @@ from /home/beatricec/LicentaBetty/ardupilot: Test does not build: Traceback (mos
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 139704515905968: cxx test.cpp -> test.cpp.1.o}
+	{task 140297212914096: cxx test.cpp -> test.cpp.1.o}
  (run with -v to display more information)
 
 not found
@@ -1008,7 +1008,7 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_3d76f2ede4fd2410b6848c81a4cb7614/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_200770e8bab25e38d2d86a50fde51c24/test.cpp[0m
 
 ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wshadow', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=format-security', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=unused-result', '-Werror=return-type', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-Wno-error=cast-align', '-Wlogical-op', '-Wframe-larger-than=1300', '-fsingle-precision-constant', '-Wno-attributes', '-Wno-error=double-promotion', '-Wno-error=missing-declarations', '-Wno-error=float-equal', '-Wno-error=undef', '-Wno-error=cpp', '-MMD', '-I../../../../modules/uavcan/libuavcan/include', '-DCONFIG_HAL_BOARD=HAL_BOARD_PX4', '-DHAVE_OCLOEXEC=0', '-DHAVE_STD_NULLPTR_T=0', '-DUAVCAN_CPP_VERSION=UAVCAN_CPP03', '-DUAVCAN_NO_ASSERTIONS=1', '-DUAVCAN_NULLPTR=nullptr', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
 err: ../../test.cpp:1:22: fatal error: byteswap.h: No such file or directory
@@ -1023,7 +1023,7 @@ from /home/beatricec/LicentaBetty/ardupilot: Test does not build: Traceback (mos
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 139704515637328: cxx test.cpp -> test.cpp.1.o}
+	{task 140297212641360: cxx test.cpp -> test.cpp.1.o}
  (run with -v to display more information)
 
 not found
@@ -1031,23 +1031,23 @@ from /home/beatricec/LicentaBetty/ardupilot: The configuration failed
 ----------------------------------------------
 Checking for program 'cmake'
 /usr/bin/cmake
-find program=['cmake'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/home/beatricec/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='CMAKE' -> ['/usr/bin/cmake']
+find program=['cmake'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='CMAKE' -> ['/usr/bin/cmake']
 ----------------------------------------------
 Checking cmake version
 3.10.2
 ----------------------------------------------
 Checking for program 'ninja, ninja-build'
 not found
-find program=['ninja', 'ninja-build'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/home/beatricec/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='NINJA' -> None
+find program=['ninja', 'ninja-build'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='NINJA' -> None
 from /home/beatricec/LicentaBetty/ardupilot: Could not find the program ['ninja', 'ninja-build']
 ----------------------------------------------
 Checking for program 'make'
 /usr/bin/make
-find program=['make'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/home/beatricec/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='MAKE' -> ['/usr/bin/make']
+find program=['make'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='MAKE' -> ['/usr/bin/make']
 ----------------------------------------------
 Checking for program 'python'
 /usr/bin/python
-find program=['python'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/home/beatricec/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='PYTHON' -> ['/usr/bin/python']
+find program=['python'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='PYTHON' -> ['/usr/bin/python']
 ['/usr/bin/python', '-c', 'import imp;print(imp.get_tag())']
 err: Traceback (most recent call last):
   File "<string>", line 1, in <module>
@@ -1076,7 +1076,7 @@ Checking for python version >= 2.7.0
 ----------------------------------------------
 Checking for program 'python'
 /usr/bin/python
-find program=['python'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/home/beatricec/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='PYTHON' -> ['/usr/bin/python']
+find program=['python'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='PYTHON' -> ['/usr/bin/python']
 ['/usr/bin/python', '-c', 'import imp;print(imp.get_tag())']
 err: Traceback (most recent call last):
   File "<string>", line 1, in <module>
@@ -1101,14 +1101,14 @@ yes
 ----------------------------------------------
 Checking for program 'git'
 /usr/bin/git
-find program=['git'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/home/beatricec/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='GIT' -> ['/usr/bin/git']
+find program=['git'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='GIT' -> ['/usr/bin/git']
 ----------------------------------------------
 Gtest
 STM32 boards currently don't support compiling gtest
 ----------------------------------------------
 Checking for program 'arm-none-eabi-size'
 /opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-size
-find program=['arm-none-eabi-size'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/home/beatricec/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='SIZE' -> ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-size']
+find program=['arm-none-eabi-size'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='SIZE' -> ['/opt/gcc-arm-none-eabi-4_9-2015q3/bin/arm-none-eabi-size']
 ----------------------------------------------
 Benchmarks
 disabled
@@ -1121,4 +1121,4 @@ disabled
 ----------------------------------------------
 Checking for program 'rsync'
 /usr/bin/rsync
-find program=['rsync'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/home/beatricec/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='RSYNC' -> ['/usr/bin/rsync']
+find program=['rsync'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='RSYNC' -> ['/usr/bin/rsync']

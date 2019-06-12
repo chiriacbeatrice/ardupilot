@@ -986,6 +986,7 @@ private:
 
     ////camp adaugat de betty pentru loguri. Nu are relevanta.Altfel nu trecea la complare//////
     int32_t alt_in_cm ;
+    ObjectAvoid objectAvoid; //added by betty
 };
 
 class ModePosHold : public Mode {
