@@ -19,7 +19,7 @@ TEST(ObjectAvoid, Test0)
  ObjectAvoid obj;
  Vector2f result=obj.location_to_xy(44.435406,26.053265);
  Vector2f result1 = obj.location_to_xy(44.434973,26.047265);
- std::cout<<"Resultatul este: "<<result.x<<" "<<result.y<<"iar morma este: "<<result.length();
+ std::cout<<"Resultatul este: "<<result.x<<" "<<result.y<<"iar norma este: "<<result.length();
  std::cout<<"\n Originea este: "<<result1.x<<" "<<result1.y<<"\n";
  //EXPECT_TRUE(1.0f < 0.0f);
  EXPECT_TRUE(result.x >43 && result.x <49);

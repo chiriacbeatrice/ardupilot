@@ -50,6 +50,10 @@ TEST(ComplexTest, Test0)
        Vector2f stopping_point_new = openCurve.getStoppingPoint(Kp,acc,currentP,velocity);
        std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
        std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
+
+       EXPECT_TRUE(stopping_point_new.x >= 9.85f && stopping_point_new.x <= 9.86f);
+       EXPECT_TRUE(stopping_point_new.y > 6.0f && stopping_point_new.y < 6.0001f);
+
 }
 
 TEST(ComplexTest, Test1)

@@ -59,14 +59,15 @@ TEST(PolygonConvex, Test0)
     std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
     std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
 
-
+    std::cout<<"\n\nValoarea vitezei dupa procesare X" <<velocity.x<<"\n";
+    std::cout<<"Valoarea vitezei dupa procesare Y"<<velocity.y<<"\n";
 
 
     EXPECT_TRUE(stopping_point_new.x>=7.6f && stopping_point_new.x<=7.7f);
     EXPECT_TRUE(stopping_point_new.y>=7.4f && stopping_point_new.y<=7.5f);
 
 
-  //  EXPECT_TRUE(is_equal(1.0f,0.0f));
+  // EXPECT_TRUE(is_equal(1.0f,0.0f));
 
 }
 
@@ -108,6 +109,9 @@ TEST(PolygonConvex, Test1)
     std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
     std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
 
+    std::cout<<"\n\nValoarea vitezei dupa procesare X" <<velocity.x<<"\n";
+    std::cout<<"Valoarea vitezei dupa procesare Y"<<velocity.y<<"\n";
+
 
     EXPECT_TRUE(is_equal(stopping_point_new.x,8.0f));
     EXPECT_TRUE(stopping_point_new.y >= 11.0f);
@@ -124,6 +128,9 @@ TEST(PolygonConvex, Test1)
     std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
     std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
 
+    std::cout<<"\n\nValoarea vitezei dupa procesare X" <<velocity1.x<<"\n";
+    std::cout<<"Valoarea vitezei dupa procesare Y"<<velocity1.y<<"\n";
+
     EXPECT_TRUE(is_equal(stopping_point_new.x,14.0f));
     EXPECT_TRUE(is_equal(stopping_point_new.y,7.0f));
 
@@ -139,6 +146,9 @@ TEST(PolygonConvex, Test1)
    std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
    std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
 
+   std::cout<<"\n\nValoarea vitezei dupa procesare X" <<velocity2.x<<"\n";
+   std::cout<<"Valoarea vitezei dupa procesare Y"<<velocity2.y<<"\n";
+
    EXPECT_TRUE(is_equal(stopping_point_new.x,5.0f));
    EXPECT_TRUE(is_equal(stopping_point_new.y,3.0f));
 
@@ -153,6 +163,9 @@ TEST(PolygonConvex, Test1)
   stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP3,velocity3);
   std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
   std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
+
+  std::cout<<"\n\nValoarea vitezei dupa procesare X" <<velocity3.x<<"\n";
+  std::cout<<"Valoarea vitezei dupa procesare Y"<<velocity3.y<<"\n";
 
   EXPECT_TRUE(is_equal(stopping_point_new.x,3.0f));
   EXPECT_TRUE(is_equal(stopping_point_new.y,8.0f));
@@ -196,6 +209,9 @@ TEST(PolygonConvex, Test2)
     std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
     std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
 
+    std::cout<<"\n\nValoarea vitezei dupa procesare X" <<velocity.x<<"\n";
+    std::cout<<"Valoarea vitezei dupa procesare Y"<<velocity.y<<"\n";
+
 
     EXPECT_TRUE(is_equal(stopping_point_new.x,3.0f));
     EXPECT_TRUE(is_equal(stopping_point_new.y,3.0f));
@@ -212,6 +228,10 @@ TEST(PolygonConvex, Test2)
     std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
     std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
 
+
+    std::cout<<"\n\nValoarea vitezei dupa procesare X" <<velocity1.x<<"\n";
+    std::cout<<"Valoarea vitezei dupa procesare Y"<<velocity1.y<<"\n";
+
     EXPECT_TRUE(is_equal(stopping_point_new.x,9.0f));
     EXPECT_TRUE(is_equal(stopping_point_new.y,11.0f));
 
@@ -226,6 +246,9 @@ TEST(PolygonConvex, Test2)
    stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP2,velocity2);
    std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
    std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
+
+   std::cout<<"\n\nValoarea vitezei dupa procesare X" <<velocity2.x<<"\n";
+   std::cout<<"Valoarea vitezei dupa procesare Y"<<velocity2.y<<"\n";
 
    EXPECT_TRUE(stopping_point_new.x > 11.5f);
    EXPECT_TRUE(stopping_point_new.x < 12.0f);
@@ -242,6 +265,9 @@ TEST(PolygonConvex, Test2)
   stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP3,velocity3);
   std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
   std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
+
+  std::cout<<"\n\nValoarea vitezei dupa procesare X" <<velocity3.x<<"\n";
+  std::cout<<"Valoarea vitezei dupa procesare Y"<<velocity3.y<<"\n";
 
   EXPECT_TRUE(is_equal(stopping_point_new.x,7.0f));
   EXPECT_TRUE(is_equal(stopping_point_new.y,11.0f));
@@ -289,6 +315,9 @@ TEST(PolygonConvex, Test3)
     std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
     std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
 
+    std::cout<<"\n\nValoarea vitezei dupa procesare X" <<velocity.x<<"\n";
+    std::cout<<"Valoarea vitezei dupa procesare Y"<<velocity.y<<"\n";
+
     EXPECT_TRUE(stopping_point_new ==stopping_point);
     EXPECT_TRUE(velocity == safeVelocity);
 
@@ -309,6 +338,9 @@ TEST(PolygonConvex, Test3)
    stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP1,velocity1);
    std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
    std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
+
+   std::cout<<"\n\nValoarea vitezei dupa procesare X" <<velocity1.x<<"\n";
+   std::cout<<"Valoarea vitezei dupa procesare Y"<<velocity1.y<<"\n";
 
    EXPECT_TRUE(stopping_point_new ==stopping_point);
    EXPECT_TRUE(velocity1 == safeVelocity1);
@@ -331,6 +363,9 @@ TEST(PolygonConvex, Test3)
   std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
   std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
 
+  std::cout<<"\n\nValoarea vitezei dupa procesare X" <<velocity2.x<<"\n";
+  std::cout<<"Valoarea vitezei dupa procesare Y"<<velocity2.y<<"\n";
+
   EXPECT_TRUE(stopping_point_new ==stopping_point);
   EXPECT_TRUE(velocity2 == safeVelocity2);
 
@@ -351,6 +386,9 @@ TEST(PolygonConvex, Test3)
  stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP3,velocity3);
  std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
  std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
+
+ std::cout<<"\n\nValoarea vitezei dupa procesare X" <<velocity3.x<<"\n";
+ std::cout<<"Valoarea vitezei dupa procesare Y"<<velocity3.y<<"\n";
 
  EXPECT_TRUE(stopping_point_new ==stopping_point);
  EXPECT_TRUE(velocity3 == safeVelocity3);
@@ -404,6 +442,9 @@ TEST(PolygonConvex, Test4)
     std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
     std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
 
+    std::cout<<"\n\nValoarea vitezei dupa procesare X" <<velocity.x<<"\n";
+    std::cout<<"Valoarea vitezei dupa procesare Y"<<velocity.y<<"\n";
+
 
     EXPECT_TRUE((stopping_point_new.x >= 15.5f) && (stopping_point_new.x <= 16.0f));
     EXPECT_TRUE((stopping_point_new.y >= 6.5f) && (stopping_point_new.y <= 7.5f));
@@ -423,6 +464,9 @@ TEST(PolygonConvex, Test4)
    std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
    std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
 
+   std::cout<<"\n\nValoarea vitezei dupa procesare X" <<velocity1.x<<"\n";
+   std::cout<<"Valoarea vitezei dupa procesare Y"<<velocity1.y<<"\n";
+
    EXPECT_TRUE(is_equal(stopping_point_new.x,3.0f));
    EXPECT_TRUE(is_equal(stopping_point_new.y,6.0f));
 
@@ -441,6 +485,9 @@ TEST(PolygonConvex, Test4)
     std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
     std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
 
+    std::cout<<"\n\nValoarea vitezei dupa procesare X" <<velocity2.x<<"\n";
+    std::cout<<"Valoarea vitezei dupa procesare Y"<<velocity2.y<<"\n";
+
     EXPECT_TRUE(is_equal(stopping_point_new.x,3.0f));
     EXPECT_TRUE(is_equal(stopping_point_new.y,2.0f));
 
@@ -458,6 +505,9 @@ TEST(PolygonConvex, Test4)
      stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP3,velocity3);
      std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
      std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
+
+     std::cout<<"\n\nValoarea vitezei dupa procesare X" <<velocity3.x<<"\n";
+     std::cout<<"Valoarea vitezei dupa procesare Y"<<velocity3.y<<"\n";
 
      EXPECT_TRUE(is_equal(stopping_point_new.x,14.0f));
      EXPECT_TRUE(is_equal(stopping_point_new.y,11.0f));
@@ -517,6 +567,9 @@ TEST(PolygonConvex, Test5)
     std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
     std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
 
+    std::cout<<"\n\nValoarea vitezei dupa procesare X" <<velocity.x<<"\n";
+    std::cout<<"Valoarea vitezei dupa procesare Y"<<velocity.y<<"\n";
+
     EXPECT_TRUE(stopping_point_new ==stopping_point);
     EXPECT_TRUE(velocity == safeVelocity);
 
@@ -537,6 +590,9 @@ TEST(PolygonConvex, Test5)
    stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP1,velocity1);
    std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
    std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
+
+   std::cout<<"\n\nValoarea vitezei dupa procesare X" <<velocity1.x<<"\n";
+   std::cout<<"Valoarea vitezei dupa procesare Y"<<velocity1.y<<"\n";
 
    EXPECT_TRUE(stopping_point_new ==stopping_point);
    EXPECT_TRUE(velocity1 == safeVelocity1);
@@ -559,6 +615,9 @@ TEST(PolygonConvex, Test5)
   std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
   std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
 
+  std::cout<<"\n\nValoarea vitezei dupa procesare X" <<velocity2.x<<"\n";
+  std::cout<<"Valoarea vitezei dupa procesare Y"<<velocity2.y<<"\n";
+
   EXPECT_TRUE(stopping_point_new ==stopping_point);
   EXPECT_TRUE(velocity2 == safeVelocity2);
 
@@ -579,6 +638,9 @@ TEST(PolygonConvex, Test5)
   stopping_point_new = polygon.getStoppingPoint(Kp,acc,currentP3,velocity3);
   std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
   std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
+
+  std::cout<<"\n\nValoarea vitezei dupa procesare X" <<velocity3.x<<"\n";
+  std::cout<<"Valoarea vitezei dupa procesare Y"<<velocity3.y<<"\n";
 
   EXPECT_TRUE(stopping_point_new ==stopping_point);
   EXPECT_TRUE(velocity3 == safeVelocity3);

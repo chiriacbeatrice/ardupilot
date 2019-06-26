@@ -239,6 +239,7 @@ TEST(ComplexTest, TestLinie)
 
      std::cout<<"newStoppingPoint.x = "<<newStoppingPoint.x<<"\n";
      std::cout<<"newStoppingPoint.y = "<<newStoppingPoint.y<<"\n";
+     //EXPECT_TRUE(is_equal(1.0f,0.0f));
 
 }
 TEST(ComplexTest, Test1)
@@ -571,7 +572,7 @@ TEST(ComplexTest, Test3)
 
         std::cout<<"=====================================================\n\n";
         std::cout<<"Caz 13\n";
-        Vector2f velocity3(-6.0f,0.0f);
+        Vector2f velocity3(-10.0f,0.0f);
         Vector2f safevel3(velocity3);
 
         map1.adjust_velocity(Kp,currentP,acc,velocity3,dt);

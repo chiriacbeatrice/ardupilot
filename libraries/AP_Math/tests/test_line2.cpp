@@ -548,6 +548,7 @@ TEST(LineTest, adjust_velocity_Stop7)
 
   // EXPECT_TRUE(stopping_point_new.x >= 17.2f);
   // EXPECT_TRUE(stopping_point_new.y <= 4.0f);
+   EXPECT_TRUE(velocity==safeVelocity);
 
 }
 

@@ -37,6 +37,10 @@ TEST(CircleTest, ajustVelocityTest0)
     Vector2f zero;
 
     circle.adjust_velocity(1.0f,currentP,5.0f,velocity,1.0f);
+    Vector2f stopping_point_new = circle.getStoppingPoint(1.0f,5.0f,currentP,velocity);
+
+    std::cout<<"\n\nValoarea StoppingPointNew X"<<stopping_point_new.x<<"\n";
+    std::cout<<"\nValoarea StoppingPointNew Y"<<stopping_point_new.y<<"\n";
 
     EXPECT_TRUE(velocity==safevel);
  //   EXPECT_TRUE(is_equal(0.0f,1.0f));//pus intentionat ca sa vedem  logurile
@@ -60,6 +64,12 @@ TEST(CircleTest, ajustVelocityTest0_1)
 
     circle.adjust_velocity(1.0f,currentP,5.0f,velocity,1.0f);
 
+    Vector2f stopping_point_new = circle.getStoppingPoint(1.0f,5.0f,currentP,velocity);
+
+    std::cout<<"\n\nValoarea StoppingPointNew X"<<stopping_point_new.x<<"\n";
+    std::cout<<"\nValoarea StoppingPointNew Y"<<stopping_point_new.y<<"\n";
+
+
     EXPECT_TRUE(velocity==safevel);
 }
 
@@ -80,6 +90,11 @@ TEST(CircleTest, ajustVelocityTest1)
     Vector2f safevel(velocity);
     Vector2f zero;
     circle.adjust_velocity(1.0f,currentP,5.0f,velocity,1.0f);
+
+    Vector2f stopping_point_new = circle.getStoppingPoint(1.0f,5.0f,currentP,velocity);
+
+    std::cout<<"\n\nValoarea StoppingPointNew X"<<stopping_point_new.x<<"\n";
+    std::cout<<"\nValoarea StoppingPointNew Y"<<stopping_point_new.y<<"\n";
 
     EXPECT_TRUE(velocity!=safevel);
     EXPECT_TRUE(velocity == zero);
@@ -104,6 +119,12 @@ TEST(CircleTest, ajustVelocityTest2)
 
     circle.adjust_velocity(1.0f,currentP,5.0f,velocity,1.0f);
    // EXPECT_TRUE(v==velocity);
+
+    Vector2f stopping_point_new = circle.getStoppingPoint(1.0f,5.0f,currentP,velocity);
+
+    std::cout<<"\n\nValoarea StoppingPointNew X"<<stopping_point_new.x<<"\n";
+    std::cout<<"\nValoarea StoppingPointNew Y"<<stopping_point_new.y<<"\n";
+
     EXPECT_TRUE(velocity!=safevel);
     EXPECT_TRUE(velocity == zero);
 }
@@ -126,6 +147,11 @@ TEST(CircleTest, ajustVelocityTest3)
     //EXPECT_TRUE(v==velocity);
     EXPECT_TRUE(velocity!=safevel);
     EXPECT_TRUE(velocity == zero);
+
+    Vector2f stopping_point_new = circle.getStoppingPoint(1.0f,5.0f,currentP,velocity);
+
+    std::cout<<"\n\nValoarea StoppingPointNew X"<<stopping_point_new.x<<"\n";
+    std::cout<<"\nValoarea StoppingPointNew Y"<<stopping_point_new.y<<"\n";
 
    // EXPECT_TRUE(is_equal(0.0f,1.0f));//pus intentionat ca sa vedem  logurile
 }
@@ -255,7 +281,7 @@ TEST(CircleTest, ajustVelocityTest6)
     //in afara si cercul este cuprins,dar viteza are orientarea pe langa tinta => nu se roteste, ramanene schimbata
     std::cout<<"=====================================================\n\n";
       std::cout<<"Test6\n";
-      Vector2f centre(13.0f,12.0f);
+      Vector2f centre(10.0f,8.0f);
       Circle circle(4.0f,centre);
       circle.setBehaviourSlide();
       EXPECT_TRUE(is_equal(circle.methodaTest(0.0f),1));
@@ -438,8 +464,8 @@ TEST(CircleTest, adjustVelocityStop3)
   Circle circle(4.0f,centre);
   circle.setBehaviourStop();
   std::cout<<"\nBehaiviourl este "<<(int)circle.get_behavior()<<"\n";
-  Vector2f currentP(23.0f,0.0f);
-  Vector2f velocity(4.0f,0.0f);
+  Vector2f currentP(6.0f,0.0f);
+  Vector2f velocity(-4.0f,0.0f);
   Vector2f safeVelocity(velocity);
   float Kp=1.0f;
   float acc=5.0f;

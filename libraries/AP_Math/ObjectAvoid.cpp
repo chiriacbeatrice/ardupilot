@@ -65,24 +65,28 @@ float ObjectAvoid::longitude_scale(const struct Location &loc)
 
 void ObjectAvoid::createMap()
 {
-    Vector2f a = location_to_xy(44.434665,26.046532);
-    Vector2f b = location_to_xy(44.4349,26.046532);
+    Vector2f a = location_to_xy(44.4348983,26.0466555);
+    Vector2f b = location_to_xy(44.4349941,26.0466421); // din MissionPlanner  in fata Campus
+
+    // din MissionPlanner  in fata cladirii PRECIS PR001 directia dinspre CAMPUS
+//    Vector2f a = location_to_xy(44.4349386,26.0473019);
+//    Vector2f b = location_to_xy(44.4351205,26.0473073);
 
     Line line(a,b);
 
 
-    //creare cerc
+    //creare cerc pozitionat intre gard si copaci in fata la CAMPUS
 
-    Vector2f centre = location_to_xy(44.435143,26.046603);
+    Vector2f centre = location_to_xy(44.4352163,26.0465696);
     Circle circle(3.0f,centre);
 
     //creare patrat
 
     std::vector<Vector2f> points;
-    Vector2f c =location_to_xy(44.434772,26.047177);
-    Vector2f d =location_to_xy(44.435009,26.047172);
-    Vector2f e =location_to_xy(44.435036,26.046962);
-    Vector2f f =location_to_xy(44.046962,26.046952);
+    Vector2f c =location_to_xy(44.4349750,26.0468486);
+    Vector2f d =location_to_xy(44.4349357,26.0468499);
+    Vector2f e =location_to_xy(44.4349328,26.0468942);
+    Vector2f f =location_to_xy(44.4349793,26.0469009); // coordonate intre PRECIS si CAMPUS
 
     points.push_back(c);
     points.push_back(d);
@@ -91,14 +95,14 @@ void ObjectAvoid::createMap()
     PolygonConvex polygon(points);
 
 
-//  //creare poligon convex
+//  //creare POLIGON CONVEX si FRANTA DESCHISA IN SPATIUL VERDE DE LANGA RECTORAT
 //    std::vector<Vector2f> pointsC;
 //
-//   Vector2f H(5.0f,18.0f);
-//   Vector2f I(11.0f,19.0f);
-//   Vector2f J(9.0f,22.0f);
-//   Vector2f K(12.0f,24.0f);
-//   Vector2f L(6.0f,23.0f);
+//   Vector2f H(44.4376332,26.0503489);
+//   Vector2f I(44.4376332,26.0506251);
+//   Vector2f J(44.4375470,26.0506654);
+//   Vector2f K(44.4374628,26.0505152);
+//   Vector2f L(44.4375049,26.0503060);
 //
 //   pointsC.push_back(H);
 //   pointsC.push_back(I);
@@ -110,10 +114,10 @@ void ObjectAvoid::createMap()
 
 //   std::vector<Vector2f> pointsOC;
 //
-//   Vector2f M(20.0f,23.0f);
-//   Vector2f N(23.0f,20.0f);
-//   Vector2f O(23.0f,17.0f);
-//   Vector2f P(22.0f,17.0f);
+//   Vector2f M(44.4373613,26.0495335);
+//   Vector2f N(44.4373345,26.0498500);
+//   Vector2f O(44.4371985,26.0498124);
+//   Vector2f P(44.4371640,26.0495952);
 //
 //   pointsOC.push_back(M);
 //   pointsOC.push_back(N);
