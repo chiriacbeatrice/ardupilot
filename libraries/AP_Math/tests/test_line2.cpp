@@ -2,7 +2,7 @@
  * test_line2.cpp
  *
  *  Created on: Jun 11, 2019
- *      Author: beatricec
+ *      Author: beatriceC
  */
 #include <AP_gtest.h>
 
@@ -75,7 +75,7 @@ TEST(LineTest, adjust_velocity_Slide1)
    std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
    std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
 
-    EXPECT_TRUE(is_equal(stopping_point_new.x ,12.0f));
+    EXPECT_TRUE(is_equal(stopping_point_new.x ,11.2f));
     EXPECT_TRUE(is_equal(stopping_point_new.y ,4.0f));
 }
 
@@ -105,7 +105,7 @@ TEST(LineTest, adjust_velocity_Slide2)
    std::cout<<"\n\nValoarea StoppingPointNew X "<<stopping_point_new.x<<"\n";
    std::cout<<"Valoarea StoppingPointNew Y "<<stopping_point_new.y<<"\n";
 
-   EXPECT_TRUE(is_equal(stopping_point_new.x ,5.0f));
+   EXPECT_TRUE(is_equal(stopping_point_new.x ,6.0f));
    EXPECT_TRUE(is_equal(stopping_point_new.y ,4.0f));
 
    line.adjust_velocity(Kp,currentP,acc,velocity,dt);

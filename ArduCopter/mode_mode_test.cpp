@@ -18,17 +18,6 @@
 
 bool Copter::ModeModeTest::init(bool ignore_checks)
 {
-    /////////////////////////////cod adaugat de betty pentru loguri//////////////////////////////
-    //Easy Way to add a log//////
-//    DataFlash_Class::instance()->Log_Write("TEST", "TimeUS,Alt,TESTBetty",
-//                                           "sm", // units: seconds, meters
-//                                           "FB", // mult: 1e-6, 1e-2
-//                                           "Qf", // format: uint64_t, float
-//                                           AP_HAL::micros64(),
-//                                           (double)alt_in_cm);  /// campurile astea le=am pus in header caci altfel nu stie de ele
-
-                                           //Inca nu am setat alt_in_cm nicaieri. Ar trebui eventual un setter pentru el
-
     //Hard Way to add a log//////
     copter.Log_Write_Test();
     //////////////////////////////
@@ -113,12 +102,6 @@ void Copter::ModeModeTest::run()
     float takeoff_climb_rate = 0.0f;
     Vector3f position_ok;
 
-    //added by betty
-   //Vector2f currentPosition;
-   //Location pos; // de decomentat la adaugarea codului
-   // added by betty
-
-
     // initialize vertical speed and acceleration
     pos_control->set_max_speed_z(-get_pilot_speed_dn(), g.pilot_speed_up);
     pos_control->set_max_accel_z(g.pilot_accel_z);
@@ -143,32 +126,6 @@ void Copter::ModeModeTest::run()
         target_climb_rate = get_pilot_desired_climb_rate(channel_throttle->get_control_in());
         target_climb_rate = constrain_float(target_climb_rate, -get_pilot_speed_dn(), g.pilot_speed_up);
 
- /*//////////////////////code added by betty 02.03.2019//////////////////////////////////////////////////////////
-
-        if  ((inertial_nav.get_latitude()>=(44.434753*powf(10,6)))
-          && (inertial_nav.get_longitude()<=(26.046537*powf(10,6))))
-        {
-          position_ok = inertial_nav.get_position(); // remains set to the value of the last correct position which was recorded
-        }
-
-        DataFlash_Class::instance()->Log_Write("PosUAV", "Pos.x,Pos.y,TESTBetty",
-                                                   "mm", // units: meters
-                                                   "BB", // mult:  1e-2
-                                                   "ff", // format: float
-                                                    (double)position_ok.x,
-                                                    (double)position_ok.y);
-        //I verified if the UAV is orients:lat S and long W
-        //In this part of code if the UAV current lat and long are not in the correct parameters then it will return to an accepted area
-        if(inertial_nav.get_latitude()<(44.434753*powf(10,6)))
-        {
-            pos_control->set_xy_target(position_ok.x,inertial_nav.get_position().y);
-        }
-        if(inertial_nav.get_longitude()>(26.046537*powf(10,6)))
-        {
-            pos_control->set_xy_target(inertial_nav.get_position().x,position_ok.y);
-        }
-        ////code added by betty 02.03.2019//////////////////////////////////////////////////////////////
-*/
     } else {
         // clear out pilot desired acceleration in case radio failsafe event occurs and we do not switch to RTL for some reason
         loiter_nav->clear_pilot_desired_acceleration();

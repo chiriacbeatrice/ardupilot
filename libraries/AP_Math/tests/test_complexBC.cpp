@@ -20,62 +20,10 @@
 // http://ardupilot.org/dev/docs/learning-ardupilot-the-example-sketches.html
 const AP_HAL::HAL& hal = AP_HAL::get_HAL();
 
-//static ObjectAvoid map1;
-//ObjectAvoid CreateObjects(void)
+//TEST(PolygonConvex, testEnvironment)
 //{
-//
-//     //creare linie
-//      Vector2f start(4.0f,5.0f);
-//      Vector2f stop(8.0f, 9.0f);
-//      Line line(start,stop);
-//      line.setBehaviourStop();
-//
-//      //creare cerc
-//      Vector2f centre(27.0f,5.0f);
-//      Circle circle(3.0f,centre);
-//      circle.setBehaviourStop();
-//
-//      //creare patrat
-//      std::vector<Vector2f> points;
-//
-//      Vector2f C(14.0f,11.0f);
-//      Vector2f D(18.0f,11.0f);
-//      Vector2f E(18.0f,15.0f);
-//      Vector2f F(14.0f,15.0f);
-//
-//      points.push_back(C);
-//      points.push_back(D);
-//      points.push_back(E);
-//      points.push_back(F);
-//      PolygonConvex polygon(points);
-//      polygon.setBehaviourStop();
-//
-//      //creare poligon convex
-//      std::vector<Vector2f> pointsC;
-//
-//      Vector2f H(5.0f,18.0f);
-//      Vector2f I(11.0f,10.0f);
-//      Vector2f J(9.0f,12.0f);
-//      Vector2f K(12.0f,15.0f);
-//      Vector2f L(6.0f,14.0f);
-//
-//      pointsC.push_back(H);
-//      pointsC.push_back(I);
-//      pointsC.push_back(J);
-//      pointsC.push_back(K);
-//      pointsC.push_back(L);
-//      PolygonConvex polygonC(pointsC);
-//      polygonC.setBehaviourStop();
-//
-//      ObjectAvoid map1;
-//      map1.addObstacle(&line);
-//      map1.addObstacle(&circle);
-//      map1.addObstacle(&polygon);
-//      map1.addObstacle(&polygonC);
-//
-//      return map1;
+//   EXPECT_FLOAT_EQ(1.0f,0.0f);
 //}
-
 
 TEST(ComplexTest, Test0)
 {
@@ -191,57 +139,8 @@ TEST(ComplexTest, Test0)
     EXPECT_TRUE(is_equal(newStoppingPoint.x,16.0f));
     EXPECT_TRUE(is_equal(newStoppingPoint.y,9.0f));
 
-
-    //  ATENTIE ACEST TEST REPREZINTA UN BUG, ATUNCI CAND VITEZA ESTE PREA MARE NU MAI E CAPABIL IN CAZUL
-    //  CERCULUI SA SE OPREASCA
-
-    //   Vector2f velocity3(14.0f,0.0f);
-    //   Vector2f safevel3(velocity);
-
-    //   map1.adjust_velocity(Kp,currentP,acc,velocity3,dt);
-    //   std::cout<<"\n\nViteza in testul pe bune .x = "<<velocity.x<<"\n";
-    //   std::cout<<"Viteza in testul pe bune .y = "<<velocity.y<<"\n";
-    //
-    //    newStoppingPoint = map1.getStoppingPoint(Kp,acc,currentP,velocity3);
-    //
-    //   std::cout<<"newStoppingPoint.x = "<<newStoppingPoint.x<<"\n";
-    //   std::cout<<"newStoppingPoint.y = "<<newStoppingPoint.y<<"\n";
-    //
-    //
-    //   EXPECT_TRUE(is_equal(newStoppingPoint.x,22.0f));
-    //   EXPECT_TRUE(is_equal(newStoppingPoint.y,5.0f));
-
-   //EXPECT_TRUE(is_equal(1.0f,0.0f));
-
 }
 
-TEST(ComplexTest, TestLinie)
-{    std::cout<<"=====================================================\n\n";
-     std::cout<<"TEST SEPARAT";
-    //creare linie
-     Vector2f start(4.0f,5.0f);
-     Vector2f stop(8.0f, 9.0f);
-     Line line(start,stop);
-     line.setBehaviourStop();
-     Vector2f currentP(12.0f,5.0f);
-     Vector2f velocity(-7.0f,0.0f);
-     Vector2f safevel(velocity);
-     float Kp=1.0f;
-     float acc=5.0f;
-     float dt = 1.0f;
-
-
-     line.adjust_velocity(Kp,currentP,acc,velocity,dt);
-     std::cout<<"Viteza IN TEST SEPARAT.x = "<<velocity.x<<"\n";
-     std::cout<<"Viteza IN TEST SEPARAT.y = "<<velocity.y<<"\n";
-
-     Vector2f newStoppingPoint =line.getStoppingPoint(Kp,acc,currentP,velocity);
-
-     std::cout<<"newStoppingPoint.x = "<<newStoppingPoint.x<<"\n";
-     std::cout<<"newStoppingPoint.y = "<<newStoppingPoint.y<<"\n";
-     //EXPECT_TRUE(is_equal(1.0f,0.0f));
-
-}
 TEST(ComplexTest, Test1)
 {
 
@@ -345,8 +244,6 @@ TEST(ComplexTest, Test1)
      std::cout<<"newStoppingPoint.y = "<<newStoppingPoint.y<<"\n";
      EXPECT_TRUE(velocity2 == safevel2);
 
-
-  // EXPECT_TRUE(is_equal(2.0f,1.0f));
 }
 
 TEST(ComplexTest, Test2)
@@ -690,7 +587,33 @@ TEST(ComplexTest, Test4)
 
 }
 
+TEST(ComplexTest, TestLinie)
+{    std::cout<<"=====================================================\n\n";
+     std::cout<<"TEST SEPARAT";
+    //creare linie
+     Vector2f start(4.0f,5.0f);
+     Vector2f stop(8.0f, 9.0f);
+     Line line(start,stop);
+     line.setBehaviourStop();
+     Vector2f currentP(12.0f,5.0f);
+     Vector2f velocity(-7.0f,0.0f);
+     Vector2f safevel(velocity);
+     float Kp=1.0f;
+     float acc=5.0f;
+     float dt = 1.0f;
 
+
+     line.adjust_velocity(Kp,currentP,acc,velocity,dt);
+     std::cout<<"Viteza IN TEST SEPARAT.x = "<<velocity.x<<"\n";
+     std::cout<<"Viteza IN TEST SEPARAT.y = "<<velocity.y<<"\n";
+
+     Vector2f newStoppingPoint =line.getStoppingPoint(Kp,acc,currentP,velocity);
+
+     std::cout<<"newStoppingPoint.x = "<<newStoppingPoint.x<<"\n";
+     std::cout<<"newStoppingPoint.y = "<<newStoppingPoint.y<<"\n";
+     //EXPECT_TRUE(is_equal(1.0f,0.0f));
+
+}
 
 AP_GTEST_MAIN()
 

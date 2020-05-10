@@ -1,13 +1,13 @@
-# project  configured on Tue Jun 25 11:52:36 2019 by
-# waf 2.0.9 (abi 20, python 2070ff0 on linux2)
-# using /home/beatricec/LicentaBetty/ardupilot/modules/waf/waf-light configure --board sitl
+# project  configured on Fri Apr 24 12:59:28 2020 by
+# waf 2.0.9 (abi 20, python 20711f0 on linux2)
+# using /home/beatrice/Testare/ardupilot/modules/waf/waf-light check-all
 #
 ----------------------------------------
 Setting top to
-/home/beatricec/LicentaBetty/ardupilot
+/home/beatrice/Testare/ardupilot
 ----------------------------------------
 Setting out to
-/home/beatricec/LicentaBetty/ardupilot/build
+/home/beatrice/Testare/ardupilot/build
 ----------------------------------------
 Autoconfiguration
 enabled
@@ -16,7 +16,7 @@ Setting board to
 sitl
 ----------------------------------------
 Checking for 'g++' (C++ compiler)
-find program=['g++', 'c++'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='CXX' -> ['/usr/bin/g++']
+find program=['g++', 'c++'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='CXX' -> ['/usr/bin/g++']
 ['/usr/bin/g++', '-dM', '-E', '-']
 out: #define __SSP_STRONG__ 3
 #define __DBL_MIN_EXP__ (-1021)
@@ -174,7 +174,7 @@ out: #define __SSP_STRONG__ 3
 #define __NO_INLINE__ 1
 #define __FLT_MANT_DIG__ 24
 #define __LDBL_DECIMAL_DIG__ 21
-#define __VERSION__ "7.4.0"
+#define __VERSION__ "7.5.0"
 #define __UINT64_C(c) c ## UL
 #define _STDC_PREDEF_H 1
 #define __GCC_ATOMIC_INT_LOCK_FREE 2
@@ -335,7 +335,7 @@ out: #define __SSP_STRONG__ 3
 #define __DEC128_MAX_EXP__ 6145
 #define __FLT32X_HAS_QUIET_NAN__ 1
 #define __ATOMIC_CONSUME 1
-#define __GNUC_MINOR__ 4
+#define __GNUC_MINOR__ 5
 #define __INT_FAST16_WIDTH__ 64
 #define __UINTMAX_MAX__ 0xffffffffffffffffUL
 #define __DEC32_MANT_DIG__ 7
@@ -366,11 +366,11 @@ out: #define __SSP_STRONG__ 3
 #define __ATOMIC_ACQ_REL 4
 #define __ATOMIC_RELEASE 3
 
-find program=['ar'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='AR' -> ['/usr/bin/ar']
+find program=['ar'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='AR' -> ['/usr/bin/ar']
 /usr/bin/g++
 ----------------------------------------
 Checking for 'gcc' (C compiler)
-find program=['gcc', 'cc'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='CC' -> ['/usr/bin/gcc']
+find program=['gcc', 'cc'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='CC' -> ['/usr/bin/gcc']
 ['/usr/bin/gcc', '-dM', '-E', '-']
 out: #define __SSP_STRONG__ 3
 #define __DBL_MIN_EXP__ (-1021)
@@ -528,7 +528,7 @@ out: #define __SSP_STRONG__ 3
 #define __NO_INLINE__ 1
 #define __FLT_MANT_DIG__ 24
 #define __LDBL_DECIMAL_DIG__ 21
-#define __VERSION__ "7.4.0"
+#define __VERSION__ "7.5.0"
 #define __UINT64_C(c) c ## UL
 #define _STDC_PREDEF_H 1
 #define __GCC_ATOMIC_INT_LOCK_FREE 2
@@ -689,7 +689,7 @@ out: #define __SSP_STRONG__ 3
 #define __DEC128_MAX_EXP__ 6145
 #define __FLT32X_HAS_QUIET_NAN__ 1
 #define __ATOMIC_CONSUME 1
-#define __GNUC_MINOR__ 4
+#define __GNUC_MINOR__ 5
 #define __INT_FAST16_WIDTH__ 64
 #define __UINTMAX_MAX__ 0xffffffffffffffffUL
 #define __DEC32_MANT_DIG__ 7
@@ -720,14 +720,14 @@ out: #define __SSP_STRONG__ 3
 #define __ATOMIC_ACQ_REL 4
 #define __ATOMIC_RELEASE 3
 
-find program=['ar'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='AR' -> ['/usr/bin/ar']
+find program=['ar'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='AR' -> ['/usr/bin/ar']
 /usr/bin/gcc
 ----------------------------------------
 Checking for c flags '-MMD'
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_8963a01007066c95be092e44900bfabd/test.c[0m
+[1/1] Compiling [32mbuild/.conf_check_4cfbd5b4c51c9342dff96f1cb6fbe845/test.c[0m
 
 ['/usr/bin/gcc', '-MMD', '-DWAF_BUILD=1', '../../test.c', '-c', '-otest.c.1.o']
 yes
@@ -736,7 +736,7 @@ Checking for cxx flags '-MMD'
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_190e21dbae080663ff04cfdcd86f0f5a/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_8103b6348403a68464b63167b6ecd25f/test.cpp[0m
 
 ['/usr/bin/g++', '-MMD', '-DWAF_BUILD=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
 yes
@@ -750,10 +750,10 @@ Checking for need to link with librt
             clock_gettime(CLOCK_REALTIME, NULL);
         }
 <==
-[1/2] Compiling [32mbuild/.conf_check_12d0bb6f8f79e34e9dd3612683cedebf/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_7933d8bc765f195db8989b871b46a51a/test.cpp[0m
 
 ['/usr/bin/g++', '-MMD', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_12d0bb6f8f79e34e9dd3612683cedebf/testbuild/sitl/testprog[0m
+[2/2] Linking [33mbuild/.conf_check_7933d8bc765f195db8989b871b46a51a/testbuild/sitl/testprog[0m
 
 ['/usr/bin/g++', 'test.cpp.1.o', '-otestprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 not necessary
@@ -767,10 +767,10 @@ Checking for HAVE_CMATH_ISFINITE
           return std::isfinite(1.0f);
         }
 <==
-[1/2] Compiling [32mbuild/.conf_check_9ea19ee6b770f6c7e052346c9691d2ec/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_292afe2ec527fcb32bfebd680d67b2f8/test.cpp[0m
 
 ['/usr/bin/g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wshadow', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=format-security', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=unused-result', '-Werror=return-type', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-Werror=float-equal', '-O3', '-MMD', '-DCONFIG_HAL_BOARD=HAL_BOARD_SITL', '-DCONFIG_HAL_BOARD_SUBTYPE=HAL_BOARD_SUBTYPE_NONE', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_9ea19ee6b770f6c7e052346c9691d2ec/testbuild/sitl/testprog[0m
+[2/2] Linking [33mbuild/.conf_check_292afe2ec527fcb32bfebd680d67b2f8/testbuild/sitl/testprog[0m
 
 ['/usr/bin/g++', '-Wl,--gc-sections', '-pthread', 'test.cpp.1.o', '-otestprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lm']
 yes
@@ -784,10 +784,10 @@ Checking for HAVE_CMATH_ISINF
           return std::isinf(1.0f);
         }
 <==
-[1/2] Compiling [32mbuild/.conf_check_4b158fe53b018884671bcc2934528366/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_20d7d4b66f0324659a1b6a6caafa3c6a/test.cpp[0m
 
 ['/usr/bin/g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wshadow', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=format-security', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=unused-result', '-Werror=return-type', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-Werror=float-equal', '-O3', '-MMD', '-DCONFIG_HAL_BOARD=HAL_BOARD_SITL', '-DCONFIG_HAL_BOARD_SUBTYPE=HAL_BOARD_SUBTYPE_NONE', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DHAVE_CMATH_ISFINITE=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_4b158fe53b018884671bcc2934528366/testbuild/sitl/testprog[0m
+[2/2] Linking [33mbuild/.conf_check_20d7d4b66f0324659a1b6a6caafa3c6a/testbuild/sitl/testprog[0m
 
 ['/usr/bin/g++', '-Wl,--gc-sections', '-pthread', 'test.cpp.1.o', '-otestprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lm']
 yes
@@ -801,10 +801,10 @@ Checking for HAVE_CMATH_ISNAN
           return std::isnan(1.0f);
         }
 <==
-[1/2] Compiling [32mbuild/.conf_check_415d8f0c503ed82d0a188f8403fd4aa9/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_f6d47aa97db56b5760c61fee183b5881/test.cpp[0m
 
 ['/usr/bin/g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wshadow', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=format-security', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=unused-result', '-Werror=return-type', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-Werror=float-equal', '-O3', '-MMD', '-DCONFIG_HAL_BOARD=HAL_BOARD_SITL', '-DCONFIG_HAL_BOARD_SUBTYPE=HAL_BOARD_SUBTYPE_NONE', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DHAVE_CMATH_ISFINITE=1', '-DHAVE_CMATH_ISINF=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_415d8f0c503ed82d0a188f8403fd4aa9/testbuild/sitl/testprog[0m
+[2/2] Linking [33mbuild/.conf_check_f6d47aa97db56b5760c61fee183b5881/testbuild/sitl/testprog[0m
 
 ['/usr/bin/g++', '-Wl,--gc-sections', '-pthread', 'test.cpp.1.o', '-otestprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lm']
 yes
@@ -821,10 +821,10 @@ Checking for NEED_CMATH_ISFINITE_STD_NAMESPACE
           return isfinite((double)1);
         }
 <==
-[1/2] Compiling [32mbuild/.conf_check_1b9bc4a13f0f3e6d8d2e22565aa695ee/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_639f258da71da8f009b0ea856c2b59e1/test.cpp[0m
 
 ['/usr/bin/g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wshadow', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=format-security', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=unused-result', '-Werror=return-type', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-Werror=float-equal', '-O3', '-MMD', '-DCONFIG_HAL_BOARD=HAL_BOARD_SITL', '-DCONFIG_HAL_BOARD_SUBTYPE=HAL_BOARD_SUBTYPE_NONE', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DHAVE_CMATH_ISFINITE=1', '-DHAVE_CMATH_ISINF=1', '-DHAVE_CMATH_ISNAN=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_1b9bc4a13f0f3e6d8d2e22565aa695ee/testbuild/sitl/testprog[0m
+[2/2] Linking [33mbuild/.conf_check_639f258da71da8f009b0ea856c2b59e1/testbuild/sitl/testprog[0m
 
 ['/usr/bin/g++', '-Wl,--gc-sections', '-pthread', 'test.cpp.1.o', '-otestprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lm']
 yes
@@ -841,10 +841,10 @@ Checking for NEED_CMATH_ISINF_STD_NAMESPACE
           return isinf((double)1);
         }
 <==
-[1/2] Compiling [32mbuild/.conf_check_45d4766251f4b923cca742dc6b43cefa/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_52ad983520c940af5d1003605aeed0e3/test.cpp[0m
 
 ['/usr/bin/g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wshadow', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=format-security', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=unused-result', '-Werror=return-type', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-Werror=float-equal', '-O3', '-MMD', '-DCONFIG_HAL_BOARD=HAL_BOARD_SITL', '-DCONFIG_HAL_BOARD_SUBTYPE=HAL_BOARD_SUBTYPE_NONE', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DHAVE_CMATH_ISFINITE=1', '-DHAVE_CMATH_ISINF=1', '-DHAVE_CMATH_ISNAN=1', '-DNEED_CMATH_ISFINITE_STD_NAMESPACE=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_45d4766251f4b923cca742dc6b43cefa/testbuild/sitl/testprog[0m
+[2/2] Linking [33mbuild/.conf_check_52ad983520c940af5d1003605aeed0e3/testbuild/sitl/testprog[0m
 
 ['/usr/bin/g++', '-Wl,--gc-sections', '-pthread', 'test.cpp.1.o', '-otestprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lm']
 yes
@@ -861,10 +861,10 @@ Checking for NEED_CMATH_ISNAN_STD_NAMESPACE
           return isnan((double)1);
         }
 <==
-[1/2] Compiling [32mbuild/.conf_check_c0aa402c096bb52339807cd0390a8fa4/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_273d3937a823d104174671433e84044a/test.cpp[0m
 
 ['/usr/bin/g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wshadow', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=format-security', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=unused-result', '-Werror=return-type', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-Werror=float-equal', '-O3', '-MMD', '-DCONFIG_HAL_BOARD=HAL_BOARD_SITL', '-DCONFIG_HAL_BOARD_SUBTYPE=HAL_BOARD_SUBTYPE_NONE', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DHAVE_CMATH_ISFINITE=1', '-DHAVE_CMATH_ISINF=1', '-DHAVE_CMATH_ISNAN=1', '-DNEED_CMATH_ISFINITE_STD_NAMESPACE=1', '-DNEED_CMATH_ISINF_STD_NAMESPACE=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_c0aa402c096bb52339807cd0390a8fa4/testbuild/sitl/testprog[0m
+[2/2] Linking [33mbuild/.conf_check_273d3937a823d104174671433e84044a/testbuild/sitl/testprog[0m
 
 ['/usr/bin/g++', '-Wl,--gc-sections', '-pthread', 'test.cpp.1.o', '-otestprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lm']
 yes
@@ -879,10 +879,10 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_b6c1174b5b121f56ecec2b26786d1e7b/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_2f7278a7acfa9ad42e1c539176f95114/test.cpp[0m
 
 ['/usr/bin/g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wshadow', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=format-security', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=unused-result', '-Werror=return-type', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-Werror=float-equal', '-O3', '-MMD', '-DCONFIG_HAL_BOARD=HAL_BOARD_SITL', '-DCONFIG_HAL_BOARD_SUBTYPE=HAL_BOARD_SUBTYPE_NONE', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DHAVE_CMATH_ISFINITE=1', '-DHAVE_CMATH_ISINF=1', '-DHAVE_CMATH_ISNAN=1', '-DNEED_CMATH_ISFINITE_STD_NAMESPACE=1', '-DNEED_CMATH_ISINF_STD_NAMESPACE=1', '-DNEED_CMATH_ISNAN_STD_NAMESPACE=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_b6c1174b5b121f56ecec2b26786d1e7b/testbuild/sitl/testprog[0m
+[2/2] Linking [33mbuild/.conf_check_2f7278a7acfa9ad42e1c539176f95114/testbuild/sitl/testprog[0m
 
 ['/usr/bin/g++', '-Wl,--gc-sections', '-pthread', 'test.cpp.1.o', '-otestprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lm']
 yes
@@ -897,17 +897,17 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_73de8457431bd29822e9a28862643596/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_a36817fbe86be0e57a9dec9d2eb0c24c/test.cpp[0m
 
 ['/usr/bin/g++', '-std=gnu++11', '-fdata-sections', '-ffunction-sections', '-fno-exceptions', '-fsigned-char', '-Wall', '-Wextra', '-Wformat', '-Wshadow', '-Wpointer-arith', '-Wcast-align', '-Wundef', '-Wno-unused-parameter', '-Wno-missing-field-initializers', '-Wno-reorder', '-Wno-redundant-decls', '-Wno-unknown-pragmas', '-Werror=format-security', '-Werror=array-bounds', '-Werror=uninitialized', '-Werror=init-self', '-Werror=return-type', '-Werror=switch', '-Werror=sign-compare', '-Werror=unused-result', '-Werror=return-type', '-Wfatal-errors', '-Wno-trigraphs', '-Werror=unused-but-set-variable', '-Werror=float-equal', '-O3', '-MMD', '-DCONFIG_HAL_BOARD=HAL_BOARD_SITL', '-DCONFIG_HAL_BOARD_SUBTYPE=HAL_BOARD_SUBTYPE_NONE', '-DWAF_BUILD=1', '-D__STDC_FORMAT_MACROS=1', '-DHAVE_CMATH_ISFINITE=1', '-DHAVE_CMATH_ISINF=1', '-DHAVE_CMATH_ISNAN=1', '-DNEED_CMATH_ISFINITE_STD_NAMESPACE=1', '-DNEED_CMATH_ISINF_STD_NAMESPACE=1', '-DNEED_CMATH_ISNAN_STD_NAMESPACE=1', '-DHAVE_ENDIAN_H=1', '../../test.cpp', '-c', '-otest.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_73de8457431bd29822e9a28862643596/testbuild/sitl/testprog[0m
+[2/2] Linking [33mbuild/.conf_check_a36817fbe86be0e57a9dec9d2eb0c24c/testbuild/sitl/testprog[0m
 
 ['/usr/bin/g++', '-Wl,--gc-sections', '-pthread', 'test.cpp.1.o', '-otestprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lm']
 yes
 ----------------------------------------------
 Checking for program 'python'
 /usr/bin/python
-find program=['python'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='PYTHON' -> ['/usr/bin/python']
+find program=['python'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='PYTHON' -> ['/usr/bin/python']
 ['/usr/bin/python', '-c', 'import imp;print(imp.get_tag())']
 err: Traceback (most recent call last):
   File "<string>", line 1, in <module>
@@ -916,7 +916,7 @@ AttributeError: 'module' object has no attribute 'get_tag'
 ['/usr/bin/python', '-c', 'import sys\nfor x in sys.version_info: print(str(x))']
 out: 2
 7
-15
+17
 final
 0
 
@@ -932,11 +932,11 @@ out: '/usr/lib/python2.7/dist-packages'
 
 ----------------------------------------------
 Checking for python version >= 2.7.0
-2.7.15
+2.7.17
 ----------------------------------------------
 Checking for program 'python'
 /usr/bin/python
-find program=['python'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='PYTHON' -> ['/usr/bin/python']
+find program=['python'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='PYTHON' -> ['/usr/bin/python']
 ['/usr/bin/python', '-c', 'import imp;print(imp.get_tag())']
 err: Traceback (most recent call last):
   File "<string>", line 1, in <module>
@@ -945,13 +945,13 @@ AttributeError: 'module' object has no attribute 'get_tag'
 ['/usr/bin/python', '-c', 'import sys\nfor x in sys.version_info: print(str(x))']
 out: 2
 7
-15
+17
 final
 0
 
 ----------------------------------------------
 Checking for python version >= 2.7.0
-2.7.15
+2.7.17
 ----------------------------------------------
 Source is git repository
 yes
@@ -961,11 +961,11 @@ yes
 ----------------------------------------------
 Checking for program 'git'
 /usr/bin/git
-find program=['git'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='GIT' -> ['/usr/bin/git']
+find program=['git'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='GIT' -> ['/usr/bin/git']
 ----------------------------------------------
 Checking for program 'size'
 /usr/bin/size
-find program=['size'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='SIZE' -> ['/usr/bin/size']
+find program=['size'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='SIZE' -> ['/usr/bin/size']
 ----------------------------------------------
 Benchmarks
 disabled
@@ -978,4 +978,4 @@ disabled
 ----------------------------------------------
 Checking for program 'rsync'
 /usr/bin/rsync
-find program=['rsync'] paths=['/home/beatricec/LicentaBetty/ardupilot/Tools/autotest', '/opt/gcc-arm-none-eabi-4_9-2015q3/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='RSYNC' -> ['/usr/bin/rsync']
+find program=['rsync'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='RSYNC' -> ['/usr/bin/rsync']

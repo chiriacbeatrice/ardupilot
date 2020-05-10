@@ -15,4 +15,28 @@ TEST(Vector2Test, IsEqual)
     EXPECT_TRUE(v_float1 == v_float1);
 }
 
+TEST(Vector2Test, Angle)
+{
+    Vector2f v_init1(1,1);
+    Vector2f v_init2(4,3);
+
+    float angle = v_init1.angle(v_init2);
+    std::cout<<angle<<std::endl;
+    EXPECT_FLOAT_EQ(angle, 0.14189726);
+}
+
+
+TEST(Vector2Test, closestPoint)
+{
+    Vector2f v_fistPoint(3.0,-1.0);
+    Vector2f v_secoundPoint(4.0,2.0);
+    Vector2f v_point(-4.0,2.0);
+    Vector2f expectedResult(3.2, -0.4);
+
+    Vector2f closestPoint =
+          Vector2f::closest_point(v_point,v_fistPoint,v_secoundPoint);
+
+    EXPECT_TRUE(closestPoint == expectedResult);
+
+}
 AP_GTEST_MAIN()

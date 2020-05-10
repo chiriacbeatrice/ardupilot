@@ -75,87 +75,9 @@ void Circle::adjust_velocity(float kP,Vector2f &currentP, float accel_cmss,
             desired_vel_cms.zero();
          }
 
-//return desired_vel_cms;
-//       std::cout<<"\n\n  Valoarea vitezei dupa procesare pe X este  "<<desired_vel_cms.x;
-//       std::cout<<"\n\n  Valoarea vitezei dupa procesare pe Y este  "<<desired_vel_cms.y;
 }
 
 
-
-//Vector2f Circle :: adjust_velocity_Slide(float kP,Vector2f &position_xy, float accel_cmss,
-//                                        Vector2f &desired_vel_cms,
-//                                        float dt,float margin_cm, float radius,float locationDiff, float speed)
-//{
-//    //targetul este proiectia lui SP pe circumferinta cercului,conform  cu
-//   //  https://www.quora.com/I-am-given-centre-of-a-circle-its-radius-and-a-point-outside-circle-How-can-I-find-a-point-on-circumference-of-circle-corresponding-to-the-point-outside
-////    Construct a vector from the circle to the point (P-C)
-////
-////    Normalise it.
-////
-////    Multiply it by the circle radius.
-////
-////    Add it to the circle centre.
-////
-////    P' = C + (P-C)/|P-C| * r
-//    // in schimb analizand mai atent am sesizat ca de fapt cu .lenght mi se afla norma vectorului
-//    // in sistemul de coordonate ce are originea punctul de decolare, deci as merge pe varianta clasica
-//    // si se merge pe formula matematica v1=lambda*v2, v1 siv2 vectori si se imparte la stopping_point length
-//    //tocmai pentru a vedea de cate ori intra
-//
-//   // const Vector2f target = _centre +
-//                           // ((stopping_point - _centre)/(stopping_point - _centre).length())*(_radius+margin_cm);
-////
-////    const Vector2f target =  stopping_point * ((locationDiff-(radius + margin_cm)) / stopping_point.length());
-////
-////
-////
-////    const Vector2f target_direction = target - position_xy;
-////    const float distance_to_target = target_direction.length(); // calculeaza cat trebuie sa inainteze pe baza liniei anterioare de cod
-////
-////    const float max_speed =AC_Avoid::get_singleton()->get_max_speed(kP, accel_cmss, distance_to_target, dt);  //calculeaza viteza maxima cu care poate inainta
-////
-////   //M-am gandit la min pentru a incetinii
-////    desired_vel_cms = target_direction * (MIN(speed,max_speed) / distance_to_target); // item
-////
-//
-//
-//    //rotatia cu unghiul alpha pe tangenta
-//    Vector2f t1,t2;
-//    Vector2f centre = _centre;
-//
-//    //Unghiul dintre  tangenta si distanta pozitie curenta->centru
-//    float alpha = safe_asin((radius+margin_cm)/locationDiff);
-//
-//    Vector2f locationVector = position_xy - centre;
-//    Vector2f locationVectorNorm = locationVector/locationDiff;
-//
-//    //Rotirea vectorului normat cu unghiul alpha in sens trigonometric
-//    t1 = rotate(locationVectorNorm,alpha);
-//    //Rotirea vectorului normat cu unghiul alpha in sens antitrigonometric
-//    t2 = rotate(locationVectorNorm,-alpha);
-//
-//    Vector2f velocityProjection1 = desired_vel_cms.projected(t1);
-//    Vector2f velocityProjection2 = desired_vel_cms.projected(t2);
-//
-//    // cum distantele de la pozitia curenta pana la punctele de tangenta sunt egale le-am scos din cosinus
-//
-//    float distanceToTangentialPoint = locationDiff*cos(alpha);
-//    const float max_speed =
-//                    AC_Avoid::get_singleton()->get_max_speed(kP, accel_cmss, distanceToTangentialPoint, dt);
-//
-//    if(velocityProjection1.length() >=  velocityProjection2.length())
-//     {
-//
-//        //desired_vel_cms *= (MIN(velocityProjection1.length(),max_speed) / distanceToTangentialPoint);
-//          desired_vel_cms = desired_vel_cms + limit_velocityCircle(max_speed,velocityProjection1);
-//     }else
-//     {
-//        //desired_vel_cms *= (MIN(velocityProjection2.length(),max_speed) / distanceToTangentialPoint);
-//          desired_vel_cms = desired_vel_cms + limit_velocityCircle(max_speed,velocityProjection2);
-//     }
-//
-//    return desired_vel_cms;
-//}
 Vector2f Circle::adjust_velocity_Slide(float kP,Vector2f &position_xy, float accel_cmss,
                                        Vector2f &desired_vel_cms,Vector2f &stopping_point,
                                        float margin,float speed)
@@ -177,10 +99,6 @@ Vector2f Circle::adjust_velocity_Slide(float kP,Vector2f &position_xy, float acc
 
     float stoppingDistance = AC_Avoid::get_singleton()->get_stopping_distance(kP, accel_cmss, speed); // nu sunt sigura ca returneaza in cm si nu in m
 
-//    std::cout<<"Raza si marginea "<< radiusOfObstacle<<"\n";
-//    std::cout<<"Distanta de oprire "<< stoppingDistance<<"\n";
-//    std::cout<<"Centru x"<< _centre.x<<"\n";
-//    std::cout<<"Centru y"<< _centre.y<<"\n";
 
     int numberPointOfIntersection = numberPointsIntersectionOfTwoCircles(_centre,radiusOfObstacle,position_xy,stoppingDistance);
 
@@ -189,29 +107,16 @@ Vector2f Circle::adjust_velocity_Slide(float kP,Vector2f &position_xy, float acc
         case 2  :
         {
 
-            //std::cout<<"Numarul de puncte este 2"<<"\n";
             intersectionOfTwoCircles(_centre,radiusOfObstacle,position_xy, stoppingDistance,firstIntersection,secoundIntersection);
-
-//            std::cout<<"first intersection X"<<firstIntersection.x<<"\n";
-//            std::cout<<"first intersection Y"<<firstIntersection.y<<"\n";
-//
-//            std::cout<<"secound intersection X"<<secoundIntersection.x<<"\n";
-//            std::cout<<"secound intersection Y"<<secoundIntersection.y<<"\n";
 
             result = rotate_velocity(firstIntersection,secoundIntersection,
                                      stopping_point, position_xy,desired_vel_cms);
 
-
-//            std::cout<<"\n\n  Valoarea vitezei dupa prima rotatie pe X este  "<<result.x;
-//            std::cout<<"\n\n  Valoarea vitezei dupa prima rotatie pe Y este  "<<result.y;
             Vector2f stopping_point_new = position_xy + result*( AC_Avoid::get_singleton()->get_stopping_distance(kP, accel_cmss, result.length())/result.length());
-
-//            std::cout<<"\n\n  Valoarea noului punct de stop X "<<stopping_point_new.x;
-//            std::cout<<"\n\n  Valoarea noului punct de stop Y "<<stopping_point_new.y;
 
             if(Vector2f::circle_segment_intersection(position_xy, stopping_point_new,_centre, (_radius+margin), intersectionSegCircleNew))
             {
-               // std::cout<<"A intrat in intersectie";
+
                 tangentPointsOfCircle(position_xy, _centre, radiusOfObstacle,
                                        firstTangentPoint,secoundTangentPoint);
 
@@ -224,16 +129,9 @@ Vector2f Circle::adjust_velocity_Slide(float kP,Vector2f &position_xy, float acc
 
         case -1:
         {
-           // std::cout<<"Un cerc contine un altul\n";
-            //distanta dintre pozitia curenta si centru
+
             tangentPointsOfCircle(position_xy, _centre, radiusOfObstacle,
                                    firstTangentPoint,secoundTangentPoint);
-
-//            std::cout<<"first tangentPoint X"<<firstTangentPoint.x<<"\n";
-//            std::cout<<"first tangentPoint Y"<<firstTangentPoint.y<<"\n";
-//
-//            std::cout<<"secound tangentPoint X"<<secoundTangentPoint.x<<"\n";
-//            std::cout<<"secound tangentPoint Y"<<secoundTangentPoint.y<<"\n";
 
 
             result = rotate_velocity(firstTangentPoint,secoundTangentPoint,
@@ -244,13 +142,13 @@ Vector2f Circle::adjust_velocity_Slide(float kP,Vector2f &position_xy, float acc
         }
         case -2:
         {
-           // std::cout<<"Cercurile coincid";
+
             result.zero();
             break;
         }
         default:
         {
-          //  std::cout<<"Nu e necesara modificarea vitezei";
+            break;
         }
     }
 
@@ -301,7 +199,7 @@ int Circle::numberPointsIntersectionOfTwoCircles(Vector2f &centre1, float &radiu
        result = 2;
     }
 
-   return result; // cazul in care se cuprind unul pe altul nu a fost tratat
+   return result;
 }
 
 void Circle::intersectionOfTwoCircles(Vector2f &centre1, float &radius1,
@@ -316,21 +214,11 @@ void Circle::intersectionOfTwoCircles(Vector2f &centre1, float &radius1,
     intersection.x = centre1.x + a*(centre2.x - centre1.x)/distanceBetweenCenteres;
     intersection.y = centre1.y + a*(centre2.y - centre1.y)/distanceBetweenCenteres;
 
-    //std::cout<<"intersection X: "<<intersection.x<<"\n";
-    //std::cout<<"intersection Y: "<<intersection.y<<"\n";
-
     intersection1.x = intersection.x +(h*(centre2.y - centre1.y))/distanceBetweenCenteres;
     intersection1.y = intersection.y -(h*(centre2.x - centre1.x))/distanceBetweenCenteres;
 
     intersection2.x = intersection.x - (h*(centre2.y - centre1.y))/distanceBetweenCenteres;
     intersection2.y = intersection.y + (h*(centre2.x - centre1.x))/distanceBetweenCenteres;
-
-
-   // std::cout<<"first intersection X in function: "<<intersection1.x<<"\n";
-   // std::cout<<"first intersection Y in function: "<<intersection1.y<<"\n";
-
-   // std::cout<<"secound intersection X in function: "<<intersection2.x<<"\n";
-   // std::cout<<"secound intersection Y in function: "<<intersection2.y<<"\n";
 
 }
 
@@ -349,24 +237,18 @@ void Circle:: tangentPointsOfCircle(Vector2f &position_xy, Vector2f &centre, flo
 
     secoundTangentPoint.x = _centre.x + ad*dx - bd *dy;
     secoundTangentPoint.y = _centre.y + ad*dy + bd *dx;
-//
-//    std::cout<<"first tangentPoint in function X"<<firstTangentPoint.x<<"\n";
-//    std::cout<<"first tangentPoint in function Y"<<firstTangentPoint.y<<"\n";
-//
-//    std::cout<<"secound tangentPoint in function X"<<secoundTangentPoint.x<<"\n";
-//    std::cout<<"secound tangentPoint in function Y"<<secoundTangentPoint.y<<"\n";
+
 }
 
 Vector2f Circle::rotate_velocity(Vector2f &firstPoint, Vector2f &secoundPoint,
                                  Vector2f &stopping_point, Vector2f &position_xy, Vector2f &desired_vel_cms)
 {
     Vector2f diffPositionFirstPoint, diffPositionSecoundPoint, diffPosStoppingPoint, result;
-    float angle1, angle2; //sunt  intoarse valori in radiani
+    float angle1, angle2; //values are converted in rad
 
 
     float firstDistance = (stopping_point - firstPoint).length();
     float secoundDistance = (stopping_point - secoundPoint).length();
-
 
     //vector between first intersection poin and current position
     diffPositionFirstPoint = firstPoint - position_xy;
@@ -376,10 +258,6 @@ Vector2f Circle::rotate_velocity(Vector2f &firstPoint, Vector2f &secoundPoint,
 
     //vector between first stopping_poin and current position
     diffPosStoppingPoint = stopping_point - position_xy;
-
-//  std::cout<<"first distance "<<firstDistance<<"\n";
-//  std::cout<<"secound distance "<<secoundDistance<<"\n";
-
 
   if(is_equal(MIN(firstDistance,secoundDistance),firstDistance))
      {

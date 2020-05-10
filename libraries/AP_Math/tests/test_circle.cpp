@@ -19,40 +19,60 @@ const AP_HAL::HAL& hal = AP_HAL::get_HAL();
 
 //cualgoritmul nou
 //
-TEST(CircleTest, ajustVelocityTest0)
+TEST(CircleTest, testEnvironment)
 {
-    //Scenariu: directia nu e orientata spre tinta si cercul de raza directiei nu intersecteza tinta
-    //=> nu se modifica viteza
-    std::cout<<"=====================================================\n\n";
-    std::cout<<"Test0\n";
-    //pozitia curenta in
     Vector2f centre(10.0f,8.0f);
     Circle circle(4.0f,centre);
-
-    circle.setBehaviourSlide();
+    //method for verifying if the test enviroment works
     EXPECT_TRUE(is_equal(circle.methodaTest(0.0f),1));
-    Vector2f currentP(15.0f,14.0f);
-    Vector2f velocity(5.0f,2.0f);
+   // EXPECT_FLOAT_EQ(1.0f, 0.0f);
+}
+
+TEST(CircleTest, ajustVelocityTest0)
+{
+    // Scenario:
+    // Precondition and action:
+    // The direction of the drone is not oriented to the target
+    // The circle's radius does not intersect the target
+    // Reaction: the velocity remains the same
+
+    std::cout<<"=====================================================\n\n";
+    std::cout<<"Test0\n";
+
+    Vector2f centre(10.0f,8.0f); // the center of the target
+    Circle circle(4.0f,centre); // create the target
+
+    circle.setBehaviourSlide(); // set the behavior of the drone
+
+    Vector2f currentP(15.0f,14.0f); // the current position of the drone
+    Vector2f velocity(5.0f,2.0f); // the current velocity of the drone
     Vector2f safevel(velocity);
     Vector2f zero;
 
+    // function for adjusting the velocity
     circle.adjust_velocity(1.0f,currentP,5.0f,velocity,1.0f);
     Vector2f stopping_point_new = circle.getStoppingPoint(1.0f,5.0f,currentP,velocity);
 
     std::cout<<"\n\nValoarea StoppingPointNew X"<<stopping_point_new.x<<"\n";
     std::cout<<"\nValoarea StoppingPointNew Y"<<stopping_point_new.y<<"\n";
 
+    //Verify that the velocity is unchanged
     EXPECT_TRUE(velocity==safevel);
- //   EXPECT_TRUE(is_equal(0.0f,1.0f));//pus intentionat ca sa vedem  logurile
 }
 
 TEST(CircleTest, ajustVelocityTest0_1)
 {
-    //Scenariu: directia e orientata spre tinta si cercul de raza directiei nu intersecteza tinta
-    //=> nu se modifica viteza
+
+    // Scenario:
+    // Precondition and action:
+    // The direction of the drone is oriented to the target
+    // The circle's radius does not intersect the target
+    // Reaction: the velocity remains the same
+
     std::cout<<"=====================================================\n\n";
     std::cout<<"Test0_1\n";
-    //pozitia curenta in
+
+    //current position of the drone
     Vector2f centre(10.0f,8.0f);
     Circle circle(4.0f,centre);
     circle.setBehaviourSlide();
@@ -62,6 +82,7 @@ TEST(CircleTest, ajustVelocityTest0_1)
     Vector2f safevel(velocity);
     Vector2f zero;
 
+    // function for adjusting the velocity
     circle.adjust_velocity(1.0f,currentP,5.0f,velocity,1.0f);
 
     Vector2f stopping_point_new = circle.getStoppingPoint(1.0f,5.0f,currentP,velocity);
@@ -69,22 +90,25 @@ TEST(CircleTest, ajustVelocityTest0_1)
     std::cout<<"\n\nValoarea StoppingPointNew X"<<stopping_point_new.x<<"\n";
     std::cout<<"\nValoarea StoppingPointNew Y"<<stopping_point_new.y<<"\n";
 
-
+    //Verify that the velocity is unchanged
     EXPECT_TRUE(velocity==safevel);
 }
 
 
 TEST(CircleTest, ajustVelocityTest1)
-{   // caz in care pozitiacurenta e pe marginea cercului
-    //chiar daca viteza are senst opus tintei, ea a fost atinsa => se opreste
+{
+    // Scenario: The current position of the drone is on the edge of the target
+    // even if the velocity vector is not oriented the opposite direction of the target
+    // Reaction: the velocity become zero and the drone stopping to advance
 
     std::cout<<"=====================================================\n\n";
     std::cout<<"Test1\n";
 
     Vector2f centre(10.0f,8.0f);
     Circle circle(4.0f,centre);
+
     circle.setBehaviourSlide();
-    EXPECT_TRUE(is_equal(circle.methodaTest(0.0f),1));
+
     Vector2f currentP(14.0f,8.0f);
     Vector2f velocity(10.0f,20.0f);
     Vector2f safevel(velocity);
@@ -98,14 +122,16 @@ TEST(CircleTest, ajustVelocityTest1)
 
     EXPECT_TRUE(velocity!=safevel);
     EXPECT_TRUE(velocity == zero);
-    //EXPECT_TRUE(is_equal(0.0f,1.0f));//pus intentionat ca sa vedem  logurile
+    EXPECT_EQ(velocity,zero);
+
 }
 
-
-
-//caz in care este dupa marginea dar nu in tinta
 TEST(CircleTest, ajustVelocityTest2)
 {
+    // Scenario: The current position of the drone is on the edge of the target
+    // the velocity vector is oriented in the direction of the target
+    // Reaction: the velocity become zero and the drone stopping to advance
+
     std::cout<<"=====================================================\n\n";
     std::cout<<"Test2\n";
     Vector2f centre(10.0f,8.0f);
@@ -118,7 +144,6 @@ TEST(CircleTest, ajustVelocityTest2)
     Vector2f zero;
 
     circle.adjust_velocity(1.0f,currentP,5.0f,velocity,1.0f);
-   // EXPECT_TRUE(v==velocity);
 
     Vector2f stopping_point_new = circle.getStoppingPoint(1.0f,5.0f,currentP,velocity);
 
@@ -134,6 +159,8 @@ TEST(CircleTest, ajustVelocityTest3)
 {
     std::cout<<"=====================================================\n\n";
     std::cout<<"Test3\n";
+
+
     Vector2f centre(10.0f,8.0f);
     Circle circle(4.0f,centre);
     circle.setBehaviourSlide();
@@ -143,8 +170,8 @@ TEST(CircleTest, ajustVelocityTest3)
     Vector2f safevel(velocity);
     Vector2f zero;
 
-     circle.adjust_velocity(1.0f,currentP,5.0f,velocity,1.0f);
-    //EXPECT_TRUE(v==velocity);
+    circle.adjust_velocity(1.0f,currentP,5.0f,velocity,1.0f);
+
     EXPECT_TRUE(velocity!=safevel);
     EXPECT_TRUE(velocity == zero);
 
@@ -153,13 +180,15 @@ TEST(CircleTest, ajustVelocityTest3)
     std::cout<<"\n\nValoarea StoppingPointNew X"<<stopping_point_new.x<<"\n";
     std::cout<<"\nValoarea StoppingPointNew Y"<<stopping_point_new.y<<"\n";
 
-   // EXPECT_TRUE(is_equal(0.0f,1.0f));//pus intentionat ca sa vedem  logurile
 }
 
 
 TEST(CircleTest, ajustVelocityTest4)
-{ // Scenariu: in afara si se face rotatia spre al doilea punct de intersectie;
-  //Conform calcului online  punctele de intersectie sunt :(4.58,10.58) si (12.58,2.58)
+{
+    // Scenario: before the edge of the target, and the orientation is changed to the
+    // second intersection point
+    // in concordance with calculation the intersection points are: (4.58, 10.58) and
+    // (12.58, 2.58)
 
     std::cout<<"=====================================================\n\n";
     std::cout<<"Test4\n";
@@ -199,7 +228,8 @@ TEST(CircleTest, ajustVelocityTest4)
 
 
 TEST(CircleTest, ajustVelocityTest4_1)
-{ // Scenariu: se continua dupa rotatia din testul 4 cu datele rezultate de acolo
+{
+    // Scenario: after the first rotation
 
     std::cout<<"=====================================================\n\n";
     std::cout<<"Test4_1\n";
@@ -234,10 +264,14 @@ TEST(CircleTest, ajustVelocityTest4_1)
     EXPECT_TRUE(is_equal(velocity.length(),safevel.length()));
 }
 
-//caz in care este in afara, iar stopping_point este in cercul de raza (R+margine)
-//Scenariu intra pe primul punct de intersectie
+
 TEST(CircleTest, ajustVelocityTest5)
 {
+
+    // Scenarion: the drone is outside the edge of the target and the stopping_point
+    // is in the radius circle(R + edge)
+    // the rotation of the vector wiil be to the first intersaction point
+
     std::cout<<"=====================================================\n\n";
     std::cout<<"Test5\n";
     Vector2f centre(10.0f,8.0f);
@@ -271,15 +305,15 @@ TEST(CircleTest, ajustVelocityTest5)
     EXPECT_TRUE(stopping_point_new.x>=12.5f && stopping_point_new.x<=12.61f);
     EXPECT_TRUE(stopping_point_new.y>=2.0f && stopping_point_new.y<=2.1f);
 
-
-   // EXPECT_TRUE(is_equal(0.0f,1.0f));//pus intentionat ca sa vedem  logurile
 }
 
 
 TEST(CircleTest, ajustVelocityTest6)
 {
-    //in afara si cercul este cuprins,dar viteza are orientarea pe langa tinta => nu se roteste, ramanene schimbata
-    std::cout<<"=====================================================\n\n";
+    // Scenario: outside the target and the circle is included in the target
+    // Reaction: velocity remains unchanged
+
+      std::cout<<"=====================================================\n\n";
       std::cout<<"Test6\n";
       Vector2f centre(10.0f,8.0f);
       Circle circle(4.0f,centre);
@@ -311,7 +345,9 @@ TEST(CircleTest, ajustVelocityTest6)
 
 TEST(CircleTest, ajustVelocityTest7)
 {
-    //in afara si cercul este cuprins, dar orientarea este opusa tintei  => nu se modifica viteza
+    //Scenario: the drone is outside the edge it is going to the target but is stil not
+    //near it, so the velocity will be unchanged
+
     std::cout<<"=====================================================\n\n";
       std::cout<<"Test7\n";
       Vector2f centre(13.0f,12.0f);
@@ -346,7 +382,7 @@ TEST(CircleTest, ajustVelocityTest7)
 
 TEST(CircleTest, ajustVelocityTest8)
 {
-    //in afara,cercul este cuprins, iar orientarea este spre  tinta => se roteste pe prima tangenta
+    //Scenario: is near the target and the orientation will be rotated to the left
       std::cout<<"=====================================================\n\n";
       std::cout<<"Test8\n";
       Vector2f centre(13.0f,12.0f);
@@ -401,7 +437,7 @@ TEST(CircleTest, adjustVelocityStop0)
 
   EXPECT_TRUE(stopping_point_new.x>=9.2f && stopping_point_new.x<=9.3f);
   EXPECT_TRUE(stopping_point_new.y>=7.2f && stopping_point_new.y<=7.3f);
-  //EXPECT_TRUE(is_equal(1.0f,0.0f));
+
 }
 
 TEST(CircleTest, adjustVelocityStop1)

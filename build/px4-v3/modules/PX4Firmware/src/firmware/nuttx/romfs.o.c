@@ -1,1 +1,0 @@
-const unsigned int romfs_img_len = 0x0000d000;

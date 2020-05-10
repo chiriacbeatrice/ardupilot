@@ -224,4 +224,5 @@ protected:
 
 private:
     static AP_Motors *_instance;
+
 };

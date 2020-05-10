@@ -2,7 +2,7 @@
  * test_polygonConvex.cpp
  *
  *  Created on: Jun 11, 2019
- *      Author: beatricec
+ *      Author: beatriceC
  */
 
 #include <AP_gtest.h>
@@ -16,15 +16,19 @@
 // http://ardupilot.org/dev/docs/learning-ardupilot-the-example-sketches.html
 const AP_HAL::HAL& hal = AP_HAL::get_HAL();
 
+
+//TEST(PolygonConvex, testEnvironment)
+//{
+//   EXPECT_FLOAT_EQ(1.0f,0.0f);
+//}
+
+
 TEST(PolygonConvex, Test0)
 {
     std::cout<<"=====================================================\n\n";
     std::cout<<"Test PolygonConvexBC\n\n";
     std::cout<<"TestStop0\n";
-//    Vector2f A(5.0f,5.0f);
-//    Vector2f B(5.0f,9.0f);
-//    Vector2f C(12.0f,9.0f);
-//    Vector2f D(12.0f,5.0f);
+
     Vector2f A(2.0f,2.0f);
     Vector2f B(4.0f,6.0f);
     Vector2f C(8.0f,5.0f);
@@ -65,10 +69,6 @@ TEST(PolygonConvex, Test0)
 
     EXPECT_TRUE(stopping_point_new.x>=7.6f && stopping_point_new.x<=7.7f);
     EXPECT_TRUE(stopping_point_new.y>=7.4f && stopping_point_new.y<=7.5f);
-
-
-  // EXPECT_TRUE(is_equal(1.0f,0.0f));
-
 }
 
 
